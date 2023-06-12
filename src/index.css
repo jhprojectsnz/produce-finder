@@ -1,0 +1,41 @@
+:root {
+  --main-dark-color: #00801C;
+  --main-light-color: #C2FFB2;
+  --text-color: rgb(29,29,29);
+
+}
+
+
+/* stop body from scrolling when scrolling on mobile */
+html, body {
+  overflow: auto;
+}
+
+.color-dark {
+  color: var(--main-dark-color);
+}
+
+.color-light {
+  color: var(--main-light-color);
+}
+
+.bg-dark {
+  background-color: var(--main-dark-color);
+}
+
+.bg-light {
+  background-color: var(--main-light-color);
+}
+
+.border-dark {
+  border: 1px solid var(--main-dark-color);
+}
+
+.border-light {
+  border: 1px solid var(--main-light-color);
+}
+
+input:focus {
+  outline: none;
+}
+
