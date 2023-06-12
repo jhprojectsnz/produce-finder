@@ -3,6 +3,7 @@ import StallPreview from "../stall-preview/stall-preview.jsx";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import locations from "../../data/data";
 import { useState } from "react";
+import StallDetails from "../../Pages/stall-details/stall-details";
 
 export default function Map() {
   const [selectedStall, setSelectedStall] = useState({});
@@ -36,6 +37,12 @@ export default function Map() {
 
   return (
     <>
+      {selectedStall.id && (
+        <StallDetails
+          selectedStall={selectedStall}
+          setSelectedStall={setSelectedStall}
+        />
+      )}
       <GoogleMap
         zoom={10}
         center={center}

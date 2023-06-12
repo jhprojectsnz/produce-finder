@@ -12,7 +12,9 @@ const locations = [
       lat: -36.78863186033818, 
       lng: 174.49670168057386,
       locationType: 'roadside stall',
-      items: ['Apples', 'Mandarins', 'Feijoas']
+      items: ['Apples', 'Mandarins', 'Feijoas'],
+      likes: 53,
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
     },
     {
       id: 2,
@@ -21,7 +23,9 @@ const locations = [
       lat: -36.77308008261856, 
       lng: 174.55441014661895,
       locationType: 'roadside stall',
-      items: ['Oranges']
+      items: ['Oranges'],
+      likes: 53,
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
     },
     {
       id: 3,
@@ -30,7 +34,9 @@ const locations = [
       lat: -36.80431583107017, 
       lng: 174.53266177070006,
       locationType: 'shop', 
-      items: ['Avocados', 'Apples', 'Potatoes']
+      items: ['Avocados', 'Apples', 'Potatoes'],
+      likes: 53,
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
     },
     {
       id: 4,
@@ -39,7 +45,9 @@ const locations = [
       lat: -36.73198150428723, 
       lng: 174.47731409214202,
       locationType: 'roadside stall',
-      items: ['Apples', 'Limes', 'Feijoas', 'Lemons']
+      items: ['Apples', 'Limes', 'Feijoas', 'Lemons'],
+      likes: 53,
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
     },
     {
       id: 5,
@@ -48,7 +56,9 @@ const locations = [
       lat: -36.677894856799995, 
       lng: 174.4627228751362,
       locationType: 'market stall',
-      items: ['Feijoas']
+      items: ['Feijoas'],
+      likes: 53,
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
     }
   ]
 

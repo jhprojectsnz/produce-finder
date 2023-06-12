@@ -7,7 +7,6 @@ import { useState } from "react";
 
 export default function SearchResults() {
   const [showMapView, setShowMapView] = useState(true);
-
   return (
     <div className="map-view">
       <SearchBar />
