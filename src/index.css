@@ -39,3 +39,7 @@ input:focus {
   outline: none;
 }
 
+.hide {
+  display: none;
+}
+

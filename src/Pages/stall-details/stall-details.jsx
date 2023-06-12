@@ -1,12 +1,12 @@
 import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
 
-export default function StallDetails({ selectedStall, setSelectedStall }) {
+export default function StallDetails({ selectedStall, setShowStallDetails }) {
   return (
     <section className="stall-details">
       <div
         className="stall-details-btn back-btn"
-        onClick={() => setSelectedStall({})}
+        onClick={() => setShowStallDetails(false)}
       >
         <BiArrowBack className="color-dark" />
       </div>

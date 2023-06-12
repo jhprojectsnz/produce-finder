@@ -2,15 +2,26 @@ import "./results-list.css";
 import locations from "../../data/data";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
-export default function ResultsList() {
+export default function ResultsList({
+  setSelectedStall,
+  setShowStallDetails,
+  showStallDetails,
+}) {
   //Replace variable below with search term once search is set up
   const searchTerm = "Auckland";
 
   return (
-    <div className="results-list">
+    <div className={showStallDetails ? "hide" : "results-list"}>
       <h3 className="search-summary">Locations near "{searchTerm}"</h3>
       {locations.map((location) => (
-        <div className="result-container" key={location.id}>
+        <div
+          className="result-container"
+          key={location.id}
+          onClick={() => {
+            setSelectedStall(location);
+            setShowStallDetails(true);
+          }}
+        >
           <img className="result-image" src={location.img} />
           <div className="result-text-container">
             <div className="result-title-container">

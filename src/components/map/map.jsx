@@ -5,8 +5,11 @@ import locations from "../../data/data";
 import { useState } from "react";
 import StallDetails from "../../Pages/stall-details/stall-details";
 
-export default function Map() {
-  const [selectedStall, setSelectedStall] = useState({});
+export default function Map({
+  selectedStall,
+  setSelectedStall,
+  setShowStallDetails,
+}) {
   const [center, setCenter] = useState({
     lat: -36.73198150428723,
     lng: 174.47731409214202,
@@ -37,12 +40,6 @@ export default function Map() {
 
   return (
     <>
-      {selectedStall.id && (
-        <StallDetails
-          selectedStall={selectedStall}
-          setSelectedStall={setSelectedStall}
-        />
-      )}
       <GoogleMap
         zoom={10}
         center={center}
@@ -70,6 +67,7 @@ export default function Map() {
       <StallPreview
         selectedStall={selectedStall}
         setSelectedStall={setSelectedStall}
+        setShowStallDetails={setShowStallDetails}
       />
     </>
   );
