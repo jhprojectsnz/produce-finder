@@ -16,9 +16,8 @@ export default function StallPreview({
           <FaTimes
             className="close-btn"
             onClick={(e) => {
-              //fix this so it does not trigger parent onClick
               setSelectedStall({});
-              e.stopPropagation;
+              e.stopPropagation();
             }}
           />
           <img className="info-image" src={selectedStall.img} />
