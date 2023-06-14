@@ -5,12 +5,6 @@
 
 }
 
-
-/* stop body from scrolling when scrolling on mobile */
-html, body {
-  overflow: auto;
-}
-
 .color-dark {
   color: var(--main-dark-color);
 }
