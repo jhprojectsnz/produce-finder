@@ -3,7 +3,6 @@ import StallPreview from "../stall-preview/stall-preview.jsx";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import locations from "../../data/data";
 import { useState } from "react";
-import StallDetails from "../../Pages/stall-details/stall-details";
 
 export default function Map({
   selectedStall,

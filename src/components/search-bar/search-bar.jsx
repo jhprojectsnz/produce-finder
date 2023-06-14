@@ -1,6 +1,6 @@
 import "./search-bar.css";
 import { BiSearchAlt, BiSliderAlt } from "react-icons/bi";
-import Filters from "../Filters/filters.jsx";
+import Filters from "../filters/filters.jsx";
 import { useState } from "react";
 
 export default function SearchBar() {
@@ -37,7 +37,7 @@ export default function SearchBar() {
           <BiSliderAlt />
         </div>
       </div>
-      {showFilters && <Filters />}
+      {showFilters && <Filters setShowFilters={setShowFilters} />}
     </div>
   );
 }

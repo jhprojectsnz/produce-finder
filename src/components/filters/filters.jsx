@@ -1,10 +1,12 @@
 import "./filters.css";
 import { FaEdit } from "react-icons/fa";
 import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
 
 //change location to be the result of search
+//change class name for close button - make close button component?
 
-export default function Filters() {
+export default function Filters({ setShowFilters }) {
   //Add seller type filters to the array below
   const sellerTypes = [
     "Roadside stall",
@@ -29,6 +31,8 @@ export default function Filters() {
 
   return (
     <div className="filters-container">
+      <h3>Search options</h3>
+      <FaTimes className="close" onClick={() => setShowFilters(false)} />
       <div className="filter">
         <p>
           Search location: <span className="italic">Birkenhead</span>

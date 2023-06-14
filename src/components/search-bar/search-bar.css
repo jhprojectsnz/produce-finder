@@ -39,7 +39,6 @@
 }
 
 .circle-btn {
-    border: 1px solid var(--main-dark-color);
     height: 30px;
     width: 30px;
     border-radius: 50%;
