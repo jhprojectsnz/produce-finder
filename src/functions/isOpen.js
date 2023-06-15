@@ -4,8 +4,7 @@ export default function isOpen(openTimes) {
     const dateNow = new Date();
     const dayNow = dateNow.getDay() === 0 ?  6 : dateNow.getDay() -1; // A number: 0 = Mon, 1 = Tue etc
     const timeNow = dateNow.toLocaleTimeString("en-GB").slice(0, 5); //time in format: hh:mm
-
-    console.log(openTimes[0])
+    
     //Check if shop open today, return false if not
     if (!openTimes[dayNow].open) return false;
 

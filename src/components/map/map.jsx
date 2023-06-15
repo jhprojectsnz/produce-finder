@@ -63,11 +63,13 @@ export default function Map({
           />
         ))}
       </GoogleMap>
-      <StallPreview
-        selectedStall={selectedStall}
-        setSelectedStall={setSelectedStall}
-        setShowStallDetails={setShowStallDetails}
-      />
+      {selectedStall.id && (
+        <StallPreview
+          selectedStall={selectedStall}
+          setSelectedStall={setSelectedStall}
+          setShowStallDetails={setShowStallDetails}
+        />
+      )}
     </>
   );
 }
