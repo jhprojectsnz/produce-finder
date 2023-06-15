@@ -1,7 +1,12 @@
 import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
+import isOpen from "../../functions/isOpen";
+import timeToAmPm from "../../functions/timeToAmPm";
 
 export default function StallDetails({ selectedStall, setShowStallDetails }) {
+  const stallIsOpen = isOpen(selectedStall.openTimes);
+  console.log(stallIsOpen);
+
   return (
     <section className="stall-details">
       <div
@@ -17,7 +22,12 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
       <div className="stall-details-text">
         <div className="stall-title-container">
           <h2 className="stall-name">{selectedStall.name}</h2>
-          <p className="stall-status">Open</p>
+          <p
+            className="stall-status"
+            style={{ color: stallIsOpen ? "green" : "red" }}
+          >
+            {stallIsOpen ? "Open" : "Closed"}
+          </p>
         </div>
         <p className="stall-likes">{`${selectedStall.likes} likes`}</p>
         <div className="stall-address">
@@ -43,34 +53,22 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
         <div className="line-separator" />
         <div className="stall-text-subsection">
           <h3>Opening hours</h3>
-          <div className="stall-time-container">
-            <p>Monday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Tuesday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Wednesday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Thursday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Friday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Saturday</p>
-            <p>10 am - 5 pm</p>
-          </div>
-          <div className="stall-time-container">
-            <p>Sunday</p>
-            <p>10 am - 5 pm</p>
-          </div>
+          {selectedStall.openTimes.map((day) => {
+            if (!day.open)
+              return (
+                <div className="stall-time-container">
+                  <p>{day.day}</p>
+                  <p>Closed</p>
+                </div>
+              );
+
+            return (
+              <div className="stall-time-container">
+                <p>{day.day}</p>
+                <p>{`${timeToAmPm(day.open)} - ${timeToAmPm(day.close)}`}</p>
+              </div>
+            );
+          })}
         </div>
         <div className="line-separator" />
         <div className="stall-text-subsection">

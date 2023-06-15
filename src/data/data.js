@@ -14,7 +14,61 @@ const locations = [
       locationType: 'roadside stall',
       items: ['Apples', 'Mandarins', 'Feijoas'],
       likes: 53,
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+      inStock: [
+        {
+          item: 'Apples',
+          amount: '500 g',
+          price: '$4'
+        },
+        {
+          item: 'Mandarins',
+          amount: '1 kg',
+          price: '$6'
+        },
+        {
+          item: 'Fejoas',
+          amount: 'small bag',
+          price: '$2'
+        }
+      ],
+      openTimes: [
+        { 
+          day: 'Monday',
+          open: '09:00',
+          close: '17:30'
+        },
+        { 
+          day: 'Tuesday',
+          open: '09:00',
+          close: '15:00'
+        },
+        { 
+          day: 'Wednesday',
+          open: '09:00',
+          close: '15:00'
+        },
+        { 
+          day: 'Thursday',
+          open: '09:00',
+          close: '15:00'
+        },
+        { 
+          day: 'Friday',
+          open: '09:00',
+          close: '19:00'
+        },
+        { 
+          day: 'Saturday',
+          open: '10:00',
+          close: '20:00'
+        },
+        { 
+          day: 'Sunday',
+          open: null,
+          close: null
+        }
+      ]
     },
     {
       id: 2,
@@ -25,7 +79,61 @@ const locations = [
       locationType: 'roadside stall',
       items: ['Oranges'],
       likes: 53,
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+       inStock: [
+        {
+          item: 'Apples',
+          amount: '500 g',
+          price: '$4'
+        },
+        {
+          item: 'Mandarins',
+          amount: '1 kg',
+          price: '$6'
+        },
+        {
+          item: 'Fejoas',
+          amount: 'small bag',
+          price: '$2'
+        }
+      ],
+      openTimes: [
+        { 
+          day: 'Monday',
+          open: '08:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Tuesday',
+          open: '08:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Wednesday',
+          open: '08:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Thursday',
+          open: '08:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Friday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Saturday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Sunday',
+          open: null,
+          close: null
+        },
+      ]
     },
     {
       id: 3,
@@ -36,7 +144,61 @@ const locations = [
       locationType: 'shop', 
       items: ['Avocados', 'Apples', 'Potatoes'],
       likes: 53,
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+       inStock: [
+        {
+          item: 'Apples',
+          amount: '500 g',
+          price: '$4'
+        },
+        {
+          item: 'Mandarins',
+          amount: '1 kg',
+          price: '$6'
+        },
+        {
+          item: 'Fejoas',
+          amount: 'small bag',
+          price: '$2'
+        }
+      ],
+      openTimes: [
+        { 
+          day: 'Monday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Tuesday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Wednesday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Thursday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Friday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Saturday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Sunday',
+          open: '09:00',
+          close: '17:00'
+        },
+      ]
     },
     {
       id: 4,
@@ -47,7 +209,61 @@ const locations = [
       locationType: 'roadside stall',
       items: ['Apples', 'Limes', 'Feijoas', 'Lemons'],
       likes: 53,
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+       inStock: [
+        {
+          item: 'Apples',
+          amount: '500 g',
+          price: '$4'
+        },
+        {
+          item: 'Mandarins',
+          amount: '1 kg',
+          price: '$6'
+        },
+        {
+          item: 'Fejoas',
+          amount: 'small bag',
+          price: '$2'
+        }
+      ],
+      openTimes: [
+        { 
+          day: 'Monday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Tuesday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Wednesday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Thursday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Friday',
+          open: null,
+          close: null
+        },
+        { 
+          day: 'Saturday',
+          open: '12:00',
+          close: '15:00'
+        },
+        { 
+          day: 'Sunday',
+          open: null,
+          close: null
+        },
+      ]
     },
     {
       id: 5,
@@ -58,7 +274,61 @@ const locations = [
       locationType: 'market stall',
       items: ['Feijoas'],
       likes: 53,
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!'
+      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+       inStock: [
+        {
+          item: 'Apples',
+          amount: '500 g',
+          price: '$4'
+        },
+        {
+          item: 'Mandarins',
+          amount: '1 kg',
+          price: '$6'
+        },
+        {
+          item: 'Fejoas',
+          amount: 'small bag',
+          price: '$2'
+        }
+      ],
+      openTimes: [
+        { 
+          day: 'Monday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Tuesday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Wednesday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Thursday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Friday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Saturday',
+          open: '09:00',
+          close: '17:00'
+        },
+        { 
+          day: 'Sunday',
+          open: '09:00',
+          close: '17:00'
+        },
+      ]
     }
   ]
 
@@ -76,3 +346,28 @@ const fruitStallNames = [
   "Fruitful Harvest",
   "Fruit Emporium"
 ];
+
+// openTimes: {
+//   monday: {
+//     open: '09:00',
+//     close: '17:00'
+//   },
+//   tuesday: {
+//     open: '9 am',
+//     close: '5 pm'
+//   },
+//   wednesday: {
+//     open: '9 am',
+//     close: '5 pm'
+//   },
+//   thurday: {
+//     open: '9 am',
+//     close: '5 pm'
+//   },
+//   friday: {
+//     open: '9 am',
+//     close: '5 pm'
+//   },
+//   saturday: null,
+//   sunday: null
+// }

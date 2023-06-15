@@ -93,7 +93,7 @@
 }
 
 .stall-time-container {
-    width: 15rem;
-    display: flex;
-    justify-content: space-between;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
