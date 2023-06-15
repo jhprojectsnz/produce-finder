@@ -76,11 +76,17 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
             );
           })}
         </div>
-        <div className="line-separator" />
-        <div className="stall-text-subsection">
-          <h3>Contact</h3>
-          <p>Phone: 09 123 4567</p>
-        </div>
+        {selectedStall.contactDetails && (
+          <>
+            <div className="line-separator" />
+            <div className="stall-text-subsection">
+              <h3>Contact</h3>
+              {Object.keys(selectedStall.contactDetails).map((contact) => (
+                <p>{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

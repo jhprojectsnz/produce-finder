@@ -66,7 +66,10 @@ const locations = [
           open: null,
           close: null
         }
-      ]
+      ],
+      contactDetails: {
+        Phone: '09 123 3453'
+      }
     },
     {
       id: 2,
@@ -104,7 +107,7 @@ const locations = [
         { 
           day: 'Thursday',
           open: '08:00',
-          close: '17:00'
+          close: '22:00'
         },
         { 
           day: 'Friday',
@@ -121,7 +124,10 @@ const locations = [
           open: null,
           close: null
         },
-      ]
+      ],
+      contactDetails: {
+        Phone: '0800 555 3453'
+      }
     },
     {
       id: 3,
@@ -171,7 +177,10 @@ const locations = [
           open: '09:00',
           close: '17:00'
         },
-      ]
+      ],
+      contactDetails: {
+        Email: 'avosandmore@gmail.com'
+      }
     },
     {
       id: 4,
