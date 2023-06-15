@@ -19,7 +19,6 @@ const locations = [
         {
           item: 'Apples',
           amount: '500 g',
-          price: '$4'
         },
         {
           item: 'Mandarins',
@@ -28,7 +27,6 @@ const locations = [
         },
         {
           item: 'Fejoas',
-          amount: 'small bag',
           price: '$2'
         }
       ],
@@ -82,19 +80,9 @@ const locations = [
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
         {
-          item: 'Apples',
-          amount: '500 g',
-          price: '$4'
-        },
-        {
-          item: 'Mandarins',
-          amount: '1 kg',
-          price: '$6'
-        },
-        {
-          item: 'Fejoas',
-          amount: 'small bag',
-          price: '$2'
+          item: 'Oranges',
+          amount: 'each',
+          price: '$1'
         }
       ],
       openTimes: [
@@ -146,21 +134,6 @@ const locations = [
       likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
-        {
-          item: 'Apples',
-          amount: '500 g',
-          price: '$4'
-        },
-        {
-          item: 'Mandarins',
-          amount: '1 kg',
-          price: '$6'
-        },
-        {
-          item: 'Fejoas',
-          amount: 'small bag',
-          price: '$2'
-        }
       ],
       openTimes: [
         { 
@@ -213,19 +186,29 @@ const locations = [
        inStock: [
         {
           item: 'Apples',
-          amount: '500 g',
-          price: '$4'
-        },
-        {
-          item: 'Mandarins',
-          amount: '1 kg',
+          amount: 'large bag',
           price: '$6'
         },
         {
+          item: 'Pears',
+          amount: '1 kg',
+          price: '$5'
+        },
+        {
           item: 'Fejoas',
-          amount: 'small bag',
+          amount: '1 kg',
+          price: '$7'
+        },
+        {
+          item: 'Lettuce',
+          amount: 'each',
           price: '$2'
-        }
+        },
+        {
+          item: 'Beans',
+          amount: 'small bag',
+          price: '$4'
+        },
       ],
       openTimes: [
         { 
@@ -277,19 +260,18 @@ const locations = [
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
         {
-          item: 'Apples',
-          amount: '500 g',
-          price: '$4'
+          item: 'Watermelons',
+          amount: 'half',
+          price: '$8'
         },
         {
-          item: 'Mandarins',
+          item: 'Bananas',
           amount: '1 kg',
-          price: '$6'
+          price: '$2'
         },
         {
           item: 'Fejoas',
           amount: 'small bag',
-          price: '$2'
         }
       ],
       openTimes: [

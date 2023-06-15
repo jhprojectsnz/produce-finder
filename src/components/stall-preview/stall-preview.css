@@ -27,14 +27,19 @@
 }
 
 .info-text {
+    height: 3rem;
     color: rgb(55, 55, 55);
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .info-image {
     height: 100%;
-    width: 150px;
+    min-width: 110px;
+    max-width: 110px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .info-status {

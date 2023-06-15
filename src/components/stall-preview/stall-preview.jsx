@@ -24,7 +24,11 @@ export default function StallPreview({
       <img className="info-image" src={selectedStall.img} />
       <div className="info-text-container">
         <h5 className="info-title">{selectedStall.name}</h5>
-        <p className="info-text">{selectedStall.items.join(", ")}</p>
+        <p className="info-text">
+          {selectedStall.inStock.length === 0
+            ? "Out of stock"
+            : selectedStall.inStock.map((item) => item.item).join(", ")}
+        </p>
         <p
           className="info-status"
           style={{ color: stallIsOpen ? "green" : "red" }}

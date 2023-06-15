@@ -41,14 +41,20 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
         <div className="line-separator" />
         <div className="stall-text-subsection">
           <h3>In Stock Now</h3>
-          <div className="stall-item-container">
-            <p>Fejoas (500g)</p>
-            <p>$6</p>
-          </div>
-          <div className="stall-item-container">
-            <p>Apples (1kg)</p>
-            <p>$3</p>
-          </div>
+          {selectedStall.inStock.length === 0 ? (
+            <p>Currently out of Stock</p>
+          ) : (
+            selectedStall.inStock.map((item) => (
+              <div className="stall-item-container">
+                {item.amount ? (
+                  <p>{`${item.item} (${item.amount})`}</p>
+                ) : (
+                  <p>{`${item.item}`}</p>
+                )}
+                {item.price && <p>{item.price}</p>}
+              </div>
+            ))
+          )}
         </div>
         <div className="line-separator" />
         <div className="stall-text-subsection">
