@@ -29,7 +29,6 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
             {stallIsOpen ? "Open" : "Closed"}
           </p>
         </div>
-        <p className="stall-likes">{`${selectedStall.likes} likes`}</p>
         <div className="stall-address">
           253 Glenfield Road, Birkenhead, Auckland
         </div>

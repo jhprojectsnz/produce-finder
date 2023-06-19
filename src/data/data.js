@@ -13,7 +13,6 @@ const locations = [
       lng: 174.49670168057386,
       locationType: 'roadside stall',
       items: ['Apples', 'Mandarins', 'Feijoas'],
-      likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
       inStock: [
         {
@@ -79,7 +78,6 @@ const locations = [
       lng: 174.55441014661895,
       locationType: 'roadside stall',
       items: ['Oranges'],
-      likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
         {
@@ -137,7 +135,6 @@ const locations = [
       lng: 174.53266177070006,
       locationType: 'shop', 
       items: ['Avocados', 'Apples', 'Potatoes'],
-      likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
       ],
@@ -190,7 +187,6 @@ const locations = [
       lng: 174.47731409214202,
       locationType: 'roadside stall',
       items: ['Apples', 'Limes', 'Feijoas', 'Lemons'],
-      likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
         {
@@ -265,7 +261,6 @@ const locations = [
       lng: 174.4627228751362,
       locationType: 'market stall',
       items: ['Feijoas'],
-      likes: 53,
       about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
        inStock: [
         {
@@ -337,28 +332,3 @@ const fruitStallNames = [
   "Fruitful Harvest",
   "Fruit Emporium"
 ];
-
-// openTimes: {
-//   monday: {
-//     open: '09:00',
-//     close: '17:00'
-//   },
-//   tuesday: {
-//     open: '9 am',
-//     close: '5 pm'
-//   },
-//   wednesday: {
-//     open: '9 am',
-//     close: '5 pm'
-//   },
-//   thurday: {
-//     open: '9 am',
-//     close: '5 pm'
-//   },
-//   friday: {
-//     open: '9 am',
-//     close: '5 pm'
-//   },
-//   saturday: null,
-//   sunday: null
-// }
