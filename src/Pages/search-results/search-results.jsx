@@ -6,12 +6,13 @@ import ResultsList from "../../components/results-list/results-list";
 import { useState } from "react";
 import StallDetails from "../stall-details/stall-details";
 
-export default function SearchResults() {
+export default function SearchResults({ setMapCenter, mapCenter }) {
   const [showMapView, setShowMapView] = useState(true);
   const [showStallDetails, setShowStallDetails] = useState(false);
   const [selectedStall, setSelectedStall] = useState({});
+
   return (
-    <div className="map-view">
+    <div className="search-results">
       {showStallDetails && (
         <StallDetails
           selectedStall={selectedStall}
@@ -24,6 +25,8 @@ export default function SearchResults() {
           selectedStall={selectedStall}
           setSelectedStall={setSelectedStall}
           setShowStallDetails={setShowStallDetails}
+          setMapCenter={setMapCenter}
+          mapCenter={mapCenter}
         />
       ) : (
         <ResultsList
