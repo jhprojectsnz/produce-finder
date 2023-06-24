@@ -8,9 +8,6 @@ export default function ResultsList({
   setShowStallDetails,
   showStallDetails,
 }) {
-  //Replace variable below with search term once search is set up
-  const searchTerm = "Auckland";
-
   return (
     <div className={showStallDetails ? "hide" : "results-list"}>
       {locations.map((location) => {
