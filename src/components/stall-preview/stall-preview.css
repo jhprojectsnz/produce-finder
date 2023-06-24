@@ -9,6 +9,9 @@
     height: 110px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+     /* remove styling applied by using <Link/>  */
+     text-decoration: inherit;
+     color: inherit;
 }
   
 .info-text-container{

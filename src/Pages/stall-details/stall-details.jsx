@@ -2,19 +2,20 @@ import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
 import isOpen from "../../functions/isOpen";
 import timeToAmPm from "../../functions/timeToAmPm";
+import { useNavigate } from "react-router-dom";
 
-export default function StallDetails({ selectedStall, setShowStallDetails }) {
+export default function StallDetails({ selectedStall }) {
   const stallIsOpen = isOpen(selectedStall.openTimes);
-  console.log(stallIsOpen);
+  const navigate = useNavigate();
 
   return (
     <section className="stall-details">
-      <div
+      <button
         className="stall-details-btn back-btn"
-        onClick={() => setShowStallDetails(false)}
+        onClick={() => navigate(-1)}
       >
         <BiArrowBack className="color-dark" />
-      </div>
+      </button>
       <div className="stall-details-btn fav-btn">
         <BiHeart className="color-dark" />
       </div>
@@ -44,7 +45,10 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
             <p>Currently out of Stock</p>
           ) : (
             selectedStall.inStock.map((item) => (
-              <div className="stall-item-container">
+              <div
+                className="stall-item-container"
+                key={`${selectedStall.id}-${item.item}`}
+              >
                 {item.amount ? (
                   <p>{`${item.item} (${item.amount})`}</p>
                 ) : (
@@ -59,18 +63,17 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
         <div className="stall-text-subsection">
           <h3>Opening hours</h3>
           {selectedStall.openTimes.map((day) => {
-            if (!day.open)
-              return (
-                <div className="stall-time-container">
-                  <p>{day.day}</p>
-                  <p>Closed</p>
-                </div>
-              );
-
             return (
-              <div className="stall-time-container">
+              <div
+                className="stall-time-container"
+                key={`${selectedStall.id}-${day.day}`}
+              >
                 <p>{day.day}</p>
-                <p>{`${timeToAmPm(day.open)} - ${timeToAmPm(day.close)}`}</p>
+                <p>
+                  {day.open
+                    ? `${timeToAmPm(day.open)} - ${timeToAmPm(day.close)}`
+                    : "Closed"}
+                </p>
               </div>
             );
           })}
@@ -81,7 +84,9 @@ export default function StallDetails({ selectedStall, setShowStallDetails }) {
             <div className="stall-text-subsection">
               <h3>Contact</h3>
               {Object.keys(selectedStall.contactDetails).map((contact) => (
-                <p>{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
+                <p
+                  key={selectedStall.contactDetails[contact]}
+                >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
               ))}
             </div>
           </>

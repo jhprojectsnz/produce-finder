@@ -20,6 +20,9 @@
     margin: 0.5rem 0;
     padding: 0.6rem;
     box-shadow: 0 0 5px rgb(204, 203, 203);
+    /* remove styling applied by using <Link/>  */
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .result-image {

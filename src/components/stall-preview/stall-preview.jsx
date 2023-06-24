@@ -1,18 +1,16 @@
 import "./stall-preview.css";
 import { FaTimes } from "react-icons/fa";
 import isOpen from "../../functions/isOpen";
+import { useNavigate } from "react-router-dom";
 
-export default function StallPreview({
-  selectedStall,
-  setSelectedStall,
-  setShowStallDetails,
-}) {
+export default function StallPreview({ selectedStall, setSelectedStall }) {
   const stallIsOpen = isOpen(selectedStall.openTimes);
+  const navigate = useNavigate();
 
   return (
     <div
       className="info-window-container"
-      onClick={() => setShowStallDetails(true)}
+      onClick={() => navigate("/results/details")}
     >
       <FaTimes
         className="close-btn"
