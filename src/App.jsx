@@ -10,7 +10,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const libraries = ["places"];
 
 function App() {
-  const [showResults, setShowResults] = useState(false);
   const [mapCenter, setMapCenter] = useState({});
 
   const { isLoaded } = useLoadScript({
@@ -24,16 +23,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                setMapCenter={setMapCenter}
-                mapCenter={mapCenter}
-                setShowResults={setShowResults}
-              />
-            }
-          />
+          <Route path="/" element={<Home setMapCenter={setMapCenter} />} />
           <Route
             path="/results/*"
             element={

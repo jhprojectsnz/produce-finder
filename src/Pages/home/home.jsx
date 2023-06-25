@@ -6,7 +6,7 @@ import { StandaloneSearchBox } from "@react-google-maps/api";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home({ setMapCenter, mapCenter, setShowResults }) {
+export default function Home({ setMapCenter }) {
   const [searchBox, setSearchBox] = useState(null);
 
   function placesChanged() {
@@ -21,11 +21,6 @@ export default function Home({ setMapCenter, mapCenter, setShowResults }) {
   //could try to change this so there are less rerenders on loading
   //avoid using state to store searchbox?
   const onSearchBoxLoad = (ref) => setSearchBox(ref);
-
-  function handleSearch() {
-    if (!mapCenter) return;
-    setShowResults(true);
-  }
 
   return (
     <section className="homepage">
@@ -50,11 +45,7 @@ export default function Home({ setMapCenter, mapCenter, setShowResults }) {
           className="home-search-input"
         />
       </StandaloneSearchBox>
-      <Link
-        to="/results/map"
-        className="home-search-btn"
-        onClick={() => handleSearch()}
-      >
+      <Link to="/results/map" className="home-search-btn">
         Search <BiSearchAlt className="home-search-icon" />
       </Link>
     </section>

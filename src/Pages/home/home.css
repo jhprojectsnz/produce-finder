@@ -61,11 +61,14 @@
     padding: 0.4rem 1.5rem 0.4rem 2rem;
     color: white;
     font-size: 0.8rem;
+    
     background-color: var(--main-dark-color);
     border: none;
     border-radius: 10px;
     box-shadow: rgb(171, 171, 171) 0 0 4px;
     cursor: pointer;
+    /* remove styling added from Link component */
+    text-decoration: none;
 }
 
 .home-search-icon {
