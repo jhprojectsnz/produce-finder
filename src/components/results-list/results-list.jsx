@@ -2,24 +2,21 @@ import "./results-list.css";
 import locations from "../../data/data";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import isOpen from "../../functions/isOpen";
+import { Link } from "react-router-dom";
 
-export default function ResultsList({
-  setSelectedStall,
-  setShowStallDetails,
-  showStallDetails,
-}) {
+export default function ResultsList({ setSelectedStall }) {
   return (
-    <div className={showStallDetails ? "hide" : "results-list"}>
+    <div className="results-list">
       {locations.map((location) => {
         let stallIsOpen = isOpen(location.openTimes);
 
         return (
-          <div
+          <Link
+            to="/results/details"
             className="result-container"
             key={location.id}
             onClick={() => {
               setSelectedStall(location);
-              setShowStallDetails(true);
             }}
           >
             <img className="result-image" src={location.img} />
@@ -40,7 +37,7 @@ export default function ResultsList({
                 {stallIsOpen ? "Open" : "Closed"}
               </p>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

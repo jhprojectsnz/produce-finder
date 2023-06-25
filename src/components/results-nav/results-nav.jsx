@@ -1,24 +1,30 @@
 import "./results-nav.css";
+import { Link, useLocation } from "react-router-dom";
 
-export default function ResultsNav({ showMapView, setShowMapView }) {
+export default function ResultsNav() {
+  const location = useLocation();
   return (
     <div className="results-nav">
-      <button
+      <Link
+        to="/results/map"
         className={
-          showMapView ? "results-nav-btn nav-btn-selected" : "results-nav-btn"
+          location.pathname === "/results/map"
+            ? "results-nav-btn nav-btn-selected"
+            : "results-nav-btn"
         }
-        onClick={() => setShowMapView(true)}
       >
         Map
-      </button>
-      <button
+      </Link>
+      <Link
+        to="/results/list"
         className={
-          !showMapView ? "results-nav-btn nav-btn-selected" : "results-nav-btn"
+          location.pathname === "/results/list"
+            ? "results-nav-btn nav-btn-selected"
+            : "results-nav-btn"
         }
-        onClick={() => setShowMapView(false)}
       >
         List
-      </button>
+      </Link>
     </div>
   );
 }
