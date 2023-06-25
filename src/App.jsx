@@ -50,17 +50,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div className="app">
-{showResults ? (
-  <SearchResults setMapCenter={setMapCenter} mapCenter={mapCenter} />
-) : (
-  <Home
-    setMapCenter={setMapCenter}
-    mapCenter={mapCenter}
-    setShowResults={setShowResults}
-  />
-)}
-</div> */
-}

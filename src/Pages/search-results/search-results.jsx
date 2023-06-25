@@ -38,31 +38,3 @@ export default function SearchResults({ setMapCenter, mapCenter }) {
     </div>
   );
 }
-
-{
-  /* <div className="search-results">
-      {showStallDetails && (
-        <StallDetails
-          selectedStall={selectedStall}
-          setShowStallDetails={setShowStallDetails}
-        />
-      )}
-      <SearchBar />
-      {showMapView ? (
-        <Map
-          selectedStall={selectedStall}
-          setSelectedStall={setSelectedStall}
-          setShowStallDetails={setShowStallDetails}
-          setMapCenter={setMapCenter}
-          mapCenter={mapCenter}
-        />
-      ) : (
-        <ResultsList
-          setSelectedStall={setSelectedStall}
-          setShowStallDetails={setShowStallDetails}
-          showStallDetails={showStallDetails}
-        />
-      )}
-      <ResultsNav showMapView={showMapView} setShowMapView={setShowMapView} />
-    </div> */
-}
