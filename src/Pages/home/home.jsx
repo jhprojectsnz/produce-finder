@@ -6,7 +6,11 @@ import { Autocomplete } from "@react-google-maps/api";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home({ setMapCenter }) {
+export default function Home({
+  setMapCenter,
+  lastSearchLocation,
+  setLastSearchLocation,
+}) {
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
 
@@ -23,7 +27,10 @@ export default function Home({ setMapCenter }) {
       lat: firstPlace.geometry.location.lat(),
       lng: firstPlace.geometry.location.lng(),
     });
+    setLastSearchLocation(firstPlace.formatted_address);
   }
+
+  console.log(lastSearchLocation);
 
   return (
     <section className="homepage">
@@ -47,6 +54,7 @@ export default function Home({ setMapCenter }) {
           type="text"
           placeholder="Enter address, city or postcode..."
           className="home-search-input"
+          defaultValue={lastSearchLocation}
         />
       </Autocomplete>
       <Link to="/results/map" className="home-search-btn">

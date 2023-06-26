@@ -11,6 +11,7 @@ const libraries = ["places"];
 
 function App() {
   const [mapCenter, setMapCenter] = useState({});
+  const [lastSearchLoaction, setLastSearchLocation] = useState("");
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
@@ -23,7 +24,16 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home setMapCenter={setMapCenter} />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                setMapCenter={setMapCenter}
+                lastSearchLocation={lastSearchLoaction}
+                setLastSearchLocation={setLastSearchLocation}
+              />
+            }
+          />
           <Route
             path="/results/*"
             element={

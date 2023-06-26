@@ -26,8 +26,9 @@
     height: 45px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0.5rem;
+    padding: 0 1rem;
     border-radius: 25px;
 }
 
@@ -47,4 +48,8 @@
     justify-content: center;
 }
 
+.back-arrow {
+    width: 20px;
+    height: 20px;
+}
 
