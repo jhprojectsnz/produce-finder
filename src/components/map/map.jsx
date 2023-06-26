@@ -23,7 +23,7 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
   return (
     <>
       <GoogleMap
-        zoom={10}
+        zoom={13}
         center={mapCenter}
         mapContainerClassName="map"
         clickableIcons={false}

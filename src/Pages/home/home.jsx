@@ -22,15 +22,14 @@ export default function Home({
   //Uses the location of the place searched to update map center
   function placesChanged() {
     if (!searchBox) return;
-    const firstPlace = searchBox.getPlace();
+    const place = searchBox.getPlace();
     setMapCenter({
-      lat: firstPlace.geometry.location.lat(),
-      lng: firstPlace.geometry.location.lng(),
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng(),
     });
-    setLastSearchLocation(firstPlace.formatted_address);
+    //store search location so it can be repopulated if user clicks back to home
+    setLastSearchLocation(place.formatted_address);
   }
-
-  console.log(lastSearchLocation);
 
   return (
     <section className="homepage">

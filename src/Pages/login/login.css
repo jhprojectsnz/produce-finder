@@ -1,0 +1,58 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 6rem auto 0;
+    padding: 1rem;
+    background: var(--main-light-color);
+    border-radius: 10px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* more padding on top - space for label */
+    padding: 15px 10px 10px;
+    border: 1px solid var(--main-dark-color);
+    border-radius: 10px; 
+}
+
+.input-container input {
+    /* make sure the input area is the full length of the surrounding border */
+    min-width:100%;
+    border: none;
+    background-color: var(--main-light-color);
+}
+
+.input-container label {
+    /* shift labels up so they sit over the input border */
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    padding: 3px;
+    background-color: var(--main-light-color);
+    font-size: 0.8rem;
+}
+
+.login-container p {
+    color: var(--main-dark-color);
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 2rem 0.4rem 2rem;
+    color: white;
+    font-size: 0.8rem;
+    font-family: inherit;
+    background-color: var(--main-dark-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
