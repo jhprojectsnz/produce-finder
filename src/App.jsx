@@ -5,6 +5,7 @@ import { useLoadScript } from "@react-google-maps/api";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/login/login.jsx";
+import StallDetailsForm from "./Pages/stall-details-form/stall-details-form.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
@@ -45,6 +46,7 @@ function App() {
             }
           ></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/form" element={<StallDetailsForm />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

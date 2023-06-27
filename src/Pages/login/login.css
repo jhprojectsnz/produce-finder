@@ -3,21 +3,22 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 4rem auto 0;
     padding: 1.5rem 0;
-    background: var(--main-light-color);
     border-radius: 10px;
 }
 
 .login-container h2 {
     font-weight: 600;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.input-container {
+.login-input-container {
     position: relative;
     display: flex;
     align-items: center;
+    width: 80%;
     gap: 0.5rem;
     /* more padding on top - space for label */
     padding: 15px 10px 10px;
@@ -26,20 +27,19 @@
     border-radius: 10px; 
 }
 
-.input-container input {
+.login-input-container input {
     /* make sure the input area is the full length of the surrounding border */
     min-width:90%;
     border: none;
-    background-color: var(--main-light-color);
 }
 
-.input-container label {
+.login-input-container label {
     /* shift labels up so they sit over the input border */
     position: absolute;
     top: -12px;
     left: 12px;
     padding: 3px;
-    background-color: var(--main-light-color);
+    background-color: white;
     color:  rgb(77, 77, 77);
     font-size: 0.8rem;
     }
@@ -69,7 +69,7 @@
 .login-separator {
     position: relative;
     width: 90%;
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 1.5rem;
     border-top: 1px solid var(--main-dark-color)
 }
 
@@ -79,8 +79,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 0 1rem;
-    background-color: var(--main-light-color);
-
+    background-color: white
 }
 
 .login-input-icon {
