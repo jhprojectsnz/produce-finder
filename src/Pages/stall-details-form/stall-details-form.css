@@ -35,7 +35,7 @@
     border-radius: 10px; 
 }
 
-.form-input-container input {
+.form-input-container .text-input {
     /* set width required to increase width of autocomplete suggestions - address input */
     min-width: 250px;
     border: none;

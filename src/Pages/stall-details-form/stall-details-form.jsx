@@ -2,6 +2,7 @@ import MainNavBar from "../../components/main-navbar/main-navbar";
 import "./stall-details-form.css";
 import { Autocomplete } from "@react-google-maps/api";
 import { useState } from "react";
+import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
 export default function StallDetailsForm() {
   //Variable to store search box ref
@@ -24,7 +25,13 @@ export default function StallDetailsForm() {
         <h2>Update Stall Details</h2>
         <div className="form-input-container">
           <label htmlFor="stall name">Stall name</label>
-          <input type="text" id="stall name" name="stall name" required />
+          <input
+            className="text-input"
+            type="text"
+            id="stall name"
+            name="stall name"
+            required
+          />
         </div>
         <div className="form-input-container">
           <label htmlFor="address">Address</label>
@@ -33,7 +40,13 @@ export default function StallDetailsForm() {
             onPlaceChanged={placesChanged}
             restrictions={{ country: "nz" }}
           >
-            <input type="text" id="address" name="address" required />
+            <input
+              className="text-input"
+              type="text"
+              id="address"
+              name="address"
+              required
+            />
           </Autocomplete>
         </div>
         <div className="form-input-container">
@@ -48,6 +61,7 @@ export default function StallDetailsForm() {
         </div>
         <div className="form-input-container">
           <label htmlFor="about">Default opening times</label>
+          <OpenHoursform />
         </div>
         <div className="form-separator">
           <span>Contact details</span>
@@ -58,11 +72,18 @@ export default function StallDetailsForm() {
         </p>
         <div className="form-input-container">
           <label htmlFor="number">Phone number</label>
-          <input type="text" id="number" name="number" placeholder="optional" />
+          <input
+            className="text-input"
+            type="text"
+            id="number"
+            name="number"
+            placeholder="optional"
+          />
         </div>
         <div className="form-input-container">
           <label htmlFor="stall name">Email</label>
           <input
+            className="text-input"
             type="text"
             id="stall name"
             name="stall name"

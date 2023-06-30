@@ -1,0 +1,28 @@
+.open-hours-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.openhours-day-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.2rem 0;
+}
+
+.openhours-day-container p {
+    width: 120px;
+    margin: 0;
+    text-align: left;
+}
+
+.openhours-checkbox {
+  color:aqua
+}
+
+.open-times-container {
+    margin: 0 1rem;
+}
+
+
