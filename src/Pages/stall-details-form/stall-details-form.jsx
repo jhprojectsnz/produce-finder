@@ -1,11 +1,10 @@
 import MainNavBar from "../../components/main-navbar/main-navbar";
 import "./stall-details-form.css";
 import { Autocomplete } from "@react-google-maps/api";
-import { useState } from "react";
+import { useState, useReducer } from "react";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
 export default function StallDetailsForm() {
-  console.log("form");
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
 
@@ -18,12 +17,22 @@ export default function StallDetailsForm() {
   function placesChanged() {
     if (!searchBox) return;
     const place = searchBox.getPlace();
+    const newAddress = place.formatted_address;
+    const newLocation = {
+      lat: place.geometry.location.lat(),
+      lng: place.geometry.location.lng(),
+    };
+    dispatch({
+      type: "address",
+      address: newAddress,
+      location: newLocation,
+    });
   }
 
-  const [formData, setformData] = useState({
+  const initialData = {
     name: "",
-    lat: 0,
-    lng: 0,
+    address: "",
+    location: { lat: 0, lng: 0 },
     locationType: "",
     about: "",
     img: "testImg1",
@@ -40,21 +49,60 @@ export default function StallDetailsForm() {
       phone: "",
       email: "",
     },
-  });
+  };
 
+  const reducerMethod = (formData, action) => {
+    switch (action.type) {
+      case "name":
+        return { ...formData, name: action.value };
+      case "about":
+        return { ...formData, about: action.value };
+      case "phone":
+        return {
+          ...formData,
+          contactDetails: { ...formData.contactDetails, phone: action.value },
+        };
+      case "email":
+        return {
+          ...formData,
+          contactDetails: { ...formData.contactDetails, email: action.value },
+        };
+      case "address":
+        return {
+          ...formData,
+          address: action.address,
+          location: action.location,
+        };
+      default:
+        return formData;
+    }
+  };
+
+  //This function is used to update the stored form data whenever a text input is modified
+  const handleTextInputChange = (e) => {
+    console.log(e.target.id);
+    dispatch({
+      type: e.target.id,
+      value: e.target.value,
+    });
+  };
+
+  const [formData, dispatch] = useReducer(reducerMethod, initialData);
+  console.log(formData);
   return (
     <>
       <MainNavBar />
       <section className="stall-details-form">
         <h2>Update Stall Details</h2>
         <div className="form-input-container">
-          <label htmlFor="stall name">Stall name</label>
+          <label htmlFor="name">Stall name</label>
           <input
             className="text-input"
             type="text"
-            id="stall name"
-            name="stall name"
+            id="name"
+            name="name"
             required
+            onChange={handleTextInputChange}
           />
         </div>
         <div className="form-input-container">
@@ -81,11 +129,16 @@ export default function StallDetailsForm() {
             name="about"
             placeholder="Give a brief description about your stall..."
             required
+            onChange={handleTextInputChange}
           />
         </div>
         <div className="form-input-container">
           <label htmlFor="about">Default opening times</label>
           <OpenHoursform />
+        </div>
+        <div className="form-input-container">
+          <label htmlFor="image">Upload image</label>
+          <button className="add-photo-btn">Add a photo</button>
         </div>
         <div className="form-separator">
           <span>Contact details</span>
@@ -95,19 +148,26 @@ export default function StallDetailsForm() {
           to get in touch with you
         </p>
         <div className="form-input-container">
-          <label htmlFor="number">Phone number</label>
-          <input className="text-input" type="text" id="number" name="number" />
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="stall name">Email</label>
+          <label htmlFor="phone">Phone number</label>
           <input
             className="text-input"
             type="text"
-            id="stall name"
-            name="stall name"
+            id="phone"
+            name="phone"
+            onChange={handleTextInputChange}
           />
         </div>
-        <button className="button">Submit</button>
+        <div className="form-input-container">
+          <label htmlFor="phone">Email</label>
+          <input
+            className="text-input"
+            type="text"
+            id="email"
+            name="email"
+            onChange={handleTextInputChange}
+          />
+        </div>
+        <button className="form-submit-btn">Submit</button>
       </section>
     </>
   );
