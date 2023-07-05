@@ -1,56 +1,52 @@
 import "./open-hours-form.css";
-import { useState } from "react";
 
 //Change to a more specfic map key
 
-export default function OpenHoursform() {
-  const [openDaysOfWeek, setOpenDaysOfWeek] = useState({
-    Monday: { open: false, openTime: "", closeTime: "" },
-    Tuesday: { open: false, openTime: "", closeTime: "" },
-    Wednesday: { open: false, openTime: "", closeTime: "" },
-    Thursday: { open: false, openTime: "", closeTime: "" },
-    Friday: { open: false, openTime: "", closeTime: "" },
-    Saturday: { open: false, openTime: "", closeTime: "" },
-    Sunday: { open: false, openTime: "", closeTime: "" },
-  });
-
-  console.log("render");
-
-  //Not sure if the approach below is ok? better to include all logic within setState?
+export default function OpenHoursform({ openTimes, dispatch }) {
+  //This function is run when the open/closed check box is clicked
   function handleCheckChange(day) {
-    //create a copy of openDays object and update the day for which the checkbox is clicked
-    const updatedOpenDays = { ...openDaysOfWeek };
-    updatedOpenDays[day].open = !openDaysOfWeek[day].open;
-    //update state openDays using the new modified object
-    setOpenDaysOfWeek(updatedOpenDays);
+    //create new object that contains the updated data for the day that has been clicked
+    //open times reset to an empty string
+    const updatedDay = {
+      [day]: { open: !openTimes[day].open, openTime: "", closeTime: "" },
+    };
+
+    //use dispatch to send the updated day data to the reducer
+    dispatch({
+      type: "openTime",
+      updatedDayData: updatedDay,
+    });
   }
 
+  //This function is run when a new time is selected from the open times drop down selector
   function handleSelectChange(e, day) {
     //set a variable to the time that has just been selected
     const newTime = e.target.value;
     //define whether this time is for open or close
     //variable below might be a bit vague? Doesn't check for 'openTimeSelect' id, just sets 'close' as a default
     const openOrClose = e.target.id === "openTimeSelect" ? "open" : "close";
-    //create a updated version of the entry for the specfic day for which the open/close time has been changed
-    const newOpenTimes =
+    //create an updated version of the entry for the specfic day for which the open/close time has been changed
+    const updatedDay =
       openOrClose === "open"
         ? {
             [day]: {
               open: true,
               openTime: newTime,
-              closeTime: openDaysOfWeek[day].closeTime,
+              closeTime: openTimes[day].closeTime,
             },
           }
         : {
             [day]: {
               open: true,
-              openTime: openDaysOfWeek[day].openTime,
+              openTime: openTimes[day].openTime,
               closeTime: newTime,
             },
           };
-    //update the state object with the new version of the updated day
-    setOpenDaysOfWeek((prev) => {
-      return { ...prev, ...newOpenTimes };
+
+    //use dispatch to send the updated day data to the reducer
+    dispatch({
+      type: "openTime",
+      updatedDayData: updatedDay,
     });
   }
 
@@ -107,7 +103,7 @@ export default function OpenHoursform() {
 
   return (
     <div className="open-hours-form">
-      {Object.keys(openDaysOfWeek).map((day) => (
+      {Object.keys(openTimes).map((day) => (
         <div className="openhours-day-container" key={day}>
           <p>{day}</p>
           <input
@@ -116,15 +112,15 @@ export default function OpenHoursform() {
             className="openhours-checkbox"
             name={day}
             value={day}
-            checked={openDaysOfWeek[day].open}
+            checked={openTimes[day].open}
             onChange={() => handleCheckChange(day)}
           />
-          {openDaysOfWeek[day].open && (
+          {openTimes[day].open && (
             <div className="open-times-container">
               <select
                 id="openTimeSelect"
                 onChange={(e) => handleSelectChange(e, day)}
-                value={openDaysOfWeek[day].openTime}
+                value={openTimes[day].openTime}
               >
                 <option value="">Open</option>
                 {times.map((time) => (
@@ -136,7 +132,7 @@ export default function OpenHoursform() {
               <span>{" - "}</span>
               <select
                 id="closeTimeSelect"
-                value={openDaysOfWeek[day].closeTime}
+                value={openTimes[day].closeTime}
                 onChange={(e) => handleSelectChange(e, day)}
               >
                 <option value="">Close</option>

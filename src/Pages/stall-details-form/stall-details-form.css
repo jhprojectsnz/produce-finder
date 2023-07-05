@@ -35,16 +35,20 @@
     border-radius: 10px; 
 }
 
+.form-autocomplete {
+    width: 100%;
+}
+
 .form-input-container .text-input {
-    /* set width required to increase width of autocomplete suggestions - address input */
-    min-width: 250px;
+    width: 100%;
     border: none;
+    font-family: inherit;
 }
 
 .form-input-container textarea {
     height: 150px;
     width: 100%;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem;
     resize: none;
     border: none;
     font-family: inherit;
@@ -97,10 +101,15 @@ textarea:focus {
 }
 
 .add-photo-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin: 1rem 0.5rem;
-    border: 1px solid var(--main-dark-color);
+    border: 1px solid  rgb(77, 77, 77);;
     background-color: white;
     color:  rgb(77, 77, 77);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 0.2rem 1rem;
+    cursor: pointer;
 }
+

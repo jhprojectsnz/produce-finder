@@ -1,7 +1,8 @@
-import MainNavBar from "../../components/main-navbar/main-navbar";
 import "./stall-details-form.css";
 import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
+import { BiUpload } from "react-icons/bi";
+import MainNavBar from "../../components/main-navbar/main-navbar";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
 export default function StallDetailsForm() {
@@ -73,22 +74,38 @@ export default function StallDetailsForm() {
           address: action.address,
           location: action.location,
         };
+      case "openTime":
+        return {
+          ...formData,
+          openTimes: {
+            ...formData.openTimes,
+            ...action.updatedDayData,
+          },
+        };
       default:
         return formData;
     }
   };
 
+  const [formData, dispatch] = useReducer(reducerMethod, initialData);
+
   //This function is used to update the stored form data whenever a text input is modified
   const handleTextInputChange = (e) => {
-    console.log(e.target.id);
     dispatch({
       type: e.target.id,
       value: e.target.value,
     });
   };
 
-  const [formData, dispatch] = useReducer(reducerMethod, initialData);
-  console.log(formData);
+  //This function will run when submit button is clicked
+  const handleSubmit = () => {
+    //Check that important fields are filled out
+
+    //Add the formData to the database here, once the database is set up
+
+    console.log(formData);
+  };
+
   return (
     <>
       <MainNavBar />
@@ -111,12 +128,14 @@ export default function StallDetailsForm() {
             onLoad={onSearchBoxLoad}
             onPlaceChanged={placesChanged}
             restrictions={{ country: "nz" }}
+            className="form-autocomplete"
           >
             <input
               className="text-input"
               type="text"
               id="address"
               name="address"
+              placeholder=""
               required
             />
           </Autocomplete>
@@ -134,11 +153,14 @@ export default function StallDetailsForm() {
         </div>
         <div className="form-input-container">
           <label htmlFor="about">Default opening times</label>
-          <OpenHoursform />
+          <OpenHoursform openTimes={formData.openTimes} dispatch={dispatch} />
         </div>
         <div className="form-input-container">
           <label htmlFor="image">Upload image</label>
-          <button className="add-photo-btn">Add a photo</button>
+          <button className="add-photo-btn">
+            Add a photo
+            <BiUpload />
+          </button>
         </div>
         <div className="form-separator">
           <span>Contact details</span>
@@ -167,30 +189,10 @@ export default function StallDetailsForm() {
             onChange={handleTextInputChange}
           />
         </div>
-        <button className="form-submit-btn">Submit</button>
+        <button className="form-submit-btn" onClick={handleSubmit}>
+          Submit
+        </button>
       </section>
     </>
   );
 }
-
-// const [formData, setformData] = useState({
-//   name: "",
-//   lat: 0,
-//   lng: 0,
-//   locationType: "",
-//   about: "",
-//   img: "testImg1",
-//   openTimes: {
-//     Monday: { open: false, openTime: "", closeTime: "" },
-//     Tuesday: { open: false, openTime: "", closeTime: "" },
-//     Wednesday: { open: false, openTime: "", closeTime: "" },
-//     Thursday: { open: false, openTime: "", closeTime: "" },
-//     Friday: { open: false, openTime: "", closeTime: "" },
-//     Saturday: { open: false, openTime: "", closeTime: "" },
-//     Sunday: { open: false, openTime: "", closeTime: "" },
-//   },
-//   contactDetails: {
-//     phone: "",
-//     email: "",
-//   },
-// });
