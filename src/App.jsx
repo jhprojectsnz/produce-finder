@@ -4,14 +4,16 @@ import Home from "./Pages/home/home.jsx";
 import { useLoadScript } from "@react-google-maps/api";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./Pages/login/login.jsx";
+import StallDetailsForm from "./Pages/stall-details-form/stall-details-form.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
 const libraries = ["places"];
 
 function App() {
-  const [showResults, setShowResults] = useState(false);
   const [mapCenter, setMapCenter] = useState({});
+  const [lastSearchLoaction, setLastSearchLocation] = useState("");
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
@@ -29,8 +31,8 @@ function App() {
             element={
               <Home
                 setMapCenter={setMapCenter}
-                mapCenter={mapCenter}
-                setShowResults={setShowResults}
+                lastSearchLocation={lastSearchLoaction}
+                setLastSearchLocation={setLastSearchLocation}
               />
             }
           />
@@ -43,6 +45,8 @@ function App() {
               />
             }
           ></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/form" element={<StallDetailsForm />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

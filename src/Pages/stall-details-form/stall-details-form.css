@@ -1,0 +1,115 @@
+.stall-details-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 4rem auto 0;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+}
+
+.stall-details-form h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stall-details-form p {
+    color: var(--main-dark-color);
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.form-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 0.5rem;
+    /* more padding on top - space for label */
+    padding: 10px 10px 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--main-dark-color);
+    border-radius: 10px; 
+}
+
+.form-autocomplete {
+    width: 100%;
+}
+
+.form-input-container .text-input {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+}
+
+.form-input-container textarea {
+    height: 150px;
+    width: 100%;
+    padding: 0.2rem;
+    resize: none;
+    border: none;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.form-input-container label {
+    /* shift labels up so they sit over the input border */
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    padding: 3px;
+    background-color: white;
+    color:  rgb(77, 77, 77);
+    font-size: 0.8rem;
+}
+
+.form-separator {
+    position: relative;
+    width: 95%;
+    margin: 1rem 0 1rem;
+    border-top: 1px solid var(--main-dark-color)
+}
+
+.form-separator span {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    padding: 0 1rem;
+    background-color: white
+}
+
+.form-submit-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: var(--main-dark-color);
+    color: var(--main-light-color);
+    line-height: 1;
+    box-shadow: 0px 3px 5px rgb(58, 58, 58);
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.add-photo-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid  rgb(77, 77, 77);;
+    background-color: white;
+    color:  rgb(77, 77, 77);
+    border-radius: 10px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
