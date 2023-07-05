@@ -5,6 +5,7 @@ import { useState } from "react";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
 export default function StallDetailsForm() {
+  console.log("form");
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
 
@@ -18,6 +19,29 @@ export default function StallDetailsForm() {
     if (!searchBox) return;
     const place = searchBox.getPlace();
   }
+
+  const [formData, setformData] = useState({
+    name: "",
+    lat: 0,
+    lng: 0,
+    locationType: "",
+    about: "",
+    img: "testImg1",
+    openTimes: {
+      Monday: { open: false, openTime: "", closeTime: "" },
+      Tuesday: { open: false, openTime: "", closeTime: "" },
+      Wednesday: { open: false, openTime: "", closeTime: "" },
+      Thursday: { open: false, openTime: "", closeTime: "" },
+      Friday: { open: false, openTime: "", closeTime: "" },
+      Saturday: { open: false, openTime: "", closeTime: "" },
+      Sunday: { open: false, openTime: "", closeTime: "" },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+  });
+
   return (
     <>
       <MainNavBar />
@@ -72,13 +96,7 @@ export default function StallDetailsForm() {
         </p>
         <div className="form-input-container">
           <label htmlFor="number">Phone number</label>
-          <input
-            className="text-input"
-            type="text"
-            id="number"
-            name="number"
-            placeholder="optional"
-          />
+          <input className="text-input" type="text" id="number" name="number" />
         </div>
         <div className="form-input-container">
           <label htmlFor="stall name">Email</label>
@@ -87,10 +105,32 @@ export default function StallDetailsForm() {
             type="text"
             id="stall name"
             name="stall name"
-            placeholder="Optional"
           />
         </div>
+        <button className="button">Submit</button>
       </section>
     </>
   );
 }
+
+// const [formData, setformData] = useState({
+//   name: "",
+//   lat: 0,
+//   lng: 0,
+//   locationType: "",
+//   about: "",
+//   img: "testImg1",
+//   openTimes: {
+//     Monday: { open: false, openTime: "", closeTime: "" },
+//     Tuesday: { open: false, openTime: "", closeTime: "" },
+//     Wednesday: { open: false, openTime: "", closeTime: "" },
+//     Thursday: { open: false, openTime: "", closeTime: "" },
+//     Friday: { open: false, openTime: "", closeTime: "" },
+//     Saturday: { open: false, openTime: "", closeTime: "" },
+//     Sunday: { open: false, openTime: "", closeTime: "" },
+//   },
+//   contactDetails: {
+//     phone: "",
+//     email: "",
+//   },
+// });

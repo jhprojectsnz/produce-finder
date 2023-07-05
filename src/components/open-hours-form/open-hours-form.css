@@ -2,27 +2,33 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0.5rem 0;
 }
 
 .openhours-day-container {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0.2rem 0;
+    height: 2rem;
 }
 
 .openhours-day-container p {
-    width: 120px;
+    /* This has a set width so all check boxes align */
+    width: 100px;
     margin: 0;
     text-align: left;
 }
 
-.openhours-checkbox {
-  color:aqua
-}
-
 .open-times-container {
-    margin: 0 1rem;
+    margin-left: 1rem;
 }
 
+.open-times-container select {
+    width: 75px;
+    padding: 5px 2px;
+    font-size: 0.7rem;
+    color:  rgb(77, 77, 77);
+    border: 1px solid var(--main-dark-color);
+    border-radius: 5px;
+}
 
