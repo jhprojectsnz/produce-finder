@@ -82,9 +82,19 @@ export default function MyStalls() {
 
   const [displayItemModal, setDisplayItemModal] = useState(false);
 
-  function handleUpdateitem(stallIndex, itemIndex) {
-    console.log(stalls);
-    setDisplayItemModal({ stallIndex: stallIndex, itemIndex: itemIndex });
+  function handleDeleteItem(stallIndex, itemIndex) {
+    setStalls((prev) =>
+      prev.map((stall, index) => {
+        return index === stallIndex
+          ? {
+              ...stall,
+              inStock: stall.inStock.filter((item, index) => {
+                return index != itemIndex;
+              }),
+            }
+          : stall;
+      })
+    );
   }
 
   return (
@@ -112,12 +122,30 @@ export default function MyStalls() {
                     <p>{item.price}</p>
                     <FaEdit
                       className="update-icon"
-                      onClick={() => handleUpdateitem(stallIndex, itemIndex)}
+                      onClick={() =>
+                        setDisplayItemModal({
+                          stallIndex: stallIndex,
+                          itemIndex: itemIndex,
+                        })
+                      }
                     />
-                    <FaRegTrashAlt className="update-icon" />
+                    <FaRegTrashAlt
+                      className="update-icon"
+                      onClick={() => handleDeleteItem(stallIndex, itemIndex)}
+                    />
                   </div>
                 ))}
-                <button className="update-add-btn">Add</button>
+                <button
+                  className="update-add-btn"
+                  onClick={() =>
+                    setDisplayItemModal({
+                      stallIndex: stallIndex,
+                      itemIndex: null,
+                    })
+                  }
+                >
+                  Add
+                </button>
               </div>
               <div className="update-btn-container">
                 <button className="update-btn">View preview</button>

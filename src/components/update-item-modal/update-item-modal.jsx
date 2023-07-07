@@ -8,31 +8,50 @@ export default function UpdateItemModal({
   setStalls,
   setDisplayItemModal,
 }) {
-  const originalItem = stalls[stallIndex].inStock[itemIndex];
+  //Find the original item data in the stalls data using the stall and item indexs
+  const originalItem = Number.isInteger(itemIndex)
+    ? stalls[stallIndex].inStock[itemIndex]
+    : null;
+  //store an updated version of the item data in state
+  //initiate with the original data or an empty version if there is no original data
   const [updatedItem, setUpdatedItem] = useState(
     originalItem || { item: "", amount: "", price: "" }
   );
 
-  //Run when submit is clicked
-  //Updates the users stalls with new data for this
-  function handleSubmit(stallIndex, itemIndex, updatedItem) {
-    setStalls((prev) =>
-      prev.map((stall, index) => {
-        return index === stallIndex
-          ? {
-              ...stall,
-              inStock: stall.inStock.map((item, index) => {
-                return index === itemIndex ? updatedItem : item;
-              }),
-            }
-          : stall;
-      })
-    );
+  //This function is run when submit button is clicked
+  //Updates the users stalls with the new data for this item
+  function handleSubmit(updatedItem, stallIndex, itemIndex) {
+    if (Number.isInteger(itemIndex)) {
+      setStalls((prev) =>
+        prev.map((stall, index) => {
+          return index === stallIndex
+            ? {
+                ...stall,
+                inStock: stall.inStock.map((item, index) => {
+                  return index === itemIndex ? updatedItem : item;
+                }),
+              }
+            : stall;
+        })
+      );
+    } else {
+      setStalls((prev) =>
+        prev.map((stall, index) => {
+          return index === stallIndex
+            ? {
+                ...stall,
+                inStock: [...stall.inStock, updatedItem],
+              }
+            : stall;
+        })
+      );
+    }
+
     setDisplayItemModal(false);
   }
 
-  //Run when text fields are changed
-  //updates state variable updatedItem to keep track of new data for this item
+  //This function is run when a text field is changed
+  //It updates state variable updatedItem to keep track of new data for this item
   function handleInputChange(e) {
     const inputType = e.target.id;
     const newValue = e.target.value;
@@ -42,7 +61,7 @@ export default function UpdateItemModal({
   return (
     <div className="update-item-modal-container">
       <div className="update-item-modal-content">
-        <h2>Item details</h2>
+        <h5>Item details</h5>
         <div className="update-item-input-container">
           <label htmlFor="item">Name</label>
           <input
@@ -79,7 +98,8 @@ export default function UpdateItemModal({
           />
         </div>
         <button
-          onClick={() => handleSubmit(stallIndex, itemIndex, updatedItem)}
+          className="item-update-btn"
+          onClick={() => handleSubmit(updatedItem, stallIndex, itemIndex)}
         >
           Submit
         </button>

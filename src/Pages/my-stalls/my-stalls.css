@@ -66,6 +66,7 @@
 
 .update-icon {
     color: var(--main-dark-color);
+    cursor: pointer;
 }
 
 .update-add-btn {
