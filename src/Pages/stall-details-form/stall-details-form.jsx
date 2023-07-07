@@ -2,10 +2,14 @@ import "./stall-details-form.css";
 import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
+import { useParams, useNavigate } from "react-router-dom";
 import MainNavBar from "../../components/main-navbar/main-navbar";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
-export default function StallDetailsForm() {
+export default function StallDetailsForm({ stalls, setStalls }) {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  console.log(id);
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
 
@@ -24,38 +28,51 @@ export default function StallDetailsForm() {
       lng: place.geometry.location.lng(),
     };
     dispatch({
-      type: "address",
+      type: "autocomplete",
       address: newAddress,
       location: newLocation,
     });
   }
 
-  const initialData = {
-    name: "",
-    address: "",
-    location: { lat: 0, lng: 0 },
-    locationType: "",
-    about: "",
-    img: "testImg1",
-    openTimes: {
-      Monday: { open: false, openTime: "", closeTime: "" },
-      Tuesday: { open: false, openTime: "", closeTime: "" },
-      Wednesday: { open: false, openTime: "", closeTime: "" },
-      Thursday: { open: false, openTime: "", closeTime: "" },
-      Friday: { open: false, openTime: "", closeTime: "" },
-      Saturday: { open: false, openTime: "", closeTime: "" },
-      Sunday: { open: false, openTime: "", closeTime: "" },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-  };
+  const stallForUpdate = stalls.filter(
+    (stall) => stall.stallId === parseInt(id)
+  );
+
+  const initialData =
+    stallForUpdate.length > 0
+      ? stallForUpdate[0]
+      : {
+          name: "",
+          address: "",
+          location: { lat: 0, lng: 0 },
+          locationType: "",
+          about: "",
+          img: "testImg1",
+          openTimes: {
+            Monday: { open: false, openTime: "", closeTime: "" },
+            Tuesday: { open: false, openTime: "", closeTime: "" },
+            Wednesday: { open: false, openTime: "", closeTime: "" },
+            Thursday: { open: false, openTime: "", closeTime: "" },
+            Friday: { open: false, openTime: "", closeTime: "" },
+            Saturday: { open: false, openTime: "", closeTime: "" },
+            Sunday: { open: false, openTime: "", closeTime: "" },
+          },
+          contactDetails: {
+            phone: "",
+            email: "",
+          },
+        };
 
   const reducerMethod = (formData, action) => {
     switch (action.type) {
       case "name":
         return { ...formData, name: action.value };
+      case "address":
+        return {
+          ...formData,
+          address: action.value,
+          location: { lat: 0, lng: 0 },
+        };
       case "about":
         return { ...formData, about: action.value };
       case "phone":
@@ -68,7 +85,7 @@ export default function StallDetailsForm() {
           ...formData,
           contactDetails: { ...formData.contactDetails, email: action.value },
         };
-      case "address":
+      case "autocomplete":
         return {
           ...formData,
           address: action.address,
@@ -88,7 +105,7 @@ export default function StallDetailsForm() {
   };
 
   const [formData, dispatch] = useReducer(reducerMethod, initialData);
-
+  console.log(formData);
   //This function is used to update the stored form data whenever a text input is modified
   const handleTextInputChange = (e) => {
     dispatch({
@@ -100,8 +117,15 @@ export default function StallDetailsForm() {
   //This function will run when submit button is clicked
   const handleSubmit = () => {
     //Check that important fields are filled out
-
     //Add the formData to the database here, once the database is set up
+
+    setStalls((prev) =>
+      prev.map((stall) =>
+        stall.stallId === formData.stallId ? formData : stall
+      )
+    );
+
+    navigate(-1);
 
     console.log(formData);
   };
@@ -118,6 +142,7 @@ export default function StallDetailsForm() {
             type="text"
             id="name"
             name="name"
+            value={formData.name}
             required
             onChange={handleTextInputChange}
           />
@@ -136,6 +161,8 @@ export default function StallDetailsForm() {
               id="address"
               name="address"
               placeholder=""
+              value={formData.address}
+              onChange={handleTextInputChange}
               required
             />
           </Autocomplete>
@@ -147,6 +174,7 @@ export default function StallDetailsForm() {
             id="about"
             name="about"
             placeholder="Give a brief description about your stall..."
+            value={formData.about}
             required
             onChange={handleTextInputChange}
           />
@@ -176,6 +204,7 @@ export default function StallDetailsForm() {
             type="text"
             id="phone"
             name="phone"
+            value={formData.contactDetails.phone}
             onChange={handleTextInputChange}
           />
         </div>
@@ -186,6 +215,7 @@ export default function StallDetailsForm() {
             type="text"
             id="email"
             name="email"
+            value={formData.contactDetails.email}
             onChange={handleTextInputChange}
           />
         </div>
