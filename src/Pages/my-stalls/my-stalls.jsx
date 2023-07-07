@@ -1,5 +1,4 @@
 import "./my-stalls.css";
-import isOpen2 from "../../functions/isOpen2";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 import MainNavBar from "../../components/main-navbar/main-navbar";
 import { useState } from "react";
@@ -103,7 +102,6 @@ export default function MyStalls() {
       <section className="my-stall-container">
         <h2>My Stalls</h2>
         {stalls.map((stall, stallIndex) => {
-          const stallIsOpen = isOpen2(stall.openTimes);
           return (
             <div className="stall-update-container" key={stall.name}>
               <h3>{stall.name}</h3>
@@ -111,7 +109,11 @@ export default function MyStalls() {
                 <h5>In Stock:</h5>
                 {stall.inStock.map((item, itemIndex) => (
                   <div className="update-item-container" key={item.item}>
-                    <p>{`${item.item} (${item.amount})`}</p>
+                    <p>
+                      {item.amount.length > 1
+                        ? `${item.item} (${item.amount})`
+                        : item.item}
+                    </p>
                     <p>{item.price}</p>
                     <FaEdit
                       className="update-icon"

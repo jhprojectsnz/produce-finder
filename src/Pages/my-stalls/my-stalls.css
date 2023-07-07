@@ -59,7 +59,7 @@
 
 .update-item-container {
     display: grid;
-    grid-template-columns: 10fr 2fr 1fr 1fr;
+    grid-template-columns: 10fr 3fr 1.5fr 1.5fr;
     align-items: center;
     margin: 0.3rem 0;
 }

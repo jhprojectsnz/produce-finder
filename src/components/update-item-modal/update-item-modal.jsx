@@ -17,10 +17,16 @@ export default function UpdateItemModal({
   const [updatedItem, setUpdatedItem] = useState(
     originalItem || { item: "", amount: "", price: "" }
   );
+  const [showError, setShowError] = useState(false);
 
   //This function is run when submit button is clicked
   //Updates the users stalls with the new data for this item
   function handleSubmit(updatedItem, stallIndex, itemIndex) {
+    //Check if name has been entered, if not show error message
+    if (updatedItem.item.length < 1) {
+      setShowError(true);
+      return;
+    }
     if (Number.isInteger(itemIndex)) {
       setStalls((prev) =>
         prev.map((stall, index) => {
@@ -46,7 +52,6 @@ export default function UpdateItemModal({
         })
       );
     }
-
     setDisplayItemModal(false);
   }
 
@@ -97,12 +102,23 @@ export default function UpdateItemModal({
             onChange={handleInputChange}
           />
         </div>
-        <button
-          className="item-update-btn"
-          onClick={() => handleSubmit(updatedItem, stallIndex, itemIndex)}
-        >
-          Submit
-        </button>
+        {showError && (
+          <p className="item-update-error">New item must include a name</p>
+        )}
+        <div className="item-update-btn-container">
+          <button
+            className="item-update-btn item-update-cancel"
+            onClick={() => setDisplayItemModal(false)}
+          >
+            Cancel
+          </button>
+          <button
+            className="item-update-btn"
+            onClick={() => handleSubmit(updatedItem, stallIndex, itemIndex)}
+          >
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   );
