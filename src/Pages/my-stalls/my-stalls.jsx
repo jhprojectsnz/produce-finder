@@ -107,13 +107,6 @@ export default function MyStalls() {
           return (
             <div className="stall-update-container" key={stall.name}>
               <h3>{stall.name}</h3>
-              <div className="open-update-container">
-                <h5>Status:</h5>
-                <p className={stallIsOpen ? "open" : "closed"}>
-                  {stallIsOpen ? "Open" : "Closed"}
-                </p>
-                <FaEdit className={stallIsOpen ? "open" : "closed"} />
-              </div>
               <div className="update-instock-container">
                 <h5>In Stock:</h5>
                 {stall.inStock.map((item, itemIndex) => (
