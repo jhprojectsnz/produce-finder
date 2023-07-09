@@ -1,5 +1,5 @@
 import "./results-list.css";
-import locations from "../../data/data";
+import { locations } from "../../data/data";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import isOpen from "../../functions/isOpen";
 import { Link } from "react-router-dom";

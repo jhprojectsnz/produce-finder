@@ -7,10 +7,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/login/login.jsx";
 import StallDetailsForm from "./Pages/stall-details-form/stall-details-form.jsx";
 import MyStalls from "./Pages/my-stalls/my-stalls.jsx";
+import UserProvider from "./context/UserContext.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
 const libraries = ["places"];
+
+// const UserContext = createContext(null);
 
 function App() {
   const [mapCenter, setMapCenter] = useState({});
@@ -91,6 +94,8 @@ function App() {
     },
   ]);
 
+  // const [currentUser, setCurrentUser] = useState({});
+
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
     libraries: libraries,
@@ -101,36 +106,40 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                setMapCenter={setMapCenter}
-                lastSearchLocation={lastSearchLoaction}
-                setLastSearchLocation={setLastSearchLocation}
-              />
-            }
-          />
-          <Route
-            path="/results/*"
-            element={
-              <SearchResults
-                setMapCenter={setMapCenter}
-                mapCenter={mapCenter}
-              />
-            }
-          ></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route
-            path="/form/:id?"
-            element={<StallDetailsForm stalls={stalls} setStalls={setStalls} />}
-          ></Route>
-          <Route
-            path="/mystalls"
-            element={<MyStalls stalls={stalls} setStalls={setStalls} />}
-          ></Route>
-        </Routes>
+        <UserProvider>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  setMapCenter={setMapCenter}
+                  lastSearchLocation={lastSearchLoaction}
+                  setLastSearchLocation={setLastSearchLocation}
+                />
+              }
+            />
+            <Route
+              path="/results/*"
+              element={
+                <SearchResults
+                  setMapCenter={setMapCenter}
+                  mapCenter={mapCenter}
+                />
+              }
+            ></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route
+              path="/form/:id?"
+              element={
+                <StallDetailsForm stalls={stalls} setStalls={setStalls} />
+              }
+            ></Route>
+            <Route
+              path="/mystalls"
+              element={<MyStalls stalls={stalls} setStalls={setStalls} />}
+            ></Route>
+          </Routes>
+        </UserProvider>
       </BrowserRouter>
     </div>
   );
