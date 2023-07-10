@@ -4,334 +4,9 @@ import testImg3 from '../assets/test-image-3.jpg';
 import testImg4 from '../assets/test-image-4.jpg';
 import testImg5 from '../assets/test-image-5.jpg';
 
-const locations = [
-    {
-      id: 1,
-      img: testImg1,
-      name: 'My Fruit Stall', 
-      lat: -36.78863186033818, 
-      lng: 174.49670168057386,
-      locationType: 'roadside stall',
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-      inStock: [
-        {
-          item: 'Apples',
-          amount: '500 g',
-        },
-        {
-          item: 'Mandarins',
-          amount: '1 kg',
-          price: '$6'
-        },
-        {
-          item: 'Fejoas',
-          price: '$2'
-        }
-      ],
-      openTimes: [
-        { 
-          day: 'Monday',
-          open: '09:00',
-          close: '17:30'
-        },
-        { 
-          day: 'Tuesday',
-          open: '09:00',
-          close: '15:00'
-        },
-        { 
-          day: 'Wednesday',
-          open: '09:00',
-          close: '15:00'
-        },
-        { 
-          day: 'Thursday',
-          open: '09:00',
-          close: '15:00'
-        },
-        { 
-          day: 'Friday',
-          open: '09:00',
-          close: '19:00'
-        },
-        { 
-          day: 'Saturday',
-          open: '10:00',
-          close: '20:00'
-        },
-        { 
-          day: 'Sunday',
-          open: null,
-          close: null
-        }
-      ],
-      contactDetails: {
-        Phone: '09 123 3453'
-      }
-    },
-    {
-      id: 2,
-      img: testImg2,
-      name: 'Tasty Oranges',  
-      lat: -36.77308008261856, 
-      lng: 174.55441014661895,
-      locationType: 'roadside stall',
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-       inStock: [
-        {
-          item: 'Oranges',
-          amount: 'each',
-          price: '$1'
-        }
-      ],
-      openTimes: [
-        { 
-          day: 'Monday',
-          open: '08:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Tuesday',
-          open: '08:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Wednesday',
-          open: '08:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Thursday',
-          open: '08:00',
-          close: '22:00'
-        },
-        { 
-          day: 'Friday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Saturday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Sunday',
-          open: null,
-          close: null
-        },
-      ],
-      contactDetails: {
-        Phone: '0800 555 3453'
-      }
-    },
-    {
-      id: 3,
-      img: testImg3,
-      name: 'Avocados and More',  
-      lat: -36.80431583107017, 
-      lng: 174.53266177070006,
-      locationType: 'shop', 
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-       inStock: [
-      ],
-      openTimes: [
-        { 
-          day: 'Monday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Tuesday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Wednesday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Thursday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Friday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Saturday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Sunday',
-          open: '09:00',
-          close: '17:00'
-        },
-      ],
-      contactDetails: {
-        Email: 'avosandmore@gmail.com'
-      }
-    },
-    {
-      id: 4,
-      img: testImg4,
-      name: 'Lots and Lots of Fruit',  
-      lat: -36.73198150428723, 
-      lng: 174.47731409214202,
-      locationType: 'roadside stall',
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-       inStock: [
-        {
-          item: 'Apples',
-          amount: 'large bag',
-          price: '$6'
-        },
-        {
-          item: 'Pears',
-          amount: '1 kg',
-          price: '$5'
-        },
-        {
-          item: 'Fejoas',
-          amount: '1 kg',
-          price: '$7'
-        },
-        {
-          item: 'Lettuce',
-          amount: 'each',
-          price: '$2'
-        },
-        {
-          item: 'Beans',
-          amount: 'small bag',
-          price: '$4'
-        },
-      ],
-      openTimes: [
-        { 
-          day: 'Monday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Tuesday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Wednesday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Thursday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Friday',
-          open: null,
-          close: null
-        },
-        { 
-          day: 'Saturday',
-          open: '12:00',
-          close: '15:00'
-        },
-        { 
-          day: 'Sunday',
-          open: null,
-          close: null
-        },
-      ]
-    },
-    {
-      id: 5,
-      img: testImg5,
-      name: 'Test Stall',  
-      lat: -36.677894856799995, 
-      lng: 174.4627228751362,
-      locationType: 'market stall',
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-       inStock: [
-        {
-          item: 'Watermelons',
-          amount: 'half',
-          price: '$8'
-        },
-        {
-          item: 'Bananas',
-          amount: '1 kg',
-          price: '$2'
-        },
-        {
-          item: 'Fejoas',
-          amount: 'small bag',
-        }
-      ],
-      openTimes: [
-        { 
-          day: 'Monday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Tuesday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Wednesday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Thursday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Friday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Saturday',
-          open: '09:00',
-          close: '17:00'
-        },
-        { 
-          day: 'Sunday',
-          open: '09:00',
-          close: '17:00'
-        },
-      ]
-    }
-  ]
-
-// export default locations
-
-const fruitStallNames = [
-  "Fruit Frenzy",
-  "Juicy Delights",
-  "Fruit Haven",
-  "Fruitopia",
-  "The Fruit Basket",
-  "Fruitful Delights",
-  "Fruit Oasis",
-  "The Fruit Stand",
-  "Fruitful Harvest",
-  "Fruit Emporium"
-];
-
-
 const stallData = [
   {
-  stallId: 48290021,
+  stallId: 1,
   ownerId: 57304,
   name: "Jim's Market Stall",
   address: "67 Symonds Street, Grafton, Auckland 1010, New Zealand",
@@ -366,7 +41,7 @@ const stallData = [
   ],
 },
 {
-  stallId: 23859031,
+  stallId: 2,
   ownerId: 57304,
   name: "Jim's Fruit Stall",
   address: "123 Manukau Road, Epsom, Auckland 1023, New Zealand",
@@ -406,7 +81,7 @@ const stallData = [
   ],
 },
 {
-  stallId: 23852553,
+  stallId: 3,
   ownerId: 52840,
   name: "Fruitful Delights",
   address: "126 Khyber Pass Road, Grafton, Auckland 1023",
@@ -440,7 +115,7 @@ const stallData = [
     },
   ],
 },{
-  stallId: 47829028,
+  stallId: 4,
   ownerId: 24893,
   name: "Fruit Oasis",
   address: "5 Clive Road, Epsom, Auckland 1023",
@@ -490,16 +165,341 @@ const users = [
     userId: 57304,
     email: "fakeemail@test.com",
     password: "password",
-    stalls: [48290021, 23859031],
-    favouriteStalls: [47829028, 23852553],
+    stalls: [1, 2],
+    favouriteStalls: [3, 4],
   },
   {
     userId: 24232,
     email: "email@email.com",
     password: "testpass",
     stalls: [],
-    favouriteStalls: [48290021, 23859031],
+    favouriteStalls: [1],
   }
 ]
 
-export {stallData, users, locations}
+export {stallData, users}
+
+
+// const locations = [
+//   {
+//     id: 1,
+//     img: testImg1,
+//     name: 'My Fruit Stall', 
+//     lat: -36.78863186033818, 
+//     lng: 174.49670168057386,
+//     locationType: 'roadside stall',
+//     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+//     inStock: [
+//       {
+//         item: 'Apples',
+//         amount: '500 g',
+//       },
+//       {
+//         item: 'Mandarins',
+//         amount: '1 kg',
+//         price: '$6'
+//       },
+//       {
+//         item: 'Fejoas',
+//         price: '$2'
+//       }
+//     ],
+//     openTimes: [
+//       { 
+//         day: 'Monday',
+//         open: '09:00',
+//         close: '17:30'
+//       },
+//       { 
+//         day: 'Tuesday',
+//         open: '09:00',
+//         close: '15:00'
+//       },
+//       { 
+//         day: 'Wednesday',
+//         open: '09:00',
+//         close: '15:00'
+//       },
+//       { 
+//         day: 'Thursday',
+//         open: '09:00',
+//         close: '15:00'
+//       },
+//       { 
+//         day: 'Friday',
+//         open: '09:00',
+//         close: '19:00'
+//       },
+//       { 
+//         day: 'Saturday',
+//         open: '10:00',
+//         close: '20:00'
+//       },
+//       { 
+//         day: 'Sunday',
+//         open: null,
+//         close: null
+//       }
+//     ],
+//     contactDetails: {
+//       Phone: '09 123 3453'
+//     }
+//   },
+//   {
+//     id: 2,
+//     img: testImg2,
+//     name: 'Tasty Oranges',  
+//     lat: -36.77308008261856, 
+//     lng: 174.55441014661895,
+//     locationType: 'roadside stall',
+//     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+//      inStock: [
+//       {
+//         item: 'Oranges',
+//         amount: 'each',
+//         price: '$1'
+//       }
+//     ],
+//     openTimes: [
+//       { 
+//         day: 'Monday',
+//         open: '08:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Tuesday',
+//         open: '08:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Wednesday',
+//         open: '08:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Thursday',
+//         open: '08:00',
+//         close: '22:00'
+//       },
+//       { 
+//         day: 'Friday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Saturday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Sunday',
+//         open: null,
+//         close: null
+//       },
+//     ],
+//     contactDetails: {
+//       Phone: '0800 555 3453'
+//     }
+//   },
+//   {
+//     id: 3,
+//     img: testImg3,
+//     name: 'Avocados and More',  
+//     lat: -36.80431583107017, 
+//     lng: 174.53266177070006,
+//     locationType: 'shop', 
+//     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+//      inStock: [
+//     ],
+//     openTimes: [
+//       { 
+//         day: 'Monday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Tuesday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Wednesday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Thursday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Friday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Saturday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Sunday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//     ],
+//     contactDetails: {
+//       Email: 'avosandmore@gmail.com'
+//     }
+//   },
+//   {
+//     id: 4,
+//     img: testImg4,
+//     name: 'Lots and Lots of Fruit',  
+//     lat: -36.73198150428723, 
+//     lng: 174.47731409214202,
+//     locationType: 'roadside stall',
+//     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+//      inStock: [
+//       {
+//         item: 'Apples',
+//         amount: 'large bag',
+//         price: '$6'
+//       },
+//       {
+//         item: 'Pears',
+//         amount: '1 kg',
+//         price: '$5'
+//       },
+//       {
+//         item: 'Fejoas',
+//         amount: '1 kg',
+//         price: '$7'
+//       },
+//       {
+//         item: 'Lettuce',
+//         amount: 'each',
+//         price: '$2'
+//       },
+//       {
+//         item: 'Beans',
+//         amount: 'small bag',
+//         price: '$4'
+//       },
+//     ],
+//     openTimes: [
+//       { 
+//         day: 'Monday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Tuesday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Wednesday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Thursday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Friday',
+//         open: null,
+//         close: null
+//       },
+//       { 
+//         day: 'Saturday',
+//         open: '12:00',
+//         close: '15:00'
+//       },
+//       { 
+//         day: 'Sunday',
+//         open: null,
+//         close: null
+//       },
+//     ]
+//   },
+//   {
+//     id: 5,
+//     img: testImg5,
+//     name: 'Test Stall',  
+//     lat: -36.677894856799995, 
+//     lng: 174.4627228751362,
+//     locationType: 'market stall',
+//     about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
+//      inStock: [
+//       {
+//         item: 'Watermelons',
+//         amount: 'half',
+//         price: '$8'
+//       },
+//       {
+//         item: 'Bananas',
+//         amount: '1 kg',
+//         price: '$2'
+//       },
+//       {
+//         item: 'Fejoas',
+//         amount: 'small bag',
+//       }
+//     ],
+//     openTimes: [
+//       { 
+//         day: 'Monday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Tuesday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Wednesday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Thursday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Friday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Saturday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//       { 
+//         day: 'Sunday',
+//         open: '09:00',
+//         close: '17:00'
+//       },
+//     ]
+//   }
+// ]
+
+
+
+// const fruitStallNames = [
+// "Fruit Frenzy",
+// "Juicy Delights",
+// "Fruit Haven",
+// "Fruitopia",
+// "The Fruit Basket",
+// "Fruitful Delights",
+// "Fruit Oasis",
+// "The Fruit Stand",
+// "Fruitful Harvest",
+// "Fruit Emporium"
+// ];

@@ -22,10 +22,12 @@ export default function MyStalls({ setSelectedStall }) {
 
   const [displayItemModal, setDisplayItemModal] = useState(false);
 
-  function handleDeleteItem(stallIndex, itemIndex) {
+  console.log(currentUser, userStalls);
+
+  function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>
       prev.map((stall, index) => {
-        return index === stallIndex
+        return stall.stallId === stallId
           ? {
               ...stall,
               inStock: stall.inStock.filter((item, index) => {
@@ -40,7 +42,7 @@ export default function MyStalls({ setSelectedStall }) {
   return (
     <section className="my-stall-container">
       <h2>My Stalls</h2>
-      {userStalls.map((stall, stallIndex) => {
+      {userStalls.map((stall) => {
         return (
           <div className="stall-update-container" key={stall.name}>
             <h3>{stall.name}</h3>
@@ -58,14 +60,14 @@ export default function MyStalls({ setSelectedStall }) {
                     className="update-icon"
                     onClick={() =>
                       setDisplayItemModal({
-                        stallIndex: stallIndex,
+                        stallId: stall.stallId,
                         itemIndex: itemIndex,
                       })
                     }
                   />
                   <FaRegTrashAlt
                     className="update-icon"
-                    onClick={() => handleDeleteItem(stallIndex, itemIndex)}
+                    onClick={() => handleDeleteItem(itemIndex, stall.stallId)}
                   />
                 </div>
               ))}
@@ -73,7 +75,7 @@ export default function MyStalls({ setSelectedStall }) {
                 className="update-add-btn"
                 onClick={() =>
                   setDisplayItemModal({
-                    stallIndex: stallIndex,
+                    stallId: stall.stallId,
                     itemIndex: null,
                   })
                 }
@@ -96,13 +98,13 @@ export default function MyStalls({ setSelectedStall }) {
           </div>
         );
       })}
-      <button className="add-stall-btn">Add Stall</button>
+      <Link to="/form" className="add-stall-btn">
+        Add Stall
+      </Link>
       {displayItemModal && (
         <UpdateItemModal
-          stallIndex={displayItemModal.stallIndex}
+          stallId={displayItemModal.stallId}
           itemIndex={displayItemModal.itemIndex}
-          stalls={stalls}
-          setStalls={setStalls}
           setDisplayItemModal={setDisplayItemModal}
         />
       )}

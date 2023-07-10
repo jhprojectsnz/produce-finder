@@ -1,7 +1,7 @@
 import "./map.css";
 import StallPreview from "../stall-preview/stall-preview.jsx";
 import { GoogleMap, MarkerF } from "@react-google-maps/api";
-import { locations } from "../../data/data";
+// import { locations } from "../../data/data";
 
 function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
   const markerIcon = {

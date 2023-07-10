@@ -9,8 +9,8 @@ import { useUserContext } from "../../context/UserContext";
 export default function StallDetailsForm() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { stalls, setStalls } = useUserContext();
-  console.log(id);
+  const { stalls, setStalls, currentUser, setCurrentUser } = useUserContext();
+
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
 
@@ -35,34 +35,39 @@ export default function StallDetailsForm() {
     });
   }
 
-  const stallForUpdate = stalls.filter(
-    (stall) => stall.stallId === parseInt(id)
-  );
+  const stallForUpdate = id
+    ? stalls.filter((stall) => stall.stallId === parseInt(id))
+    : false;
 
-  const initialData =
-    stallForUpdate.length > 0
-      ? stallForUpdate[0]
-      : {
-          name: "",
-          address: "",
-          location: { lat: 0, lng: 0 },
-          locationType: "",
-          about: "",
-          img: "testImg1",
-          openTimes: {
-            Monday: { open: false, openTime: "", closeTime: "" },
-            Tuesday: { open: false, openTime: "", closeTime: "" },
-            Wednesday: { open: false, openTime: "", closeTime: "" },
-            Thursday: { open: false, openTime: "", closeTime: "" },
-            Friday: { open: false, openTime: "", closeTime: "" },
-            Saturday: { open: false, openTime: "", closeTime: "" },
-            Sunday: { open: false, openTime: "", closeTime: "" },
-          },
-          contactDetails: {
-            phone: "",
-            email: "",
-          },
-        };
+  const nextIdNumber = stalls[stalls.length - 1].stallId + 1;
+  const userId = currentUser.userId;
+
+  const initialData = stallForUpdate
+    ? stallForUpdate[0]
+    : {
+        stallId: nextIdNumber,
+        ownerId: userId,
+        name: "",
+        address: "",
+        location: { lat: 0, lng: 0 },
+        locationType: "",
+        about: "",
+        img: "testImg1",
+        openTimes: {
+          Monday: { open: false, openTime: "", closeTime: "" },
+          Tuesday: { open: false, openTime: "", closeTime: "" },
+          Wednesday: { open: false, openTime: "", closeTime: "" },
+          Thursday: { open: false, openTime: "", closeTime: "" },
+          Friday: { open: false, openTime: "", closeTime: "" },
+          Saturday: { open: false, openTime: "", closeTime: "" },
+          Sunday: { open: false, openTime: "", closeTime: "" },
+        },
+        contactDetails: {
+          phone: "",
+          email: "",
+        },
+        inStock: [],
+      };
 
   const reducerMethod = (formData, action) => {
     switch (action.type) {
@@ -106,7 +111,7 @@ export default function StallDetailsForm() {
   };
 
   const [formData, dispatch] = useReducer(reducerMethod, initialData);
-  console.log(formData);
+
   //This function is used to update the stored form data whenever a text input is modified
   const handleTextInputChange = (e) => {
     dispatch({
@@ -119,21 +124,31 @@ export default function StallDetailsForm() {
   const handleSubmit = () => {
     //Check that important fields are filled out
     //Add the formData to the database here, once the database is set up
-
-    setStalls((prev) =>
-      prev.map((stall) =>
-        stall.stallId === formData.stallId ? formData : stall
-      )
-    );
+    if (stallForUpdate) {
+      setStalls((prev) =>
+        prev.map((stall) =>
+          stall.stallId === formData.stallId ? formData : stall
+        )
+      );
+    } else {
+      console.log("else");
+      setStalls((prev) => [...prev, formData]);
+      setCurrentUser((prev) => {
+        console.log(prev);
+        const obj = {
+          ...prev,
+          stalls: [...prev.stalls, formData.stallId],
+        };
+        return obj;
+      });
+    }
 
     navigate(-1);
-
-    console.log(formData);
   };
-
+  console.log(formData);
   return (
     <section className="stall-details-form">
-      <h2>Update Stall Details</h2>
+      <h2>{`${stallForUpdate ? "Update" : "New"} Stall Details`}</h2>
       <div className="form-input-container">
         <label htmlFor="name">Stall name</label>
         <input

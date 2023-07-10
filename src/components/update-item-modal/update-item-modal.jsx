@@ -1,17 +1,20 @@
+import { useUserContext } from "../../context/UserContext";
 import "./update-item-modal.css";
 import { useState } from "react";
 
 export default function UpdateItemModal({
-  stallIndex,
+  stallId,
   itemIndex,
-  stalls,
-  setStalls,
   setDisplayItemModal,
 }) {
+  const { stalls, setStalls } = useUserContext();
+
+  console.log(stalls, stallId);
   //Find the original item data in the stalls data using the stall and item indexs
   const originalItem = Number.isInteger(itemIndex)
-    ? stalls[stallIndex].inStock[itemIndex]
+    ? stalls.filter((stall) => stall.stallId === stallId)[0].inStock[itemIndex]
     : null;
+
   //store an updated version of the item data in state
   //initiate with the original data or an empty version if there is no original data
   const [updatedItem, setUpdatedItem] = useState(
@@ -21,7 +24,7 @@ export default function UpdateItemModal({
 
   //This function is run when submit button is clicked
   //Updates the users stalls with the new data for this item
-  function handleSubmit(updatedItem, stallIndex, itemIndex) {
+  function handleSubmit() {
     //Check if name has been entered, if not show error message
     if (updatedItem.item.length < 1) {
       setShowError(true);
@@ -29,8 +32,8 @@ export default function UpdateItemModal({
     }
     if (Number.isInteger(itemIndex)) {
       setStalls((prev) =>
-        prev.map((stall, index) => {
-          return index === stallIndex
+        prev.map((stall) => {
+          return stall.stallId === stallId
             ? {
                 ...stall,
                 inStock: stall.inStock.map((item, index) => {
@@ -41,9 +44,11 @@ export default function UpdateItemModal({
         })
       );
     } else {
+      console.log("else");
       setStalls((prev) =>
-        prev.map((stall, index) => {
-          return index === stallIndex
+        prev.map((stall) => {
+          console.log(stall.stallId, stallId);
+          return stall.stallId === stallId
             ? {
                 ...stall,
                 inStock: [...stall.inStock, updatedItem],
@@ -112,10 +117,7 @@ export default function UpdateItemModal({
           >
             Cancel
           </button>
-          <button
-            className="item-update-btn"
-            onClick={() => handleSubmit(updatedItem, stallIndex, itemIndex)}
-          >
+          <button className="item-update-btn" onClick={handleSubmit}>
             Submit
           </button>
         </div>
