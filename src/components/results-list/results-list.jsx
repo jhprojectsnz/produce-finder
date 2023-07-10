@@ -1,18 +1,17 @@
 import "./results-list.css";
-import { locations } from "../../data/data";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import isOpen from "../../functions/isOpen";
+import isOpen2 from "../../functions/isOpen2";
 import { Link } from "react-router-dom";
 
-export default function ResultsList({ setSelectedStall }) {
+export default function ResultsList({ setSelectedStall, stallList }) {
   return (
     <div className="results-list">
-      {locations.map((location) => {
-        let stallIsOpen = isOpen(location.openTimes);
+      {stallList.map((location) => {
+        let stallIsOpen = isOpen2(location.openTimes);
 
         return (
           <Link
-            to="/results/details"
+            to="/details"
             className="result-container"
             key={location.id}
             onClick={() => {

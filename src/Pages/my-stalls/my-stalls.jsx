@@ -14,7 +14,9 @@ export default function MyStalls() {
     //Fetch the stalls associated with the user from the database here
 
     //Code below to allow front end to function until backend/database is added
-    const userStalls = stalls.filter((stall) => stall.ownerId === currentUser);
+    const userStalls = stalls.filter(
+      (stall) => stall.ownerId === currentUser.userId
+    );
     setUserStalls(userStalls);
   }, [currentUser, stalls]);
 

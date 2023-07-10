@@ -1,11 +1,12 @@
 import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
-import isOpen from "../../functions/isOpen";
-import timeToAmPm from "../../functions/timeToAmPm";
+import isOpen2 from "../../functions/isOpen2";
 import { useNavigate } from "react-router-dom";
 
+//Could make contact details fields only appear if they have been included
+
 export default function StallDetails({ selectedStall }) {
-  const stallIsOpen = isOpen(selectedStall.openTimes);
+  const stallIsOpen = isOpen2(selectedStall.openTimes);
   const navigate = useNavigate();
 
   return (
@@ -62,16 +63,16 @@ export default function StallDetails({ selectedStall }) {
         <div className="line-separator" />
         <div className="stall-text-subsection">
           <h3>Opening hours</h3>
-          {selectedStall.openTimes.map((day) => {
+          {Object.keys(selectedStall.openTimes).map((day) => {
             return (
               <div
                 className="stall-time-container"
-                key={`${selectedStall.id}-${day.day}`}
+                key={`${selectedStall.id}-${day}`}
               >
-                <p>{day.day}</p>
+                <p>{day}</p>
                 <p>
-                  {day.open
-                    ? `${timeToAmPm(day.open)} - ${timeToAmPm(day.close)}`
+                  {selectedStall.openTimes[day].open
+                    ? `${selectedStall.openTimes[day].openTime} - ${selectedStall.openTimes[day].closeTime}`
                     : "Closed"}
                 </p>
               </div>

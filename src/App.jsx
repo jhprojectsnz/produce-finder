@@ -10,6 +10,7 @@ import MyStalls from "./Pages/my-stalls/my-stalls.jsx";
 import Favourites from "./Pages/favourites/favourites.jsx";
 import UserProvider from "./context/UserContext.jsx";
 import MainNavBar from "./components/main-navbar/main-navbar.jsx";
+import StallDetails from "./Pages/stall-details/stall-details.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
@@ -93,6 +94,9 @@ function App() {
       ],
     },
   ]);
+  const [selectedStall, setSelectedStall] = useState({});
+
+  console.log(selectedStall);
 
   // const [currentUser, setCurrentUser] = useState({});
 
@@ -125,6 +129,8 @@ function App() {
                 <SearchResults
                   setMapCenter={setMapCenter}
                   mapCenter={mapCenter}
+                  selectedStall={selectedStall}
+                  setSelectedStall={setSelectedStall}
                 />
               }
             ></Route>
@@ -136,7 +142,14 @@ function App() {
               }
             ></Route>
             <Route path="/mystalls" element={<MyStalls />}></Route>
-            <Route path="/favourites" element={<Favourites />}></Route>
+            <Route
+              path="/favourites"
+              element={<Favourites setSelectedStall={setSelectedStall} />}
+            ></Route>
+            <Route
+              path="/details"
+              element={<StallDetails selectedStall={selectedStall} />}
+            />
           </Routes>
         </UserProvider>
       </BrowserRouter>

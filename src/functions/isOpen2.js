@@ -2,6 +2,7 @@ function timeTo24h(time) {
     const [timeNumbers, timeLetters] = time.split(" ");
     const [hours, minutes] = timeNumbers.split(':');
     let hoursInt = parseInt(hours);
+
     
     if (hoursInt != 12) {
         hoursInt = timeLetters.toLowerCase() === 'am' ? hoursInt : hoursInt + 12
@@ -22,6 +23,7 @@ export default function isOpen(openTimes) {
 
     //Check if shop open today, return false if not
     if (!openTimes[dayNow].open) return false;
+
 
     //convert open and close times to 24 hour time
     const openToday = timeTo24h(openTimes[dayNow].openTime)

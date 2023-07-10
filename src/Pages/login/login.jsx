@@ -22,7 +22,7 @@ export default function Login() {
     if (loginUser.length != 1 || loginUser[0].password != enteredPassword) {
       setErrorMessage(true);
     } else {
-      setCurrentUser(loginUser[0].userId);
+      setCurrentUser(loginUser[0]);
       setIsAuth(true);
       navigate("/");
     }

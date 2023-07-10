@@ -44,7 +44,10 @@ export default function MainNavBar() {
           </div>
         </div>
       </div>
-      <DropdownMenu showDropdown={showDropdown} />
+      <DropdownMenu
+        showDropdown={showDropdown}
+        setShowDropdown={setShowDropdown}
+      />
     </div>
   );
 }

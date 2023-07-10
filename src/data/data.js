@@ -380,7 +380,7 @@ const stallData = [
     Wednesday: { open: false, openTime: "", closeTime: "" },
     Thursday: { open: false, openTime: "", closeTime: "" },
     Friday: { open: false, openTime: "", closeTime: "" },
-    Saturday: { open: false, openTime: "8:00am", closeTime: "12:00pm" },
+    Saturday: { open: false, openTime: "8:00 am", closeTime: "12:00 pm" },
     Sunday: { open: false, openTime: "", closeTime: "" },
   },
   contactDetails: {
@@ -415,13 +415,13 @@ const stallData = [
   about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
   img: testImg3,
   openTimes: {
-    Monday: { open: true, openTime: "10:00am", closeTime: "6:00pm" },
-    Tuesday: { open: true, openTime: "10:00am", closeTime: "6:00pm" },
-    Wednesday: { open: true, openTime: "10:00am", closeTime: "6:00pm" },
-    Thursday: { open: true, openTime: "10:00am", closeTime: "6:00pm" },
-    Friday: { open: true, openTime: "10:00am", closeTime: "6:00pm" },
-    Saturday: { open: true, openTime: "11:00am", closeTime: "4:00pm" },
-    Sunday: { open: true, openTime: "11:00am", closeTime: "4:00pm" },
+    Monday: { open: true, openTime: "10:00 am", closeTime: "6:00 pm" },
+    Tuesday: { open: true, openTime: "10:00 am", closeTime: "6:00 pm" },
+    Wednesday: { open: true, openTime: "10:00 am", closeTime: "6:00 pm" },
+    Thursday: { open: true, openTime: "10:00 am", closeTime: "6:00 pm" },
+    Friday: { open: true, openTime: "10:00 am", closeTime: "6:00 pm" },
+    Saturday: { open: true, openTime: "11:00 am", closeTime: "4:00 pm" },
+    Sunday: { open: true, openTime: "11:00 am", closeTime: "4:00 pm" },
   },
   contactDetails: {
     phone: "",
@@ -449,13 +449,13 @@ const stallData = [
   about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
   img: testImg4,
   openTimes: {
-    Monday: { open: true, openTime: "8:00am", closeTime: "4:00pm" },
-    Tuesday: { open: true, openTime: "8:00am", closeTime: "4:00pm" },
+    Monday: { open: true, openTime: "8:00 am", closeTime: "4:00 pm" },
+    Tuesday: { open: true, openTime: "8:00 am", closeTime: "4:00 pm" },
     Wednesday: { open: false, openTime: "", closeTime: "" },
     Thursday: { open: false, openTime: "", closeTime: "" },
     Friday: { open: false, openTime: "", closeTime: "" },
-    Saturday: { open: true, openTime: "9:00am", closeTime: "12:00pm" },
-    Sunday: { open: true, openTime: "9:00am", closeTime: "12:00pm" },
+    Saturday: { open: true, openTime: "9:00 am", closeTime: "12:00 pm" },
+    Sunday: { open: true, openTime: "9:00 am", closeTime: "12:00 pm" },
   },
   contactDetails: {
     phone: "67392034",
@@ -491,14 +491,14 @@ const users = [
     email: "fakeemail@test.com",
     password: "password",
     stalls: [48290021, 23859031],
-    FavouriteStalls: [47829028, 23852553],
+    favouriteStalls: [47829028, 23852553],
   },
   {
     userId: 24232,
     email: "email@email.com",
     password: "testpass",
     stalls: [],
-    FavouriteStalls: [48290021, 23859031],
+    favouriteStalls: [48290021, 23859031],
   }
 ]
 
