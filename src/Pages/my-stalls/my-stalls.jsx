@@ -1,12 +1,24 @@
 import "./my-stalls.css";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 import MainNavBar from "../../components/main-navbar/main-navbar";
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
 import { Link } from "react-router-dom";
+import { useUserContext } from "../../context/UserContext";
 
-export default function MyStalls({ stalls, setStalls }) {
-  console.log(stalls);
+export default function MyStalls() {
+  const { currentUser, stalls, setStalls } = useUserContext();
+
+  const [userStalls, setUserStalls] = useState([]);
+
+  useEffect(() => {
+    //Fetch the stalls associated with the user from the database here
+
+    //Code below to allow front end to function until backend/database is added
+    const userStalls = stalls.filter((stall) => stall.ownerId === currentUser);
+    setUserStalls(userStalls);
+  }, [currentUser, stalls]);
+
   const [displayItemModal, setDisplayItemModal] = useState(false);
 
   function handleDeleteItem(stallIndex, itemIndex) {
@@ -29,7 +41,7 @@ export default function MyStalls({ stalls, setStalls }) {
       <MainNavBar />
       <section className="my-stall-container">
         <h2>My Stalls</h2>
-        {stalls.map((stall, stallIndex) => {
+        {userStalls.map((stall, stallIndex) => {
           return (
             <div className="stall-update-container" key={stall.name}>
               <h3>{stall.name}</h3>

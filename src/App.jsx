@@ -13,8 +13,6 @@ import UserProvider from "./context/UserContext.jsx";
 // array should not be passed directly to the libraries prop
 const libraries = ["places"];
 
-// const UserContext = createContext(null);
-
 function App() {
   const [mapCenter, setMapCenter] = useState({});
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
