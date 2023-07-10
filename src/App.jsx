@@ -141,7 +141,10 @@ function App() {
                 <StallDetailsForm stalls={stalls} setStalls={setStalls} />
               }
             ></Route>
-            <Route path="/mystalls" element={<MyStalls />}></Route>
+            <Route
+              path="/mystalls"
+              element={<MyStalls setSelectedStall={setSelectedStall} />}
+            ></Route>
             <Route
               path="/favourites"
               element={<Favourites setSelectedStall={setSelectedStall} />}

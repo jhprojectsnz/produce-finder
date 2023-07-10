@@ -4,10 +4,12 @@ import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
+import { useUserContext } from "../../context/UserContext";
 
-export default function StallDetailsForm({ stalls, setStalls }) {
+export default function StallDetailsForm() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { stalls, setStalls } = useUserContext();
   console.log(id);
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);

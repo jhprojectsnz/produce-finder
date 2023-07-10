@@ -5,7 +5,7 @@ import UpdateItemModal from "../../components/update-item-modal/update-item-moda
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";
 
-export default function MyStalls() {
+export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
 
   const [userStalls, setUserStalls] = useState([]);
@@ -85,8 +85,13 @@ export default function MyStalls() {
               <Link to={`/form/${stall.stallId}`} className="update-btn">
                 Edit details
               </Link>
-              <button className="update-btn">View preview</button>
-              <button className="update-btn">Edit details</button>
+              <Link
+                to={"/details"}
+                className="update-btn"
+                onClick={() => setSelectedStall(stall)}
+              >
+                View preview
+              </Link>
             </div>
           </div>
         );
