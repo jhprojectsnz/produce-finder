@@ -7,7 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Pages/login/login.jsx";
 import StallDetailsForm from "./Pages/stall-details-form/stall-details-form.jsx";
 import MyStalls from "./Pages/my-stalls/my-stalls.jsx";
+import Favourites from "./Pages/favourites/favourites.jsx";
 import UserProvider from "./context/UserContext.jsx";
+import MainNavBar from "./components/main-navbar/main-navbar.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
@@ -105,6 +107,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <UserProvider>
+          <MainNavBar />
           <Routes>
             <Route
               path="/"
@@ -132,10 +135,8 @@ function App() {
                 <StallDetailsForm stalls={stalls} setStalls={setStalls} />
               }
             ></Route>
-            <Route
-              path="/mystalls"
-              element={<MyStalls stalls={stalls} setStalls={setStalls} />}
-            ></Route>
+            <Route path="/mystalls" element={<MyStalls />}></Route>
+            <Route path="/favourites" element={<Favourites />}></Route>
           </Routes>
         </UserProvider>
       </BrowserRouter>

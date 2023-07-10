@@ -1,5 +1,4 @@
 import "./home.css";
-import MainNavBar from "../../components/main-navbar/main-navbar";
 import homeBackground from "../../assets/home-background.jpg";
 import { BiSearchAlt } from "react-icons/bi";
 import { Autocomplete } from "@react-google-maps/api";
@@ -33,7 +32,6 @@ export default function Home({
 
   return (
     <section className="homepage">
-      <MainNavBar />
       <img
         src={homeBackground}
         alt="Home page background"

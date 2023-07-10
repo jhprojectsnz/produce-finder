@@ -3,7 +3,6 @@ import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
-import MainNavBar from "../../components/main-navbar/main-navbar";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 
 export default function StallDetailsForm({ stalls, setStalls }) {
@@ -131,98 +130,95 @@ export default function StallDetailsForm({ stalls, setStalls }) {
   };
 
   return (
-    <>
-      <MainNavBar />
-      <section className="stall-details-form">
-        <h2>Update Stall Details</h2>
-        <div className="form-input-container">
-          <label htmlFor="name">Stall name</label>
+    <section className="stall-details-form">
+      <h2>Update Stall Details</h2>
+      <div className="form-input-container">
+        <label htmlFor="name">Stall name</label>
+        <input
+          className="text-input"
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          required
+          onChange={handleTextInputChange}
+        />
+      </div>
+      <div className="form-input-container">
+        <label htmlFor="address">Address</label>
+        <Autocomplete
+          onLoad={onSearchBoxLoad}
+          onPlaceChanged={placesChanged}
+          restrictions={{ country: "nz" }}
+          className="form-autocomplete"
+        >
           <input
             className="text-input"
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="address"
+            name="address"
+            placeholder=""
+            value={formData.address}
+            onChange={handleTextInputChange}
             required
-            onChange={handleTextInputChange}
           />
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="address">Address</label>
-          <Autocomplete
-            onLoad={onSearchBoxLoad}
-            onPlaceChanged={placesChanged}
-            restrictions={{ country: "nz" }}
-            className="form-autocomplete"
-          >
-            <input
-              className="text-input"
-              type="text"
-              id="address"
-              name="address"
-              placeholder=""
-              value={formData.address}
-              onChange={handleTextInputChange}
-              required
-            />
-          </Autocomplete>
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="about">About</label>
-          <textarea
-            type="text"
-            id="about"
-            name="about"
-            placeholder="Give a brief description about your stall..."
-            value={formData.about}
-            required
-            onChange={handleTextInputChange}
-          />
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="about">Default opening times</label>
-          <OpenHoursform openTimes={formData.openTimes} dispatch={dispatch} />
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="image">Upload image</label>
-          <button className="add-photo-btn">
-            Add a photo
-            <BiUpload />
-          </button>
-        </div>
-        <div className="form-separator">
-          <span>Contact details</span>
-        </div>
-        <p>
-          <strong>Optional</strong> - these will be displayed to allow costumers
-          to get in touch with you
-        </p>
-        <div className="form-input-container">
-          <label htmlFor="phone">Phone number</label>
-          <input
-            className="text-input"
-            type="text"
-            id="phone"
-            name="phone"
-            value={formData.contactDetails.phone}
-            onChange={handleTextInputChange}
-          />
-        </div>
-        <div className="form-input-container">
-          <label htmlFor="phone">Email</label>
-          <input
-            className="text-input"
-            type="text"
-            id="email"
-            name="email"
-            value={formData.contactDetails.email}
-            onChange={handleTextInputChange}
-          />
-        </div>
-        <button className="form-submit-btn" onClick={handleSubmit}>
-          Submit
+        </Autocomplete>
+      </div>
+      <div className="form-input-container">
+        <label htmlFor="about">About</label>
+        <textarea
+          type="text"
+          id="about"
+          name="about"
+          placeholder="Give a brief description about your stall..."
+          value={formData.about}
+          required
+          onChange={handleTextInputChange}
+        />
+      </div>
+      <div className="form-input-container">
+        <label htmlFor="about">Default opening times</label>
+        <OpenHoursform openTimes={formData.openTimes} dispatch={dispatch} />
+      </div>
+      <div className="form-input-container">
+        <label htmlFor="image">Upload image</label>
+        <button className="add-photo-btn">
+          Add a photo
+          <BiUpload />
         </button>
-      </section>
-    </>
+      </div>
+      <div className="form-separator">
+        <span>Contact details</span>
+      </div>
+      <p>
+        <strong>Optional</strong> - these will be displayed to allow costumers
+        to get in touch with you
+      </p>
+      <div className="form-input-container">
+        <label htmlFor="phone">Phone number</label>
+        <input
+          className="text-input"
+          type="text"
+          id="phone"
+          name="phone"
+          value={formData.contactDetails.phone}
+          onChange={handleTextInputChange}
+        />
+      </div>
+      <div className="form-input-container">
+        <label htmlFor="phone">Email</label>
+        <input
+          className="text-input"
+          type="text"
+          id="email"
+          name="email"
+          value={formData.contactDetails.email}
+          onChange={handleTextInputChange}
+        />
+      </div>
+      <button className="form-submit-btn" onClick={handleSubmit}>
+        Submit
+      </button>
+    </section>
   );
 }

@@ -1,5 +1,4 @@
 import "./dashboard.css";
-import MainNavBar from "../../components/main-navbar/main-navbar";
 import DashboardNav from "../../components/dashboard-nav/dashboard-nav";
 import { Routes, Route } from "react-router-dom";
 import StallSearch from "../../components/stall-search/stall-search";
@@ -8,17 +7,14 @@ import MyStalls from "../../components/my-stalls/my-stalls";
 
 export default function Dashboard() {
   return (
-    <>
-      <MainNavBar />
-      <section className="dashboard-container">
-        <h2>Welcome back</h2>
-        <DashboardNav />
-        <Routes>
-          <Route path="search" element={<StallSearch />} />
-          <Route path="favourites" element={<Favourites />} />
-          <Route path="mystalls" element={<MyStalls />} />
-        </Routes>
-      </section>
-    </>
+    <section className="dashboard-container">
+      <h2>Welcome back</h2>
+      <DashboardNav />
+      <Routes>
+        <Route path="search" element={<StallSearch />} />
+        <Route path="favourites" element={<Favourites />} />
+        <Route path="mystalls" element={<MyStalls />} />
+      </Routes>
+    </section>
   );
 }
