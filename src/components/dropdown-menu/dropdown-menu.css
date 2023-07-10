@@ -1,0 +1,36 @@
+.dropdown-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    background-color: var(--main-light-color);
+    animation: open-animation 0.3s ease-in-out forwards;
+
+}
+
+.dropdown-hidden {
+    display: none;
+}
+
+.dropdown-menu-link {
+    padding: 1rem;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px solid var(--main-dark-color);
+    text-align: center;
+   
+}
+
+@keyframes open-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

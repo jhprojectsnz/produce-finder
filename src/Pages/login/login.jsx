@@ -8,11 +8,11 @@ import { users } from "../../data/data";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const { setCurrentUser } = useUserContext();
+  const { setCurrentUser, setIsAuth } = useUserContext();
   const navigate = useNavigate();
 
-  const [enteredEmail, setEnteredEmail] = useState("");
-  const [enteredPassword, setEnteredPassword] = useState("");
+  const [enteredEmail, setEnteredEmail] = useState("fakeemail@test.com");
+  const [enteredPassword, setEnteredPassword] = useState("password");
   const [errorMessage, setErrorMessage] = useState(false);
 
   function handleLogin() {
@@ -24,6 +24,7 @@ export default function Login() {
       setErrorMessage(true);
     } else {
       setCurrentUser(loginUser[0].userId);
+      setIsAuth(true);
       navigate("/");
     }
   }
