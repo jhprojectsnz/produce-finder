@@ -6,6 +6,28 @@ import { useNavigate } from "react-router-dom";
 export default function StallPreview({ selectedStall, setSelectedStall }) {
   const stallIsOpen = isOpen2(selectedStall.openTimes);
   const navigate = useNavigate();
+  const stallNames = [
+    "Fruit Frenzy",
+    "Juicy Delights",
+    "Fruit Haven",
+    "Fruitopia",
+    "The Fruit Basket",
+    "Fruitful Delights",
+    "Fruit Oasis",
+    "The Fruit Stand",
+    "Fruitful Harvest",
+    "Fruit Emporium",
+    "Fresh Harvest",
+    "Garden Delights",
+    "Farm to Table",
+    "The Veggie Patch",
+    "The Green Grocer",
+    "Nature's Bounty",
+    "The Produce Stand",
+    "The Garden Market",
+    "The Veggie Cart",
+    "The Farmer's Market",
+  ];
 
   return (
     <div className="info-window-container" onClick={() => navigate("/details")}>
