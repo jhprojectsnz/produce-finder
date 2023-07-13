@@ -84,11 +84,64 @@ const openTimesArray = [
   }
 ]
 
+const fruitAndVeges = [
+  "apple",
+  "apricot",
+  "avocado",
+  "banana",
+  "blackberry",
+  "blueberry",
+  "cherry",
+  "coconut",
+  "lemon",
+  "orange",
+  "gooseberry",
+  "blueberries",
+  "raspberries",
+  "strawberries",
+  "cherries",
+  "watermelon",
+  "kiwifruit",
+  "mandarins",
+  "grapes",
+  "Broccoli",
+  "Cabbage",
+  "Asparagus",
+  "Beetroot",
+  "Carrot",
+  "Garlic",
+  "Leek",
+  "Cauliflower",
+  "Cucumber",
+  "Eggplant",
+  "Green Beans",
+  "Kale",
+  "Lettuce",
+  "Onion",
+  "potato",
+  "pumpkin"
+]
+
+const units = ['kg', "each", "100 g", "bag", "small bag"]
+
 const phoneNumbers = [4937493, 39048390, 3483984, 283908023, 20940398, 84344543]
 
 export default function convertPlaceToStall(place) {
-    // console.log(place)
-    const templateObject = {
+
+    const inStockBlankArray = new Array(randomNumber(6)).fill("blank");
+    const inStockArray = inStockBlankArray.map(item => (
+        {
+          item: fruitAndVeges[randomNumber(fruitAndVeges.length)],
+          amount: units[randomNumber(units.length)],
+          price: `$ ${randomNumber(6) + 1}`,
+        }
+      )
+    )
+
+    // console.log(inStockBlankArray, inStockArray)
+
+
+    const stallData = {
         stallId: place.place_id,
         ownerId: null,
         name: stallNames[randomNumber(stallNames.length)],
@@ -102,29 +155,8 @@ export default function convertPlaceToStall(place) {
           phone: phoneNumbers[randomNumber(phoneNumbers.length)],
           email: "",
         },
-        inStock: [
-          {
-            item: "Bananas",
-            amount: "bunch",
-            price: "$2",
-          },
-          {
-            item: "Apricots",
-            amount: "small bag",
-            price: "$4",
-          },
-          {
-            item: "Peachs",
-            amount: "1 kg",
-            price: "$6",
-          },
-          {
-            item: "Cabbage",
-            amount: "each",
-            price: "$2",
-          },
-        ],
+        inStock: inStockArray,
       }
     
-    return templateObject
+    return stallData
 }

@@ -2,7 +2,7 @@ import "./map.css";
 import StallPreview from "../stall-preview/stall-preview.jsx";
 import { GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useUserContext } from "../../context/UserContext";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import convertPlaceToStall from "../../functions/convertPlaceToStall";
 
 function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
@@ -22,10 +22,9 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
     anchor: new google.maps.Point(200, 500),
   };
 
-  const { stalls } = useUserContext();
-  const [places, setPlaces] = useState([]);
-
-  console.log("render");
+  //Access stalls data and setStalls from context
+  //This is a SUBSTITUTE FOR ACCESSING DATABASE - update later when database set up
+  const { stalls, setStalls } = useUserContext();
 
   //Set a ref for the google map so it can be accessed by other functions
   const mapRef = useRef(null);
@@ -37,7 +36,7 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
       lat: mapRef.current.state.map.center.lat(),
       lng: mapRef.current.state.map.center.lng(),
     };
-    console.log("idle", newCenter);
+
     //Access the PlacesService required to do a nearby search
     const service = new google.maps.places.PlacesService(
       mapRef.current.state.map
@@ -49,14 +48,22 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
       keyword: "farm",
       radius: 10000,
     };
-    //Perform nearby search and save results to state
+    //Perform nearby search, convert places to stalls and then save new stalls to context
     service.nearbySearch(request, (results, status) => {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
-        const placesAsStalls = results.map((place) =>
-          convertPlaceToStall(place)
-        );
-        console.log(placesAsStalls);
-        setPlaces(placesAsStalls);
+        setStalls((prevStalls) => {
+          //Create a set containing IDs of all current stalls
+          //Allows for a quick check if new places are already in stalls data
+          const currentStallIds = new Set();
+          prevStalls.forEach((stall) => currentStallIds.add(stall.stallId));
+          //Filter out places that are already in stalls data
+          //Then convert the places data to dummy stalls data
+          const newPlacesAsStalls = results
+            .filter((place) => !currentStallIds.has(place.place_id))
+            .map((place) => convertPlaceToStall(place));
+          //Add the new dummy stalls to the current stalls data
+          return [...prevStalls, ...newPlacesAsStalls];
+        });
       }
     });
   }
@@ -75,25 +82,6 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
       >
         {console.log("map")}
         {stalls.map((stall) => (
-          <MarkerF
-            key={stall.stallId}
-            position={{ lat: stall.location.lat, lng: stall.location.lng }}
-            options={{
-              icon:
-                stall.stallId === selectedStall.stallId
-                  ? selectedIcon
-                  : markerIcon,
-            }}
-            onClick={() => {
-              setSelectedStall(stall);
-              setMapCenter({
-                lat: stall.location.lat,
-                lng: stall.location.lng,
-              });
-            }}
-          />
-        ))}
-        {places.map((stall) => (
           <MarkerF
             key={stall.stallId}
             position={{ lat: stall.location.lat, lng: stall.location.lng }}

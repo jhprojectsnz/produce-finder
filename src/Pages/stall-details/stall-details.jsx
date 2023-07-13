@@ -48,7 +48,7 @@ export default function StallDetails({ selectedStall }) {
             selectedStall.inStock.map((item) => (
               <div
                 className="stall-item-container"
-                key={`${selectedStall.id}-${item.item}`}
+                key={`${selectedStall.stallId}-${item.item}`}
               >
                 {item.amount ? (
                   <p>{`${item.item} (${item.amount})`}</p>
