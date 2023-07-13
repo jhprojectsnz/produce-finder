@@ -28,6 +28,9 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
 
   //Set a ref for the google map so it can be accessed by other functions
   const mapRef = useRef(null);
+  const mapBounds = mapRef.current
+    ? mapRef.current.state.map.getBounds()
+    : null;
 
   //This function will run after user finishes zooming or scrolling the map
   function handleOnIdol() {
@@ -37,6 +40,7 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
       lng: mapRef.current.state.map.center.lng(),
     };
 
+    console.log("idol");
     //Access the PlacesService required to do a nearby search
     const service = new google.maps.places.PlacesService(
       mapRef.current.state.map
@@ -66,7 +70,20 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
         });
       }
     });
+
+    if (JSON.stringify(newCenter) != JSON.stringify(mapCenter)) {
+      setMapCenter(newCenter);
+    }
   }
+
+  const stallsInView = () => {
+    if (!mapBounds) return [];
+    return stalls.filter((stall) =>
+      mapBounds.contains(
+        new google.maps.LatLng(stall.location.lat, stall.location.lng)
+      )
+    );
+  };
 
   return (
     <>
@@ -81,7 +98,7 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
         onIdle={handleOnIdol}
       >
         {console.log("map")}
-        {stalls.map((stall) => (
+        {stallsInView().map((stall) => (
           <MarkerF
             key={stall.stallId}
             position={{ lat: stall.location.lat, lng: stall.location.lng }}
@@ -93,10 +110,6 @@ function Map({ selectedStall, setSelectedStall, setMapCenter, mapCenter }) {
             }}
             onClick={() => {
               setSelectedStall(stall);
-              setMapCenter({
-                lat: stall.location.lat,
-                lng: stall.location.lng,
-              });
             }}
           />
         ))}

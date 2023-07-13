@@ -15,8 +15,8 @@ export default function SearchResults({
 }) {
   const { stalls } = useUserContext();
   const [searchResults, setSearchResults] = useState([]);
-  // const [selectedStall, setSelectedStall] = useState({});
 
+  console.log("results");
   //Import all stalls from context
   useEffect(() => {
     //search database for results that are near the search location here

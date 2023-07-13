@@ -5,9 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 //Could make contact details fields only appear if they have been included
 
-export default function StallDetails({ selectedStall }) {
+export default function StallDetails({ selectedStall, setMapCenter }) {
   const stallIsOpen = isOpen2(selectedStall.openTimes);
   const navigate = useNavigate();
+
+  function handleAddressClick() {
+    setMapCenter(selectedStall.location);
+    navigate("/results/map");
+  }
 
   return (
     <section className="stall-details">
@@ -31,8 +36,8 @@ export default function StallDetails({ selectedStall }) {
             {stallIsOpen ? "Open" : "Closed"}
           </p>
         </div>
-        <div className="stall-address">
-          253 Glenfield Road, Birkenhead, Auckland
+        <div className="stall-address" onClick={handleAddressClick}>
+          {selectedStall.address}
         </div>
         <div className="line-separator" />
         <div className="stall-text-subsection">
@@ -84,11 +89,13 @@ export default function StallDetails({ selectedStall }) {
             <div className="line-separator" />
             <div className="stall-text-subsection">
               <h3>Contact</h3>
-              {Object.keys(selectedStall.contactDetails).map((contact) => (
-                <p
-                  key={selectedStall.contactDetails[contact]}
-                >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
-              ))}
+              {Object.keys(selectedStall.contactDetails).map((contact) =>
+                selectedStall.contactDetails[contact] ? (
+                  <p
+                    key={selectedStall.contactDetails[contact]}
+                  >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
+                ) : null
+              )}
             </div>
           </>
         )}

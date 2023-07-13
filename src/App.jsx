@@ -67,7 +67,12 @@ function App() {
             ></Route>
             <Route
               path="/details"
-              element={<StallDetails selectedStall={selectedStall} />}
+              element={
+                <StallDetails
+                  selectedStall={selectedStall}
+                  setMapCenter={setMapCenter}
+                />
+              }
             />
           </Routes>
         </UserProvider>
