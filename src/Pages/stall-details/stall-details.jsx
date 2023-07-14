@@ -3,8 +3,6 @@ import { BiArrowBack, BiHeart } from "react-icons/bi";
 import isOpen2 from "../../functions/isOpen2";
 import { useNavigate } from "react-router-dom";
 
-//Could make contact details fields only appear if they have been included
-
 export default function StallDetails({ selectedStall, setMapCenter }) {
   const stallIsOpen = isOpen2(selectedStall.openTimes);
   const navigate = useNavigate();
