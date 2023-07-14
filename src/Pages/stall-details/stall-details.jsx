@@ -9,14 +9,17 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
 
   function handleAddressClick() {
     setMapCenter(selectedStall.location);
-    navigate("/results/map");
+    navigate("/results");
   }
 
   return (
     <section className="stall-details">
       <button
         className="stall-details-btn back-btn"
-        onClick={() => navigate(-1)}
+        onClick={() => {
+          console.log("back");
+          navigate(-1);
+        }}
       >
         <BiArrowBack className="color-dark" />
       </button>

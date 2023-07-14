@@ -1,30 +1,29 @@
 import "./results-nav.css";
 import { Link, useLocation } from "react-router-dom";
 
-export default function ResultsNav() {
-  const location = useLocation();
+export default function ResultsNav({ resultsView, setResultsView }) {
   return (
     <div className="results-nav">
-      <Link
-        to="/results/map"
+      <button
         className={
-          location.pathname === "/results/map"
+          resultsView === "map"
             ? "results-nav-btn nav-btn-selected"
             : "results-nav-btn"
         }
+        onClick={() => setResultsView("map")}
       >
         Map
-      </Link>
-      <Link
-        to="/results/list"
+      </button>
+      <button
         className={
-          location.pathname === "/results/list"
+          resultsView === "list"
             ? "results-nav-btn nav-btn-selected"
             : "results-nav-btn"
         }
+        onClick={() => setResultsView("list")}
       >
         List
-      </Link>
+      </button>
     </div>
   );
 }
