@@ -1,22 +1,25 @@
 import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
-import isOpen2 from "../../functions/isOpen2";
+import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
-  const stallIsOpen = isOpen2(selectedStall.openTimes);
+  const stallIsOpen = isOpen(selectedStall.openTimes);
   const navigate = useNavigate();
 
   function handleAddressClick() {
     setMapCenter(selectedStall.location);
-    navigate("/results/map");
+    navigate("/results");
   }
 
   return (
     <section className="stall-details">
       <button
         className="stall-details-btn back-btn"
-        onClick={() => navigate(-1)}
+        onClick={() => {
+          console.log("back");
+          navigate(-1);
+        }}
       >
         <BiArrowBack className="color-dark" />
       </button>

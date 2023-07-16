@@ -4,11 +4,13 @@ import { useState, useEffect, useMemo } from "react";
 import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";
+import RemoveStallModal from "../../components/remove-stall-modal/remove-stall-modal";
 
 export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
 
   const [userStalls, setUserStalls] = useState([]);
+  const [displayRemoveStallModal, setDisplayRemoveStallModal] = useState(false);
 
   useEffect(() => {
     //Fetch the stalls associated with the user from the database here
@@ -21,8 +23,6 @@ export default function MyStalls({ setSelectedStall }) {
   }, [currentUser, stalls]);
 
   const [displayItemModal, setDisplayItemModal] = useState(false);
-
-  console.log(currentUser, userStalls);
 
   function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>
@@ -80,10 +80,16 @@ export default function MyStalls({ setSelectedStall }) {
                   })
                 }
               >
-                Add
+                Add item
               </button>
             </div>
             <div className="update-btn-container">
+              <button
+                className="update-btn delete-stall"
+                onClick={() => setDisplayRemoveStallModal(stall)}
+              >
+                Remove
+              </button>
               <Link to={`/form/${stall.stallId}`} className="update-btn">
                 Edit details
               </Link>
@@ -92,7 +98,7 @@ export default function MyStalls({ setSelectedStall }) {
                 className="update-btn"
                 onClick={() => setSelectedStall(stall)}
               >
-                View preview
+                Preview
               </Link>
             </div>
           </div>
@@ -106,6 +112,13 @@ export default function MyStalls({ setSelectedStall }) {
           stallId={displayItemModal.stallId}
           itemIndex={displayItemModal.itemIndex}
           setDisplayItemModal={setDisplayItemModal}
+        />
+      )}
+      {displayRemoveStallModal && (
+        <RemoveStallModal
+          removeStall={displayRemoveStallModal}
+          setDisplayRemoveStallModal={setDisplayRemoveStallModal}
+          setUserStalls={setUserStalls}
         />
       )}
     </section>

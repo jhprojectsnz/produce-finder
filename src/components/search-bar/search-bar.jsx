@@ -2,10 +2,12 @@ import "./search-bar.css";
 import { BiSearchAlt, BiSliderAlt, BiArrowBack } from "react-icons/bi";
 import Filters from "../filters/filters.jsx";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchBar() {
   const [showFilters, setShowFilters] = useState(false);
+
+  const navigate = useNavigate();
 
   function handleClick() {
     setShowFilters(false);
@@ -17,29 +19,35 @@ export default function SearchBar() {
     <div className="search-bar">
       <div className="search-container">
         <div className="input-container">
-          <Link to={"/"}>
+          <button
+            className="circle-btn border-dark bg-light"
+            onClick={() => navigate(-1)}
+          >
             <BiArrowBack className="color-dark back-arrow" />
-          </Link>
+          </button>
           <input
             type="text"
             placeholder="Search fruit and veg..."
             className="search-input"
             onFocus={() => setShowFilters(true)}
           />
-          <div className="circle-btn border-dark" onClick={handleClick}>
+          <button
+            className="circle-btn border-dark bg-light"
+            onClick={handleClick}
+          >
             <BiSearchAlt className="color-dark" />
-          </div>
+          </button>
         </div>
-        <div
+        <button
           className={
             showFilters
               ? "circle-btn border-light color-dark bg-light"
-              : "circle-btn border-light color-light"
+              : "circle-btn border-light color-light bg-dark"
           }
           onClick={() => setShowFilters((prev) => !prev)}
         >
           <BiSliderAlt />
-        </div>
+        </button>
       </div>
       {showFilters && <Filters setShowFilters={setShowFilters} />}
     </div>

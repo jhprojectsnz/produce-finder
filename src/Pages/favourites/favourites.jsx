@@ -27,7 +27,7 @@ export default function Favourites({ setSelectedStall }) {
       <h2>Favourites</h2>
       <div className="fav-results-container">
         <ResultsList
-          stallList={favouriteStalls}
+          stallsList={favouriteStalls}
           setSelectedStall={setSelectedStall}
         />
       </div>

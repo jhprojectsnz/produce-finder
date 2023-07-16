@@ -142,10 +142,13 @@ export default function StallDetailsForm() {
         return obj;
       });
     }
-
     navigate(-1);
   };
-  console.log(formData);
+
+  function handleCancel() {
+    navigate(-1);
+  }
+
   return (
     <section className="stall-details-form">
       <h2>{`${stallForUpdate ? "Update" : "New"} Stall Details`}</h2>
@@ -233,9 +236,14 @@ export default function StallDetailsForm() {
           onChange={handleTextInputChange}
         />
       </div>
-      <button className="form-submit-btn" onClick={handleSubmit}>
-        Submit
-      </button>
+      <div className="form-btn-container">
+        <button className="form-cancel-btn" onClick={handleCancel}>
+          Cancel
+        </button>
+        <button className="form-submit-btn" onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
     </section>
   );
 }

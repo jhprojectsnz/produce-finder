@@ -20,6 +20,7 @@ function App() {
   const [mapCenter, setMapCenter] = useState({});
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
+  console.log("app");
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
@@ -45,7 +46,7 @@ function App() {
               }
             />
             <Route
-              path="/results/*"
+              path="/results"
               element={
                 <SearchResults
                   setMapCenter={setMapCenter}
