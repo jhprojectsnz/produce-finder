@@ -22,7 +22,6 @@ export default function Markers({
     anchor: new google.maps.Point(200, 500),
   };
 
-  console.log(stallsWithinMapBounds);
   return stallsWithinMapBounds.map((stall) => (
     <MarkerF
       key={stall.stallId}

@@ -158,7 +158,635 @@ const stallData = [
       price: "$2",
     },
   ],
-}]
+},{
+    "stallId": 5,
+    "ownerId": null,
+    "name": "The Cherry Cart",
+    "address": "4893606/33C Orchard St, Avondale, Auckland",
+    "location": {
+        "lat": -36.8900314,
+        "lng": 174.6808734
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-1.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Tuesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Wednesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Thursday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Friday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        }
+    },
+    "contactDetails": {
+        "phone": 20940398,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "Onion",
+            "amount": "each",
+            "price": "$ 5"
+        },
+        {
+            "item": "potato",
+            "amount": "100 g",
+            "price": "$ 4"
+        },
+        {
+            "item": "Beetroot",
+            "amount": "100 g",
+            "price": "$ 3"
+        },
+        {
+            "item": "Green Beans",
+            "amount": "kg",
+            "price": "$ 5"
+        }
+    ]
+},
+{
+    "stallId": 6,
+    "ownerId": null,
+    "name": "The Pineapple Patch",
+    "address": "203a Symonds St, Eden Terrace, Auckland",
+    "location": {
+        "lat": -36.8634451,
+        "lng": 174.7609325
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-1.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Tuesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Wednesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Thursday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Friday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 39048390,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "avocado",
+            "amount": "small bag",
+            "price": "$ 2"
+        }
+    ]
+},
+{
+    "stallId": 7,
+    "ownerId": null,
+    "name": "The Apple Orchard",
+    "address": "9 Redmond St, Ponsonby, Auckland",
+    "location": {
+        "lat": -36.8482887,
+        "lng": 174.7427807
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-2.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Tuesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Wednesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Thursday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Friday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 4937493,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "apricot",
+            "amount": "small bag",
+            "price": "$ 3"
+        },
+        {
+            "item": "Cauliflower",
+            "amount": "100 g",
+            "price": "$ 6"
+        },
+        {
+            "item": "Asparagus",
+            "amount": "bag",
+            "price": "$ 6"
+        }
+    ]
+},
+{
+    "stallId": 8,
+    "ownerId": null,
+    "name": "The Broccoli Bazaar",
+    "address": "91 St Heliers Bay Rd, St Heliers, Auckland",
+    "location": {
+        "lat": -36.8549534,
+        "lng": 174.8594814
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-4.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Tuesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Wednesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Thursday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Friday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        }
+    },
+    "contactDetails": {
+        "phone": 283908023,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "Asparagus",
+            "amount": "small bag",
+            "price": "$ 5"
+        },
+        {
+            "item": "grapes",
+            "amount": "bag",
+            "price": "$ 4"
+        }
+    ]
+},
+{
+    "stallId": 9,
+    "ownerId": null,
+    "name": "Juicy Delights",
+    "address": "4893606/33C Orchard St, Avondale, Auckland",
+    "location": {
+        "lat": -36.8899362,
+        "lng": 174.680621
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-1.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Tuesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Wednesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Thursday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Friday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 84344543,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "apple",
+            "amount": "small bag",
+            "price": "$ 2"
+        }
+    ]
+},
+{
+    "stallId": 10,
+    "ownerId": null,
+    "name": "Fruitopia",
+    "address": "597 Rosebank Rd, Avondale, Auckland",
+    "location": {
+        "lat": -36.8766119,
+        "lng": 174.6704165
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-2.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Tuesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Wednesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Thursday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Friday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 4937493,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "mandarins",
+            "amount": "100 g",
+            "price": "$ 4"
+        },
+        {
+            "item": "mandarins",
+            "amount": "small bag",
+            "price": "$ 2"
+        }
+    ]
+},
+{
+    "stallId": 11,
+    "ownerId": null,
+    "name": "Fruit Emporium",
+    "address": "4 Huron St, Takapuna, Takapuna Beach",
+    "location": {
+        "lat": -36.7888847,
+        "lng": 174.7713999
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-2.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Tuesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Wednesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Thursday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Friday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Saturday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 39048390,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "coconut",
+            "amount": "100 g",
+            "price": "$ 4"
+        },
+        {
+            "item": "apple",
+            "amount": "100 g",
+            "price": "$ 4"
+        },
+        {
+            "item": "gooseberry",
+            "amount": "each",
+            "price": "$ 2"
+        }
+    ]
+},
+{
+    "stallId": 12,
+    "ownerId": null,
+    "name": "Fruitful Harvest",
+    "address": "533 Great South Rd, Papatoetoe, Auckland",
+    "location": {
+        "lat": -36.9807493,
+        "lng": 174.875754
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-5.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Tuesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Wednesday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Thursday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Friday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Saturday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "12:00 pm"
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 283908023,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "avocado",
+            "amount": "small bag",
+            "price": "$ 6"
+        },
+        {
+            "item": "Cabbage",
+            "amount": "kg",
+            "price": "$ 2"
+        },
+        {
+            "item": "blueberry",
+            "amount": "small bag",
+            "price": "$ 4"
+        },
+        {
+            "item": "Cucumber",
+            "amount": "small bag",
+            "price": "$ 1"
+        }
+    ]
+},
+{
+    "stallId": 13,
+    "ownerId": null,
+    "name": "Fruit Oasis",
+    "address": "Volkner Pl, Albany, Auckland",
+    "location": {
+        "lat": -36.7493039,
+        "lng": 174.7070939
+    },
+    "locationType": "",
+    "about": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!",
+    "img": "/src/assets/test-image-5.jpg",
+    "openTimes": {
+        "Monday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Tuesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Wednesday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Thursday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Friday": {
+            "open": true,
+            "openTime": "9:00 am",
+            "closeTime": "5:00 pm"
+        },
+        "Saturday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        },
+        "Sunday": {
+            "open": false,
+            "openTime": "",
+            "closeTime": ""
+        }
+    },
+    "contactDetails": {
+        "phone": 39048390,
+        "email": ""
+    },
+    "inStock": [
+        {
+            "item": "Asparagus",
+            "amount": "small bag",
+            "price": "$ 3"
+        },
+        {
+            "item": "raspberries",
+            "amount": "bag",
+            "price": "$ 4"
+        },
+        {
+            "item": "Cabbage",
+            "amount": "small bag",
+            "price": "$ 1"
+        },
+        {
+            "item": "strawberries",
+            "amount": "bag",
+            "price": "$ 3"
+        },
+        {
+            "item": "watermelon",
+            "amount": "bag",
+            "price": "$ 1"
+        }
+    ]
+},]
 
 const users = [
   {
@@ -503,3 +1131,4 @@ export {stallData, users}
 // "Fruitful Harvest",
 // "Fruit Emporium"
 // ];
+

@@ -25,3 +25,6 @@ vite.config.js
 *.njsproj
 *.sln
 *.sw?
+
+
+src/data/bigDataFile.js
