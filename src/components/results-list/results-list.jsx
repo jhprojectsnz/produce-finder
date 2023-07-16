@@ -1,16 +1,13 @@
 import "./results-list.css";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import isOpen2 from "../../functions/isOpen2";
+import isOpen from "../../functions/isOpen";
 import { Link } from "react-router-dom";
 
-export default function ResultsList({
-  setSelectedStall,
-  stallsWithinMapBounds,
-}) {
+export default function ResultsList({ setSelectedStall, stallsList }) {
   return (
     <div className="results-list">
-      {stallsWithinMapBounds.map((location) => {
-        let stallIsOpen = isOpen2(location.openTimes);
+      {stallsList.map((location) => {
+        let stallIsOpen = isOpen(location.openTimes);
 
         return (
           <Link

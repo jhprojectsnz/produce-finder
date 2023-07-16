@@ -119,10 +119,7 @@ export default function SearchResults({
       )}
 
       {resultsView === "list" && (
-        <ResultsList
-          setSelectedStall={setSelectedStall}
-          stallsWithinMapBounds={stallsWithinMapBounds}
-        />
+        <ResultsList setSelectedStall={setSelectedStall} stallsList={stalls} />
       )}
       <ResultsNav resultsView={resultsView} setResultsView={setResultsView} />
     </div>

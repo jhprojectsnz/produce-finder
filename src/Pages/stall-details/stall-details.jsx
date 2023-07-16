@@ -1,10 +1,10 @@
 import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
-import isOpen2 from "../../functions/isOpen2";
+import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
-  const stallIsOpen = isOpen2(selectedStall.openTimes);
+  const stallIsOpen = isOpen(selectedStall.openTimes);
   const navigate = useNavigate();
 
   function handleAddressClick() {
