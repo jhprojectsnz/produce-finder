@@ -2,6 +2,7 @@ import "./stall-details.css";
 import { BiArrowBack, BiHeart } from "react-icons/bi";
 import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
+import FavouriteButton from "../../components/favourite-button/favourite-button";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
   const stallIsOpen = isOpen(selectedStall.openTimes);
@@ -23,8 +24,9 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
       >
         <BiArrowBack className="color-dark" />
       </button>
+
       <div className="stall-details-btn fav-btn">
-        <BiHeart className="color-dark" />
+        <FavouriteButton selectedStall={selectedStall} />
       </div>
       <img className="stall-image" src={selectedStall.img} />
       <div className="stall-details-text">

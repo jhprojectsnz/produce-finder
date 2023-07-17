@@ -47,17 +47,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .result-title {
     font-size: 0.8rem;
-}
-
-.result-fav-icon {
-    width: 15px;
-    height: 15px;
-    margin-top: 2px;
-    margin-left: 10px;
 }
 
 .result-text {

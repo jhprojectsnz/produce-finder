@@ -1,32 +1,33 @@
 import "./results-list.css";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
 import isOpen from "../../functions/isOpen";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import FavouriteButton from "../favourite-button/favourite-button";
 
 export default function ResultsList({ setSelectedStall, stallsList }) {
+  const navigate = useNavigate();
   return (
     <div className="results-list">
-      {stallsList.map((location) => {
-        let stallIsOpen = isOpen(location.openTimes);
+      {stallsList.map((stall) => {
+        let stallIsOpen = isOpen(stall.openTimes);
 
         return (
-          <Link
-            to="/details"
+          <div
             className="result-container"
-            key={location.id}
+            key={stall.id}
             onClick={() => {
-              setSelectedStall(location);
+              setSelectedStall(stall);
+              navigate("/details");
             }}
           >
-            <img className="result-image" src={location.img} />
+            <img className="result-image" src={stall.img} />
             <div className="result-text-container">
               <div className="result-title-container">
-                <h5 className="result-title">{location.name}</h5>
-                <FaRegHeart className="result-fav-icon" />
+                <h5 className="result-title">{stall.name}</h5>
+                <FavouriteButton selectedStall={stall} />
               </div>
               <p className="result-text">
-                {location.inStock.length > 0
-                  ? location.inStock.map((item) => item.item).join(", ")
+                {stall.inStock.length > 0
+                  ? stall.inStock.map((item) => item.item).join(", ")
                   : "Out of stock"}
               </p>
               <p
@@ -36,7 +37,7 @@ export default function ResultsList({ setSelectedStall, stallsList }) {
                 {stallIsOpen ? "Open" : "Closed"}
               </p>
             </div>
-          </Link>
+          </div>
         );
       })}
     </div>
