@@ -4,15 +4,21 @@ import Filters from "../filters/filters.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function SearchBar() {
+export default function SearchBar({ filters, setFilters }) {
   const [showFilters, setShowFilters] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
+  //Navigate function used for back button to go back one page
   const navigate = useNavigate();
 
-  function handleClick() {
-    setShowFilters(false);
-
-    //handle search for fruit and veg here
+  //Called when search button is clicked or enter is pressed in search field
+  function handleSearch() {
+    setFilters((prev) => ({
+      ...prev,
+      keyword: searchTerm,
+    }));
+    setSearchTerm("");
+    setShowFilters(true);
   }
 
   return (
@@ -30,10 +36,15 @@ export default function SearchBar() {
             placeholder="Search fruit and veg..."
             className="search-input"
             onFocus={() => setShowFilters(true)}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleSearch();
+            }}
           />
           <button
             className="circle-btn border-dark bg-light"
-            onClick={handleClick}
+            onClick={handleSearch}
           >
             <BiSearchAlt className="color-dark" />
           </button>
@@ -49,7 +60,13 @@ export default function SearchBar() {
           <BiSliderAlt />
         </button>
       </div>
-      {showFilters && <Filters setShowFilters={setShowFilters} />}
+      {showFilters && (
+        <Filters
+          filters={filters}
+          setFilters={setFilters}
+          setShowFilters={setShowFilters}
+        />
+      )}
     </div>
   );
 }

@@ -2,12 +2,13 @@ import "./search-results.css";
 import SearchBar from "../../components/search-bar/search-bar";
 import ResultsNav from "../../components/results-nav/results-nav";
 import ResultsList from "../../components/results-list/results-list";
-import { useState, useRef, useMemo } from "react";
+import { useState, useRef, useMemo, useEffect } from "react";
 import { useUserContext } from "../../context/UserContext";
 import StallPreview from "../../components/stall-preview/stall-preview";
 import { GoogleMap } from "@react-google-maps/api";
 // import convertPlaceToStall from "../../functions/convertPlaceToStall";
 import Markers from "../../components/markers/markers";
+import isOpen from "../../functions/isOpen";
 
 export default function SearchResults({
   setMapCenter,
@@ -19,6 +20,14 @@ export default function SearchResults({
   const { stalls, setStalls } = useUserContext();
 
   const [resultsView, setResultsView] = useState("map");
+  const [filters, setFilters] = useState({
+    keyword: false,
+    buttonFilters: {
+      "Open now": false,
+      "Items in stock": false,
+      Organic: false,
+    },
+  });
 
   //Get google map component as a ref
   const mapRef = useRef(null);
@@ -77,6 +86,7 @@ export default function SearchResults({
   //   }
   // }
 
+  //This function is used to update mapCenter variable when navigating away from the map component
   function updateMapCenter() {
     const currentCenter = {
       lat: mapRef.current.state.map.center.lat(),
@@ -85,9 +95,48 @@ export default function SearchResults({
     setMapCenter(currentCenter);
   }
 
+  const filteredStalls = useMemo(() => {
+    //Make a set of related words to the searched word
+    //The items in a stall are checked against this set
+    const matchTerms = filters.keyword
+      ? new Set([
+          filters.keyword.toLowerCase(),
+          filters.keyword.replace(/s$/, "").toLowerCase(),
+          filters.keyword.concat("s").toLowerCase(),
+          filters.keyword,
+          filters.keyword.replace(/s$/, ""),
+          filters.keyword.concat("s"),
+        ])
+      : null;
+
+    //Return stalls filtered by selected filters
+    return stalls.filter((stall) => {
+      if (filters.buttonFilters["Open now"]) {
+        if (!isOpen(stall.openTimes)) return false;
+      }
+      if (filters.buttonFilters["Items in stock"]) {
+        if (stall.inStock.length < 1) return false;
+      }
+      if (filters.buttonFilters.Organic) {
+        if (!stall.organic) return false;
+      }
+      if (filters.keyword) {
+        let hasSearchTerm = false;
+        stall.inStock.forEach((item) => {
+          if (matchTerms.has(item.item)) {
+            hasSearchTerm = true;
+          }
+        });
+        if (!hasSearchTerm) return false;
+      }
+
+      return true;
+    });
+  });
+
   return (
     <div className="search-results">
-      <SearchBar />
+      <SearchBar filters={filters} setFilters={setFilters} />
 
       {resultsView === "map" && (
         <>
@@ -103,7 +152,7 @@ export default function SearchResults({
           >
             {console.log("map")}
             <Markers
-              stallsWithinMapBounds={stalls}
+              stallsWithinMapBounds={filteredStalls}
               selectedStall={selectedStall}
               setSelectedStall={setSelectedStall}
             />
@@ -119,7 +168,10 @@ export default function SearchResults({
       )}
 
       {resultsView === "list" && (
-        <ResultsList setSelectedStall={setSelectedStall} stallsList={stalls} />
+        <ResultsList
+          setSelectedStall={setSelectedStall}
+          stallsList={filteredStalls}
+        />
       )}
       <ResultsNav resultsView={resultsView} setResultsView={setResultsView} />
     </div>

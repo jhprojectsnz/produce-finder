@@ -39,6 +39,7 @@ const stallData = [
       price: "$5",
     },
   ],
+  organic: true,
 },
 {
   stallId: 2,
@@ -79,6 +80,7 @@ const stallData = [
       price: "$3",
     },
   ],
+  organic: true,
 },
 {
   stallId: 3,
@@ -114,6 +116,7 @@ const stallData = [
       price: "$4",
     },
   ],
+  organic: false,
 },{
   stallId: 4,
   ownerId: 24893,
@@ -158,6 +161,7 @@ const stallData = [
       price: "$2",
     },
   ],
+  organic: false,
 },{
     "stallId": 5,
     "ownerId": null,
@@ -232,7 +236,8 @@ const stallData = [
             "amount": "kg",
             "price": "$ 5"
         }
-    ]
+    ],
+    organic: false,
 },
 {
     "stallId": 6,
@@ -293,7 +298,8 @@ const stallData = [
             "amount": "small bag",
             "price": "$ 2"
         }
-    ]
+    ],
+    organic: false,
 },
 {
     "stallId": 7,
@@ -364,7 +370,8 @@ const stallData = [
             "amount": "bag",
             "price": "$ 6"
         }
-    ]
+    ],
+    organic: true,
 },
 {
     "stallId": 8,
@@ -419,18 +426,8 @@ const stallData = [
         "phone": 283908023,
         "email": ""
     },
-    "inStock": [
-        {
-            "item": "Asparagus",
-            "amount": "small bag",
-            "price": "$ 5"
-        },
-        {
-            "item": "grapes",
-            "amount": "bag",
-            "price": "$ 4"
-        }
-    ]
+    "inStock": [],
+    organic: false,
 },
 {
     "stallId": 9,
@@ -491,7 +488,8 @@ const stallData = [
             "amount": "small bag",
             "price": "$ 2"
         }
-    ]
+    ],
+    organic: true,
 },
 {
     "stallId": 10,
@@ -557,7 +555,8 @@ const stallData = [
             "amount": "small bag",
             "price": "$ 2"
         }
-    ]
+    ],
+    organic: true,
 },
 {
     "stallId": 11,
@@ -628,7 +627,8 @@ const stallData = [
             "amount": "each",
             "price": "$ 2"
         }
-    ]
+    ],
+    organic: true,
 },
 {
     "stallId": 12,
@@ -704,7 +704,8 @@ const stallData = [
             "amount": "small bag",
             "price": "$ 1"
         }
-    ]
+    ],
+    organic: false,
 },
 {
     "stallId": 13,
@@ -785,7 +786,8 @@ const stallData = [
             "amount": "bag",
             "price": "$ 1"
         }
-    ]
+    ],
+    organic: false,
 },]
 
 const users = [

@@ -1,73 +1,66 @@
 import "./filters.css";
-import { FaEdit } from "react-icons/fa";
-import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
-//change location to be the result of search
-//change class name for close button - make close button component?
+export default function Filters({ filters, setFilters, setShowFilters }) {
+  //Add true/false filters to the array below
+  //Also update filter function in search results
+  const filterTypes = ["Open now", "", "Shop", "Click and Collect"];
 
-export default function Filters({ setShowFilters }) {
-  //Add seller type filters to the array below
-  const sellerTypes = [
-    "Roadside stall",
-    "Market Stall",
-    "Shop",
-    "Click and Collect",
-  ];
-  //A state variable is created to track selected seller types
-  //This is an array of equal length with values initailly set to false
-  const [selectedSellerTypes, setSelectedSellerTypes] = useState(
-    sellerTypes.map((seller) => false)
-  );
-  //Function below run when a filter button is clicked
-  //Will update the array stored in state, switching the boolen at the index that matches the index of the button clicked
-  function handleFilterClick(index) {
-    setSelectedSellerTypes((prevArray) =>
-      prevArray.map((prev, i) => (i === index ? !prev : prev))
-    );
+  //Function below run when a true/false filter button is clicked
+  function handleFilterClick(filter) {
+    setFilters((prev) => {
+      console.log(prev.buttonFilters[filter]);
+      const newObj = {
+        ...prev,
+        buttonFilters: {
+          ...prev.buttonFilters,
+          [filter]: !prev.buttonFilters[filter],
+        },
+      };
+      console.log(newObj);
+      return newObj;
+    });
   }
 
-  const [hideClosed, setHideClosed] = useState(false);
+  //This function is run when close button next to the search term is clicked
+  function handleRemoveKeyword() {
+    setFilters((prev) => ({
+      ...prev,
+      keyword: false,
+    }));
+  }
 
   return (
     <div className="filters-container">
-      <h3>Search options</h3>
       <FaTimes className="close" onClick={() => setShowFilters(false)} />
-      <div className="filter">
-        <p>
-          Search location: <span className="italic">Birkenhead</span>
-        </p>
-        <FaEdit className="edit-icon" />
-      </div>
-      <div className="separator-line" />
-      <div className="filter">
-        <label className="filter-label" htmlFor={`custom-checkbox-hide`}>
-          Hide-closed
-        </label>
-        <input
-          type="checkbox"
-          id={`custom-checkbox-hide`}
-          name="hide-closed"
-          value="hide-closed"
-          checked={hideClosed}
-          onChange={() => setHideClosed((prev) => !prev)}
-        />
-      </div>
-      <div className="separator-line" />
-      <div className="filter vertical">
-        <p>Seller types</p>
+      <h3>Filters</h3>
+      {filters.keyword && (
+        <>
+          <div className="filter">
+            <p className="filter-title">Stalls selling:</p>
+            <div className="filter-btn narrow-btn">
+              {filters.keyword}
+              <FaTimes className="remove-icon" onClick={handleRemoveKeyword} />
+            </div>
+          </div>
+          <div className="separator-line" />
+        </>
+      )}
+
+      <div className="filter-vertical">
+        <p className="filter-title">Show stalls:</p>
         <div className="filter-btn-container">
-          {sellerTypes.map((type, index) => (
+          {Object.keys(filters.buttonFilters).map((filter) => (
             <button
               className={
-                selectedSellerTypes[index]
+                filters.buttonFilters[filter]
                   ? "filter-btn filter-selected"
                   : "filter-btn"
               }
-              key={type}
-              onClick={() => handleFilterClick(index)}
+              key={filter}
+              onClick={() => handleFilterClick(filter)}
             >
-              {type}
+              {filter}
             </button>
           ))}
         </div>
