@@ -135,45 +135,46 @@ export default function SearchResults({
   });
 
   return (
-    <div className="search-results">
+    <>
       <SearchBar filters={filters} setFilters={setFilters} />
+      <div className="search-results">
+        {resultsView === "map" && (
+          <>
+            <GoogleMap
+              ref={mapRef}
+              zoom={13}
+              center={mapCenter}
+              mapContainerClassName="map"
+              clickableIcons={false}
+              onClick={() => setSelectedStall({})}
+              options={{ disableDefaultUI: true }}
+              // onIdle={handleOnIdol}
+            >
+              {console.log("map")}
+              <Markers
+                stallsWithinMapBounds={filteredStalls}
+                selectedStall={selectedStall}
+                setSelectedStall={setSelectedStall}
+              />
+            </GoogleMap>
+            {selectedStall.stallId && (
+              <StallPreview
+                selectedStall={selectedStall}
+                setSelectedStall={setSelectedStall}
+                updateMapCenter={updateMapCenter}
+              />
+            )}
+          </>
+        )}
 
-      {resultsView === "map" && (
-        <>
-          <GoogleMap
-            ref={mapRef}
-            zoom={13}
-            center={mapCenter}
-            mapContainerClassName="map"
-            clickableIcons={false}
-            onClick={() => setSelectedStall({})}
-            options={{ disableDefaultUI: true }}
-            // onIdle={handleOnIdol}
-          >
-            {console.log("map")}
-            <Markers
-              stallsWithinMapBounds={filteredStalls}
-              selectedStall={selectedStall}
-              setSelectedStall={setSelectedStall}
-            />
-          </GoogleMap>
-          {selectedStall.stallId && (
-            <StallPreview
-              selectedStall={selectedStall}
-              setSelectedStall={setSelectedStall}
-              updateMapCenter={updateMapCenter}
-            />
-          )}
-        </>
-      )}
-
-      {resultsView === "list" && (
-        <ResultsList
-          setSelectedStall={setSelectedStall}
-          stallsList={filteredStalls}
-        />
-      )}
-      <ResultsNav resultsView={resultsView} setResultsView={setResultsView} />
-    </div>
+        {resultsView === "list" && (
+          <ResultsList
+            setSelectedStall={setSelectedStall}
+            stallsList={filteredStalls}
+          />
+        )}
+        <ResultsNav resultsView={resultsView} setResultsView={setResultsView} />
+      </div>
+    </>
   );
 }

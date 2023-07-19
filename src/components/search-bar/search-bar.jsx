@@ -1,12 +1,14 @@
 import "./search-bar.css";
-import { BiSearchAlt, BiSliderAlt, BiArrowBack } from "react-icons/bi";
+import { BiSearchAlt, BiSliderAlt, BiArrowBack, BiMenu } from "react-icons/bi";
 import Filters from "../filters/filters.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DropdownMenu from "../dropdown-menu/dropdown-menu";
 
 export default function SearchBar({ filters, setFilters }) {
   const [showFilters, setShowFilters] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
 
   //Navigate function used for back button to go back one page
   const navigate = useNavigate();
@@ -55,11 +57,31 @@ export default function SearchBar({ filters, setFilters }) {
               ? "circle-btn border-light color-dark bg-light"
               : "circle-btn border-light color-light bg-dark"
           }
-          onClick={() => setShowFilters((prev) => !prev)}
+          onClick={() => {
+            setShowFilters((prev) => !prev);
+            setShowDropdown(false);
+          }}
         >
           <BiSliderAlt />
         </button>
+        <button
+          className={
+            showDropdown
+              ? "circle-btn border-light color-dark bg-light"
+              : "circle-btn border-light color-light bg-dark"
+          }
+          onClick={() => {
+            setShowDropdown((prev) => !prev);
+            setShowFilters(false);
+          }}
+        >
+          <BiMenu />
+        </button>
       </div>
+      <DropdownMenu
+        showDropdown={showDropdown}
+        setShowDropdown={setShowDropdown}
+      />
       {showFilters && (
         <Filters
           filters={filters}
