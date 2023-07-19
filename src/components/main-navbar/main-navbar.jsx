@@ -1,47 +1,47 @@
 import "./main-navbar.css";
-import { BiMenu, BiLogOutCircle } from "react-icons/bi";
-import { FaUserAlt } from "react-icons/fa";
+import { BiMenu, BiLogOutCircle, BiUser } from "react-icons/bi";
 import { useUserContext } from "../../context/UserContext";
-import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
+import CircleBtn from "../cricle-btn/circle-btn";
 import { useState } from "react";
 
 //Could add a modal to confirm logout here
 export default function MainNavBar() {
   const { isAuth, setIsAuth, setCurrentUser } = useUserContext();
   const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  function handleLogout() {
+  function handleLogoutClick() {
     setIsAuth(false);
     setCurrentUser({});
   }
 
+  function handleLoginClick() {
+    navigate("/login");
+  }
+
   return (
-    <div className="main-navbar">
+    <div className={location.pathname != "/results" ? "main-navbar" : "hide"}>
       <div className="main-navbar-container">
         <h1 className="main-navbar-title">Find Fresh Produce</h1>
         <div className="main-navbar-btn-container">
           {isAuth ? (
-            <div
-              className="circle-btn border-light color-light bg-dark"
-              onClick={handleLogout}
-            >
-              <BiLogOutCircle className="menu-icon" />
-            </div>
+            <CircleBtn appearance="dark" handleClick={handleLogoutClick}>
+              <BiLogOutCircle className="circle-btn-icon" />
+            </CircleBtn>
           ) : (
-            <Link
-              to="/login"
-              className={"circle-btn border-light color-light bg-dark"}
-            >
-              <FaUserAlt className="login-icon" />
-            </Link>
+            <CircleBtn appearance={"dark"} handleClick={handleLoginClick}>
+              <BiUser className="circle-btn-icon" />
+            </CircleBtn>
           )}
-          <div
-            className="circle-btn border-light color-light bg-dark"
-            onClick={() => setShowDropdown(!showDropdown)}
+          <CircleBtn
+            appearance="dark"
+            handleClick={() => setShowDropdown(!showDropdown)}
           >
-            <BiMenu className="menu-icon" />
-          </div>
+            <BiMenu className="circle-btn-icon" />
+          </CircleBtn>
         </div>
       </div>
       <DropdownMenu

@@ -4,6 +4,7 @@ import Filters from "../filters/filters.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
+import CircleBtn from "../cricle-btn/circle-btn";
 
 export default function SearchBar({ filters, setFilters }) {
   const [showFilters, setShowFilters] = useState(false);
@@ -23,16 +24,23 @@ export default function SearchBar({ filters, setFilters }) {
     setShowFilters(true);
   }
 
+  function handleDropdownClick() {
+    setShowDropdown((prev) => !prev);
+    setShowFilters(false);
+  }
+
+  function handleFiltersClick() {
+    setShowFilters((prev) => !prev);
+    setShowDropdown(false);
+  }
+
   return (
     <div className="search-bar">
       <div className="search-container">
         <div className="input-container">
-          <button
-            className="circle-btn border-dark bg-light"
-            onClick={() => navigate(-1)}
-          >
-            <BiArrowBack className="color-dark back-arrow" />
-          </button>
+          <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
+            <BiArrowBack className="color-dark circle-btn-icon" />
+          </CircleBtn>
           <input
             type="text"
             placeholder="Search fruit and veg..."
@@ -44,39 +52,22 @@ export default function SearchBar({ filters, setFilters }) {
               if (e.key === "Enter") handleSearch();
             }}
           />
-          <button
-            className="circle-btn border-dark bg-light"
-            onClick={handleSearch}
-          >
-            <BiSearchAlt className="color-dark" />
-          </button>
+          <CircleBtn appearance="light" handleClickClick={handleSearch}>
+            <BiSearchAlt className="circle-btn-icon" />
+          </CircleBtn>
         </div>
-        <button
-          className={
-            showFilters
-              ? "circle-btn border-light color-dark bg-light"
-              : "circle-btn border-light color-light bg-dark"
-          }
-          onClick={() => {
-            setShowFilters((prev) => !prev);
-            setShowDropdown(false);
-          }}
+        <CircleBtn
+          appearance={showFilters ? "light" : "dark"}
+          handleClick={handleFiltersClick}
         >
-          <BiSliderAlt />
-        </button>
-        <button
-          className={
-            showDropdown
-              ? "circle-btn border-light color-dark bg-light"
-              : "circle-btn border-light color-light bg-dark"
-          }
-          onClick={() => {
-            setShowDropdown((prev) => !prev);
-            setShowFilters(false);
-          }}
+          <BiSliderAlt className="circle-btn-icon" />
+        </CircleBtn>
+        <CircleBtn
+          appearance={showDropdown ? "light" : "dark"}
+          handleClick={handleDropdownClick}
         >
-          <BiMenu />
-        </button>
+          <BiMenu className="circle-btn-icon" />
+        </CircleBtn>
       </div>
       <DropdownMenu
         showDropdown={showDropdown}
