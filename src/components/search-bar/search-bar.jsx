@@ -38,7 +38,7 @@ export default function SearchBar({ filters, setFilters }) {
     <div className="search-bar">
       <div className="search-container">
         <div className="input-container">
-          <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
+          <CircleBtn appearance="light" handleClick={() => navigate("/")}>
             <BiArrowBack className="color-dark circle-btn-icon" />
           </CircleBtn>
           <input
