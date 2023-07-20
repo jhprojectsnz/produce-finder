@@ -115,6 +115,12 @@ export default function SearchResults({
       if (filters.buttonFilters.Organic) {
         if (!stall.organic) return false;
       }
+      if (filters.buttonFilters["Market stall"]) {
+        if (!stall.marketStall) return false;
+      }
+      if (filters.buttonFilters["Eftpos payment"]) {
+        if (!stall.eftposPayment) return false;
+      }
       if (filters.keyword) {
         let hasSearchTerm = false;
         stall.inStock.forEach((item) => {

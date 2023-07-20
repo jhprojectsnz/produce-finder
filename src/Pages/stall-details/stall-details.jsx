@@ -3,10 +3,25 @@ import { BiArrowBack, BiHeart } from "react-icons/bi";
 import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 import FavouriteButton from "../../components/favourite-button/favourite-button";
+import { useMemo } from "react";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
-  const stallIsOpen = isOpen(selectedStall.openTimes);
   const navigate = useNavigate();
+  const stallIsOpen = useMemo(() => isOpen(selectedStall.openTimes));
+
+  //Create an array of li elements for any stall options that are true
+  //If the resulting array contains elements they will be rendered as a list in the about section
+  //Stall options should be added to the array below
+  const stallOptions = useMemo(() =>
+    ["marketStall", "organic", "eftposPayment"]
+      .map((stallOption) => {
+        const formatText = stallOption
+          .replace(/([a-z])([A-Z])/g, "$1 $2")
+          .toLowerCase();
+        return selectedStall[stallOption] ? <li>{formatText}</li> : null;
+      })
+      .filter((li) => li)
+  );
 
   function handleAddressClick() {
     setMapCenter(selectedStall.location);
@@ -45,6 +60,7 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
         <div className="line-separator" />
         <div className="stall-text-subsection">
           <h3>About</h3>
+          {stallOptions.length > 0 && <ul>{stallOptions}</ul>}
           <p>{selectedStall.about}</p>
         </div>
         <div className="line-separator" />

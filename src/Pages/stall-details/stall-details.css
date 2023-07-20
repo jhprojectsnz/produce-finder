@@ -81,14 +81,33 @@
     border-bottom: 1px solid var(--main-dark-color);
 }
 
-.stall-text-subsection h3 {
-    font-size: 0.9rem;
-    color: var(--main-dark-color);
-    margin-bottom: 0.2rem;
-}
-
-.stall-text-subsection p {
+/* CSS nesting used below - not supported in old browsers */
+.stall-text-subsection {
     font-size: 0.8rem;
+
+    & h3 {
+        font-size: 0.9rem;
+        color: var(--main-dark-color);
+        margin-bottom: 0.2rem;
+    }
+
+    & p {
+        font-size: inherit;
+    }
+
+    & ul {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        margin: 0.5rem 0;
+        text-transform: capitalize;
+    }
+
+    & li {
+        list-style-position: inside;
+        font-size: inherit;
+        font-weight: 500;
+    }
 }
 
 .stall-item-container {

@@ -4,6 +4,7 @@ import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
+import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
 import { useUserContext } from "../../context/UserContext";
 
 export default function StallDetailsForm() {
@@ -67,6 +68,9 @@ export default function StallDetailsForm() {
           email: "",
         },
         inStock: [],
+        organic: false,
+        marketStall: false,
+        eftposPayment: false,
       };
 
   const reducerMethod = (formData, action) => {
@@ -104,6 +108,11 @@ export default function StallDetailsForm() {
             ...formData.openTimes,
             ...action.updatedDayData,
           },
+        };
+      case "details":
+        return {
+          ...formData,
+          [action.value]: !formData[action.value],
         };
       default:
         return formData;
@@ -197,7 +206,7 @@ export default function StallDetailsForm() {
         />
       </div>
       <div className="form-input-container">
-        <label htmlFor="about">Default opening times</label>
+        <label htmlFor="about">Open times</label>
         <OpenHoursform openTimes={formData.openTimes} dispatch={dispatch} />
       </div>
       <div className="form-input-container">
@@ -207,11 +216,15 @@ export default function StallDetailsForm() {
           <BiUpload />
         </button>
       </div>
+      <div className="form-input-container">
+        <label htmlFor="image">Stall details</label>
+        <SelectStallDetails formData={formData} dispatch={dispatch} />
+      </div>
       <div className="form-separator">
         <span>Contact details</span>
       </div>
       <p>
-        <strong>Optional</strong> - these will be displayed to allow costumers
+        <strong>Optional</strong> - These will be displayed to allow costumers
         to get in touch with you
       </p>
       <div className="form-input-container">

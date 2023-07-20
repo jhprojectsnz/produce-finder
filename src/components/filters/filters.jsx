@@ -2,10 +2,6 @@ import "./filters.css";
 import { FaTimes } from "react-icons/fa";
 
 export default function Filters({ filters, setFilters, setShowFilters }) {
-  //Add true/false filters to the array below
-  //Also update filter function in search results
-  const filterTypes = ["Open now", "", "Shop", "Click and Collect"];
-
   //Function below run when a true/false filter button is clicked
   function handleFilterClick(filter) {
     setFilters((prev) => {

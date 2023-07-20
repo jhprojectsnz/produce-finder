@@ -1,6 +1,6 @@
 import "./my-stalls.css";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";

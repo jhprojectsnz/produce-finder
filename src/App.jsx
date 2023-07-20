@@ -22,12 +22,15 @@ function App() {
   const [selectedStall, setSelectedStall] = useState({});
   //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
   //Could create a second set of context for this and other shared variables(e.g. mapCenter)?
+  //Or include the filters in the url?
   const [filters, setFilters] = useState({
     keyword: false,
     buttonFilters: {
       "Open now": false,
       "Items in stock": false,
       Organic: false,
+      "Market stall": false,
+      "Eftpos payment": false,
     },
   });
 
@@ -55,7 +58,7 @@ function App() {
               }
             />
             <Route
-              path="/results*"
+              path="/results/*"
               element={
                 <SearchResults
                   setMapCenter={setMapCenter}

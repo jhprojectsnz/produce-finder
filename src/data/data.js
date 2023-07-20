@@ -40,6 +40,8 @@ const stallData = [
     },
   ],
   organic: true,
+  marketStall: false,
+  eftposPayment: true
 },
 {
   stallId: 2,
@@ -81,6 +83,8 @@ const stallData = [
     },
   ],
   organic: true,
+  marketStall: true,
+  eftposPayment: false
 },
 {
   stallId: 3,
@@ -117,6 +121,8 @@ const stallData = [
     },
   ],
   organic: false,
+  marketStall: false,
+  eftposPayment: false
 },{
   stallId: 4,
   ownerId: 24893,
@@ -162,6 +168,8 @@ const stallData = [
     },
   ],
   organic: false,
+  marketStall: false,
+  eftposPayment: true,
 },{
     "stallId": 5,
     "ownerId": null,
@@ -237,7 +245,9 @@ const stallData = [
             "price": "$ 5"
         }
     ],
-    organic: false,
+    organic: true,
+    marketStall: false,
+    eftposPayment: false
 },
 {
     "stallId": 6,
@@ -300,6 +310,8 @@ const stallData = [
         }
     ],
     organic: false,
+    marketStall: true,
+    eftposPayment: true
 },
 {
     "stallId": 7,
@@ -372,6 +384,8 @@ const stallData = [
         }
     ],
     organic: true,
+    marketStall: true,
+    eftposPayment: false
 },
 {
     "stallId": 8,
@@ -428,6 +442,8 @@ const stallData = [
     },
     "inStock": [],
     organic: false,
+    marketStall: false,
+    eftposPayment: false
 },
 {
     "stallId": 9,
@@ -489,7 +505,9 @@ const stallData = [
             "price": "$ 2"
         }
     ],
-    organic: true,
+    organic: false,
+    marketStall: true,
+    eftposPayment: false
 },
 {
     "stallId": 10,
@@ -557,6 +575,8 @@ const stallData = [
         }
     ],
     organic: true,
+    marketStall: true,
+    eftposPayment: false
 },
 {
     "stallId": 11,
@@ -628,7 +648,9 @@ const stallData = [
             "price": "$ 2"
         }
     ],
-    organic: true,
+    organic: false,
+    marketStall: false,
+    eftposPayment: true
 },
 {
     "stallId": 12,
@@ -706,6 +728,8 @@ const stallData = [
         }
     ],
     organic: false,
+    marketStall: true,
+    eftposPayment: false
 },
 {
     "stallId": 13,
@@ -788,6 +812,8 @@ const stallData = [
         }
     ],
     organic: false,
+    marketStall: false,
+    eftposPayment: false
 },]
 
 const users = [
