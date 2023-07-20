@@ -20,7 +20,16 @@ function App() {
   const [mapCenter, setMapCenter] = useState({});
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
-  console.log("app");
+  //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
+  //Could create a second set of context for this and other shared variables(e.g. mapCenter)?
+  const [filters, setFilters] = useState({
+    keyword: false,
+    buttonFilters: {
+      "Open now": false,
+      "Items in stock": false,
+      Organic: false,
+    },
+  });
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
@@ -46,26 +55,28 @@ function App() {
               }
             />
             <Route
-              path="/results"
+              path="/results*"
               element={
                 <SearchResults
                   setMapCenter={setMapCenter}
                   mapCenter={mapCenter}
                   selectedStall={selectedStall}
                   setSelectedStall={setSelectedStall}
+                  filters={filters}
+                  setFilters={setFilters}
                 />
               }
-            ></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/form/:id?" element={<StallDetailsForm />}></Route>
+            />
+            <Route path="/login" element={<Login />} />
+            <Route path="/form/:id?" element={<StallDetailsForm />} />
             <Route
               path="/mystalls"
               element={<MyStalls setSelectedStall={setSelectedStall} />}
-            ></Route>
+            />
             <Route
               path="/favourites"
               element={<Favourites setSelectedStall={setSelectedStall} />}
-            ></Route>
+            />
             <Route
               path="/details"
               element={

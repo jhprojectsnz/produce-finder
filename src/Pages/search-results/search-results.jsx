@@ -2,32 +2,27 @@ import "./search-results.css";
 import SearchBar from "../../components/search-bar/search-bar";
 import ResultsNav from "../../components/results-nav/results-nav";
 import ResultsList from "../../components/results-list/results-list";
+import StallPreview from "../../components/stall-preview/stall-preview";
+import Markers from "../../components/markers/markers";
+// import convertPlaceToStall from "../../functions/convertPlaceToStall";
+import isOpen from "../../functions/isOpen";
 import { useState, useRef, useMemo, useEffect } from "react";
 import { useUserContext } from "../../context/UserContext";
-import StallPreview from "../../components/stall-preview/stall-preview";
 import { GoogleMap } from "@react-google-maps/api";
-// import convertPlaceToStall from "../../functions/convertPlaceToStall";
-import Markers from "../../components/markers/markers";
-import isOpen from "../../functions/isOpen";
+import { useLocation } from "react-router-dom";
 
 export default function SearchResults({
   setMapCenter,
   mapCenter,
   selectedStall,
   setSelectedStall,
+  filters,
+  setFilters,
 }) {
   //Import all stalls from context
   const { stalls, setStalls } = useUserContext();
 
-  const [resultsView, setResultsView] = useState("map");
-  const [filters, setFilters] = useState({
-    keyword: false,
-    buttonFilters: {
-      "Open now": false,
-      "Items in stock": false,
-      Organic: false,
-    },
-  });
+  const location = useLocation();
 
   //Get google map component as a ref
   const mapRef = useRef(null);
@@ -138,7 +133,7 @@ export default function SearchResults({
     <>
       <SearchBar filters={filters} setFilters={setFilters} />
       <div className="search-results">
-        {resultsView === "map" && (
+        {location.pathname === "/results/map" && (
           <>
             <GoogleMap
               ref={mapRef}
@@ -167,13 +162,13 @@ export default function SearchResults({
           </>
         )}
 
-        {resultsView === "list" && (
+        {location.pathname === "/results/list" && (
           <ResultsList
             setSelectedStall={setSelectedStall}
             stallsList={filteredStalls}
           />
         )}
-        <ResultsNav resultsView={resultsView} setResultsView={setResultsView} />
+        <ResultsNav />
       </div>
     </>
   );

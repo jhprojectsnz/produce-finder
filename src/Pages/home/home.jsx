@@ -53,7 +53,7 @@ export default function Home({
           defaultValue={lastSearchLocation}
         />
       </Autocomplete>
-      <Link to="/results" className="home-search-btn">
+      <Link to="/results/map" className="home-search-btn">
         Search <BiSearchAlt className="home-search-icon" />
       </Link>
     </section>
