@@ -1,5 +1,5 @@
 import "./stall-details.css";
-import { BiArrowBack, BiHeart } from "react-icons/bi";
+import { BiArrowBack } from "react-icons/bi";
 import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 import FavouriteButton from "../../components/favourite-button/favourite-button";
@@ -25,7 +25,7 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
 
   function handleAddressClick() {
     setMapCenter(selectedStall.location);
-    navigate("/results");
+    navigate("/results/map");
   }
 
   return (
