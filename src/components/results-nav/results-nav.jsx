@@ -1,7 +1,7 @@
 import "./results-nav.css";
 import { Link, useLocation } from "react-router-dom";
 
-export default function ResultsNav() {
+export default function ResultsNav({ updateMapCenter }) {
   const location = useLocation();
   return (
     <div className="results-nav">
@@ -22,6 +22,7 @@ export default function ResultsNav() {
             ? "results-nav-btn nav-btn-selected"
             : "results-nav-btn"
         }
+        onClick={updateMapCenter}
       >
         List
       </Link>

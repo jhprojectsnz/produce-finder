@@ -17,7 +17,11 @@ import StallDetails from "./Pages/stall-details/stall-details.jsx";
 const libraries = ["places"];
 
 function App() {
-  const [mapCenter, setMapCenter] = useState({});
+  const defaultMapCenter = {
+    lat: -36.850821266967884,
+    lng: 174.76444851328998,
+  };
+  const [mapCenter, setMapCenter] = useState(defaultMapCenter);
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
   //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
@@ -40,6 +44,7 @@ function App() {
   });
 
   if (!isLoaded) return <div>Loading...</div>;
+  console.log("app");
 
   return (
     <div className="app">

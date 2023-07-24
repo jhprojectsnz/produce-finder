@@ -135,6 +135,13 @@ export default function SearchResults({
     });
   });
 
+  const mapStyles = [
+    {
+      featureType: "poi",
+      stylers: [{ visibility: "off" }],
+    },
+  ];
+
   return (
     <>
       <SearchBar filters={filters} setFilters={setFilters} />
@@ -148,7 +155,7 @@ export default function SearchResults({
               mapContainerClassName="map"
               clickableIcons={false}
               onClick={() => setSelectedStall({})}
-              options={{ disableDefaultUI: true }}
+              options={{ disableDefaultUI: true, styles: mapStyles }}
               // onIdle={handleOnIdol}
             >
               {console.log("map")}
@@ -174,7 +181,7 @@ export default function SearchResults({
             stallsList={filteredStalls}
           />
         )}
-        <ResultsNav />
+        <ResultsNav updateMapCenter={updateMapCenter} />
       </div>
     </>
   );
