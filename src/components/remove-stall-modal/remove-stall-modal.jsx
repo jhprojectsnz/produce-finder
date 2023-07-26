@@ -5,7 +5,6 @@ export default function RemoveStallModal({
   setUserStalls,
   setDisplayRemoveStallModal,
 }) {
-  console.log(removeStall);
   function handleDeleteStall() {
     setUserStalls((prev) => {
       console.log(prev);
