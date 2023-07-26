@@ -47,6 +47,7 @@ export default function MainNavBar() {
       <DropdownMenu
         showDropdown={showDropdown}
         setShowDropdown={setShowDropdown}
+        handleLogoutClick={handleLogoutClick}
       />
     </div>
   );

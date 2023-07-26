@@ -2,7 +2,11 @@ import "./dropdown-menu.css";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";
 
-export default function DropdownMenu({ showDropdown, setShowDropdown }) {
+export default function DropdownMenu({
+  showDropdown,
+  setShowDropdown,
+  handleLogoutClick,
+}) {
   const { isAuth } = useUserContext();
 
   return (
@@ -36,6 +40,16 @@ export default function DropdownMenu({ showDropdown, setShowDropdown }) {
             onClick={() => setShowDropdown(false)}
           >
             My Stalls
+          </Link>
+          <Link
+            to="/"
+            className="dropdown-menu-link"
+            onClick={() => {
+              setShowDropdown(false);
+              handleLogoutClick();
+            }}
+          >
+            Log out
           </Link>
         </>
       ) : (
