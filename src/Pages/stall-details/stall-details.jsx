@@ -3,10 +3,18 @@ import { BiArrowBack } from "react-icons/bi";
 import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 import FavouriteButton from "../../components/favourite-button/favourite-button";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
   const navigate = useNavigate();
+
+  //If a user navigates to this page without a stall being selected navigate back on page
+  //Most likely cause of this is user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
+  if (!selectedStall.stallId) {
+    useEffect(() => navigate(-1), []);
+    return <></>;
+  }
+
   const stallIsOpen = useMemo(() => isOpen(selectedStall.openTimes));
 
   //Create an array of li elements for any stall options that are true
@@ -18,7 +26,9 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
         const formatText = stallOption
           .replace(/([a-z])([A-Z])/g, "$1 $2")
           .toLowerCase();
-        return selectedStall[stallOption] ? <li>{formatText}</li> : null;
+        return selectedStall[stallOption] ? (
+          <li key={formatText}>{formatText}</li>
+        ) : null;
       })
       .filter((li) => li)
   );
@@ -33,7 +43,6 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
       <button
         className="stall-details-btn back-btn"
         onClick={() => {
-          console.log("back");
           navigate(-1);
         }}
       >

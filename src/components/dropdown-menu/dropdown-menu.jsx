@@ -18,15 +18,15 @@ export default function DropdownMenu({
       >
         Home
       </Link>
-      <Link
-        to="/"
-        className="dropdown-menu-link"
-        onClick={() => setShowDropdown(false)}
-      >
-        About
-      </Link>
       {isAuth ? (
         <>
+          <Link
+            to="/mystalls"
+            className="dropdown-menu-link"
+            onClick={() => setShowDropdown(false)}
+          >
+            My Stalls
+          </Link>
           <Link
             to="/favourites"
             className="dropdown-menu-link"
@@ -35,11 +35,11 @@ export default function DropdownMenu({
             Favourites
           </Link>
           <Link
-            to="/mystalls"
+            to="/"
             className="dropdown-menu-link"
             onClick={() => setShowDropdown(false)}
           >
-            My Stalls
+            About
           </Link>
           <Link
             to="/"
@@ -53,13 +53,22 @@ export default function DropdownMenu({
           </Link>
         </>
       ) : (
-        <Link
-          to="/login"
-          className="dropdown-menu-link"
-          onClick={() => setShowDropdown(false)}
-        >
-          Log in
-        </Link>
+        <>
+          <Link
+            to="/"
+            className="dropdown-menu-link"
+            onClick={() => setShowDropdown(false)}
+          >
+            About
+          </Link>
+          <Link
+            to="/login"
+            className="dropdown-menu-link"
+            onClick={() => setShowDropdown(false)}
+          >
+            Log in
+          </Link>
+        </>
       )}
     </div>
   );

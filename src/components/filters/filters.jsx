@@ -5,7 +5,6 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
   //Function below run when a true/false filter button is clicked
   function handleFilterClick(filter) {
     setFilters((prev) => {
-      console.log(prev.buttonFilters[filter]);
       const newObj = {
         ...prev,
         buttonFilters: {
@@ -13,7 +12,6 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
           [filter]: !prev.buttonFilters[filter],
         },
       };
-      console.log(newObj);
       return newObj;
     });
   }
