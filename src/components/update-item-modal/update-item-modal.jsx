@@ -1,4 +1,5 @@
 import { useUserContext } from "../../context/UserContext";
+import ButtonStd from "../button-std/button-std";
 import "./update-item-modal.css";
 import { useState } from "react";
 
@@ -9,7 +10,6 @@ export default function UpdateItemModal({
 }) {
   const { stalls, setStalls } = useUserContext();
 
-  console.log(stalls, stallId);
   //Find the original item data in the stalls data using the stall and item indexs
   const originalItem = Number.isInteger(itemIndex)
     ? stalls.filter((stall) => stall.stallId === stallId)[0].inStock[itemIndex]
@@ -44,10 +44,8 @@ export default function UpdateItemModal({
         })
       );
     } else {
-      console.log("else");
       setStalls((prev) =>
         prev.map((stall) => {
-          console.log(stall.stallId, stallId);
           return stall.stallId === stallId
             ? {
                 ...stall,
@@ -111,15 +109,15 @@ export default function UpdateItemModal({
           <p className="item-update-error">New item must include a name</p>
         )}
         <div className="item-update-btn-container">
-          <button
-            className="item-update-btn item-update-cancel"
-            onClick={() => setDisplayItemModal(false)}
+          <ButtonStd
+            appearance="light"
+            handleClick={() => setDisplayItemModal(false)}
           >
             Cancel
-          </button>
-          <button className="item-update-btn" onClick={handleSubmit}>
+          </ButtonStd>
+          <ButtonStd appearance="dark" handleClick={handleSubmit}>
             Submit
-          </button>
+          </ButtonStd>
         </div>
       </div>
     </div>

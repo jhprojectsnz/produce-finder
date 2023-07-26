@@ -1,31 +1,30 @@
+import ButtonStd from "../button-std/button-std";
 import "./results-nav.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function ResultsNav({ updateMapCenter }) {
   const location = useLocation();
+  const navigate = useNavigate();
+
   return (
     <div className="results-nav">
-      <Link
-        to="/results/map"
-        className={
-          location.pathname === "/results/map"
-            ? "results-nav-btn nav-btn-selected"
-            : "results-nav-btn"
-        }
+      <ButtonStd
+        appearance={location.pathname === "/results/map" ? "dark" : "light"}
+        options={["shadow", "long"]}
+        handleClick={() => navigate("/results/map")}
       >
         Map
-      </Link>
-      <Link
-        to="/results/list"
-        className={
-          location.pathname === "/results/list"
-            ? "results-nav-btn nav-btn-selected"
-            : "results-nav-btn"
-        }
-        onClick={updateMapCenter}
+      </ButtonStd>
+      <ButtonStd
+        appearance={location.pathname === "/results/list" ? "dark" : "light"}
+        options={["shadow", "long"]}
+        handleClick={() => {
+          navigate("/results/list");
+          updateMapCenter();
+        }}
       >
         List
-      </Link>
+      </ButtonStd>
     </div>
   );
 }

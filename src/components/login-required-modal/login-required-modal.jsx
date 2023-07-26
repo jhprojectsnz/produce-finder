@@ -1,3 +1,4 @@
+import ButtonStd from "../button-std/button-std";
 import "./login-required-modal.css";
 import { useNavigate } from "react-router-dom";
 
@@ -12,18 +13,15 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
           vegetable growers.
         </p>
         <div className="item-update-btn-container">
-          <button
-            className="item-update-btn item-update-cancel"
-            onClick={() => setShowLoginModal(false)}
+          <ButtonStd
+            appearance="light"
+            handleClick={() => setShowLoginModal(false)}
           >
             Back
-          </button>
-          <button
-            className="item-update-btn"
-            onClick={() => navigate("/login")}
-          >
+          </ButtonStd>
+          <ButtonStd appearance="dark" handleClick={() => navigate("/login")}>
             Login
-          </button>
+          </ButtonStd>
         </div>
       </div>
     </div>

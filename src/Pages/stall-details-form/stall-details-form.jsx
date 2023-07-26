@@ -6,6 +6,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import OpenHoursform from "../../components/open-hours-form/open-hours-form";
 import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
 import { useUserContext } from "../../context/UserContext";
+import ButtonStd from "../../components/button-std/button-std";
 
 export default function StallDetailsForm() {
   const { id } = useParams();
@@ -250,12 +251,12 @@ export default function StallDetailsForm() {
         />
       </div>
       <div className="form-btn-container">
-        <button className="form-cancel-btn" onClick={handleCancel}>
+        <ButtonStd appearance="light" handleClick={handleCancel}>
           Cancel
-        </button>
-        <button className="form-submit-btn" onClick={handleSubmit}>
+        </ButtonStd>
+        <ButtonStd appearance="dark" handleClick={handleSubmit}>
           Submit
-        </button>
+        </ButtonStd>
       </div>
     </section>
   );

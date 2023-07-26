@@ -13,7 +13,7 @@ export default function ResultsList({ setSelectedStall, stallsList }) {
         return (
           <div
             className="result-container"
-            key={stall.id}
+            key={stall.stallId}
             onClick={() => {
               setSelectedStall(stall);
               navigate("/details");

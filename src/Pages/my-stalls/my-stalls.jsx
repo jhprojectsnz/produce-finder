@@ -2,12 +2,14 @@ import "./my-stalls.css";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
-import { Link } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";
 import RemoveStallModal from "../../components/remove-stall-modal/remove-stall-modal";
+import ButtonStd from "../../components/button-std/button-std";
+import { useNavigate } from "react-router-dom";
 
 export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
+  const navigate = useNavigate();
 
   const [userStalls, setUserStalls] = useState([]);
   const [displayRemoveStallModal, setDisplayRemoveStallModal] = useState(false);
@@ -26,7 +28,7 @@ export default function MyStalls({ setSelectedStall }) {
 
   function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>
-      prev.map((stall, index) => {
+      prev.map((stall) => {
         return stall.stallId === stallId
           ? {
               ...stall,
@@ -84,29 +86,34 @@ export default function MyStalls({ setSelectedStall }) {
               </button>
             </div>
             <div className="update-btn-container">
-              <button
-                className="update-btn delete-stall"
-                onClick={() => setDisplayRemoveStallModal(stall)}
+              <ButtonStd
+                appearance={"red"}
+                handleClick={() => setDisplayRemoveStallModal(stall)}
               >
                 Remove
-              </button>
-              <Link to={`/form/${stall.stallId}`} className="update-btn">
+              </ButtonStd>
+              <ButtonStd
+                appearance={"dark"}
+                handleClick={() => navigate(`/form/${stall.stallId}`)}
+              >
                 Edit details
-              </Link>
-              <Link
-                to={"/details"}
-                className="update-btn"
-                onClick={() => setSelectedStall(stall)}
+              </ButtonStd>
+              <ButtonStd
+                appearance={"dark"}
+                handleClick={() => {
+                  setSelectedStall(stall);
+                  navigate("/details");
+                }}
               >
                 Preview
-              </Link>
+              </ButtonStd>
             </div>
           </div>
         );
       })}
-      <Link to="/form" className="add-stall-btn">
+      <button onClick={() => navigate("/form")} className="add-stall-btn">
         Add Stall
-      </Link>
+      </button>
       {displayItemModal && (
         <UpdateItemModal
           stallId={displayItemModal.stallId}

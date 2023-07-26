@@ -1,3 +1,4 @@
+import ButtonStd from "../button-std/button-std";
 import "./filters.css";
 import { FaTimes } from "react-icons/fa";
 
@@ -32,32 +33,24 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
         <>
           <div className="filter">
             <p className="filter-title">Stalls selling:</p>
-            <div className="filter-btn narrow-btn">
+            <ButtonStd appearance="grey">
               {filters.keyword}
               <FaTimes className="remove-icon" onClick={handleRemoveKeyword} />
-            </div>
+            </ButtonStd>
           </div>
           <div className="separator-line" />
         </>
       )}
-
-      <div className="filter-vertical">
-        <p className="filter-title">Show stalls:</p>
-        <div className="filter-btn-container">
-          {Object.keys(filters.buttonFilters).map((filter) => (
-            <button
-              className={
-                filters.buttonFilters[filter]
-                  ? "filter-btn filter-selected"
-                  : "filter-btn"
-              }
-              key={filter}
-              onClick={() => handleFilterClick(filter)}
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
+      <div className="filter-btn-container">
+        {Object.keys(filters.buttonFilters).map((filter) => (
+          <ButtonStd
+            appearance={filters.buttonFilters[filter] ? "dark" : "grey"}
+            key={filter}
+            handleClick={() => handleFilterClick(filter)}
+          >
+            {filter}
+          </ButtonStd>
+        ))}
       </div>
     </div>
   );

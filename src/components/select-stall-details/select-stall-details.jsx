@@ -1,36 +1,29 @@
 import "./select-stall-details.css";
+import ButtonStd from "../button-std/button-std";
 
 export default function SelectStallDetails({ dispatch, formData }) {
-  function handleClick(e) {
-    dispatch({ type: "details", value: e.target.id });
-  }
-
   return (
     <div className="select-details-container">
-      <button
-        className={
-          formData.marketStall ? "filter-btn filter-selected" : "filter-btn"
-        }
-        onClick={() => dispatch({ type: "details", value: "marketStall" })}
+      <ButtonStd
+        appearance={formData.marketStall ? "dark" : "grey"}
+        handleClick={() => dispatch({ type: "details", value: "marketStall" })}
       >
         Market stall
-      </button>
-      <button
-        className={
-          formData.organic ? "filter-btn filter-selected" : "filter-btn"
-        }
-        onClick={() => dispatch({ type: "details", value: "organic" })}
+      </ButtonStd>
+      <ButtonStd
+        appearance={formData.organic ? "dark" : "grey"}
+        handleClick={() => dispatch({ type: "details", value: "organic" })}
       >
         Organic
-      </button>
-      <button
-        className={
-          formData.eftposPayment ? "filter-btn filter-selected" : "filter-btn"
+      </ButtonStd>
+      <ButtonStd
+        appearance={formData.eftposPayment ? "dark" : "grey"}
+        handleClick={() =>
+          dispatch({ type: "details", value: "eftposPayment" })
         }
-        onClick={() => dispatch({ type: "details", value: "eftposPayment" })}
       >
         Eftpos payment
-      </button>
+      </ButtonStd>
     </div>
   );
 }

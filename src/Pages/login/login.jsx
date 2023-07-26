@@ -5,6 +5,7 @@ import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
 import { users } from "../../data/data";
 import { useNavigate } from "react-router-dom";
+import ButtonStd from "../../components/button-std/button-std";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
@@ -57,9 +58,9 @@ export default function Login() {
         <p className="login-error">Email or password do not match known user</p>
       )}
       <p className="login-text-link">Forgot your password?</p>
-      <button className="login-btn" onClick={handleLogin}>
+      <ButtonStd appearance="dark" options={["long"]} handleClick={handleLogin}>
         Log in
-      </button>
+      </ButtonStd>
       <div className="login-separator">
         <span>OR</span>
       </div>
@@ -83,7 +84,9 @@ export default function Login() {
         <FaLock className="login-input-icon" />
         <input type="password" name="confirm-password" required />
       </div>
-      <button className="login-btn">Sign up</button>
+      <ButtonStd appearance="dark" options={["long"]}>
+        Sign up
+      </ButtonStd>
     </section>
   );
 }

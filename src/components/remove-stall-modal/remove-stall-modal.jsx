@@ -1,3 +1,4 @@
+import ButtonStd from "../button-std/button-std";
 import "./remove-stall-modal.css";
 
 export default function RemoveStallModal({
@@ -7,7 +8,6 @@ export default function RemoveStallModal({
 }) {
   function handleDeleteStall() {
     setUserStalls((prev) => {
-      console.log(prev);
       return prev.filter((stall) => stall.stallId != removeStall.stallId);
     });
     setDisplayRemoveStallModal(false);
@@ -22,18 +22,15 @@ export default function RemoveStallModal({
           <strong>{removeStall.name}</strong> ?
         </p>
         <div className="item-update-btn-container">
-          <button
-            className="item-update-btn item-update-cancel"
-            onClick={() => setDisplayRemoveStallModal(false)}
+          <ButtonStd
+            appearance="light"
+            handleClick={() => setDisplayRemoveStallModal(false)}
           >
             Back
-          </button>
-          <button
-            className="item-update-btn remove-stall-btn"
-            onClick={handleDeleteStall}
-          >
+          </ButtonStd>
+          <ButtonStd appearance="red" handleClick={handleDeleteStall}>
             Remove
-          </button>
+          </ButtonStd>
         </div>
       </div>
     </div>
