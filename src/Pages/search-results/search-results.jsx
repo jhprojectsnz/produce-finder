@@ -4,9 +4,8 @@ import ResultsNav from "../../components/results-nav/results-nav";
 import ResultsList from "../../components/results-list/results-list";
 import StallPreview from "../../components/stall-preview/stall-preview";
 import Markers from "../../components/markers/markers";
-// import convertPlaceToStall from "../../functions/convertPlaceToStall";
 import isOpen from "../../functions/isOpen";
-import { useState, useRef, useMemo, useEffect } from "react";
+import { useState, useRef, useMemo } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { GoogleMap } from "@react-google-maps/api";
 import { useLocation } from "react-router-dom";
@@ -20,66 +19,20 @@ export default function SearchResults({
   setFilters,
 }) {
   //Import all stalls from context
-  const { stalls, setStalls } = useUserContext();
-
+  const { stalls } = useUserContext();
+  //location used to find current pathname and use that for conditional rendering
   const location = useLocation();
+
+  const [mapBounds, setMapBounds] = useState(false);
 
   //Get google map component as a ref
   const mapRef = useRef(null);
 
-  //Use this along with the handleOnIdol function
-  // handleOnIdol updates stalls variable causing rerender when bounds changed
-  // const stallsWithinMapBounds = useMemo(() => {
-  //   const mapBounds = mapRef.current
-  //     ? mapRef.current.state.map.getBounds()
-  //     : null;
-  //   return mapBounds
-  //     ? stalls.filter((stall) =>
-  //         mapBounds.contains(
-  //           new google.maps.LatLng(stall.location.lat, stall.location.lng)
-  //         )
-  //       )
-  //     : [];
-  // });
-
-  //This cost to use, only activate when needed
-  //Use small dummy set of stalls for development
-  // function handleOnIdol() {
-  //   // Filter all stalls to those within new map bounds and save to state
-  //   // Stalls that are within the current map bounds will be shown as markers and appear in the results list
-  //   if (mapRef.current) {
-  //     //Access the PlacesService required to do a nearby search
-  //     const service = new google.maps.places.PlacesService(
-  //       mapRef.current.state.map
-  //     );
-
-  //     const mapBounds = mapRef.current.state.map.getBounds();
-
-  //     //Set request parameters for the nearby search
-  //     const request = {
-  //       keyword: "orchard",
-  //       bounds: mapBounds,
-  //     };
-  //     //Perform nearby search, convert places to stalls and then save new stalls to context
-  //     service.nearbySearch(request, (results, status) => {
-  //       if (status == google.maps.places.PlacesServiceStatus.OK) {
-  //         setStalls((prevStalls) => {
-  //           //Create a set containing IDs of all current stalls
-  //           //Allows for a quick check if new places are already in stalls data
-  //           const currentStallIds = new Set();
-  //           prevStalls.forEach((stall) => currentStallIds.add(stall.stallId));
-  //           //Filter out places that are already in stalls data
-  //           //Then convert the places data to dummy stalls data
-  //           const newPlacesAsStalls = results
-  //             .filter((place) => !currentStallIds.has(place.place_id))
-  //             .map((place) => convertPlaceToStall(place));
-  //           //Add the new dummy stalls to the current stalls data
-  //           return [...prevStalls, ...newPlacesAsStalls];
-  //         });
-  //       }
-  //     });
-  //   }
-  // }
+  //This function is run every time a use pauses after zooming or scrolling the map
+  //Stores the new map bounds to state. This causes a rerender and updates filteredStalls
+  function handleOnIdol() {
+    setMapBounds(mapRef.current.state.map.getBounds());
+  }
 
   //This function is used to update mapCenter variable when navigating away from the map component
   function updateMapCenter() {
@@ -90,6 +43,8 @@ export default function SearchResults({
     setMapCenter(currentCenter);
   }
 
+  //Make a array of stalls, first filtered by map bounds and then by user filters
+  //The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
     //Make a set of related words to the searched word
     //The items in a stall are checked against this set
@@ -104,8 +59,17 @@ export default function SearchResults({
         ])
       : null;
 
+    //Filter all stalls to just those within the current map bounds
+    const stallsWithinMapBounds = mapBounds
+      ? stalls.filter((stall) =>
+          mapBounds.contains(
+            new google.maps.LatLng(stall.location.lat, stall.location.lng)
+          )
+        )
+      : [];
+
     //Return stalls filtered by selected filters
-    return stalls.filter((stall) => {
+    return stallsWithinMapBounds.filter((stall) => {
       if (filters.buttonFilters["Open now"]) {
         if (!isOpen(stall.openTimes)) return false;
       }
@@ -135,6 +99,7 @@ export default function SearchResults({
     });
   });
 
+  //Styles for the Google map - switch of points of interest to make map clearer
   const mapStyles = [
     {
       featureType: "poi",
@@ -156,7 +121,7 @@ export default function SearchResults({
               clickableIcons={false}
               onClick={() => setSelectedStall({})}
               options={{ disableDefaultUI: true, styles: mapStyles }}
-              // onIdle={handleOnIdol}
+              onIdle={handleOnIdol}
             >
               {console.log("map")}
               <Markers
