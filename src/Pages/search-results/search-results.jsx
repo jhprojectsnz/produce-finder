@@ -13,6 +13,8 @@ import { useLocation } from "react-router-dom";
 export default function SearchResults({
   setMapCenter,
   mapCenter,
+  setMapZoom,
+  mapZoom,
   selectedStall,
   setSelectedStall,
   filters,
@@ -35,12 +37,14 @@ export default function SearchResults({
   }
 
   //This function is used to update mapCenter variable when navigating away from the map component
-  function updateMapCenter() {
+  function updateMapSettings() {
     const currentCenter = {
       lat: mapRef.current.state.map.center.lat(),
       lng: mapRef.current.state.map.center.lng(),
     };
+    const currentZoom = mapRef.current.state.map.getZoom();
     setMapCenter(currentCenter);
+    setMapZoom(currentZoom);
   }
 
   //Make a array of stalls, first filtered by map bounds and then by user filters
@@ -115,7 +119,7 @@ export default function SearchResults({
           <>
             <GoogleMap
               ref={mapRef}
-              zoom={13}
+              zoom={mapZoom}
               center={mapCenter}
               mapContainerClassName="map"
               clickableIcons={false}
@@ -134,7 +138,7 @@ export default function SearchResults({
               <StallPreview
                 selectedStall={selectedStall}
                 setSelectedStall={setSelectedStall}
-                updateMapCenter={updateMapCenter}
+                updateMapCenter={updateMapSettings}
               />
             )}
           </>
@@ -146,7 +150,7 @@ export default function SearchResults({
             stallsList={filteredStalls}
           />
         )}
-        <ResultsNav updateMapCenter={updateMapCenter} />
+        <ResultsNav updateMapCenter={updateMapSettings} />
       </div>
     </>
   );

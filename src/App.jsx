@@ -23,6 +23,7 @@ function App() {
     lng: 174.76444851328998,
   };
   const [mapCenter, setMapCenter] = useState(defaultMapCenter);
+  const [mapZoom, setMapZoom] = useState(13);
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
   //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
@@ -69,6 +70,8 @@ function App() {
                 <SearchResults
                   setMapCenter={setMapCenter}
                   mapCenter={mapCenter}
+                  setMapZoom={setMapZoom}
+                  mapZoom={mapZoom}
                   selectedStall={selectedStall}
                   setSelectedStall={setSelectedStall}
                   filters={filters}

@@ -7,7 +7,7 @@ const UserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState({});
   const [isAuth, setIsAuth] = useState(false);
   //For now store all stall data in context
-  //That way it can be updated and won't be refreshed unless page is refreshed
+  //That way it can be updated and won't be reset unless page is refreshed
   const [stalls, setStalls] = useState(stallData);
 
   return (
