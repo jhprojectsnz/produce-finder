@@ -156,37 +156,41 @@ const fruitAndVeges = [
 
 const units = ['kg', "each", "100 g", "bag", "small bag"]
 
-const phoneNumbers = [4937493, 39048390, 3483984, 283908023, 20940398, 84344543, "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+const phoneNumbers = [4937493, 39048390, 3483984, 283908023, 20940398, 84344543, "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 
-//The function below will convert the data for a single place from Google places into a stall
-export function convertPlaceToStall(place) {
+//Converts an array of location data into an array of stall data
+export default function convertLocationsToStalls(array) {
 
-  const inStockBlankArray = new Array(randomNumber(6)).fill("blank");
-  const inStockArray = inStockBlankArray.map(item => (
-      {
-        item: fruitAndVeges[randomNumber(fruitAndVeges.length)],
-        amount: units[randomNumber(units.length)],
-        price: `$ ${randomNumber(6) + 1}`,
+    return array.map((location) => {
+      //Randomly generate stock for the current stall (up to 5 items)
+      const inStockBlankArray = new Array(randomNumber(6)).fill("blank");
+      const inStockArray = inStockBlankArray.map(item => (
+          {
+            item: fruitAndVeges[randomNumber(fruitAndVeges.length)],
+            amount: units[randomNumber(units.length)],
+            price: `$ ${randomNumber(6) + 1}`,
+          }
+        )
+      )
+      //Generate the rest of the stall data
+      return {
+        stallId: location.stallId,
+        ownerId: null,
+        name: stallNames[randomNumber(stallNames.length)],
+        address: location.address,
+        location: location.location,
+        about: 'EXAMPLE ONLY: This is an example of a fruit/vegetable seller and all details have been made up. Sellers can include more information here such as growing methods, what they have avaliable in different seasons etc.',
+        img: images[randomNumber(images.length)],
+        openTimes: openTimesArray[randomNumber(openTimesArray.length)],
+        contactDetails: {
+          phone: phoneNumbers[randomNumber(phoneNumbers.length)],
+          email: "",
+        },
+        inStock: inStockArray,
+        organic: randomNumber(10) > 5,
+        marketStall: randomNumber(10) > 8,
+        eftposPayment: randomNumber(10) > 7
       }
-    )
-  )
-  const stallData = {
-      stallId: place.place_id,
-      ownerId: null,
-      name: stallNames[randomNumber(stallNames.length)],
-      address: place.vicinity,
-      location: {lat: place.geometry.location.lat(), lng: place.geometry.location.lng()},
-      locationType: "",
-      about: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est deleniti reiciendis recusandae necessitatibus natus dolores aliquid quo odit nulla laborum facilis, voluptatibus provident veritatis, adipisci numquam rerum laudantium minus sit!',
-      img: images[randomNumber(images.length)],
-      openTimes: openTimesArray[randomNumber(openTimesArray.length)],
-      contactDetails: {
-        phone: phoneNumbers[randomNumber(phoneNumbers.length)],
-        email: "",
-      },
-      inStock: inStockArray,
-   
-    }
+    })
   
-  return stallData
-}
+  }
