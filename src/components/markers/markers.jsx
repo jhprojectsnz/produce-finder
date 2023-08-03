@@ -50,12 +50,19 @@ export default function Markers({
   };
 
   function markerType(stallId) {
-    if (stallId === selectedStall.stallId) return selectedIcon;
-    if (currentUser.userId && currentUser.stalls.includes(stallId))
-      return userIcon;
-    if (currentUser.userId && currentUser.favouriteStalls.includes(stallId))
-      return favIcon;
-    return markerIcon;
+    if (currentUser.userId && currentUser.stalls.includes(stallId)) {
+      return stallId === selectedStall.stallId
+        ? { ...userIcon, scale: 0.08, strokeWeight: 2.5 }
+        : userIcon;
+    }
+    if (currentUser.userId && currentUser.favouriteStalls.includes(stallId)) {
+      return stallId === selectedStall.stallId
+        ? { ...favIcon, scale: 0.04, fillColor: "#E31515" }
+        : favIcon;
+    }
+    return stallId === selectedStall.stallId
+      ? { ...markerIcon, fillColor: "#00801C", scale: 0.08 }
+      : markerIcon;
   }
 
   return filteredStalls.map((stall) => (
