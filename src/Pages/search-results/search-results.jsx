@@ -74,21 +74,20 @@ export default function SearchResults({
 
     //Return stalls filtered by selected filters
     return stallsWithinMapBounds.filter((stall) => {
-      if (filters.buttonFilters["Open now"]) {
-        if (!isOpen(stall.openTimes)) return false;
-      }
-      if (filters.buttonFilters["Items in stock"]) {
-        if (stall.inStock.length < 1) return false;
-      }
-      if (filters.buttonFilters.Organic) {
-        if (!stall.organic) return false;
-      }
-      if (filters.buttonFilters["Market stall"]) {
-        if (!stall.marketStall) return false;
-      }
-      if (filters.buttonFilters["Eftpos payment"]) {
-        if (!stall.eftposPayment) return false;
-      }
+      if (filters.buttonFilters["Open now"] && !isOpen(stall.openTimes))
+        return false;
+
+      if (filters.buttonFilters["Items in stock"] && stall.inStock.length < 1)
+        return false;
+
+      if (filters.buttonFilters.Organic && !stall.organic) return false;
+
+      if (filters.buttonFilters["Market stall"] && !stall.marketStall)
+        return false;
+
+      if (filters.buttonFilters["Eftpos payment"] && !stall.eftposPayment)
+        return false;
+
       if (filters.keyword) {
         let hasSearchTerm = false;
         stall.inStock.forEach((item) => {

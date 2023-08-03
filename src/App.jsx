@@ -11,7 +11,6 @@ import Favourites from "./Pages/favourites/favourites.jsx";
 import UserProvider from "./context/UserContext.jsx";
 import MainNavBar from "./components/main-navbar/main-navbar.jsx";
 import StallDetails from "./Pages/stall-details/stall-details.jsx";
-import APITest from "./Pages/API-test/API-test.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
@@ -89,7 +88,6 @@ function App() {
               path="/favourites"
               element={<Favourites setSelectedStall={setSelectedStall} />}
             />
-            <Route path="/API" element={<APITest />} />
             <Route
               path="/details"
               element={
