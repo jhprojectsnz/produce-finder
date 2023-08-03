@@ -21,6 +21,11 @@ function App() {
     lat: -36.850821266967884,
     lng: 174.76444851328998,
   };
+  const [mapDetails, setMapDetails] = useState({
+    center: defaultMapCenter,
+    zoom: 13,
+    bounds: false,
+  });
   const [mapCenter, setMapCenter] = useState(defaultMapCenter);
   const [mapZoom, setMapZoom] = useState(13);
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
@@ -67,6 +72,8 @@ function App() {
               path="/results/*"
               element={
                 <SearchResults
+                  mapDetails={mapDetails}
+                  setMapDetails={setMapDetails}
                   setMapCenter={setMapCenter}
                   mapCenter={mapCenter}
                   setMapZoom={setMapZoom}

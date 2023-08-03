@@ -5,27 +5,23 @@ import ResultsList from "../../components/results-list/results-list";
 import StallPreview from "../../components/stall-preview/stall-preview";
 import Markers from "../../components/markers/markers";
 import isOpen from "../../functions/isOpen";
-import { useState, useRef, useMemo } from "react";
+import { useRef, useMemo } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { GoogleMap } from "@react-google-maps/api";
 import { useLocation } from "react-router-dom";
 
 export default function SearchResults({
-  setMapCenter,
-  mapCenter,
-  setMapZoom,
-  mapZoom,
   selectedStall,
   setSelectedStall,
   filters,
   setFilters,
+  mapDetails,
+  setMapDetails,
 }) {
   //Import all stalls from context
   const { stalls } = useUserContext();
   //location used to find current pathname and use that for conditional rendering
   const location = useLocation();
-
-  const [mapBounds, setMapBounds] = useState(false);
 
   //Get google map component as a ref
   const mapRef = useRef(null);
@@ -33,7 +29,10 @@ export default function SearchResults({
   //This function is run every time a use pauses after zooming or scrolling the map
   //Stores the new map bounds to state. This causes a rerender and updates filteredStalls
   function handleOnIdol() {
-    setMapBounds(mapRef.current.state.map.getBounds());
+    setMapDetails((prev) => ({
+      ...prev,
+      mapBounds: mapRef.current.state.map.getBounds(),
+    }));
   }
 
   //This function is used to update mapCenter variable when navigating away from the map component
@@ -43,8 +42,11 @@ export default function SearchResults({
       lng: mapRef.current.state.map.center.lng(),
     };
     const currentZoom = mapRef.current.state.map.getZoom();
-    setMapCenter(currentCenter);
-    setMapZoom(currentZoom);
+    setMapDetails((prev) => ({
+      ...prev,
+      center: currentCenter,
+      zoom: currentZoom,
+    }));
   }
 
   //Make a array of stalls, first filtered by map bounds and then by user filters
@@ -64,9 +66,9 @@ export default function SearchResults({
       : null;
 
     //Filter all stalls to just those within the current map bounds
-    const stallsWithinMapBounds = mapBounds
+    const stallsWithinMapBounds = mapDetails.mapBounds
       ? stalls.filter((stall) =>
-          mapBounds.contains(
+          mapDetails.mapBounds.contains(
             new google.maps.LatLng(stall.location.lat, stall.location.lng)
           )
         )
@@ -118,8 +120,8 @@ export default function SearchResults({
           <>
             <GoogleMap
               ref={mapRef}
-              zoom={mapZoom}
-              center={mapCenter}
+              zoom={mapDetails.zoom}
+              center={mapDetails.center}
               mapContainerClassName="map"
               clickableIcons={false}
               onClick={() => setSelectedStall({})}
@@ -128,7 +130,7 @@ export default function SearchResults({
             >
               {console.log("map")}
               <Markers
-                stallsWithinMapBounds={filteredStalls}
+                filteredStalls={filteredStalls}
                 selectedStall={selectedStall}
                 setSelectedStall={setSelectedStall}
               />
