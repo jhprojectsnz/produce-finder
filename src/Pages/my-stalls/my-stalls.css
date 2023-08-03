@@ -30,8 +30,13 @@
     font-size: 0.8rem;
 }
 
+/* CSS nesting - not supported in all browsers */
 .stall-update-container p {
     font-size: 0.8rem;
+
+    &:first-letter {
+        text-transform: capitalize;
+    }
 }
 
 .open-update-container {

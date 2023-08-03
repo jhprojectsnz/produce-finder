@@ -4,6 +4,7 @@ import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 import FavouriteButton from "../../components/favourite-button/favourite-button";
 import { useMemo, useEffect } from "react";
+import CircleBtn from "../../components/cricle-btn/circle-btn";
 
 export default function StallDetails({ selectedStall, setMapCenter }) {
   const navigate = useNavigate();
@@ -40,17 +41,18 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
 
   return (
     <section className="stall-details">
-      <button
-        className="stall-details-btn back-btn"
-        onClick={() => {
-          navigate(-1);
-        }}
-      >
-        <BiArrowBack className="color-dark" />
-      </button>
-
-      <div className="stall-details-btn fav-btn">
-        <FavouriteButton selectedStall={selectedStall} />
+      <div className="stall-details-btn-container">
+        <CircleBtn
+          appearance={"light"}
+          handleClick={() => {
+            navigate(-1);
+          }}
+        >
+          <BiArrowBack className="color-dark" />
+        </CircleBtn>
+        <CircleBtn appearance={"light"}>
+          <FavouriteButton selectedStall={selectedStall} />
+        </CircleBtn>
       </div>
       <img className="stall-image" src={selectedStall.img} />
       <div className="stall-details-text">
@@ -76,7 +78,7 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
         <div className="stall-text-subsection">
           <h3>In Stock Now</h3>
           {selectedStall.inStock.length === 0 ? (
-            <p>Currently out of Stock</p>
+            <p>Currently out of stock</p>
           ) : (
             selectedStall.inStock.map((item) => (
               <div
@@ -112,7 +114,8 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
             );
           })}
         </div>
-        {selectedStall.contactDetails && (
+        {(selectedStall.contactDetails.email ||
+          selectedStall.contactDetails.phone) && (
           <>
             <div className="line-separator" />
             <div className="stall-text-subsection">
