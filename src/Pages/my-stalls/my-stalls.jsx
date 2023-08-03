@@ -12,6 +12,7 @@ export default function MyStalls({ setSelectedStall }) {
   const navigate = useNavigate();
 
   const [userStalls, setUserStalls] = useState([]);
+  const [displayItemModal, setDisplayItemModal] = useState(false);
   const [displayRemoveStallModal, setDisplayRemoveStallModal] = useState(false);
 
   useEffect(() => {
@@ -23,8 +24,6 @@ export default function MyStalls({ setSelectedStall }) {
     );
     setUserStalls(userStalls);
   }, [currentUser, stalls]);
-
-  const [displayItemModal, setDisplayItemModal] = useState(false);
 
   function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>

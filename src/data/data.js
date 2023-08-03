@@ -1,7 +1,7 @@
 const stallData = [
     {
         "stallId": 1,
-        "ownerId": null,
+        "ownerId": 57304,
         "name": "The Pineapple Patch",
         "address": "Barclay Road, Aria",
         "location": {
@@ -58,7 +58,7 @@ const stallData = [
     },
     {
         "stallId": 2,
-        "ownerId": null,
+        "ownerId": 57304,
         "name": "The Fruit Stand",
         "address": "15 Abbott Road, Waikino",
         "location": {
@@ -19921,7 +19921,7 @@ const users = [
     email: "fakeemail@test.com",
     password: "password",
     stalls: [1, 2],
-    favouriteStalls: [3, 4],
+    favouriteStalls: [10, 30, 23, 103, 140, 12, 203, 240, 34, 92, 111],
   },
   {
     userId: 24232,
