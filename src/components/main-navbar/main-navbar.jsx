@@ -16,6 +16,7 @@ export default function MainNavBar() {
   function handleLogoutClick() {
     setIsAuth(false);
     setCurrentUser({});
+    navigate("/");
   }
 
   function handleLoginClick() {
