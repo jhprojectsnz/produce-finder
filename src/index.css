@@ -4,8 +4,8 @@
   --main-dark-color: #00801C;
   --main-light-color: #C2FFB2;
   --text-color: rgb(29,29,29);
+  --modal-background-color:  rgba(63, 63, 63, 0.8);
   font-family: 'Poppins', Verdana, sans-serif;
-
 }
 
 .color-dark {

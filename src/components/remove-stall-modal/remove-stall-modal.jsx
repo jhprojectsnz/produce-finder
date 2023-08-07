@@ -14,14 +14,14 @@ export default function RemoveStallModal({
   }
 
   return (
-    <div className="update-item-modal-container">
-      <div className="update-item-modal-content">
+    <div className="remove-stall-modal-container">
+      <div className="remove-stall-modal-content">
         <h5>Remove Stall</h5>
         <p>
-          Are you sure you want to permenantly remove{" "}
+          {"Are you sure you want to permenantly remove "}
           <strong>{removeStall.name}</strong> ?
         </p>
-        <div className="item-update-btn-container">
+        <div className="remove-stall-btn-container">
           <ButtonStd
             appearance="light"
             handleClick={() => setDisplayRemoveStallModal(false)}

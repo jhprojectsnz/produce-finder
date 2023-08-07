@@ -50,9 +50,7 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
         >
           <BiArrowBack className="color-dark" />
         </CircleBtn>
-        <CircleBtn appearance={"light"}>
-          <FavouriteButton selectedStall={selectedStall} />
-        </CircleBtn>
+        <FavouriteButton selectedStall={selectedStall} buttonStyle={true} />
       </div>
       <img className="stall-image" src={selectedStall.img} />
       <div className="stall-details-text">
