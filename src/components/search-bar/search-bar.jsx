@@ -37,31 +37,34 @@ export default function SearchBar({ filters, setFilters }) {
   return (
     <div className="search-bar">
       <div className="search-container">
-        <div className="input-container">
-          <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
-            <BiArrowBack className="color-dark circle-btn-icon" />
-          </CircleBtn>
-          <input
-            type="text"
-            placeholder="Search fruit and veg..."
-            className="search-input"
-            onFocus={() => setShowFilters(true)}
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleSearch();
-            }}
-          />
-          <CircleBtn appearance="light" handleClickClick={handleSearch}>
-            <BiSearchAlt className="circle-btn-icon" />
+        <h1 className="search-title">Find Fresh Produce</h1>
+        <div className="search-elements">
+          <div className="input-container">
+            <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
+              <BiArrowBack className="color-dark circle-btn-icon" />
+            </CircleBtn>
+            <input
+              type="text"
+              placeholder="Search fruit and veg..."
+              className="search-input"
+              onFocus={() => setShowFilters(true)}
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSearch();
+              }}
+            />
+            <CircleBtn appearance="light" handleClickClick={handleSearch}>
+              <BiSearchAlt className="circle-btn-icon" />
+            </CircleBtn>
+          </div>
+          <CircleBtn
+            appearance={showFilters ? "light" : "dark"}
+            handleClick={handleFiltersClick}
+          >
+            <BiSliderAlt className="circle-btn-icon" />
           </CircleBtn>
         </div>
-        <CircleBtn
-          appearance={showFilters ? "light" : "dark"}
-          handleClick={handleFiltersClick}
-        >
-          <BiSliderAlt className="circle-btn-icon" />
-        </CircleBtn>
         <CircleBtn
           appearance={showDropdown ? "light" : "dark"}
           handleClick={handleDropdownClick}
