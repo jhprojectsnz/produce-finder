@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     height: 150px;
     background-color: white;
     margin: 0.5rem 0;
@@ -50,11 +50,56 @@
 .result-text {
     color: rgb(55, 55, 55);
     text-transform: capitalize;
+    word-spacing: 0.1rem;
 }
 
 .result-status {
     position: absolute;
     bottom: 10px;
-    color:green;
     font-weight: bold;
 }
+
+/* On screens larger than 700px change card style */
+@media screen and (min-width: 700px) {
+    .results-list {
+        padding: 5rem 2rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .result-container {
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 15px;
+    }
+
+    .result-text-container {
+        padding: 1rem;
+    }
+
+    .result-image {
+        max-width: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        min-height: 250px; 
+        border-radius: 15px 15px 0 0;
+    }
+
+    .result-title {
+        font-size: 0.9rem;
+    }
+
+    .result-text {
+       font-size: 0.8rem;
+      
+    }
+
+    .result-status {
+        bottom: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
