@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
     z-index: -1;
     background-color: var(--main-light-color);
     animation: open-animation 0.3s ease-in-out forwards;
@@ -31,5 +32,17 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Make the dropdown menu small and on the right hand side for large screens */
+@media screen and (min-width: 460px) {
+    .dropdown-menu {
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        max-width: 200px;
+        box-shadow: 1px 0 10px rgb(88, 88, 88);
+    }
+    
 }
 
