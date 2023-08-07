@@ -62,8 +62,22 @@ export default function SearchResults({
           filters.keyword,
           filters.keyword.replace(/s$/, ""),
           filters.keyword.concat("s"),
+          filters.keyword
+            .charAt(0)
+            .toUpperCase()
+            .concat(filters.keyword.slice(1)),
+          filters.keyword
+            .charAt(0)
+            .toUpperCase()
+            .concat(filters.keyword.slice(1).replace(/s$/, "")),
+          filters.keyword
+            .charAt(0)
+            .toUpperCase()
+            .concat(filters.keyword.slice(1).concat("s")),
         ])
       : null;
+
+    console.log(matchTerms);
 
     //Filter all stalls to just those within the current map bounds
     const stallsWithinMapBounds = mapDetails.mapBounds

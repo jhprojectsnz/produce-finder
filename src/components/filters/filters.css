@@ -1,6 +1,7 @@
 .filters-container {
     position: relative;
     width: 100%;
+    max-width: 600px;
     background-color: var(--main-light-color);
     padding: 1rem;
     font-size: 0.8rem;
