@@ -5,7 +5,11 @@ import { useNavigate } from "react-router-dom";
 export default function LoginRequiredModal({ setShowLoginModal }) {
   const navigate = useNavigate();
   return (
-    <div className="update-item-modal-container">
+    <div
+      className="update-item-modal-container"
+      // Add this onClick so click events do on propagate to elements beneath the modal
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="update-item-modal-content">
         <h5>Login required</h5>
         <p>
@@ -15,11 +19,18 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
         <div className="item-update-btn-container">
           <ButtonStd
             appearance="light"
-            handleClick={() => setShowLoginModal(false)}
+            handleClick={(e) => {
+              setShowLoginModal(false);
+            }}
           >
             Back
           </ButtonStd>
-          <ButtonStd appearance="dark" handleClick={() => navigate("/login")}>
+          <ButtonStd
+            appearance="dark"
+            handleClick={(e) => {
+              navigate("/login");
+            }}
+          >
             Login
           </ButtonStd>
         </div>

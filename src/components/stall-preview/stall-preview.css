@@ -6,12 +6,10 @@
     transform: translate(-50%, 0);
     right: 0;
     width: 85%;
+    max-width: 600px;
     height: 110px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-     /* remove styling applied by using <Link/>  */
-     text-decoration: inherit;
-     color: inherit;
 }
   
 .info-text-container{
