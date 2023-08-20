@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home({
-  setMapCenter,
+  setMapDetails,
   lastSearchLocation,
   setLastSearchLocation,
 }) {
@@ -21,10 +21,13 @@ export default function Home({
   function placesChanged() {
     if (!searchBox) return;
     const place = searchBox.getPlace();
-    setMapCenter({
-      lat: place.geometry.location.lat(),
-      lng: place.geometry.location.lng(),
-    });
+    setMapDetails((prev) => ({
+      ...prev,
+      center: {
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng(),
+      },
+    }));
     //store search location so it can be repopulated if user clicks back to home
     setLastSearchLocation(place.formatted_address);
   }

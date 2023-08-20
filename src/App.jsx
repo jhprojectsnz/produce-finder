@@ -16,7 +16,7 @@ import StallDetails from "./Pages/stall-details/stall-details.jsx";
 // array should not be passed directly to the libraries prop
 const libraries = ["places"];
 
-function App() {
+export default function App() {
   const defaultMapCenter = {
     lat: -36.850821266967884,
     lng: 174.76444851328998,
@@ -26,8 +26,6 @@ function App() {
     zoom: 13,
     bounds: false,
   });
-  const [mapCenter, setMapCenter] = useState(defaultMapCenter);
-  const [mapZoom, setMapZoom] = useState(13);
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
   //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
@@ -62,7 +60,7 @@ function App() {
               path="/"
               element={
                 <Home
-                  setMapCenter={setMapCenter}
+                  setMapDetails={setMapDetails}
                   lastSearchLocation={lastSearchLoaction}
                   setLastSearchLocation={setLastSearchLocation}
                 />
@@ -74,10 +72,6 @@ function App() {
                 <SearchResults
                   mapDetails={mapDetails}
                   setMapDetails={setMapDetails}
-                  setMapCenter={setMapCenter}
-                  mapCenter={mapCenter}
-                  setMapZoom={setMapZoom}
-                  mapZoom={mapZoom}
                   selectedStall={selectedStall}
                   setSelectedStall={setSelectedStall}
                   filters={filters}
@@ -100,7 +94,7 @@ function App() {
               element={
                 <StallDetails
                   selectedStall={selectedStall}
-                  setMapCenter={setMapCenter}
+                  setMapDetails={setMapDetails}
                 />
               }
             />
@@ -110,5 +104,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

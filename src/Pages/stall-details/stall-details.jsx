@@ -6,7 +6,7 @@ import FavouriteButton from "../../components/favourite-button/favourite-button"
 import { useMemo, useEffect } from "react";
 import CircleBtn from "../../components/cricle-btn/circle-btn";
 
-export default function StallDetails({ selectedStall, setMapCenter }) {
+export default function StallDetails({ selectedStall, setMapDetails }) {
   const navigate = useNavigate();
 
   //If a user navigates to this page without a stall being selected navigate back on page
@@ -35,7 +35,8 @@ export default function StallDetails({ selectedStall, setMapCenter }) {
   );
 
   function handleAddressClick() {
-    setMapCenter(selectedStall.location);
+    console.log(selectedStall);
+    setMapDetails((prev) => ({ ...prev, center: selectedStall.location }));
     navigate("/results/map");
   }
 
