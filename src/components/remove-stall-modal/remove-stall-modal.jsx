@@ -2,24 +2,17 @@ import ButtonStd from "../button-std/button-std";
 import "./remove-stall-modal.css";
 
 export default function RemoveStallModal({
-  removeStall,
-  setUserStalls,
+  stallToRemove,
   setDisplayRemoveStallModal,
+  handleDeleteStall,
 }) {
-  function handleDeleteStall() {
-    setUserStalls((prev) => {
-      return prev.filter((stall) => stall.stallId != removeStall.stallId);
-    });
-    setDisplayRemoveStallModal(false);
-  }
-
   return (
     <div className="remove-stall-modal-container">
       <div className="remove-stall-modal-content">
         <h5>Remove Stall</h5>
         <p>
           {"Are you sure you want to permenantly remove "}
-          <strong>{removeStall.name}</strong> ?
+          <strong>{stallToRemove.name}</strong> ?
         </p>
         <div className="remove-stall-btn-container">
           <ButtonStd
@@ -28,7 +21,10 @@ export default function RemoveStallModal({
           >
             Back
           </ButtonStd>
-          <ButtonStd appearance="red" handleClick={handleDeleteStall}>
+          <ButtonStd
+            appearance="red"
+            handleClick={() => handleDeleteStall(stallToRemove.stallId)}
+          >
             Remove
           </ButtonStd>
         </div>

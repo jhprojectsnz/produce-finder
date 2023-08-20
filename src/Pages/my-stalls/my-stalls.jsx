@@ -25,6 +25,8 @@ export default function MyStalls({ setSelectedStall }) {
     setUserStalls(userStalls);
   }, [currentUser, stalls]);
 
+  //This function runs when bin icon next to an item (fruit or vegetable) is clicked
+  //The stalls array in context is updated, with the clicked item removed from the relevant stall
   function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>
       prev.map((stall) => {
@@ -38,6 +40,15 @@ export default function MyStalls({ setSelectedStall }) {
           : stall;
       })
     );
+  }
+
+  //This function runs when "Remove"  button within the remove stall modal is clicked
+  //It will remove the selected stall from the stalls array stored in context
+  function handleDeleteStall(selectedStallId) {
+    setStalls((prev) =>
+      prev.filter((stall) => stall.stallId != selectedStallId)
+    );
+    setDisplayRemoveStallModal(false);
   }
 
   return (
@@ -122,9 +133,9 @@ export default function MyStalls({ setSelectedStall }) {
       )}
       {displayRemoveStallModal && (
         <RemoveStallModal
-          removeStall={displayRemoveStallModal}
+          stallToRemove={displayRemoveStallModal}
           setDisplayRemoveStallModal={setDisplayRemoveStallModal}
-          setUserStalls={setUserStalls}
+          handleDeleteStall={handleDeleteStall}
         />
       )}
     </section>
