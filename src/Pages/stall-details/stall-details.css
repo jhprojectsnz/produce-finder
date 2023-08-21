@@ -96,6 +96,11 @@
     grid-template-columns: 1fr 1fr;
 }
 
+/* button container for wide screen only */
+.stall-details-wide-btn-container {
+    display: none;
+}
+
 /* make the top image larger on screens wider than 500px */
 @media screen and (min-width: 500px) {
     .stall-image {
@@ -106,6 +111,8 @@
 /* Different format for desktop and tablets  */
 @media screen and (min-width: 700px) {
     .stall-details {
+        position: relative;
+        margin: auto;
         display: grid;
         grid-template-columns: auto auto;
         /* set height for first two rows - contains title and address */
@@ -149,6 +156,15 @@
     .stall-text-subsection {
         width: 100%;
         padding: 1rem 0.5rem;
+    }
+
+    .stall-details-wide-btn-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
     }
    
     /* below are classes to place elements in specific grid cells */

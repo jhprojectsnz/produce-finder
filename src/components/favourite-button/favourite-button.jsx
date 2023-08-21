@@ -4,6 +4,7 @@ import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
 import LoginRequiredModal from "../login-required-modal/login-required-modal";
 import CircleBtn from "../cricle-btn/circle-btn";
+import ButtonStd from "../button-std/button-std";
 
 export default function FavouriteButton({ selectedStall, buttonStyle }) {
   const { currentUser, setCurrentUser } = useUserContext();
@@ -34,18 +35,33 @@ export default function FavouriteButton({ selectedStall, buttonStyle }) {
   }
 
   const currentFavIcon = isCurrentFavourite ? (
-    <FaHeart className="fav-icon favourite" onClick={handleClick} />
+    <FaHeart className="fav-icon favourite" />
   ) : (
-    <FaRegHeart className="fav-icon" onClick={handleClick} />
+    <FaRegHeart className="fav-icon" />
   );
 
   return (
     <>
-      {buttonStyle ? (
-        <CircleBtn appearance={"light"}>{currentFavIcon}</CircleBtn>
-      ) : (
-        currentFavIcon
+      {buttonStyle === "plain" && (
+        <div className="plain-container" onClick={handleClick}>
+          {currentFavIcon}
+        </div>
       )}
+      {buttonStyle === "circle" && (
+        <CircleBtn handleClick={handleClick} appearance={"light"}>
+          {currentFavIcon}
+        </CircleBtn>
+      )}
+      {buttonStyle === "long" && (
+        <ButtonStd
+          handleClick={handleClick}
+          appearance={"light"}
+          options={["long"]}
+        >
+          Favourite{currentFavIcon}
+        </ButtonStd>
+      )}
+
       {showLoginModal && (
         <LoginRequiredModal setShowLoginModal={setShowLoginModal} />
       )}

@@ -23,7 +23,7 @@ export default function ResultsList({ setSelectedStall, stallsList }) {
             <div className="result-text-container">
               <div className="result-title-container">
                 <h5 className="result-title">{stall.name}</h5>
-                <FavouriteButton selectedStall={stall} buttonStyle={false} />
+                <FavouriteButton selectedStall={stall} buttonStyle={"plain"} />
               </div>
               <p className="result-text">
                 {stall.inStock.length > 0
