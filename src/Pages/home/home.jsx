@@ -1,5 +1,4 @@
 import "./home.css";
-import homeBackground from "../../assets/home-background.jpg";
 import { BiSearchAlt } from "react-icons/bi";
 import { Autocomplete } from "@react-google-maps/api";
 import { useState } from "react";

@@ -35,7 +35,6 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
   );
 
   function handleAddressClick() {
-    console.log(selectedStall);
     setMapDetails((prev) => ({ ...prev, center: selectedStall.location }));
     navigate("/results/map");
   }
@@ -54,82 +53,79 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
         <FavouriteButton selectedStall={selectedStall} buttonStyle={true} />
       </div>
       <img className="stall-image" src={selectedStall.img} />
-      <div className="stall-details-text">
-        <div className="stall-title-container">
-          <h2 className="stall-name">{selectedStall.name}</h2>
-          <p
-            className="stall-status"
-            style={{ color: stallIsOpen ? "green" : "red" }}
-          >
-            {stallIsOpen ? "Open" : "Closed"}
-          </p>
-        </div>
-        <div className="stall-address" onClick={handleAddressClick}>
-          {selectedStall.address}
-        </div>
-        <div className="line-separator" />
-        <div className="stall-text-subsection">
-          <h3>About</h3>
-          {stallOptions.length > 0 && <ul>{stallOptions}</ul>}
-          <p>{selectedStall.about}</p>
-        </div>
-        <div className="line-separator" />
-        <div className="stall-text-subsection">
-          <h3>In Stock Now</h3>
-          {selectedStall.inStock.length === 0 ? (
-            <p>Currently out of stock</p>
-          ) : (
-            selectedStall.inStock.map((item) => (
-              <div
-                className="stall-item-container"
-                key={`${selectedStall.stallId}-${item.item}`}
-              >
-                {item.amount ? (
-                  <p>{`${item.item} (${item.amount})`}</p>
-                ) : (
-                  <p>{`${item.item}`}</p>
-                )}
-                {item.price && <p>{item.price}</p>}
-              </div>
-            ))
-          )}
-        </div>
-        <div className="line-separator" />
-        <div className="stall-text-subsection">
-          <h3>Opening hours</h3>
-          {Object.keys(selectedStall.openTimes).map((day) => {
-            return (
-              <div
-                className="stall-time-container"
-                key={`${selectedStall.id}-${day}`}
-              >
-                <p>{day}</p>
-                <p>
-                  {selectedStall.openTimes[day].open
-                    ? `${selectedStall.openTimes[day].openTime} - ${selectedStall.openTimes[day].closeTime}`
-                    : "Closed"}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-        {(selectedStall.contactDetails.email ||
-          selectedStall.contactDetails.phone) && (
-          <>
-            <div className="line-separator" />
-            <div className="stall-text-subsection">
-              <h3>Contact</h3>
-              {Object.keys(selectedStall.contactDetails).map((contact) =>
-                selectedStall.contactDetails[contact] ? (
-                  <p
-                    key={selectedStall.contactDetails[contact]}
-                  >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
-                ) : null
+      <div className="stall-title-container left-col row-one">
+        <h2 className="stall-name">{selectedStall.name}</h2>
+        <p
+          className="stall-status"
+          style={{ color: stallIsOpen ? "green" : "red" }}
+        >
+          {stallIsOpen ? "Open" : "Closed"}
+        </p>
+      </div>
+      <div
+        className="stall-address left-col row-two"
+        onClick={handleAddressClick}
+      >
+        {selectedStall.address}
+      </div>
+      <div className="stall-text-subsection left-col row-four">
+        <h3>About</h3>
+        {stallOptions.length > 0 && <ul>{stallOptions}</ul>}
+        <p>{selectedStall.about}</p>
+      </div>
+      <div className="stall-text-subsection row-three">
+        <h3>In Stock Now</h3>
+        {selectedStall.inStock.length === 0 ? (
+          <p>Currently out of stock</p>
+        ) : (
+          selectedStall.inStock.map((item) => (
+            <div
+              className="stall-item-container"
+              key={`${selectedStall.stallId}-${item.item}`}
+            >
+              {item.amount ? (
+                <p>{`${item.item} (${item.amount})`}</p>
+              ) : (
+                <p>{`${item.item}`}</p>
               )}
+              {item.price && <p>{item.price}</p>}
             </div>
-          </>
+          ))
         )}
       </div>
+      <div className="stall-text-subsection right-col row-four">
+        <h3>Opening hours</h3>
+        {Object.keys(selectedStall.openTimes).map((day) => {
+          return (
+            <div
+              className="stall-time-container"
+              key={`${selectedStall.id}-${day}`}
+            >
+              <p>{day}</p>
+              <p>
+                {selectedStall.openTimes[day].open
+                  ? `${selectedStall.openTimes[day].openTime} - ${selectedStall.openTimes[day].closeTime}`
+                  : "Closed"}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+      {(selectedStall.contactDetails.email ||
+        selectedStall.contactDetails.phone) && (
+        <>
+          <div className="stall-text-subsection left-col">
+            <h3>Contact</h3>
+            {Object.keys(selectedStall.contactDetails).map((contact) =>
+              selectedStall.contactDetails[contact] ? (
+                <p
+                  key={selectedStall.contactDetails[contact]}
+                >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
+              ) : null
+            )}
+          </div>
+        </>
+      )}
     </section>
   );
 }

@@ -1,15 +1,16 @@
 .stall-details {
+    /* use absolute position to place over the navbar */
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     flex-direction: column;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 10000;
-    background-color: white;
 }
 
+/* navigation buttons - shown for small screens only */
 .stall-details-btn-container {
     position: absolute;
     top:0;
@@ -26,47 +27,33 @@
     object-fit: cover;
 }
 
-.stall-details-text {
-    width: 100%;
-    padding: 1rem;
-}
-
+/* title and stall status in this container */
 .stall-title-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 1rem 0.2rem;
+    font-weight: 600;
 }
 
 .stall-name {
     font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.stall-status {
-    color: green;
-    font-weight: bold;
-}
-
-.stall-likes {
-    font-size: 0.8rem;
-    color: rgb(73, 73, 73);
 }
 
 .stall-address {
+    width: 100%;
+    padding: 0 1rem 1rem;
     font-size: 0.8rem;
     text-decoration: underline;
 }
 
-.line-separator {
-    width: 100%;
-    margin: 1rem auto;
-    border-bottom: 1px solid var(--main-dark-color);
-}
-
 /* CSS nesting used below - not supported in old browsers */
 .stall-text-subsection {
+    width: 90%;
+    padding: 1rem 0;
     font-size: 0.8rem;
+    border-top: 1px solid var(--main-dark-color) ;
 
     & h3 {
         font-size: 0.9rem;
@@ -74,29 +61,27 @@
         margin-bottom: 0.2rem;
     }
 
-    & p {
-        font-size: inherit;
-    }
-
     & p:first-letter {
         text-transform: capitalize;
     }
 
+    /* labels in the about section (e.g. Organic) */
     & ul {
         width: 100%;
         display: flex;
         gap: 1rem;
-        margin: 0.5rem 0;
+        margin: 0.2rem 0 0.5rem;
         text-transform: capitalize;
     }
 
     & li {
         list-style-position: inside;
-        font-size: inherit;
         font-weight: 500;
     }
 }
 
+/* line for an individual fruit or vege */
+/* grid to separate item and dollar amount */
 .stall-item-container {
     width: 100%;
     display: grid;
@@ -105,7 +90,89 @@
 }
 
 .stall-time-container {
-    width: 20rem;
+    width: 100%;
+    min-width: 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* make the top image larger on screens wider than 500px */
+@media screen and (min-width: 500px) {
+    .stall-image {
+        height: 20rem;
+    }
+}
+
+/* Different format for desktop and tablets  */
+@media screen and (min-width: 700px) {
+    .stall-details {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* set height for first two rows - contains title and address */
+        grid-template-rows: 2.5rem 2rem auto auto;
+        gap: 0 2rem;
+        align-items: start;
+        /* set max-width so not too streched on large screen */
+        max-width: 900px;
+        /* large top padding to push down below nav */
+        padding: 6rem 2rem 0;
+    }
+
+    /* hide top buttons on larger screens */
+    .stall-details-btn-container {
+        display: none;
+    }
+
+    .stall-image {
+        height: 15rem;
+        width: auto;
+        grid-column: 2;
+        grid-row: 1 / 4;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .stall-title-container {
+        padding: 0;
+    }
+
+    .stall-name {
+        font-size: 1.5rem;
+    }
+    
+    .stall-address {
+        padding: 0;
+    }
+    
+    .stall-text-subsection {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+   
+    /* below are classes to place elements in specific grid cells */
+    .left-col {
+        grid-column: 1;
+    }
+
+    .right-col {
+        grid-column: 2;
+    }
+
+    .row-one {
+        grid-row: 1;
+    }
+
+    .row-two {
+        grid-row: 2;
+    }
+
+    .row-three {
+        grid-row: 3;
+    }
+
+    .row-four {
+        grid-row: 4;
+    }
+} 
