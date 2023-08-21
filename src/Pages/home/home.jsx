@@ -33,32 +33,29 @@ export default function Home({
   }
 
   return (
-    <section className="homepage">
-      <img
-        src={homeBackground}
-        alt="Home page background"
-        className="home-background"
-      />
-      <div className="home-main-text">
-        <h2>Fresh fruit and vegetables</h2>
-        <h2>Direct from the grower</h2>
-        <p>Find produce stalls and shops near you</p>
-      </div>
-      <Autocomplete
-        onLoad={onSearchBoxLoad}
-        onPlaceChanged={placesChanged}
-        restrictions={{ country: "nz" }}
-      >
-        <input
-          type="text"
-          placeholder="Enter address, city or postcode..."
-          className="home-search-input"
-          defaultValue={lastSearchLocation}
-        />
-      </Autocomplete>
-      <Link to="/results/map" className="home-search-btn">
-        Search <BiSearchAlt className="home-search-icon" />
-      </Link>
-    </section>
+    <div className="homepage">
+      <section className="hero">
+        <div className="home-main-text">
+          <h2>Fresh fruit and vegetables</h2>
+          <h2>Direct from the grower</h2>
+          <p>Find produce stalls and shops near you</p>
+        </div>
+        <Autocomplete
+          onLoad={onSearchBoxLoad}
+          onPlaceChanged={placesChanged}
+          restrictions={{ country: "nz" }}
+        >
+          <input
+            type="text"
+            placeholder="Enter address, city or postcode..."
+            className="home-search-input"
+            defaultValue={lastSearchLocation}
+          />
+        </Autocomplete>
+        <Link to="/results/map" className="home-search-btn">
+          Search <BiSearchAlt className="home-search-icon" />
+        </Link>
+      </section>
+    </div>
   );
 }
