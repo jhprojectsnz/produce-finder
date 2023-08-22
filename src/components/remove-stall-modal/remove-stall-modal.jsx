@@ -11,7 +11,7 @@ export default function RemoveStallModal({
       <div className="remove-stall-modal-content">
         <h5>Remove Stall</h5>
         <p>
-          {"Are you sure you want to permenantly remove "}
+          {"Are you sure you want to permanently remove "}
           <strong>{stallToRemove.name}</strong> ?
         </p>
         <div className="remove-stall-btn-container">

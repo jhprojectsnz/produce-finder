@@ -26,7 +26,9 @@ export default function MainNavBar() {
   return (
     <div className={location.pathname != "/results" ? "main-navbar" : "hide"}>
       <div className="main-navbar-container">
-        <h1 className="main-navbar-title">Find Fresh Produce</h1>
+        <h1 className="main-navbar-title" onClick={() => navigate("/")}>
+          Find Fresh Produce
+        </h1>
         <div className="main-navbar-btn-container">
           {isAuth ? (
             <CircleBtn appearance="dark" handleClick={handleLogoutClick}>

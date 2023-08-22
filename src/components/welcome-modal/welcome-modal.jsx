@@ -18,12 +18,12 @@ export default function WelcomeModal({ setShowWelcomeModal }) {
           demonstration
         </p>
         <p className="bold">
-          Login in using the guest account details to get the full experience
-          including:
+          Try logging in using the guest account details to get the full
+          experience including:
         </p>
         <ul>
           <li>Creating test stalls of your own</li>
-          <li>Managing stock or modifing details of existing stalls</li>
+          <li>Managing stock or modifying details of existing stalls</li>
           <li>Saving stalls to favourites</li>
         </ul>
         <p>

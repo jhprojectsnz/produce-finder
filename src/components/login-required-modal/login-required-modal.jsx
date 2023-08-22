@@ -13,8 +13,8 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
       <div className="login-required-modal-content">
         <h5>Login required</h5>
         <p>
-          Log in or create an account to follow all of your favourite fruit and
-          vegetable growers.
+          Log in or create an account to add fruit and vegetable sellers to your
+          favourites
         </p>
         <div className="login-required-btn-container">
           <ButtonStd

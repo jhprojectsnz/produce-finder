@@ -13,6 +13,7 @@
 
 .welcome-modal-content {
     width: 85%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     padding: 2.5rem;

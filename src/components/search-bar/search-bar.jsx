@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
 import CircleBtn from "../cricle-btn/circle-btn";
 
-export default function SearchBar({ filters, setFilters }) {
+export default function SearchBar({ filters, setFilters, setSelectedStall }) {
   const [showFilters, setShowFilters] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
@@ -21,6 +21,7 @@ export default function SearchBar({ filters, setFilters }) {
       keyword: searchTerm,
     }));
     setSearchTerm("");
+    setSelectedStall({});
     setShowFilters(true);
   }
 
@@ -54,7 +55,7 @@ export default function SearchBar({ filters, setFilters }) {
                 if (e.key === "Enter") handleSearch();
               }}
             />
-            <CircleBtn appearance="light" handleClickClick={handleSearch}>
+            <CircleBtn appearance="light" handleClick={handleSearch}>
               <BiSearchAlt className="circle-btn-icon" />
             </CircleBtn>
           </div>

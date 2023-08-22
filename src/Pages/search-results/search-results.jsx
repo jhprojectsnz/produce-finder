@@ -77,8 +77,6 @@ export default function SearchResults({
         ])
       : null;
 
-    console.log(matchTerms);
-
     //Filter all stalls to just those within the current map bounds
     const stallsWithinMapBounds = mapDetails.mapBounds
       ? stalls.filter((stall) =>
@@ -128,7 +126,11 @@ export default function SearchResults({
 
   return (
     <>
-      <SearchBar filters={filters} setFilters={setFilters} />
+      <SearchBar
+        filters={filters}
+        setFilters={setFilters}
+        setSelectedStall={setSelectedStall}
+      />
       <div className="search-results">
         {location.pathname === "/results/map" && (
           <>

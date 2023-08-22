@@ -255,7 +255,7 @@ export default function StallDetailsForm() {
           Cancel
         </ButtonStd>
         <ButtonStd appearance="dark" handleClick={handleSubmit}>
-          Submit
+          {stallForUpdate ? "Save" : "Submit"}
         </ButtonStd>
       </div>
     </section>
