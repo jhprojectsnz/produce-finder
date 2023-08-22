@@ -3,11 +3,7 @@ import "./welcome-modal.css";
 
 export default function WelcomeModal({ setShowWelcomeModal }) {
   return (
-    <div
-      className="welcome-modal-container"
-      // Add this onClick so click events do not propagate to elements beneath the modal
-      onClick={(e) => e.stopPropagation()}
-    >
+    <div className="welcome-modal-container">
       <div className="welcome-modal-content">
         <h3>Find Fresh Produce</h3>
         <h5>Demo version</h5>

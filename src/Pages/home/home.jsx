@@ -11,15 +11,19 @@ export default function Home({
 }) {
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
-  //could try to change this so there are less rerenders on loading?
-  //avoid using state to store searchbox?
+  //Could try to change this so there are less rerenders on loading?
+  //Avoid using state to store searchbox?
   const onSearchBoxLoad = (ref) => setSearchBox(ref);
 
   //Run whenever a new place is entered into the search bar
   //Uses the location of the place searched to update map center
   function placesChanged() {
+    //If searchBox has not been defined - do nothing
     if (!searchBox) return;
     const place = searchBox.getPlace();
+    //If the place searched doesn't have geometry information - do nothing
+    if (!place.geometry) return;
+    //Update map details with location of place searched
     setMapDetails((prev) => ({
       ...prev,
       center: {
@@ -27,7 +31,7 @@ export default function Home({
         lng: place.geometry.location.lng(),
       },
     }));
-    //store search location so it can be repopulated if user clicks back to home
+    //Store search location so it can be repopulated if user clicks back to home
     setLastSearchLocation(place.formatted_address);
   }
 
