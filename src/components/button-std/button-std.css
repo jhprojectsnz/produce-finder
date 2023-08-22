@@ -42,3 +42,7 @@
 .shadow-button-std {
     box-shadow: 0px 3px 5px rgb(58, 58, 58);
 }
+
+.bold-button-std {
+    font-weight: bold;
+}

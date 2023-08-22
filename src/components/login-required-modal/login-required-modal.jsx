@@ -7,7 +7,7 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
   return (
     <div
       className="login-required-modal-container"
-      // Add this onClick so click events do on propagate to elements beneath the modal
+      // Add this onClick so click events do not propagate to elements beneath the modal
       onClick={(e) => e.stopPropagation()}
     >
       <div className="login-required-modal-content">

@@ -1,7 +1,7 @@
 const stallData = [
     {
         "stallId": 1,
-        "ownerId": 57304,
+        "ownerId": null,
         "name": "The Pineapple Patch",
         "address": "Barclay Road, Aria",
         "location": {
@@ -19918,9 +19918,9 @@ const stallData = [
 const users = [
   {
     userId: 57304,
-    email: "fakeemail@test.com",
+    email: "guestaccount@testemail.com",
     password: "password",
-    stalls: [1, 2, 8],
+    stalls: [2, 8],
     favouriteStalls: [10, 30, 23, 66, 103, 140, 12, 203, 240, 34, 92, 111, 160, 226, 161],
   },
   {

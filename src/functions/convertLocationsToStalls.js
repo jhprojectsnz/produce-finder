@@ -179,7 +179,7 @@ export default function convertLocationsToStalls(array) {
         name: stallNames[randomNumber(stallNames.length)],
         address: location.address,
         location: location.location,
-        about: 'EXAMPLE ONLY: This is an example of a fruit/vegetable seller and all details have been made up. Sellers can include more information here such as growing methods, what they have avaliable in different seasons etc.',
+        about: 'EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have avaliable in different seasons, upcoming stock etc.',
         img: images[randomNumber(images.length)],
         openTimes: openTimesArray[randomNumber(openTimesArray.length)],
         contactDetails: {

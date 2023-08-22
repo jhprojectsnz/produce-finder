@@ -11,7 +11,9 @@ export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
   const navigate = useNavigate();
 
-  const [enteredEmail, setEnteredEmail] = useState("fakeemail@test.com");
+  const [enteredEmail, setEnteredEmail] = useState(
+    "guestaccount@testemail.com"
+  );
   const [enteredPassword, setEnteredPassword] = useState("password");
   const [errorMessage, setErrorMessage] = useState(false);
 

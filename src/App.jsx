@@ -11,6 +11,7 @@ import Favourites from "./Pages/favourites/favourites.jsx";
 import UserProvider from "./context/UserContext.jsx";
 import MainNavBar from "./components/main-navbar/main-navbar.jsx";
 import StallDetails from "./Pages/stall-details/stall-details.jsx";
+import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 
 // google maps libraries must be assigned outside of the component to avoid error
 // array should not be passed directly to the libraries prop
@@ -41,6 +42,8 @@ export default function App() {
       "Eftpos payment": false,
     },
   });
+
+  const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
@@ -101,6 +104,9 @@ export default function App() {
           </Routes>
         </UserProvider>
       </BrowserRouter>
+      {showWelcomeModal && (
+        <WelcomeModal setShowWelcomeModal={setShowWelcomeModal} />
+      )}{" "}
     </div>
   );
 }
