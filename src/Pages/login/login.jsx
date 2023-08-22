@@ -27,7 +27,7 @@ export default function Login() {
     } else {
       setCurrentUser(loginUser[0]);
       setIsAuth(true);
-      navigate("/");
+      navigate(-1);
     }
   }
 

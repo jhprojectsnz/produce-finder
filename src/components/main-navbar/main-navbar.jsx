@@ -4,7 +4,7 @@ import { useUserContext } from "../../context/UserContext";
 import { useNavigate, useLocation } from "react-router-dom";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
 import CircleBtn from "../cricle-btn/circle-btn";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 //Could add a modal to confirm logout here
 export default function MainNavBar() {
@@ -12,6 +12,10 @@ export default function MainNavBar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  // useEffect(() => {
+  //   	if(location.pathname === "/results") setShowDropdown(false)
+  // },[])
 
   function handleLogoutClick() {
     setIsAuth(false);
@@ -23,8 +27,14 @@ export default function MainNavBar() {
     navigate("/login");
   }
 
+  console.log(location.pathname.split("/"));
+
   return (
-    <div className={location.pathname != "/results" ? "main-navbar" : "hide"}>
+    <div
+      className={
+        location.pathname.split("/")[1] != "results" ? "main-navbar" : "hide"
+      }
+    >
       <div className="main-navbar-container">
         <h1 className="main-navbar-title" onClick={() => navigate("/")}>
           Find Fresh Produce
