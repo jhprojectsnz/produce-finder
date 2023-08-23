@@ -13,10 +13,6 @@ export default function MainNavBar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // useEffect(() => {
-  //   	if(location.pathname === "/results") setShowDropdown(false)
-  // },[])
-
   function handleLogoutClick() {
     setIsAuth(false);
     setCurrentUser({});
@@ -27,10 +23,9 @@ export default function MainNavBar() {
     navigate("/login");
   }
 
-  console.log(location.pathname.split("/"));
-
   return (
     <div
+      // check if on results page - if so hide main navbar
       className={
         location.pathname.split("/")[1] != "results" ? "main-navbar" : "hide"
       }
