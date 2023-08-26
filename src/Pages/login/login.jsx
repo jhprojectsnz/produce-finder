@@ -10,9 +10,8 @@ import HowToModal from "../../components/how-to-modal/how-to-modal";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
-  const [enteredEmail, setEnteredEmail] = useState(
-    "guestaccount@testemail.com"
-  );
+  // For demo version email and password are initialised to "guest" values to make it easy for user to use test log in
+  const [enteredEmail, setEnteredEmail] = useState("guest@email.com");
   const [enteredPassword, setEnteredPassword] = useState("password");
   const [showError, setShowError] = useState(false);
   const [showHowTo, setShowHowTo] = useState(false);

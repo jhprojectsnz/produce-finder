@@ -2,7 +2,7 @@ import "./open-hours-form.css";
 
 //Change to a more specfic map key
 
-export default function OpenHoursform({ openTimes, dispatch }) {
+export default function OpenHoursForm({ openTimes, dispatch }) {
   //This function is run when the open/closed check box is clicked
   function handleCheckChange(day) {
     //create new object that contains the updated data for the day that has been clicked

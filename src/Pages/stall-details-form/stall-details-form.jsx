@@ -3,7 +3,7 @@ import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
-import OpenHoursform from "../../components/open-hours-form/open-hours-form";
+import OpenHoursForm from "../../components/open-hours-form/open-hours-form";
 import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
 import { useUserContext } from "../../context/UserContext";
 import ButtonStd from "../../components/button-std/button-std";
@@ -12,6 +12,7 @@ export default function StallDetailsForm() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { stalls, setStalls, currentUser, setCurrentUser } = useUserContext();
+  const [addImageAttempt, setAddImageAttempt] = useState(false);
 
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
@@ -141,10 +142,8 @@ export default function StallDetailsForm() {
         )
       );
     } else {
-      console.log("else");
       setStalls((prev) => [...prev, formData]);
       setCurrentUser((prev) => {
-        console.log(prev);
         const obj = {
           ...prev,
           stalls: [...prev.stalls, formData.stallId],
@@ -157,6 +156,11 @@ export default function StallDetailsForm() {
 
   function handleCancel() {
     navigate(-1);
+  }
+
+  function handleAddImage() {
+    //In full version add ability to add image here
+    setAddImageAttempt(true);
   }
 
   return (
@@ -208,17 +212,18 @@ export default function StallDetailsForm() {
       </div>
       <div className="form-input-container">
         <label htmlFor="about">Open times</label>
-        <OpenHoursform openTimes={formData.openTimes} dispatch={dispatch} />
+        <OpenHoursForm openTimes={formData.openTimes} dispatch={dispatch} />
       </div>
       <div className="form-input-container">
         <label htmlFor="image">Upload image</label>
-        <button className="add-photo-btn">
+        <button className="add-photo-btn" onClick={handleAddImage}>
           Add a photo
           <BiUpload />
         </button>
+        {addImageAttempt && <p>Add photo coming soon...</p>}
       </div>
       <div className="form-input-container">
-        <label htmlFor="image">Stall details</label>
+        <label htmlFor="open-times">Stall details</label>
         <SelectStallDetails formData={formData} dispatch={dispatch} />
       </div>
       <div className="form-separator">

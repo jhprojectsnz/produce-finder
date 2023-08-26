@@ -1,7 +1,7 @@
 const stallData = [
     {
         "stallId": 1,
-        "ownerId": null,
+        "ownerId": 57304,
         "name": "Juicy Delights",
         "address": "89 Maryvale Road, Wainui",
         "location": {
@@ -79,7 +79,7 @@ const stallData = [
     },
     {
         "stallId": 3,
-        "ownerId": null,
+        "ownerId": 57304,
         "name": "Lisa's Garden",
         "address": "Unit T/301 Botany Road, Auckland",
         "location": {
@@ -56315,9 +56315,9 @@ const stallData = [
 const users = [
   {
     userId: 57304,
-    email: "guestaccount@testemail.com",
+    email: "guest@email.com",
     password: "password",
-    stalls: [2, 8],
+    stalls: [1, 3],
     favouriteStalls: [10, 30, 23, 66, 103, 140, 12, 203, 240, 34, 92, 111, 160, 226, 161],
   },
   {
