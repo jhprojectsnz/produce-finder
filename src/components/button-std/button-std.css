@@ -1,48 +1,49 @@
 .button-std {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .red-button-std {
-    color: red;
-    background-color: white;
-    border: 2px solid red;
+  color: red;
+  background-color: white;
+  border: 2px solid red;
 }
 
 .dark-button-std {
-    color: white;
-    background-color: var(--main-dark-color);
-    border: solid 2px var(--main-dark-color);
+  color: white;
+  background-color: var(--main-dark-color);
+  border: solid 2px var(--main-dark-color);
 }
 
 .light-button-std {
-    color: var(--main-dark-color);
-    background-color: white;
-    border: solid 2px var(--main-dark-color);
+  color: var(--main-dark-color);
+  background-color: white;
+  border: solid 2px var(--main-dark-color);
 }
 
 .grey-button-std {
-    color: var(--main-dark-color);
-    color: black;
-    background-color: rgb(237, 237, 237);;
-    border: solid 2px var(--main-dark-color);
+  color: var(--main-dark-color);
+  color: black;
+  background-color: rgb(237, 237, 237);
+  border: solid 2px var(--main-dark-color);
 }
 
 .long-button-std {
-   padding: 0.3rem 2rem;
-   border-radius: 10px;
+  padding: 0.3rem 2rem;
+  border-radius: 10px;
 }
 
 .shadow-button-std {
-    box-shadow: 0px 3px 5px rgb(58, 58, 58);
+  box-shadow: 0px 3px 5px rgb(58, 58, 58);
 }
 
 .bold-button-std {
-    font-weight: bold;
+  font-weight: bold;
 }

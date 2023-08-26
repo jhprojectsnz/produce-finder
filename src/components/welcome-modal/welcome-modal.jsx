@@ -1,5 +1,5 @@
-import ButtonStd from "../button-std/button-std";
 import "./welcome-modal.css";
+import ButtonStd from "../button-std/button-std";
 
 export default function WelcomeModal({ setShowWelcomeModal }) {
   return (

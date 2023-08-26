@@ -6,6 +6,7 @@ import { useState } from "react";
 import { users } from "../../data/data";
 import { useNavigate } from "react-router-dom";
 import ButtonStd from "../../components/button-std/button-std";
+import HowToModal from "../../components/how-to-modal/how-to-modal";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
@@ -15,19 +16,20 @@ export default function Login() {
     "guestaccount@testemail.com"
   );
   const [enteredPassword, setEnteredPassword] = useState("password");
-  const [errorMessage, setErrorMessage] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const [showHowTo, setShowHowTo] = useState(false);
 
   function handleLogin() {
     //Add Auth functionality here
 
     //Here is a simple substitute for now
     const loginUser = users.filter((user) => enteredEmail === user.email);
-    if (loginUser.length != 1 || loginUser[0].password != enteredPassword) {
-      setErrorMessage(true);
-    } else {
+    if (loginUser.length === 1 && loginUser[0].password === enteredPassword) {
       setCurrentUser(loginUser[0]);
       setIsAuth(true);
-      navigate(-1);
+      setShowHowTo(true);
+    } else {
+      setShowError(true);
     }
   }
 
@@ -56,7 +58,7 @@ export default function Login() {
           required
         />
       </div>
-      {errorMessage && (
+      {showError && (
         <p className="login-error">Email or password do not match known user</p>
       )}
       <p className="login-text-link">Forgot your password?</p>
@@ -89,6 +91,7 @@ export default function Login() {
       <ButtonStd appearance="dark" options={["long"]}>
         Sign up
       </ButtonStd>
+      {showHowTo && <HowToModal />}
     </section>
   );
 }
