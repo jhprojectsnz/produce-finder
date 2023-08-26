@@ -36,7 +36,11 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
   );
 
   function handleAddressClick() {
-    setMapDetails((prev) => ({ ...prev, center: selectedStall.location }));
+    setMapDetails((prev) => ({
+      ...prev,
+      center: selectedStall.location,
+      zoom: 15,
+    }));
     navigate("/results/map");
   }
 

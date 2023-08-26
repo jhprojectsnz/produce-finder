@@ -4,14 +4,12 @@ import { FaLock } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
 import { users } from "../../data/data";
-import { useNavigate } from "react-router-dom";
+
 import ButtonStd from "../../components/button-std/button-std";
 import HowToModal from "../../components/how-to-modal/how-to-modal";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
-  const navigate = useNavigate();
-
   const [enteredEmail, setEnteredEmail] = useState(
     "guestaccount@testemail.com"
   );
