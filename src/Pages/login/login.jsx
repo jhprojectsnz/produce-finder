@@ -16,6 +16,7 @@ export default function Login() {
   const [enteredPassword, setEnteredPassword] = useState("password");
   const [showError, setShowError] = useState(false);
   const [showHowTo, setShowHowTo] = useState(false);
+  const [signUpAttempt, setSignUpAttempt] = useState(false);
 
   function handleLogin() {
     //Add Auth functionality here
@@ -86,7 +87,16 @@ export default function Login() {
         <FaLock className="login-input-icon" />
         <input type="password" name="confirm-password" required />
       </div>
-      <ButtonStd appearance="dark" options={["long"]}>
+      {signUpAttempt && (
+        <p className="login-error">
+          Sign up for Find Fresh Produce coming soon!
+        </p>
+      )}
+      <ButtonStd
+        appearance="dark"
+        options={["long"]}
+        handleClick={() => setSignUpAttempt(true)}
+      >
         Sign up
       </ButtonStd>
       {showHowTo && <HowToModal />}
