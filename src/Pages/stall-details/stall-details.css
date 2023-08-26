@@ -125,6 +125,8 @@
     max-width: 900px;
     /* large top padding to push down below nav */
     padding: 6rem 2rem 0;
+    /* remove background-color so that it doesn't cover nav bar */
+    background-color: transparent;
   }
 
   /* hide top buttons on larger screens */
