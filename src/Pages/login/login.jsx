@@ -3,10 +3,9 @@ import { FiMail } from "react-icons/fi";
 import { FaLock } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { users } from "../../data/data";
-
 import ButtonStd from "../../components/button-std/button-std";
-import HowToModal from "../../components/how-to-modal/how-to-modal";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
@@ -14,8 +13,9 @@ export default function Login() {
   const [enteredEmail, setEnteredEmail] = useState("guest@email.com");
   const [enteredPassword, setEnteredPassword] = useState("password");
   const [showError, setShowError] = useState(false);
-  const [showHowTo, setShowHowTo] = useState(false);
   const [signUpAttempt, setSignUpAttempt] = useState(false);
+
+  const navigate = useNavigate();
 
   function handleLogin() {
     //Add Auth functionality here
@@ -25,7 +25,7 @@ export default function Login() {
     if (loginUser.length === 1 && loginUser[0].password === enteredPassword) {
       setCurrentUser(loginUser[0]);
       setIsAuth(true);
-      setShowHowTo(true);
+      navigate(-1);
     } else {
       setShowError(true);
     }
@@ -98,7 +98,6 @@ export default function Login() {
       >
         Sign up
       </ButtonStd>
-      {showHowTo && <HowToModal />}
     </section>
   );
 }
