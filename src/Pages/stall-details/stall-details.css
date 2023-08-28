@@ -151,6 +151,8 @@
 
   .stall-name {
     font-size: 1.5rem;
+    margin-right: 2rem;
+    white-space: nowrap;
   }
 
   .stall-address {
