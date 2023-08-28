@@ -5,11 +5,7 @@
   width: 100%;
   z-index: -1;
   background-color: var(--main-light-color);
-  animation: open-animation 0.3s ease-in-out forwards;
-}
-
-.dropdown-hidden {
-  display: none;
+  animation: open-animation 0.3s ease-in-out;
 }
 
 .dropdown-menu-link {

@@ -26,6 +26,12 @@ export default function MainNavBar() {
     navigate("/mystalls");
   }
 
+  function handleMenuClick(e) {
+    // Stop propagation required so that the click event doesn't trigger the dropdown to close due to click outside dropdown menu
+    e.stopPropagation();
+    setShowDropdown((prev) => !prev);
+  }
+
   return (
     <div
       // Check if on results page - if so hide main navbar
@@ -52,18 +58,12 @@ export default function MainNavBar() {
               <BiUser className="circle-btn-icon" />
             </CircleBtn>
           )}
-          <CircleBtn
-            appearance="dark"
-            handleClick={() => setShowDropdown(!showDropdown)}
-          >
+          <CircleBtn appearance="dark" handleClick={handleMenuClick}>
             <BiMenu className="circle-btn-icon" />
           </CircleBtn>
         </div>
       </div>
-      <DropdownMenu
-        showDropdown={showDropdown}
-        setShowDropdown={setShowDropdown}
-      />
+      {showDropdown && <DropdownMenu setShowDropdown={setShowDropdown} />}
     </div>
   );
 }
