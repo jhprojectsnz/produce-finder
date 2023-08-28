@@ -1,14 +1,15 @@
 .fav-icon {
-    width: 14px;
-    height: 14px;
-    color: var(--main-dark-color);
+  width: 14px;
+  height: 14px;
+  color: var(--main-dark-color);
+  cursor: pointer;
 }
 
 .favourite {
-    color: rgb(218, 51, 51);
+  color: rgb(218, 51, 51);
 }
 
 .plain-container {
-    width: fit-content;
-    height: fit-content;
+  width: fit-content;
+  height: fit-content;
 }

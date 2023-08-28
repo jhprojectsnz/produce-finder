@@ -25,6 +25,7 @@
   color: white;
   width: 50px;
   line-height: 1rem;
+  cursor: pointer;
 }
 
 .main-navbar-btn-container {

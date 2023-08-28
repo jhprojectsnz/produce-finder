@@ -1,105 +1,104 @@
 .results-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
 }
 
 .result-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-    height: 150px;
-    background-color: white;
-    margin: 0.5rem 0;
-    padding: 0.6rem;
-    box-shadow: 0 0 10px rgb(204, 203, 203);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 150px;
+  background-color: white;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  box-shadow: 0 0 10px rgb(204, 203, 203);
+  cursor: pointer;
 }
 
 .result-image {
-    max-height: 90%;
-    min-height: 90%;
-    object-fit: cover;
-    min-width: 150px; 
-    border-radius: 10px;
+  max-height: 90%;
+  min-height: 90%;
+  object-fit: cover;
+  min-width: 150px;
+  border-radius: 10px;
 }
 
 .result-text-container {
-    position: relative;
-    padding: 0.2rem 0.5rem 0.2rem 1rem;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 0.8rem;
+  position: relative;
+  padding: 0.2rem 0.5rem 0.2rem 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .result-title-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .result-title {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .result-text {
-    color: rgb(55, 55, 55);
-    text-transform: capitalize;
-    word-spacing: 0.1rem;
+  color: rgb(55, 55, 55);
+  text-transform: capitalize;
+  word-spacing: 0.1rem;
 }
 
 .result-status {
-    position: absolute;
-    bottom: 10px;
-    font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
 }
 
 /* On screens larger than 700px change card style */
 @media screen and (min-width: 700px) {
-    .results-list {
-        padding: 5rem 2rem;
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-    .result-container {
-        width: 300px;
-        height: 400px;
-        flex-direction: column;
-        padding: 0;
-        border-radius: 15px;
-    }
+  .results-list {
+    padding: 5rem 2rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .result-container {
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 15px;
+  }
 
-    .result-text-container {
-        padding: 1rem;
-    }
+  .result-text-container {
+    padding: 1rem;
+  }
 
-    .result-image {
-        max-width: 100%;
-        min-width: 100%;
-        object-fit: cover;
-        min-height: 250px; 
-        border-radius: 15px 15px 0 0;
-    }
+  .result-image {
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    min-height: 250px;
+    border-radius: 15px 15px 0 0;
+  }
 
-    .result-title {
-        font-size: 0.9rem;
-    }
+  .result-title {
+    font-size: 0.9rem;
+  }
 
-    .result-text {
-       font-size: 0.8rem;
-      
-    }
+  .result-text {
+    font-size: 0.8rem;
+  }
 
-    .result-status {
-        bottom: 1rem;
-        font-size: 0.8rem;
-    }
+  .result-status {
+    bottom: 1rem;
+    font-size: 0.8rem;
+  }
 }
-

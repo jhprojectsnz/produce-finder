@@ -102,7 +102,7 @@ export default function OpenHoursForm({ openTimes, dispatch }) {
   ];
 
   return (
-    <div className="open-hours-form">
+    <div className="openhours-form">
       {Object.keys(openTimes).map((day) => (
         <div className="openhours-day-container" key={day}>
           <p>{day}</p>
