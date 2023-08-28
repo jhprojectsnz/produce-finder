@@ -11,21 +11,27 @@ export default function SearchBar({ filters, setFilters, setSelectedStall }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
 
-  //Navigate function used for back button to go back one page
+  // Navigate function used for back button to go back one page
   const navigate = useNavigate();
 
-  //Called when search button is clicked or enter is pressed in search field
+  // Called when search button is clicked or enter key is pressed in search field
   function handleSearch() {
+    // Add the search term to the filters state object
     setFilters((prev) => ({
       ...prev,
       keyword: searchTerm,
     }));
     setSearchTerm("");
+    // Reset selected stall in case the previously selected is included in the newly filtered stalls
     setSelectedStall({});
+    // Show the filters so user can see where the search term has been added
     setShowFilters(true);
   }
 
-  function handleDropdownClick() {
+  function handleDropdownClick(e) {
+    // Stop propagation important - dropdown will had an click event to the document
+    // Need to avoid immediately triggering this event when clicking the menu button
+    e.stopPropagation();
     setShowDropdown((prev) => !prev);
     setShowFilters(false);
   }
@@ -38,7 +44,9 @@ export default function SearchBar({ filters, setFilters, setSelectedStall }) {
   return (
     <div className="search-bar">
       <div className="search-container">
-        <h1 className="search-title">Find Fresh Produce</h1>
+        <h1 className="search-title" onClick={() => navigate("/")}>
+          Find Fresh Produce
+        </h1>
         <div className="search-elements">
           <div className="input-container">
             <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
@@ -73,10 +81,12 @@ export default function SearchBar({ filters, setFilters, setSelectedStall }) {
           <BiMenu className="circle-btn-icon" />
         </CircleBtn>
       </div>
-      <DropdownMenu
-        showDropdown={showDropdown}
-        setShowDropdown={setShowDropdown}
-      />
+      {showDropdown && (
+        <DropdownMenu
+          showDropdown={showDropdown}
+          setShowDropdown={setShowDropdown}
+        />
+      )}
       {showFilters && (
         <Filters
           filters={filters}
