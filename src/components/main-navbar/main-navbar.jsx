@@ -1,31 +1,34 @@
 import "./main-navbar.css";
-import { BiMenu, BiLogOutCircle, BiUser } from "react-icons/bi";
+import { BiMenu, BiUser } from "react-icons/bi";
+import { FaHouseUser, FaHeart } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useNavigate, useLocation } from "react-router-dom";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
 import CircleBtn from "../cricle-btn/circle-btn";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 //Could add a modal to confirm logout here
 export default function MainNavBar() {
-  const { isAuth, setIsAuth, setCurrentUser } = useUserContext();
+  const { isAuth } = useUserContext();
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
-  function handleLogoutClick() {
-    setIsAuth(false);
-    setCurrentUser({});
-    navigate("/");
-  }
 
   function handleLoginClick() {
     navigate("/login");
   }
 
+  function handleFavouritesClick() {
+    navigate("/favourites");
+  }
+
+  function handleMyStallsClick() {
+    navigate("/mystalls");
+  }
+
   return (
     <div
-      // check if on results page - if so hide main navbar
+      // Check if on results page - if so hide main navbar
       className={
         location.pathname.split("/")[1] != "results" ? "main-navbar" : "hide"
       }
@@ -36,9 +39,14 @@ export default function MainNavBar() {
         </h1>
         <div className="main-navbar-btn-container">
           {isAuth ? (
-            <CircleBtn appearance="dark" handleClick={handleLogoutClick}>
-              <BiLogOutCircle className="circle-btn-icon" />
-            </CircleBtn>
+            <>
+              <CircleBtn appearance="dark" handleClick={handleMyStallsClick}>
+                <FaHouseUser className="circle-btn-icon" />
+              </CircleBtn>
+              <CircleBtn appearance="dark" handleClick={handleFavouritesClick}>
+                <FaHeart />
+              </CircleBtn>
+            </>
           ) : (
             <CircleBtn appearance={"dark"} handleClick={handleLoginClick}>
               <BiUser className="circle-btn-icon" />
@@ -55,7 +63,6 @@ export default function MainNavBar() {
       <DropdownMenu
         showDropdown={showDropdown}
         setShowDropdown={setShowDropdown}
-        handleLogoutClick={handleLogoutClick}
       />
     </div>
   );
