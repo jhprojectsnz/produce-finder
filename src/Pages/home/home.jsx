@@ -4,6 +4,7 @@ import { Autocomplete } from "@react-google-maps/api";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
+import About from "../../components/about/about";
 
 export default function Home({
   setMapDetails,
@@ -62,6 +63,7 @@ export default function Home({
         </Link>
       </section>
       <PopularStalls setSelectedStall={setSelectedStall} />
+      <About />
     </div>
   );
 }
