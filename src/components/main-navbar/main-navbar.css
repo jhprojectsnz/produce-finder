@@ -4,13 +4,12 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-navbar-container {
   position: relative;
   padding: 0.5rem 1rem;
+  height: var(--main-nav-height);
   display: flex;
   flex-direction: row;
   align-items: center;

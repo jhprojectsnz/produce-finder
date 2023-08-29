@@ -129,7 +129,7 @@
     /* set max-width so not too streched on large screen */
     max-width: 900px;
     /* large top padding to push down below nav */
-    padding: 6rem 2rem 0;
+    padding: 2rem 2rem;
     /* Low z-index so the main nav is on top */
     z-index: 1;
   }
@@ -175,7 +175,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0;
+    margin-top: 1rem;
     /* center this container by placing across both columns */
     grid-column: 1 / 3;
   }

@@ -164,16 +164,3 @@ export default function SearchResults({
     </>
   );
 }
-
-/*
-keyword = strawberries
-
-lowercase = apples
-
-strawberry
-
-app
-
-
-
-*/

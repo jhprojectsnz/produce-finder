@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .result-container {
@@ -63,7 +63,7 @@
 /* On screens larger than 700px change card style */
 @media screen and (min-width: 700px) {
   .results-list {
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
