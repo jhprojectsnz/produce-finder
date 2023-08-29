@@ -18,7 +18,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: rgba(0, 0, 0, 0.77);
+  box-shadow: 0 0 10px black;
   /* set z-index so tranparent layer can be added over top */
   z-index: 1;
 }

@@ -67,6 +67,7 @@ export default function App() {
                   setMapDetails={setMapDetails}
                   lastSearchLocation={lastSearchLoaction}
                   setLastSearchLocation={setLastSearchLocation}
+                  setSelectedStall={setSelectedStall}
                 />
               }
             />

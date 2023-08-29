@@ -9,6 +9,7 @@ export default function Home({
   setMapDetails,
   lastSearchLocation,
   setLastSearchLocation,
+  setSelectedStall,
 }) {
   //Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
@@ -60,7 +61,7 @@ export default function Home({
           Search <BiSearchAlt className="home-search-icon" />
         </Link>
       </section>
-      <PopularStalls />
+      <PopularStalls setSelectedStall={setSelectedStall} />
     </div>
   );
 }
