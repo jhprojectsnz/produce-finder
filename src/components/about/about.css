@@ -7,15 +7,14 @@
 
   & h2 {
     width: fit-content;
-    margin: 1rem auto;
+    margin: auto;
     font-family: Podkova, Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
   }
 
   & h3 {
-    margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
@@ -23,16 +22,45 @@
 
   & p {
     width: auto;
-    margin: 1rem 0;
     font-size: 0.9rem;
   }
+
+  & .bold {
+    font-weight: 500;
+  }
+}
+
+.about-section-container {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: var(--main-light-color);
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-all-benifits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-benefit-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgb(195, 195, 195);
+  border-radius: 20px;
 
   & p {
     text-align: center;
@@ -40,12 +68,79 @@
 }
 
 .about-image {
-  width: 200px;
-  height: auto;
+  height: 70%;
+  width: auto;
 }
 
 .about-stall-image {
   width: 300px;
   height: auto;
   margin-top: 2rem;
+}
+
+.about-widescreen-image {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .about {
+    & h2 {
+      font-size: 2.2rem;
+    }
+
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  .about-section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 4rem;
+
+    & p {
+      font-size: 1.1rem;
+      width: 100%;
+    }
+  }
+
+  .about-all-benifits {
+    flex-direction: row;
+  }
+
+  .about-image {
+    height: 60%;
+  }
+
+  .about-benefit-container {
+    width: 30%;
+    height: 250px;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .about-stall-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about {
+    width: 90%;
+    & h2 {
+      margin: 0;
+    }
+  }
+  .about-widescreen-image {
+    display: block;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem;
+  }
 }
