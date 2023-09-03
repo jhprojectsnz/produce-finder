@@ -3,15 +3,13 @@ import farmImg from "../../assets/farm-image.jpg";
 import healthImg from "../../assets/healthy-image.jpg";
 import saveImg from "../../assets/save-image.jpg";
 import stallImg from "../../assets/fruit-stall-image.jpg";
-import growerImg from "../../assets/tomato-grower-image.jpg";
-import grapesImg from "../../assets/grapes-image.jpg";
 import ButtonStd from "../button-std/button-std";
 import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const navigate = useNavigate();
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-section-container">
         <h2>Welecome To Find Fresh Produce</h2>
         <p>

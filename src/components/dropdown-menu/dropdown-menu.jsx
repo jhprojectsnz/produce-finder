@@ -28,7 +28,7 @@ export default function DropdownMenu({ setShowDropdown }) {
       <Link to="/" className="dropdown-menu-link">
         Home
       </Link>
-      <Link to="/" className="dropdown-menu-link">
+      <Link to="/about" className="dropdown-menu-link">
         About
       </Link>
       {isAuth ? (

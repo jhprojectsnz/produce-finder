@@ -1,10 +1,11 @@
 import "./home.css";
 import { BiSearchAlt } from "react-icons/bi";
 import { Autocomplete } from "@react-google-maps/api";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
 import About from "../../components/about/about";
+import { useLocation } from "react-router-dom";
 
 export default function Home({
   setMapDetails,
@@ -12,21 +13,38 @@ export default function Home({
   setLastSearchLocation,
   setSelectedStall,
 }) {
-  //Variable to store search box ref
+  // Variable to store search box ref
   const [searchBox, setSearchBox] = useState(null);
-  //Could try to change this so there are less rerenders on loading?
-  //Avoid using state to store searchbox?
+  // Could try to change this so there are less rerenders on loading?
+  // Avoid using state to store searchbox?
   const onSearchBoxLoad = (ref) => setSearchBox(ref);
 
-  //Run whenever a new place is entered into the search bar
-  //Uses the location of the place searched to update map center
+  const location = useLocation();
+
+  // If URL contains "/about" on load scroll to about section
+  // Otherwise scroll to top of homepage
+  useEffect(() => {
+    if (location.pathname === "/about") {
+      const aboutSection = document.getElementById("about");
+      aboutSection.scrollIntoView({
+        behavior: "instant",
+      });
+      // Need to scroll up 80px to offset navbar
+      window.scrollBy(0, -80);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location.pathname]);
+
+  // Run whenever a new place is entered into the search bar
+  // Uses the location of the place searched to update map center
   function placesChanged() {
-    //If searchBox has not been defined - do nothing
+    // If searchBox has not been defined - do nothing
     if (!searchBox) return;
     const place = searchBox.getPlace();
-    //If the place searched doesn't have geometry information - do nothing
+    // If the place searched doesn't have geometry information - do nothing
     if (!place.geometry) return;
-    //Update map details with location of place searched
+    // Update map details with location of place searched
     setMapDetails((prev) => ({
       ...prev,
       center: {
@@ -34,7 +52,7 @@ export default function Home({
         lng: place.geometry.location.lng(),
       },
     }));
-    //Store search location so it can be repopulated if user clicks back to home
+    // Store search location so it can be repopulated if user clicks back to home
     setLastSearchLocation(place.formatted_address);
   }
 

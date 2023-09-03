@@ -61,7 +61,7 @@ export default function App() {
           <MainNavBar />
           <Routes>
             <Route
-              path="/"
+              path="/:about?"
               element={
                 <Home
                   setMapDetails={setMapDetails}
