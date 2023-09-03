@@ -1,5 +1,6 @@
 .popular-stalls {
   width: 100%;
+  max-width: 1200px;
 }
 
 .popular-stalls h2 {
