@@ -2,14 +2,5 @@
   width: 100%;
   /* set max-width to limit to three cards wide on wide screen */
   max-width: 1200px;
-}
-
-.popular-stalls h2 {
-  width: fit-content;
-  margin: 1.5rem auto 0;
-  padding: 0 2rem;
-  font-family: Podkova, Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 1.8rem;
-  border-bottom: 1px solid var(--main-dark-color);
+  padding: 2rem 0;
 }

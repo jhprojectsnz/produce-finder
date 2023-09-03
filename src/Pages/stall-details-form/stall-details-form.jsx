@@ -7,6 +7,7 @@ import OpenHoursForm from "../../components/open-hours-form/open-hours-form";
 import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
 import { useUserContext } from "../../context/UserContext";
 import ButtonStd from "../../components/button-std/button-std";
+import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function StallDetailsForm() {
   const { id } = useParams();
@@ -165,7 +166,9 @@ export default function StallDetailsForm() {
 
   return (
     <section className="stall-details-form">
-      <h2>{`${stallForUpdate ? "Update" : "New"} Stall Details`}</h2>
+      <SectionHeading>{`${
+        stallForUpdate ? "Update" : "New"
+      } Stall Details`}</SectionHeading>
       <div className="form-input-container">
         <label htmlFor="name">Stall name</label>
         <input

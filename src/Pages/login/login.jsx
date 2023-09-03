@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { users } from "../../data/data";
 import ButtonStd from "../../components/button-std/button-std";
+import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
@@ -32,8 +33,8 @@ export default function Login() {
   }
 
   return (
-    <section className="login-container">
-      <h2>Log In</h2>
+    <section className="login">
+      <SectionHeading>Log In</SectionHeading>
       <div className="login-input-container">
         <label htmlFor="email">Email</label>
         <FiMail className="login-input-icon" />
@@ -66,7 +67,7 @@ export default function Login() {
       <div className="login-separator">
         <span>OR</span>
       </div>
-      <h2>Sign up</h2>
+      <SectionHeading>Sign up</SectionHeading>
       <div className="login-input-container">
         <label htmlFor="name">Full Name</label>
         <input type="text" id="name" name="name" required />

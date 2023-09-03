@@ -1,6 +1,7 @@
 import "./popular-stalls.css";
 import { useUserContext } from "../../context/UserContext";
 import ResultsList from "../results-list/results-list";
+import SectionHeading from "../section-heading/section-heading";
 
 export default function PopularStalls({ setSelectedStall }) {
   const { stalls } = useUserContext();
@@ -9,7 +10,7 @@ export default function PopularStalls({ setSelectedStall }) {
   const firstFiveStalls = stalls.slice(0, 6);
   return (
     <section className="popular-stalls">
-      <h2>Popular Stalls</h2>
+      <SectionHeading>Popular Stalls</SectionHeading>
       <ResultsList
         stallsList={firstFiveStalls}
         setSelectedStall={setSelectedStall}

@@ -1,8 +1,3 @@
-.favourites-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 1.5rem;
+.favourites {
+  padding: 1.5rem 0;
 }

@@ -2,6 +2,7 @@ import "./favourites.css";
 import { useUserContext } from "../../context/UserContext";
 import { useEffect, useState } from "react";
 import ResultsList from "../../components/results-list/results-list";
+import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function Favourites({ setSelectedStall }) {
   const { currentUser, stalls } = useUserContext();
@@ -23,14 +24,12 @@ export default function Favourites({ setSelectedStall }) {
   }, [currentUser, stalls]);
 
   return (
-    <section className="favourites-container">
-      <h2>Favourites</h2>
-      <div className="fav-results-container">
-        <ResultsList
-          stallsList={favouriteStalls}
-          setSelectedStall={setSelectedStall}
-        />
-      </div>
+    <section className="favourites">
+      <SectionHeading>Favourites</SectionHeading>
+      <ResultsList
+        stallsList={favouriteStalls}
+        setSelectedStall={setSelectedStall}
+      />
     </section>
   );
 }

@@ -6,6 +6,7 @@ import { useUserContext } from "../../context/UserContext";
 import RemoveStallModal from "../../components/remove-stall-modal/remove-stall-modal";
 import ButtonStd from "../../components/button-std/button-std";
 import { useNavigate } from "react-router-dom";
+import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
@@ -52,8 +53,8 @@ export default function MyStalls({ setSelectedStall }) {
   }
 
   return (
-    <section className="my-stall-container">
-      <h2>My Stalls</h2>
+    <section className="my-stalls">
+      <SectionHeading>My Stalls</SectionHeading>
       {userStalls.map((stall) => {
         return (
           <div className="stall-update-container" key={stall.name}>

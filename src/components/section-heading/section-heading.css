@@ -1,0 +1,12 @@
+.section-heading {
+  /* use width and margin to center h2 */
+  width: fit-content;
+  margin: 0 auto 1.5rem;
+  /* use padding and border for underline */
+  padding: 0 1rem 0.2rem;
+  border-bottom: 1px solid var(--main-dark-color);
+  font-family: Podkova, Arial, Helvetica, sans-serif;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
