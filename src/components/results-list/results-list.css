@@ -60,8 +60,8 @@
   font-weight: bold;
 }
 
-/* On screens larger than 700px change card style */
-@media screen and (min-width: 700px) {
+/* On screens larger than 750px change card style */
+@media screen and (min-width: 750px) {
   .results-list {
     padding: 1rem 2rem;
     flex-direction: row;
