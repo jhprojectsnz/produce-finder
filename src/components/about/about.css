@@ -3,15 +3,17 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 2rem 2rem;
+  max-width: 1000px;
+  padding: 0 1.5rem 2rem;
 
   & h2 {
     width: fit-content;
-    margin: auto;
+    margin: 0 auto 0.5rem;
     font-family: Podkova, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
+    line-height: 2.2rem;
   }
 
   & h3 {
@@ -21,7 +23,7 @@
   }
 
   & p {
-    width: auto;
+    width: 100%;
     font-size: 0.9rem;
   }
 
@@ -31,18 +33,15 @@
 }
 
 .about-section-container {
-  width: 100%;
-  padding: 1.5rem;
-  margin: 1rem;
-  border-radius: 10px;
-  background-color: var(--main-light-color);
-}
-
-.about-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 15px;
+  background-color: var(--main-light-color);
 }
 
 .about-all-benifits {
@@ -55,10 +54,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 80%;
+  max-width: 500px;
   height: 250px;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   box-shadow: 0 0 10px rgb(195, 195, 195);
   border-radius: 20px;
 
@@ -67,9 +68,23 @@
   }
 }
 
-.about-image {
+.about-image-container {
+  display: flex;
+  justify-content: center;
   height: 70%;
-  width: auto;
+  width: 100%;
+}
+
+.about-image {
+  height: 100%;
+
+  &#heart-vegetable-image {
+    padding: 1rem;
+  }
+}
+
+.about-btn-container {
+  margin: 1rem auto 0.5rem;
 }
 
 .about-stall-image {
@@ -78,14 +93,11 @@
   margin-top: 2rem;
 }
 
-.about-widescreen-image {
-  display: none;
-}
-
 @media screen and (min-width: 800px) {
   .about {
     & h2 {
       font-size: 2.2rem;
+      margin-bottom: 1rem;
     }
 
     & h3 {
@@ -96,51 +108,36 @@
   }
 
   .about-section-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
+    margin: 3rem;
     padding: 2rem;
-    margin: 4rem;
-
     & p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 100%;
     }
   }
 
   .about-all-benifits {
     flex-direction: row;
-  }
-
-  .about-image {
-    height: 60%;
+    max-width: none;
   }
 
   .about-benefit-container {
     width: 30%;
     height: 250px;
-    margin: 1rem;
-    padding: 1rem;
+  }
+
+  .about-image-container {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+  }
+
+  .about-image {
+    height: 100%;
   }
 
   .about-stall-image {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .about {
-    width: 90%;
-    & h2 {
-      margin: 0;
-    }
-  }
-  .about-widescreen-image {
-    display: block;
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    margin: 1rem;
   }
 }
