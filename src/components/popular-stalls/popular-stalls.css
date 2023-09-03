@@ -1,5 +1,6 @@
 .popular-stalls {
   width: 100%;
+  /* set max-width to limit to three cards wide on wide screen */
   max-width: 1200px;
 }
 
