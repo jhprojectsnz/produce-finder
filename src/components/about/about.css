@@ -119,6 +119,7 @@
 
   .about-all-benifits {
     flex-direction: row;
+    justify-content: space-between;
     max-width: none;
   }
 
