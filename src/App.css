@@ -8,5 +8,10 @@
 .app {
   width: 100%;
   height: 100vh;
+  /* Need app to be a column flexbox to place footer at the bottom of the page; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Add padding at the top to account for the nav bar */
   padding-top: var(--main-nav-height);
 }

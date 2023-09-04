@@ -14,9 +14,10 @@ import StallDetails from "./Pages/stall-details/stall-details.jsx";
 import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
 import ModalLayout from "./components/modal-layout/modal-layout.jsx";
+import Footer from "./components/footer/footer.jsx";
 
-// google maps libraries must be assigned outside of the component to avoid error
-// array should not be passed directly to the libraries prop
+// Google maps libraries must be assigned outside of the component to avoid error
+// Array should not be passed directly to the libraries prop
 const libraries = ["places"];
 
 export default function App() {
@@ -31,9 +32,9 @@ export default function App() {
   });
   const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
-  //Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
-  //Could create a second set of context for this and other shared variables(e.g. mapCenter)?
-  //Or include the filters in the url?
+  // Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
+  // Could create a second set of context for this and other shared variables(e.g. mapCenter)?
+  // Or include the filters in the url?
   const [filters, setFilters] = useState({
     keyword: false,
     buttonFilters: {
@@ -106,6 +107,7 @@ export default function App() {
               }
             />
           </Routes>
+          <Footer />
         </UserProvider>
       </BrowserRouter>
       {showWelcomeModal && (
