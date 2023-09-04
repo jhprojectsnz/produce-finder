@@ -1,40 +1,7 @@
-.remove-stall-modal-container {
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--modal-background-color);
-    z-index: 10000;
-}
-
-/* CSS nesting - not supported in older browsers */
-.remove-stall-modal-content {
-    width: 85%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    background-color: white;
-    border-radius: 1rem;
-
-    & h5 {
-        margin: 0 auto 1rem;
-        font-size: 1.2rem;
-    }
-
-    & p {
-        margin: 0 auto 1.5rem;
-        font-size: 1rem;
-    }
-}
-
 .remove-stall-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
 }

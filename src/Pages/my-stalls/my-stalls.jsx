@@ -7,6 +7,7 @@ import RemoveStallModal from "../../components/remove-stall-modal/remove-stall-m
 import ButtonStd from "../../components/button-std/button-std";
 import { useNavigate } from "react-router-dom";
 import SectionHeading from "../../components/section-heading/section-heading";
+import ModalLayout from "../../components/modal-layout/modal-layout";
 
 export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
@@ -126,18 +127,22 @@ export default function MyStalls({ setSelectedStall }) {
         Add Stall
       </button>
       {displayItemModal && (
-        <UpdateItemModal
-          stallId={displayItemModal.stallId}
-          itemIndex={displayItemModal.itemIndex}
-          setDisplayItemModal={setDisplayItemModal}
-        />
+        <ModalLayout>
+          <UpdateItemModal
+            stallId={displayItemModal.stallId}
+            itemIndex={displayItemModal.itemIndex}
+            setDisplayItemModal={setDisplayItemModal}
+          />
+        </ModalLayout>
       )}
       {displayRemoveStallModal && (
-        <RemoveStallModal
-          stallToRemove={displayRemoveStallModal}
-          setDisplayRemoveStallModal={setDisplayRemoveStallModal}
-          handleDeleteStall={handleDeleteStall}
-        />
+        <ModalLayout>
+          <RemoveStallModal
+            stallToRemove={displayRemoveStallModal}
+            setDisplayRemoveStallModal={setDisplayRemoveStallModal}
+            handleDeleteStall={handleDeleteStall}
+          />
+        </ModalLayout>
       )}
     </section>
   );

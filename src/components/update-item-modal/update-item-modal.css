@@ -1,72 +1,43 @@
-.update-item-modal-container {
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--modal-background-color);
-    z-index: 10000;
-}
-
-/* CSS nesting - not supported in older browsers */
-.update-item-modal-content {
-    width: 85%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    background-color: white;
-    border-radius: 1rem;
-
-    & h5 {
-        margin: 0 auto 1rem;
-        font-size: 1.2rem;
-    }
-}
-
 /* CSS nesting - not supported in older browsers */
 .update-item-input-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 95%;
-    /* more padding on top - space for label */
-    padding: 0.7rem 1rem 0.6rem;
-    margin: 1rem 0;
-    border: 1px solid var(--main-dark-color);
-    border-radius: 10px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  /* more padding on top - space for label */
+  padding: 0.7rem 1rem 0.6rem;
+  margin: 1rem 0;
+  border: 1px solid var(--main-dark-color);
+  border-radius: 10px;
 
-    & .text-input {
-        width: 100%;
-        border: none;
-        font-family: inherit;
-    }
+  & .text-input {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+  }
 
-    & label {
+  & label {
     /* shift labels up so they sit over the input border */
     position: absolute;
     top: -12px;
     left: 12px;
     padding: 3px;
     background-color: white;
-    color:  rgb(77, 77, 77);
+    color: rgb(77, 77, 77);
     font-size: 0.8rem;
-    }
+  }
 }
 
 .item-update-error {
-    font-size: 0.8rem;
-    color: red;
-    font-style: italic;
-    margin: 0 auto 1rem;
+  font-size: 0.8rem;
+  color: red;
+  font-style: italic;
+  margin: 0 auto 1rem;
 }
 
 .item-update-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }

@@ -1,4 +1,4 @@
-.how-to-modal-container {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,44 +12,38 @@
 }
 
 /* CSS nesting - not supported in older browsers */
-.how-to-modal-content {
-  width: 80%;
-  max-width: 1000px;
+.modal-content {
+  width: 85%;
+  max-width: 600px;
+  max-height: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2.5rem;
+  padding: 2rem;
   background-color: white;
   border-radius: 1rem;
 
   & h5 {
     margin: 0 auto 1rem;
     font-size: 1.2rem;
-    color: var(--main-dark-color);
+    color: black;
     font-family: inherit;
   }
 
-  & p {
-    width: 100%;
-    font-size: 0.8rem;
+  & p,
+  ul {
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  & li {
+    /* line up bullets with text above */
+    list-style-position: inside;
+    /* line up second line of text with the first for each bullet */
+    text-indent: -1.3rem;
+    padding-left: 1.3rem;
   }
 
   & .bold {
     font-weight: bold;
   }
-}
-
-.how-to-video {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin: 1.5rem auto;
-}
-
-.how-to-btn-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
 }

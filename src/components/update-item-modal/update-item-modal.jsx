@@ -67,59 +67,57 @@ export default function UpdateItemModal({
   }
 
   return (
-    <div className="update-item-modal-container">
-      <div className="update-item-modal-content">
-        <h5>Item details</h5>
-        <div className="update-item-input-container">
-          <label htmlFor="item">Name</label>
-          <input
-            className="text-input"
-            type="text"
-            id="item"
-            name="item"
-            required
-            value={updatedItem.item}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className="update-item-input-container">
-          <label htmlFor="amount">Units for sale</label>
-          <input
-            className="text-input"
-            type="text"
-            id="amount"
-            name="amount"
-            placeholder="each, 1 kg, small bag ..."
-            value={updatedItem.amount}
-            onChange={handleInputChange}
-          />
-        </div>
-        <div className="update-item-input-container">
-          <label htmlFor="price">Price</label>
-          <input
-            className="text-input"
-            type="text"
-            id="price"
-            name="price"
-            value={updatedItem.price}
-            onChange={handleInputChange}
-          />
-        </div>
-        {showError && (
-          <p className="item-update-error">New item must include a name</p>
-        )}
-        <div className="item-update-btn-container">
-          <ButtonStd
-            appearance="light"
-            handleClick={() => setDisplayItemModal(false)}
-          >
-            Cancel
-          </ButtonStd>
-          <ButtonStd appearance="dark" handleClick={handleSubmit}>
-            Submit
-          </ButtonStd>
-        </div>
+    <>
+      <h5>Item details</h5>
+      <div className="update-item-input-container">
+        <label htmlFor="item">Name</label>
+        <input
+          className="text-input"
+          type="text"
+          id="item"
+          name="item"
+          required
+          value={updatedItem.item}
+          onChange={handleInputChange}
+        />
       </div>
-    </div>
+      <div className="update-item-input-container">
+        <label htmlFor="amount">Units for sale</label>
+        <input
+          className="text-input"
+          type="text"
+          id="amount"
+          name="amount"
+          placeholder="each, 1 kg, small bag ..."
+          value={updatedItem.amount}
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="update-item-input-container">
+        <label htmlFor="price">Price</label>
+        <input
+          className="text-input"
+          type="text"
+          id="price"
+          name="price"
+          value={updatedItem.price}
+          onChange={handleInputChange}
+        />
+      </div>
+      {showError && (
+        <p className="item-update-error">New item must include a name</p>
+      )}
+      <div className="item-update-btn-container">
+        <ButtonStd
+          appearance="light"
+          handleClick={() => setDisplayItemModal(false)}
+        >
+          Cancel
+        </ButtonStd>
+        <ButtonStd appearance="dark" handleClick={handleSubmit}>
+          Submit
+        </ButtonStd>
+      </div>
+    </>
   );
 }
