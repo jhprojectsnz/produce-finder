@@ -9,6 +9,7 @@
 
 .rn-relative {
   position: relative;
+  margin-top: 1rem;
   padding-bottom: var(--space-from-bottom-of-screen);
 }
 

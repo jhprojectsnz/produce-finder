@@ -10,18 +10,21 @@ import ButtonStd from "../../components/button-std/button-std";
 export default function StallDetails({ selectedStall, setMapDetails }) {
   const navigate = useNavigate();
 
-  //If a user navigates to this page without a stall being selected navigate back on page
-  //Most likely cause of this is user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
-  if (!selectedStall.stallId) {
-    useEffect(() => navigate(-1), []);
-    return <></>;
-  }
+  // If a user navigates to this page without a stall being selected navigate back on page
+  // Most likely cause of this is user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
+  useEffect(() => {
+    if (!selectedStall.stallId) {
+      navigate(-1);
+    }
+  }, []);
+  // This needs to be outside of useEffect to stop the rest of the code from running
+  if (!selectedStall.stallId) return <></>;
 
   const stallIsOpen = useMemo(() => isOpen(selectedStall.openTimes));
 
-  //Create an array of li elements for any stall options that are true
-  //If the resulting array contains elements they will be rendered as a list in the about section
-  //Stall options should be added to the array below
+  // Create an array of li elements for any stall options that are true
+  // If the resulting array contains elements, render then as a list in the about section
+  // New stall options should be added to the array below
   const stallOptions = useMemo(() =>
     ["marketStall", "organic", "eftposPayment"]
       .map((stallOption) => {

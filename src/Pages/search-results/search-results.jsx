@@ -22,12 +22,11 @@ export default function SearchResults({
   const { stalls } = useUserContext();
   // Location used to find current pathname and use that for conditional rendering
   const location = useLocation();
-
   // Get google map component as a ref
   const mapRef = useRef(null);
 
-  // This function is run every time a use pauses after zooming or scrolling the map
-  // Stores the new map bounds to state. This causes a rerender and updates filteredStalls
+  // This function is run every time a user pauses after zooming or scrolling the map
+  // It saves the new map bounds to state. This causes a rerender and updates filteredStalls
   function handleOnIdol() {
     setMapDetails((prev) => ({
       ...prev,
@@ -35,7 +34,7 @@ export default function SearchResults({
     }));
   }
 
-  //This function is used to update mapCenter variable when navigating away from the map component
+  // This function is used to update mapDetails variable when navigating away from the map component
   function updateMapSettings() {
     const currentCenter = {
       lat: mapRef.current.state.map.center.lat(),

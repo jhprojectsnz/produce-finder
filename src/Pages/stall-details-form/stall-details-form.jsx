@@ -160,8 +160,21 @@ export default function StallDetailsForm() {
   }
 
   function handleAddImage() {
-    //In full version add ability to add image here
+    // In full version add ability to add image here
     setAddImageAttempt(true);
+  }
+
+  // If the user is not logged in or URL ID doesn't match their stalls return error
+  if (
+    !currentUser.userId ||
+    (id && !currentUser.stalls.includes(parseInt(id)))
+  ) {
+    return (
+      <div className="form-access-error">
+        <h3>Error</h3>
+        <p>You do not have permission to access this page</p>
+      </div>
+    );
   }
 
   return (

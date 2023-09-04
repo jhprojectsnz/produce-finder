@@ -18,17 +18,22 @@ export default function MyStalls({ setSelectedStall }) {
   const [displayRemoveStallModal, setDisplayRemoveStallModal] = useState(false);
 
   useEffect(() => {
-    //Fetch the stalls associated with the user from the database here
+    // Check if there is a current user, otherwise redirect to login page
+    if (currentUser.userId) {
+      // In full version - fetch the stalls associated with the user from the database here
 
-    //Code below to allow front end to function until backend/database is added
-    const userStalls = stalls.filter(
-      (stall) => stall.ownerId === currentUser.userId
-    );
-    setUserStalls(userStalls);
+      // Code below to allow front-end to function until back-end/database is added
+      const userStalls = stalls.filter(
+        (stall) => stall.ownerId === currentUser.userId
+      );
+      setUserStalls(userStalls);
+    } else {
+      navigate("/login");
+    }
   }, [currentUser, stalls]);
 
-  //This function runs when bin icon next to an item (fruit or vegetable) is clicked
-  //The stalls array in context is updated, with the clicked item removed from the relevant stall
+  // This function runs when bin icon next to an item (fruit or vegetable) is clicked
+  // The stalls array in context is updated, with the clicked item removed from the relevant stall
   function handleDeleteItem(itemIndex, stallId) {
     setStalls((prev) =>
       prev.map((stall) => {
