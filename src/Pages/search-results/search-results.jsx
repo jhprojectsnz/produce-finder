@@ -9,6 +9,7 @@ import { useRef, useMemo } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { GoogleMap } from "@react-google-maps/api";
 import { useLocation } from "react-router-dom";
+import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function SearchResults({
   selectedStall,
@@ -153,10 +154,13 @@ export default function SearchResults({
         )}
 
         {location.pathname === "/results/list" && (
-          <ResultsList
-            setSelectedStall={setSelectedStall}
-            stallsList={filteredStalls}
-          />
+          <div className="results-list-container">
+            <SectionHeading>Results</SectionHeading>
+            <ResultsList
+              setSelectedStall={setSelectedStall}
+              stallsList={filteredStalls}
+            />
+          </div>
         )}
         <ResultsNav updateMapCenter={updateMapSettings} />
       </div>
