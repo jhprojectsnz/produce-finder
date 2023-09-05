@@ -1,7 +1,5 @@
 import "./App.css";
 
-import { useLoadScript } from "@react-google-maps/api";
-import { Loader } from "@googlemaps/js-api-loader";
 import { Wrapper } from "@googlemaps/react-wrapper";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,10 +17,6 @@ import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
 import ModalLayout from "./components/modal-layout/modal-layout.jsx";
 import Footer from "./components/footer/footer.jsx";
-
-// Google maps libraries must be assigned outside of the component to avoid error
-// Array should not be passed directly to the libraries prop
-const libraries = ["places"];
 
 export default function App() {
   // Set a default map center here
@@ -54,47 +48,8 @@ export default function App() {
 
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
-  // Load the google map API - used for places search
-  // const { isLoaded } = useLoadScript({
-  //   googleMapsApiKey: import.meta.env.VITE_API_KEY,
-  //   libraries: libraries,
-  // });
-
-  // if (!isLoaded) return <div>Loading...</div>;
-  // console.log("app");
-  // const loader = new Loader({
-  //   apiKey: import.meta.env.VITE_API_KEY,
-  //   version: "weekly",
-  //   libraries: ["places"],
-  // });
-
-  // const mapOptions = {
-  //   center: {
-  //     lat: 0,
-  //     lng: 0,
-  //   },
-  //   zoom: 4,
-  // };
-
-  // let map;
-  // let service;
-
-  // loader
-  //   .importLibrary("maps")
-  //   .then(({ Map }) => {
-  //     map = new Map(document.getElementById("google-map"), mapOptions);
-  //   })
-  //   .then(() => {
-  //     service = new google.maps.places.PlacesService(map);
-  //   });
-
-  // loader.importLibrary("places").then((google) => {
-  //   const service = new google.PlacesService(map);
-  // });
-
   return (
-    <div className="app" id="app">
-      <div id="google-map" />
+    <div className="app">
       <BrowserRouter>
         <UserProvider>
           <MainNavBar />

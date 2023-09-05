@@ -1,199 +1,131 @@
 import "./map.css";
 import StallPreview from "../stall-preview/stall-preview.jsx";
-import { GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useUserContext } from "../../context/UserContext";
-import { useEffect, useRef } from "react";
-import convertPlaceToStall from "../../functions/convertPlaceToStall";
+import { useEffect, useRef, useState } from "react";
 
 export default function Map({
   selectedStall,
   setSelectedStall,
-  setMapCenter,
-  mapCenter,
-  stallsInMapBounds,
-  setStallsInMapBounds,
+  setMapDetails,
+  mapDetails,
 }) {
-  const markerIcon = {
-    path: "M 172.268 501.67 C 26.97 291.031 0 269.413 0 192 C 0 85.961 85.961 0 192 0 s 192 85.961 192 192 c 0 77.413 -26.97 99.031 -172.268 309.67 c -9.535 13.774 -29.93 13.773 -39.464 0 Z M 192 272 c 44.183 0 80 -35.817 80 -80 s -35.817 -80 -80 -80 s -80 35.817 -80 80 s 35.817 80 80 80 Z",
-    fillColor: "red",
-    fillOpacity: 1,
-    scale: 0.06,
-    anchor: new google.maps.Point(200, 500),
-  };
+  // Import all stalls from context
+  const { stalls } = useUserContext();
 
-  const selectedIcon = {
-    path: "M 172.268 501.67 C 26.97 291.031 0 269.413 0 192 C 0 85.961 85.961 0 192 0 s 192 85.961 192 192 c 0 77.413 -26.97 99.031 -172.268 309.67 c -9.535 13.774 -29.93 13.773 -39.464 0 Z M 192 272 c 44.183 0 80 -35.817 80 -80 s -35.817 -80 -80 -80 s -80 35.817 -80 80 s 35.817 80 80 80 Z",
-    fillColor: "blue",
-    fillOpacity: 1,
-    scale: 0.08,
-    anchor: new google.maps.Point(200, 500),
-  };
-
-  //Access stalls data and setStalls from context
-  //This is a SUBSTITUTE FOR ACCESSING DATABASE - update later when database set up
-  const { stalls, setStalls } = useUserContext();
-
-  //Get google map component as a ref
+  // Get google map component as a ref
   const mapRef = useRef(null);
 
-  // function filterStallsWithinBounds(mapRef) {
-  //   const mapBounds = mapRef.current.state.map.getBounds();
-  //   const stallsInNewMapBounds = stalls.filter((stall) =>
-  //     mapBounds.contains(
-  //       new google.maps.LatLng(stall.location.lat, stall.location.lng)
-  //     )
-  //   );
-  //   setStallsInMapBounds(stallsInNewMapBounds);
-  // }
+  // Styles for the Google map - switch of points of interest to make map clearer
+  const mapStyles = [
+    {
+      featureType: "poi",
+      stylers: [{ visibility: "off" }],
+    },
+  ];
 
-  function searchNewStallsInBounds(mapRef) {
-    //Access the PlacesService required to do a nearby search
-    const service = new google.maps.places.PlacesService(
-      mapRef.current.state.map
-    );
+  const [googleMap, setGoogleMap] = useState();
 
-    const mapBounds = mapRef.current.state.map.getBounds();
+  console.log(mapDetails);
 
-    //Set request parameters for the nearby search
-    const request = {
-      keyword: "farm",
-      bounds: mapBounds,
-    };
-    //Perform nearby search, convert places to stalls and then save new stalls to context
-    service.nearbySearch(request, (results, status) => {
-      if (status == google.maps.places.PlacesServiceStatus.OK) {
-        setStalls((prevStalls) => {
-          //Create a set containing IDs of all current stalls
-          //Allows for a quick check if new places are already in stalls data
-          const currentStallIds = new Set();
-          prevStalls.forEach((stall) => currentStallIds.add(stall.stallId));
-          //Filter out places that are already in stalls data
-          //Then convert the places data to dummy stalls data
-          const newPlacesAsStalls = results
-            .filter((place) => !currentStallIds.has(place.place_id))
-            .map((place) => convertPlaceToStall(place));
-          //Add the new dummy stalls to the current stalls data
-          return [...prevStalls, ...newPlacesAsStalls];
-        });
-      }
+  useEffect(() => {
+    console.log("useEffect");
+    const map = new google.maps.Map(mapRef.current, {
+      center: mapDetails.center,
+      zoom: mapDetails.zoom,
+      styles: mapStyles,
+      clickableIcons: false,
+      disableDefaultUI: true,
     });
-  }
 
-  function handleOnIdol() {
-    console.log(mapRef);
+    map.addListener("idle", () => {
+      setMapDetails((prev) => ({
+        ...prev,
+        bounds: map.getBounds(),
+      }));
+    });
 
-    // Filter all stalls to those within new map bounds and save to state
-    // Stalls that are within the current map bounds will be shown as markers and appear in the results list
-    if (mapRef) {
-      searchNewStallsInBounds(mapRef);
-    }
-  }
-  console.log(mapRef);
-  // console.log(mapRef.current.GoogleMap)
+    setGoogleMap(map);
+  }, []);
 
-  console.log(stalls);
-  console.log(stallsInMapBounds);
+  // // Make a array of stalls, first filtered by map bounds and then by user filters
+  // // The resulting stalls are used as markers on map and to populate results list
+  // const filteredStalls = useMemo(() => {
+  //   // Filter all stalls to just those within the current map bounds
+  //   const stallsWithinMapBounds = mapDetails.mapBounds
+  //     ? stalls.filter((stall) =>
+  //         mapDetails.mapBounds.contains(
+  //           new google.maps.LatLng(stall.location.lat, stall.location.lng)
+  //         )
+  //       )
+  //     : [];
+
+  //   // Return an array of stalls filtered by user selected filters
+  //   return stallsWithinMapBounds.filter((stall) => {
+  //     // If Open now filter is selected and stall is closed don't include stall
+  //     if (filters.buttonFilters["Open now"] && !isOpen(stall.openTimes))
+  //       return false;
+  //     // If Items in stock is selected and stall has no stock don't include stall
+  //     if (filters.buttonFilters["Items in stock"] && stall.inStock.length < 1)
+  //       return false;
+  //     // If Organic/Market stall/Eftopos payment filters are selected
+  //     // Check if the stall matchs and exclude if not
+  //     if (filters.buttonFilters.Organic && !stall.organic) return false;
+  //     if (filters.buttonFilters["Market stall"] && !stall.marketStall)
+  //       return false;
+  //     if (filters.buttonFilters["Eftpos payment"] && !stall.eftposPayment)
+  //       return false;
+
+  //     // If the user has search for a fruit or vegetable filter stalls by this keyword
+  //     if (filters.keyword) {
+  //       // Simplify the keyword by:
+  //       // - Converting to lower case
+  //       // - Slicing of the end to keyword to account for plurals "ies" or "s"
+  //       const filterTerm = /ies$/.test(filters.keyword)
+  //         ? filters.keyword.toLowerCase().slice(0, -3)
+  //         : filters.keyword.toLowerCase().slice(0, -1);
+
+  //       // Initiate variable to track whether the stall has an item that matches the filterTerm
+  //       let stallHasKeyword = false;
+
+  //       // Look through each product to see if it includes the search term
+  //       // Sliced filterTerms like cherr (from Cherries) will match Cherries, Cherry etc
+  //       stall.inStock.forEach((product) => {
+  //         // toSting needs to be run before toLowerCase will work here
+  //         // Product.item not stored as a primitive string?
+  //         const productName = product.item.toString().toLowerCase();
+  //         if (productName.includes(filterTerm)) {
+  //           stallHasKeyword = true;
+  //         }
+  //       });
+  //       // If stallHasKeyword is still false then stall does not have a matching product - don't include
+  //       if (!stallHasKeyword) return false;
+  //     }
+
+  //     // If there none of the above conditions have been meet then include the stall in filtered array
+  //     return true;
+  //   });
+  // });
 
   return (
     <>
-      <GoogleMap
-        ref={mapRef}
-        zoom={13}
-        center={mapCenter}
-        mapContainerClassName="map"
-        clickableIcons={false}
-        onClick={() => setSelectedStall({})}
-        options={{ disableDefaultUI: true }}
-        onIdle={handleOnIdol}
-      >
-        {console.log("map")}
-        {stallsInMapBounds.length > 0 &&
-          stallsInMapBounds.map((stall) => (
-            <MarkerF
-              key={stall.stallId}
-              position={{ lat: stall.location.lat, lng: stall.location.lng }}
-              options={{
-                icon:
-                  stall.stallId === selectedStall.stallId
-                    ? selectedIcon
-                    : markerIcon,
-              }}
-              onClick={() => {
-                setSelectedStall(stall);
-              }}
-            />
-          ))}
-      </GoogleMap>
+      <div ref={mapRef} className="map"></div>
+      {/* <GoogleMap
+      onClick={() => setSelectedStall({})}
+    >
+      {console.log("map")}
+      <Markers
+        filteredStalls={filteredStalls}
+        selectedStall={selectedStall}
+        setSelectedStall={setSelectedStall}
+      />
+    </GoogleMap> */}
       {selectedStall.stallId && (
         <StallPreview
           selectedStall={selectedStall}
           setSelectedStall={setSelectedStall}
+          updateMapCenter={updateMapSettings}
         />
       )}
     </>
   );
 }
-
-// //Set a ref for the google map so it can be accessed by other functions
-// const mapRef = useRef(null);
-// // const mapBounds = mapRef.current
-// //   ? mapRef.current.state.map.getBounds()
-// //   : null;
-
-// //This function will run after user finishes zooming or scrolling the map
-// function handleOnIdol() {
-//   //Find the new center of the map
-//   const newCenter = {
-//     lat: mapRef.current.state.map.center.lat(),
-//     lng: mapRef.current.state.map.center.lng(),
-//   };
-
-//   console.log("idol");
-//   //Access the PlacesService required to do a nearby search
-//   const service = new google.maps.places.PlacesService(
-//     mapRef.current.state.map
-//   );
-
-//   //Set request parameters for the nearby search
-//   const request = {
-//     location: newCenter,
-//     keyword: "farm",
-//     radius: 10000,
-//   };
-//   //Perform nearby search, convert places to stalls and then save new stalls to context
-//   service.nearbySearch(request, (results, status) => {
-//     if (status == google.maps.places.PlacesServiceStatus.OK) {
-//       setStalls((prevStalls) => {
-//         //Create a set containing IDs of all current stalls
-//         //Allows for a quick check if new places are already in stalls data
-//         const currentStallIds = new Set();
-//         prevStalls.forEach((stall) => currentStallIds.add(stall.stallId));
-//         //Filter out places that are already in stalls data
-//         //Then convert the places data to dummy stalls data
-//         const newPlacesAsStalls = results
-//           .filter((place) => !currentStallIds.has(place.place_id))
-//           .map((place) => convertPlaceToStall(place));
-//         //Add the new dummy stalls to the current stalls data
-//         return [...prevStalls, ...newPlacesAsStalls];
-//       });
-//     }
-//   });
-
-//   //If the map has been moved update mapCenter
-//   if (JSON.stringify(newCenter) != JSON.stringify(mapCenter)) {
-//     setMapCenter(newCenter);
-//   }
-
-// console.log(mapBounds);
-
-//Filter all stalls to those within new map bounds and save to state
-//Stalls that are within the current map bounds will be shown as markers and appear in the results list
-// if (mapBounds) {
-//   const stallsInNewMapBounds = stalls.filter((stall) =>
-//     mapBounds.contains(
-//       new google.maps.LatLng(stall.location.lat, stall.location.lng)
-//     )
-//   );
-//   setStallsInMapBounds(stallsInNewMapBounds);
-// }
-// }

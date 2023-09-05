@@ -1,12 +1,11 @@
 import "./home.css";
 
-import { BiSearchAlt } from "react-icons/bi";
-import { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
 import About from "../../components/about/about";
 import { useLocation } from "react-router-dom";
+import LocationSearch from "../../components/location-search/location-search";
 
 export default function Home({
   setMapDetails,
@@ -16,20 +15,6 @@ export default function Home({
 }) {
   // Location used to find current pathname
   const location = useLocation();
-
-  const autocompleteRef = useRef(null);
-  const [autocomplete, setAutocomplete] = useState();
-  const placesOptions = { componentRestrictions: { country: "nz" } };
-  useEffect(() => {
-    if (autocompleteRef.current && !autocomplete) {
-      setAutocomplete(
-        new google.maps.places.Autocomplete(
-          autocompleteRef.current,
-          placesOptions
-        )
-      );
-    }
-  }, []);
 
   // If URL contains "/about" on load scroll to the about section
   // Otherwise scroll to top of homepage
@@ -46,18 +31,6 @@ export default function Home({
     }
   }, [location.pathname]);
 
-  function handleSearch() {
-    const place = autocomplete.getPlace();
-    setMapDetails((prev) => ({
-      ...prev,
-      center: {
-        lat: place.geometry.location.lat(),
-        lng: place.geometry.location.lng(),
-      },
-    }));
-    setLastSearchLocation(place.formatted_address);
-  }
-
   return (
     <div className="homepage">
       <section className="hero">
@@ -66,20 +39,11 @@ export default function Home({
           <h2>Direct from the grower</h2>
           <p>Find produce stalls and shops near you</p>
         </div>
-        <input
-          ref={autocompleteRef}
-          type="text"
-          placeholder="Enter address, city or postcode..."
-          className="home-search-input"
-          defaultValue={lastSearchLocation}
+        <LocationSearch
+          setMapDetails={setMapDetails}
+          setLastSearchLocation={setLastSearchLocation}
+          lastSearchLocation={lastSearchLocation}
         />
-        <Link
-          to="/results/map"
-          className="home-search-btn"
-          onClick={handleSearch}
-        >
-          Search <BiSearchAlt className="home-search-icon" />
-        </Link>
       </section>
       <PopularStalls setSelectedStall={setSelectedStall} />
       <About />
