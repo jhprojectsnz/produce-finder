@@ -1,18 +1,23 @@
 import "./main-navbar.css";
+
 import { BiMenu, BiUser } from "react-icons/bi";
 import { FaHouseUser, FaHeart } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useNavigate, useLocation } from "react-router-dom";
-import DropdownMenu from "../dropdown-menu/dropdown-menu";
-import CircleBtn from "../cricle-btn/circle-btn";
 import { useState } from "react";
 
-//Could add a modal to confirm logout here
+import DropdownMenu from "../dropdown-menu/dropdown-menu";
+import CircleBtn from "../cricle-btn/circle-btn";
+
 export default function MainNavBar() {
   const { isAuth } = useUserContext();
   const [showDropdown, setShowDropdown] = useState(false);
+
+  // useNavigate function used to navigate between pages on click
   const navigate = useNavigate();
+  // useLocation gets current pathname - used for condition rendering of the nav
   const location = useLocation();
+  const currentMainPath = location.pathname.split("/")[1];
 
   function handleLoginClick() {
     navigate("/login");
@@ -26,21 +31,20 @@ export default function MainNavBar() {
     navigate("/mystalls");
   }
 
-  function handleMenuClick(e) {
+  function handleTitleClick() {
+    navigate("/");
+  }
+
+  function handleMenuButtonClick(e) {
     // Stop propagation required so that the click event doesn't trigger the dropdown to close due to click outside dropdown menu
     e.stopPropagation();
     setShowDropdown((prev) => !prev);
   }
 
   return (
-    <div
-      // Check if on results page - if so hide main navbar
-      className={
-        location.pathname.split("/")[1] != "results" ? "main-navbar" : "hide"
-      }
-    >
+    <nav className={currentMainPath != "results" ? "main-navbar" : "hide"}>
       <div className="main-navbar-container">
-        <h1 className="main-navbar-title" onClick={() => navigate("/")}>
+        <h1 className="main-navbar-title" onClick={handleTitleClick}>
           Find Fresh Produce
         </h1>
         <div className="main-navbar-btn-container">
@@ -58,12 +62,12 @@ export default function MainNavBar() {
               <BiUser className="circle-btn-icon" />
             </CircleBtn>
           )}
-          <CircleBtn appearance="dark" handleClick={handleMenuClick}>
+          <CircleBtn appearance="dark" handleClick={handleMenuButtonClick}>
             <BiMenu className="circle-btn-icon" />
           </CircleBtn>
         </div>
       </div>
       {showDropdown && <DropdownMenu setShowDropdown={setShowDropdown} />}
-    </div>
+    </nav>
   );
 }

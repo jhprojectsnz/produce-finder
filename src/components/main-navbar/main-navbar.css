@@ -8,12 +8,12 @@
 
 .main-navbar-container {
   position: relative;
-  padding: 0.5rem 1rem;
   height: var(--main-nav-height);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
   background-color: var(--main-dark-color);
 }
 

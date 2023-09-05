@@ -1,10 +1,12 @@
-import SearchResults from "./Pages/search-results/search-results.jsx";
 import "./App.css";
-import Home from "./Pages/home/home.jsx";
+
 import { useLoadScript } from "@react-google-maps/api";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./Pages/home/home.jsx";
 import Login from "./Pages/login/login.jsx";
+import SearchResults from "./Pages/search-results/search-results.jsx";
 import StallDetailsForm from "./Pages/stall-details-form/stall-details-form.jsx";
 import MyStalls from "./Pages/my-stalls/my-stalls.jsx";
 import Favourites from "./Pages/favourites/favourites.jsx";
@@ -21,20 +23,22 @@ import Footer from "./components/footer/footer.jsx";
 const libraries = ["places"];
 
 export default function App() {
+  // Set a default map center here
   const defaultMapCenter = {
     lat: -36.850821266967884,
     lng: 174.76444851328998,
   };
+  // Map details and selecte dStall are stored in App component - used across multiple components
   const [mapDetails, setMapDetails] = useState({
     center: defaultMapCenter,
     zoom: 13,
     bounds: false,
   });
-  const [lastSearchLoaction, setLastSearchLocation] = useState("");
   const [selectedStall, setSelectedStall] = useState({});
-  // Filters only used in SearchResults component but are here to store values when use navigates between results and stall details
+  const [lastSearchLoaction, setLastSearchLocation] = useState("");
+  // Filters only used in SearchResults component but are here so values are stored when user navigates between results and stall details
   // Could create a second set of context for this and other shared variables(e.g. mapCenter)?
-  // Or include the filters in the url?
+  // Or save to localStorage/sessionStorage
   const [filters, setFilters] = useState({
     keyword: false,
     buttonFilters: {
@@ -48,6 +52,7 @@ export default function App() {
 
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
+  // Load the google map API - used for places search
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: import.meta.env.VITE_API_KEY,
     libraries: libraries,

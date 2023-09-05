@@ -7,8 +7,7 @@ export default function DropdownMenu({ setShowDropdown }) {
   const { isAuth, setIsAuth, setCurrentUser } = useUserContext();
 
   // Use useEffect to add the onClick listner to the whole document when the dropdown is opened
-  // then remove it when dropdown is closed
-  //Clicking anywhere on the page will close the dropdown menu
+  // Clicking anywhere on the page will close the dropdown menu
   useEffect(() => {
     document.addEventListener("click", () => setShowDropdown(false));
     return () => {
@@ -16,7 +15,6 @@ export default function DropdownMenu({ setShowDropdown }) {
     };
   }, []);
 
-  // This function runs when log out button is clicked
   function handleLogoutClick() {
     setIsAuth(false);
     setCurrentUser({});

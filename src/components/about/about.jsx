@@ -1,10 +1,13 @@
 import "./about.css";
+
+import { useNavigate } from "react-router-dom";
+
 import farmImg from "../../assets/farm-image.jpg";
 import healthImg from "../../assets/healthy-image.jpg";
 import saveImg from "../../assets/save-image.jpg";
 import stallImg from "../../assets/fruit-stall-image.jpg";
+
 import ButtonStd from "../button-std/button-std";
-import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const navigate = useNavigate();
