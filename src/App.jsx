@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { useLoadScript } from "@react-google-maps/api";
+import { Loader } from "@googlemaps/js-api-loader";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -53,16 +54,50 @@ export default function App() {
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
   // Load the google map API - used for places search
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: import.meta.env.VITE_API_KEY,
-    libraries: libraries,
+  // const { isLoaded } = useLoadScript({
+  //   googleMapsApiKey: import.meta.env.VITE_API_KEY,
+  //   libraries: libraries,
+  // });
+
+  // if (!isLoaded) return <div>Loading...</div>;
+  // console.log("app");
+  const loader = new Loader({
+    apiKey: import.meta.env.VITE_API_KEY,
+    version: "weekly",
+    libraries: ["places"],
   });
 
-  if (!isLoaded) return <div>Loading...</div>;
-  console.log("app");
+  const mapOptions = {
+    center: {
+      lat: 0,
+      lng: 0,
+    },
+    zoom: 4,
+  };
+
+  let map;
+  let service;
+
+  loader
+    .importLibrary("maps")
+    .then(({ Map }) => {
+      map = new Map(document.getElementById("google-map"), mapOptions);
+    })
+    .then(() => {
+      service = new google.maps.places.PlacesService(map);
+    });
+
+  // loader.importLibrary("places").then((google) => {
+  //   const service = new google.PlacesService(map);
+  // });
+
+  console.log(google);
+
+  console.log(map);
 
   return (
-    <div className="app">
+    <div className="app" id="app">
+      <div id="google-map" />
       <BrowserRouter>
         <UserProvider>
           <MainNavBar />

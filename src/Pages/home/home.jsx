@@ -1,8 +1,10 @@
 import "./home.css";
+
 import { BiSearchAlt } from "react-icons/bi";
 import { Autocomplete } from "@react-google-maps/api";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
 import About from "../../components/about/about";
 import { useLocation } from "react-router-dom";
@@ -19,9 +21,10 @@ export default function Home({
   // Avoid using state to store searchbox?
   const onSearchBoxLoad = (ref) => setSearchBox(ref);
 
+  // Used to find current pathname
   const location = useLocation();
 
-  // If URL contains "/about" on load scroll to about section
+  // If URL contains "/about" on load scroll to the about section
   // Otherwise scroll to top of homepage
   useEffect(() => {
     if (location.pathname === "/about") {
@@ -39,11 +42,12 @@ export default function Home({
   // Run whenever a new place is entered into the search bar
   // Uses the location of the place searched to update map center
   function placesChanged() {
-    // If searchBox has not been defined - do nothing
     if (!searchBox) return;
     const place = searchBox.getPlace();
+
     // If the place searched doesn't have geometry information - do nothing
     if (!place.geometry) return;
+
     // Update map details with location of place searched
     setMapDetails((prev) => ({
       ...prev,
@@ -52,6 +56,7 @@ export default function Home({
         lng: place.geometry.location.lng(),
       },
     }));
+
     // Store search location so it can be repopulated if user clicks back to home
     setLastSearchLocation(place.formatted_address);
   }
@@ -64,7 +69,7 @@ export default function Home({
           <h2>Direct from the grower</h2>
           <p>Find produce stalls and shops near you</p>
         </div>
-        <Autocomplete
+        {/* <Autocomplete
           onLoad={onSearchBoxLoad}
           onPlaceChanged={placesChanged}
           restrictions={{ country: "nz" }}
@@ -75,7 +80,7 @@ export default function Home({
             className="home-search-input"
             defaultValue={lastSearchLocation}
           />
-        </Autocomplete>
+        </Autocomplete> */}
         <Link to="/results/map" className="home-search-btn">
           Search <BiSearchAlt className="home-search-icon" />
         </Link>
