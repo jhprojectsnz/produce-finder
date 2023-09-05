@@ -1,8 +1,7 @@
 import "./home.css";
 
 import { BiSearchAlt } from "react-icons/bi";
-import { Autocomplete } from "@react-google-maps/api";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
@@ -15,14 +14,22 @@ export default function Home({
   setLastSearchLocation,
   setSelectedStall,
 }) {
-  // Variable to store search box ref
-  const [searchBox, setSearchBox] = useState(null);
-  // Could try to change this so there are less rerenders on loading?
-  // Avoid using state to store searchbox?
-  const onSearchBoxLoad = (ref) => setSearchBox(ref);
-
-  // Used to find current pathname
+  // Location used to find current pathname
   const location = useLocation();
+
+  const autocompleteRef = useRef(null);
+  const [autocomplete, setAutocomplete] = useState();
+  const placesOptions = { componentRestrictions: { country: "nz" } };
+  useEffect(() => {
+    if (autocompleteRef.current && !autocomplete) {
+      setAutocomplete(
+        new google.maps.places.Autocomplete(
+          autocompleteRef.current,
+          placesOptions
+        )
+      );
+    }
+  }, []);
 
   // If URL contains "/about" on load scroll to the about section
   // Otherwise scroll to top of homepage
@@ -39,16 +46,8 @@ export default function Home({
     }
   }, [location.pathname]);
 
-  // Run whenever a new place is entered into the search bar
-  // Uses the location of the place searched to update map center
-  function placesChanged() {
-    if (!searchBox) return;
-    const place = searchBox.getPlace();
-
-    // If the place searched doesn't have geometry information - do nothing
-    if (!place.geometry) return;
-
-    // Update map details with location of place searched
+  function handleSearch() {
+    const place = autocomplete.getPlace();
     setMapDetails((prev) => ({
       ...prev,
       center: {
@@ -56,8 +55,6 @@ export default function Home({
         lng: place.geometry.location.lng(),
       },
     }));
-
-    // Store search location so it can be repopulated if user clicks back to home
     setLastSearchLocation(place.formatted_address);
   }
 
@@ -69,19 +66,18 @@ export default function Home({
           <h2>Direct from the grower</h2>
           <p>Find produce stalls and shops near you</p>
         </div>
-        {/* <Autocomplete
-          onLoad={onSearchBoxLoad}
-          onPlaceChanged={placesChanged}
-          restrictions={{ country: "nz" }}
+        <input
+          ref={autocompleteRef}
+          type="text"
+          placeholder="Enter address, city or postcode..."
+          className="home-search-input"
+          defaultValue={lastSearchLocation}
+        />
+        <Link
+          to="/results/map"
+          className="home-search-btn"
+          onClick={handleSearch}
         >
-          <input
-            type="text"
-            placeholder="Enter address, city or postcode..."
-            className="home-search-input"
-            defaultValue={lastSearchLocation}
-          />
-        </Autocomplete> */}
-        <Link to="/results/map" className="home-search-btn">
           Search <BiSearchAlt className="home-search-icon" />
         </Link>
       </section>
