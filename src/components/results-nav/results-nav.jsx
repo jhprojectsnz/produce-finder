@@ -26,7 +26,7 @@ export default function ResultsNav({ updateMapCenter }) {
         options={["shadow", "long"]}
         handleClick={() => {
           navigate("/results/list");
-          updateMapCenter();
+          // updateMapCenter();
         }}
       >
         List

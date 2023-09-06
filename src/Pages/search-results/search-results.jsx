@@ -2,8 +2,6 @@ import "./search-results.css";
 import SearchBar from "../../components/search-bar/search-bar";
 import ResultsNav from "../../components/results-nav/results-nav";
 import ResultsList from "../../components/results-list/results-list";
-import StallPreview from "../../components/stall-preview/stall-preview";
-import Markers from "../../components/markers/markers";
 import isOpen from "../../functions/isOpen";
 import { useMemo } from "react";
 import { useUserContext } from "../../context/UserContext";
@@ -26,7 +24,6 @@ export default function SearchResults({
 
   // This function is used to update mapDetails variable when navigating away from the map component
   function updateMapSettings() {
-    console.log(googleMap);
     const currentCenter = {
       lat: googleMap.center.lat(),
       lng: googleMap.center.lng(),
@@ -42,10 +39,11 @@ export default function SearchResults({
   // Make a array of stalls, first filtered by map bounds and then by user filters
   // The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
+    console.log(mapDetails.bounds);
     // Filter all stalls to just those within the current map bounds
-    const stallsWithinMapBounds = mapDetails.mapBounds
+    const stallsWithinMapBounds = mapDetails.bounds
       ? stalls.filter((stall) =>
-          mapDetails.mapBounds.contains(
+          mapDetails.bounds.contains(
             new google.maps.LatLng(stall.location.lat, stall.location.lng)
           )
         )
@@ -99,31 +97,30 @@ export default function SearchResults({
   });
 
   return (
-    <>
+    <div className="search-results">
       <SearchBar
         filters={filters}
         setFilters={setFilters}
         setSelectedStall={setSelectedStall}
       />
-      <div className="search-results">
-        {location.pathname === "/results/map" && (
-          <Map
-            setMapDetails={setMapDetails}
-            mapDetails={mapDetails}
-            selectedStall={selectedStall}
+      {location.pathname === "/results/list" ? (
+        <div className="results-list-container">
+          <SectionHeading>Results</SectionHeading>
+          <ResultsList
+            setSelectedStall={setSelectedStall}
+            stallsList={filteredStalls}
           />
-        )}
-        {location.pathname === "/results/list" && (
-          <div className="results-list-container">
-            <SectionHeading>Results</SectionHeading>
-            <ResultsList
-              setSelectedStall={setSelectedStall}
-              stallsList={filteredStalls}
-            />
-          </div>
-        )}
-        <ResultsNav updateMapCenter={updateMapSettings} />
-      </div>
-    </>
+        </div>
+      ) : (
+        <Map
+          filteredStalls={filteredStalls}
+          setMapDetails={setMapDetails}
+          mapDetails={mapDetails}
+          selectedStall={selectedStall}
+          setSelectedStall={setSelectedStall}
+        />
+      )}
+      <ResultsNav updateMapCenter={updateMapSettings} />
+    </div>
   );
 }
