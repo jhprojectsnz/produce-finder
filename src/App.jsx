@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useLoadScript } from "@react-google-maps/api";
+import { Wrapper } from "@googlemaps/react-wrapper";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,10 +17,6 @@ import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
 import ModalLayout from "./components/modal-layout/modal-layout.jsx";
 import Footer from "./components/footer/footer.jsx";
-
-// Google maps libraries must be assigned outside of the component to avoid error
-// Array should not be passed directly to the libraries prop
-const libraries = ["places"];
 
 export default function App() {
   // Set a default map center here
@@ -52,66 +48,65 @@ export default function App() {
 
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
-  // Load the google map API - used for places search
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: import.meta.env.VITE_API_KEY,
-    libraries: libraries,
-  });
-
-  if (!isLoaded) return <div>Loading...</div>;
   console.log("app");
-
   return (
     <div className="app">
       <BrowserRouter>
         <UserProvider>
           <MainNavBar />
-          <Routes>
-            <Route
-              path="/:about?"
-              element={
-                <Home
-                  setMapDetails={setMapDetails}
-                  lastSearchLocation={lastSearchLoaction}
-                  setLastSearchLocation={setLastSearchLocation}
-                  setSelectedStall={setSelectedStall}
-                />
-              }
-            />
-            <Route
-              path="/results/*"
-              element={
-                <SearchResults
-                  mapDetails={mapDetails}
-                  setMapDetails={setMapDetails}
-                  selectedStall={selectedStall}
-                  setSelectedStall={setSelectedStall}
-                  filters={filters}
-                  setFilters={setFilters}
-                />
-              }
-            />
-            <Route path="/login" element={<Login />} />
-            <Route path="/form/:id?" element={<StallDetailsForm />} />
-            <Route
-              path="/mystalls"
-              element={<MyStalls setSelectedStall={setSelectedStall} />}
-            />
-            <Route
-              path="/favourites"
-              element={<Favourites setSelectedStall={setSelectedStall} />}
-            />
-            <Route path="/NewStallData" element={<CreateStallData />} />
-            <Route
-              path="/details"
-              element={
-                <StallDetails
-                  selectedStall={selectedStall}
-                  setMapDetails={setMapDetails}
-                />
-              }
-            />
-          </Routes>
+          <Wrapper
+            apiKey={import.meta.env.VITE_API_KEY}
+            version="weekly"
+            libraries={["places"]}
+          >
+            <Routes>
+              <Route
+                path="/:about?"
+                element={
+                  <Home
+                    setMapDetails={setMapDetails}
+                    lastSearchLocation={lastSearchLoaction}
+                    setLastSearchLocation={setLastSearchLocation}
+                    setSelectedStall={setSelectedStall}
+                  />
+                }
+              />
+
+              <Route
+                path="/results/*"
+                element={
+                  <SearchResults
+                    mapDetails={mapDetails}
+                    setMapDetails={setMapDetails}
+                    selectedStall={selectedStall}
+                    setSelectedStall={setSelectedStall}
+                    filters={filters}
+                    setFilters={setFilters}
+                  />
+                }
+              />
+              <Route path="/login" element={<Login />} />
+              <Route path="/form/:id?" element={<StallDetailsForm />} />
+              <Route
+                path="/mystalls"
+                element={<MyStalls setSelectedStall={setSelectedStall} />}
+              />
+              <Route
+                path="/favourites"
+                element={<Favourites setSelectedStall={setSelectedStall} />}
+              />
+              <Route path="/NewStallData" element={<CreateStallData />} />
+              <Route
+                path="/details"
+                element={
+                  <StallDetails
+                    selectedStall={selectedStall}
+                    setMapDetails={setMapDetails}
+                  />
+                }
+              />
+            </Routes>
+          </Wrapper>
           <Footer />
         </UserProvider>
       </BrowserRouter>

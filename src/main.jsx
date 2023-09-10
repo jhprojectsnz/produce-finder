@@ -7,6 +7,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  // <App />
 );
 
 //Switch to this to check rerenders without strict mode

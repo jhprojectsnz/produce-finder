@@ -3,11 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
 
-export default function StallPreview({
-  selectedStall,
-  setSelectedStall,
-  updateMapCenter,
-}) {
+export default function StallPreview({ selectedStall, setSelectedStall }) {
   const stallIsOpen = isOpen(selectedStall.openTimes);
   const navigate = useNavigate();
 
@@ -15,7 +11,6 @@ export default function StallPreview({
     <div
       className="info-window-container"
       onClick={() => {
-        updateMapCenter();
         navigate("/details");
       }}
     >
