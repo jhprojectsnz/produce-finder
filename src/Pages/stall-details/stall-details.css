@@ -119,7 +119,7 @@
 @media screen and (min-width: 700px) {
   .stall-details {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
     /* set height for first two rows - contains title and address */
