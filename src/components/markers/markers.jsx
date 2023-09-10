@@ -59,51 +59,23 @@ export default function Markers({
   }
 
   useEffect(() => {
+    console.log("markers");
     markers.forEach((marker) => marker.setMap(null));
-    setMarkers((prev) => []);
-    setMarkers((prev) => {
-      return filteredStalls.map(
-        (stall) =>
-          new google.maps.Marker({
-            position: {
-              lat: stall.location.lat,
-              lng: stall.location.lng,
-            },
-            icon: markerType(stall.stallId),
-            map: googleMap,
-          })
-      );
-    });
-    console.log(markers);
-  }, [filteredStalls]);
-
-  // const markers = filteredStalls.map(
-  //   (stall) =>
-  //     new google.maps.Marker({
-  //       position: {
-  //         lat: stall.location.lat,
-  //         lng: stall.location.lng,
-  //       },
-  //       icon: markerType(stall.stallId),
-  //       map: googleMap,
-  //     })
-  // );
-
-  // console.log(markers);
+    setMarkers(
+      filteredStalls.map((stall) => {
+        const newMarker = new google.maps.Marker({
+          position: {
+            lat: stall.location.lat,
+            lng: stall.location.lng,
+          },
+          icon: markerType(stall.stallId),
+          map: googleMap,
+        });
+        newMarker.addListener("click", () => setSelectedStall(stall));
+        return newMarker;
+      })
+    );
+  }, [filteredStalls, selectedStall]);
 
   return <></>;
 }
-
-// <MarkerF
-
-//   position={{
-//     lat: stall.location.lat,
-//     lng: stall.location.lng,
-//   }}
-//   options={{
-//     icon: markerType(stall.stallId),
-//   }}
-//   onClick={() => {
-//     setSelectedStall(stall);
-//   }}
-// />

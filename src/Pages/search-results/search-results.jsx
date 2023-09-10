@@ -36,10 +36,11 @@ export default function SearchResults({
     }));
   }
 
+  console.log("SearchResults");
+
   // Make a array of stalls, first filtered by map bounds and then by user filters
   // The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
-    console.log(mapDetails.bounds);
     // Filter all stalls to just those within the current map bounds
     const stallsWithinMapBounds = mapDetails.bounds
       ? stalls.filter((stall) =>
@@ -124,3 +125,9 @@ export default function SearchResults({
     </div>
   );
 }
+
+// Load a google map
+// Populate the map with markers for the locations within the map bounds
+// Save a list of those locations that can be used for list view
+// When user moves the map update the markers to the new map bounds
+// Update the saved locations

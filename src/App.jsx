@@ -48,6 +48,7 @@ export default function App() {
 
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
+  console.log("app");
   return (
     <div className="app">
       <BrowserRouter>
