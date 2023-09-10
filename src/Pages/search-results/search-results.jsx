@@ -50,6 +50,8 @@ export default function SearchResults({
         )
       : [];
 
+    console.log(stallsWithinMapBounds);
+
     // Return an array of stalls filtered by user selected filters
     return stallsWithinMapBounds.filter((stall) => {
       // If Open now filter is selected and stall is closed don't include stall
@@ -96,6 +98,8 @@ export default function SearchResults({
       return true;
     });
   });
+
+  console.log(filteredStalls);
 
   return (
     <div className="search-results">

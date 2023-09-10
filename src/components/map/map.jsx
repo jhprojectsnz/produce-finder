@@ -36,14 +36,15 @@ export default function Map({
     setGoogleMap(map);
 
     map.addListener("idle", () => {
-      const bounds = map.getBounds();
-
-      if (bounds) {
-        console.log("has bounds");
-        setMapDetails((prev) => ({
-          ...prev,
+      if (map) {
+        setMapDetails({
+          zoom: map.getZoom(),
+          center: {
+            lat: map.center.lat(),
+            lng: map.center.lng(),
+          },
           bounds: map.getBounds(),
-        }));
+        });
       }
     });
 
@@ -52,18 +53,6 @@ export default function Map({
     });
 
     return () => {
-      console.log("unmount");
-      const currentCenter = {
-        lat: map.center.lat(),
-        lng: map.center.lng(),
-      };
-      const currentZoom = map.getZoom();
-      setMapDetails((prev) => ({
-        ...prev,
-        center: currentCenter,
-        zoom: currentZoom,
-      }));
-
       google.maps.event.clearInstanceListeners(map);
     };
   }, []);

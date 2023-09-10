@@ -1,6 +1,6 @@
 import "./markers.css";
 import { useUserContext } from "../../context/UserContext";
-import { useState, useEffect } from "react";
+import NewMarker from "../marker/marker.jsx";
 
 export default function Markers({
   filteredStalls,
@@ -9,8 +9,6 @@ export default function Markers({
   googleMap,
 }) {
   const { currentUser } = useUserContext();
-
-  const [markers, setMarkers] = useState([]);
 
   const markerIcon = {
     path: "M 172.268 501.67 C 26.97 291.031 0 269.413 0 192 C 0 85.961 85.961 0 192 0 s 192 85.961 192 192 c 0 77.413 -26.97 99.031 -172.268 309.67 c -9.535 13.774 -29.93 13.773 -39.464 0 Z M 192 272 c 44.183 0 80 -35.817 80 -80 s -35.817 -80 -80 -80 s -80 35.817 -80 80 s 35.817 80 80 80 Z",
@@ -58,24 +56,35 @@ export default function Markers({
       : markerIcon;
   }
 
-  useEffect(() => {
-    console.log("markers");
-    markers.forEach((marker) => marker.setMap(null));
-    setMarkers(
-      filteredStalls.map((stall) => {
-        const newMarker = new google.maps.Marker({
-          position: {
-            lat: stall.location.lat,
-            lng: stall.location.lng,
-          },
-          icon: markerType(stall.stallId),
-          map: googleMap,
-        });
-        newMarker.addListener("click", () => setSelectedStall(stall));
-        return newMarker;
-      })
-    );
-  }, [filteredStalls, selectedStall]);
-
-  return <></>;
+  return filteredStalls.map((stall) => (
+    <NewMarker
+      key={stall.stallId}
+      position={{
+        lat: stall.location.lat,
+        lng: stall.location.lng,
+      }}
+      icon={markerType(stall.stallId)}
+      map={googleMap}
+      onClick={() => setSelectedStall(stall)}
+    />
+  ));
 }
+
+// useEffect(() => {
+//   console.log("markers");
+//   markers.forEach((marker) => marker.setMap(null));
+//   setMarkers(
+//     filteredStalls.map((stall) => {
+//       const newMarker = new google.maps.Marker({
+//         position: {
+//           lat: stall.location.lat,
+//           lng: stall.location.lng,
+//         },
+//         icon: markerType(stall.stallId),
+//         map: googleMap,
+//       });
+//       newMarker.addListener("click", () => setSelectedStall(stall));
+//       return newMarker;
+//     })
+//   );
+// }, [filteredStalls, selectedStall]);
