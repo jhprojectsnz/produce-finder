@@ -8,6 +8,7 @@ export default function Markers({
   setSelectedStall,
   googleMap,
 }) {
+  // Need currentUser to determine icon appearance (i.e. user stall, fav stall or default)
   const { currentUser } = useUserContext();
 
   const markerIcon = {
@@ -40,22 +41,27 @@ export default function Markers({
     anchor: new google.maps.Point(300, 500),
   };
 
+  // Determine icon appearance for a given stall
   function markerType(stallId) {
+    // Given stall is one of the current users stalls
     if (currentUser.userId && currentUser.stalls.includes(stallId)) {
       return stallId === selectedStall.stallId
         ? { ...userIcon, scale: 0.08, strokeWeight: 2.5 }
         : userIcon;
     }
+    // Given stall one for the current users favourite stalls
     if (currentUser.userId && currentUser.favouriteStalls.includes(stallId)) {
       return stallId === selectedStall.stallId
         ? { ...favIcon, scale: 0.04, fillColor: "#E31515" }
         : favIcon;
     }
+    // Default appearance
     return stallId === selectedStall.stallId
       ? { ...markerIcon, fillColor: "#00801C", scale: 0.08 }
       : markerIcon;
   }
 
+  // Create a marker for each of the filtered stalls
   return filteredStalls.map((stall) => (
     <NewMarker
       key={stall.stallId}
@@ -69,22 +75,3 @@ export default function Markers({
     />
   ));
 }
-
-// useEffect(() => {
-//   console.log("markers");
-//   markers.forEach((marker) => marker.setMap(null));
-//   setMarkers(
-//     filteredStalls.map((stall) => {
-//       const newMarker = new google.maps.Marker({
-//         position: {
-//           lat: stall.location.lat,
-//           lng: stall.location.lng,
-//         },
-//         icon: markerType(stall.stallId),
-//         map: googleMap,
-//       });
-//       newMarker.addListener("click", () => setSelectedStall(stall));
-//       return newMarker;
-//     })
-//   );
-// }, [filteredStalls, selectedStall]);

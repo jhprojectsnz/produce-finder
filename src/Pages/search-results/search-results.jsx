@@ -22,22 +22,6 @@ export default function SearchResults({
   // Location used to find current pathname and use that for conditional rendering
   const location = useLocation();
 
-  // This function is used to update mapDetails variable when navigating away from the map component
-  function updateMapSettings() {
-    const currentCenter = {
-      lat: googleMap.center.lat(),
-      lng: googleMap.center.lng(),
-    };
-    const currentZoom = googleMap.getZoom();
-    setMapDetails((prev) => ({
-      ...prev,
-      center: currentCenter,
-      zoom: currentZoom,
-    }));
-  }
-
-  console.log("SearchResults");
-
   // Make a array of stalls, first filtered by map bounds and then by user filters
   // The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
@@ -49,8 +33,6 @@ export default function SearchResults({
           )
         )
       : [];
-
-    console.log(stallsWithinMapBounds);
 
     // Return an array of stalls filtered by user selected filters
     return stallsWithinMapBounds.filter((stall) => {
@@ -99,8 +81,6 @@ export default function SearchResults({
     });
   });
 
-  console.log(filteredStalls);
-
   return (
     <div className="search-results">
       <SearchBar
@@ -125,13 +105,7 @@ export default function SearchResults({
           setSelectedStall={setSelectedStall}
         />
       )}
-      <ResultsNav updateMapCenter={updateMapSettings} />
+      <ResultsNav />
     </div>
   );
 }
-
-// Load a google map
-// Populate the map with markers for the locations within the map bounds
-// Save a list of those locations that can be used for list view
-// When user moves the map update the markers to the new map bounds
-// Update the saved locations
