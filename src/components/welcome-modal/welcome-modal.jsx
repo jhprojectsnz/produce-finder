@@ -1,9 +1,11 @@
 import "./welcome-modal.css";
+
 import ButtonStd from "../button-std/button-std";
+import ModalLayout from "../modal-layout/modal-layout";
 
 export default function WelcomeModal({ setShowWelcomeModal }) {
   return (
-    <>
+    <ModalLayout>
       <h3 className="welcome-modal-title">Find Fresh Produce</h3>
       <h4 className="welcome-modal-subtitle">Demo version</h4>
       <p className="bold">Welcome to Find Fresh Produce!</p>
@@ -36,6 +38,6 @@ export default function WelcomeModal({ setShowWelcomeModal }) {
           Explore!
         </ButtonStd>
       </div>
-    </>
+    </ModalLayout>
   );
 }

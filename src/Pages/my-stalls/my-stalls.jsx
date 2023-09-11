@@ -1,13 +1,14 @@
 import "./my-stalls.css";
+
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
+import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../../context/UserContext";
+
+import SectionHeading from "../../components/section-heading/section-heading";
+import UpdateItemModal from "../../components/update-item-modal/update-item-modal";
 import RemoveStallModal from "../../components/remove-stall-modal/remove-stall-modal";
 import ButtonStd from "../../components/button-std/button-std";
-import { useNavigate } from "react-router-dom";
-import SectionHeading from "../../components/section-heading/section-heading";
-import ModalLayout from "../../components/modal-layout/modal-layout";
 
 export default function MyStalls({ setSelectedStall }) {
   const { currentUser, stalls, setStalls } = useUserContext();
@@ -49,8 +50,8 @@ export default function MyStalls({ setSelectedStall }) {
     );
   }
 
-  //This function runs when "Remove"  button within the remove stall modal is clicked
-  //It will remove the selected stall from the stalls array stored in context
+  // Runs when "Remove"  button within the remove stall modal is clicked
+  // It will remove the selected stall from the stalls array stored in context
   function handleDeleteStall(selectedStallId) {
     setStalls((prev) =>
       prev.filter((stall) => stall.stallId != selectedStallId)
@@ -76,7 +77,7 @@ export default function MyStalls({ setSelectedStall }) {
                   </p>
                   <p>{item.price}</p>
                   <FaEdit
-                    className="update-icon"
+                    className="update-item-icon"
                     onClick={() =>
                       setDisplayItemModal({
                         stallId: stall.stallId,
@@ -85,7 +86,7 @@ export default function MyStalls({ setSelectedStall }) {
                     }
                   />
                   <FaRegTrashAlt
-                    className="update-icon"
+                    className="update-item-icon"
                     onClick={() => handleDeleteItem(itemIndex, stall.stallId)}
                   />
                 </div>
@@ -132,22 +133,18 @@ export default function MyStalls({ setSelectedStall }) {
         Add Stall
       </button>
       {displayItemModal && (
-        <ModalLayout>
-          <UpdateItemModal
-            stallId={displayItemModal.stallId}
-            itemIndex={displayItemModal.itemIndex}
-            setDisplayItemModal={setDisplayItemModal}
-          />
-        </ModalLayout>
+        <UpdateItemModal
+          stallId={displayItemModal.stallId}
+          itemIndex={displayItemModal.itemIndex}
+          setDisplayItemModal={setDisplayItemModal}
+        />
       )}
       {displayRemoveStallModal && (
-        <ModalLayout>
-          <RemoveStallModal
-            stallToRemove={displayRemoveStallModal}
-            setDisplayRemoveStallModal={setDisplayRemoveStallModal}
-            handleDeleteStall={handleDeleteStall}
-          />
-        </ModalLayout>
+        <RemoveStallModal
+          stallToRemove={displayRemoveStallModal}
+          setDisplayRemoveStallModal={setDisplayRemoveStallModal}
+          handleDeleteStall={handleDeleteStall}
+        />
       )}
     </section>
   );

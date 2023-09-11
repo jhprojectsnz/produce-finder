@@ -20,10 +20,9 @@ export default function Login() {
 
   const navigate = useNavigate();
 
+  // Add Auth functionality here
   function handleLogin() {
-    //Add Auth functionality here
-
-    //Here is a simple substitute for now
+    // Here is a simple substitute for now
     const loginUser = users.filter((user) => enteredEmail === user.email);
     if (loginUser.length === 1 && loginUser[0].password === enteredPassword) {
       setCurrentUser(loginUser[0]);

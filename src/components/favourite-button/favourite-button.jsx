@@ -1,11 +1,12 @@
 import "./favourite-button.css";
+
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
+
 import LoginRequiredModal from "../login-required-modal/login-required-modal";
 import CircleBtn from "../cricle-btn/circle-btn";
 import ButtonStd from "../button-std/button-std";
-import ModalLayout from "../modal-layout/modal-layout";
 
 export default function FavouriteButton({ selectedStall, buttonStyle }) {
   const { currentUser, setCurrentUser } = useUserContext();
@@ -64,9 +65,7 @@ export default function FavouriteButton({ selectedStall, buttonStyle }) {
       )}
 
       {showLoginModal && (
-        <ModalLayout>
-          <LoginRequiredModal setShowLoginModal={setShowLoginModal} />
-        </ModalLayout>
+        <LoginRequiredModal setShowLoginModal={setShowLoginModal} />
       )}
     </>
   );

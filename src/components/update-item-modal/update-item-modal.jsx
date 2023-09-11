@@ -2,6 +2,7 @@ import { useUserContext } from "../../context/UserContext";
 import ButtonStd from "../button-std/button-std";
 import "./update-item-modal.css";
 import { useState } from "react";
+import ModalLayout from "../modal-layout/modal-layout";
 
 export default function UpdateItemModal({
   stallId,
@@ -67,7 +68,7 @@ export default function UpdateItemModal({
   }
 
   return (
-    <>
+    <ModalLayout>
       <h5>Item details</h5>
       <div className="update-item-input-container">
         <label htmlFor="item">Name</label>
@@ -118,6 +119,6 @@ export default function UpdateItemModal({
           Submit
         </ButtonStd>
       </div>
-    </>
+    </ModalLayout>
   );
 }

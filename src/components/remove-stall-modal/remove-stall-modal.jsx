@@ -1,5 +1,7 @@
-import ButtonStd from "../button-std/button-std";
 import "./remove-stall-modal.css";
+
+import ButtonStd from "../button-std/button-std";
+import ModalLayout from "../modal-layout/modal-layout";
 
 export default function RemoveStallModal({
   stallToRemove,
@@ -7,7 +9,7 @@ export default function RemoveStallModal({
   handleDeleteStall,
 }) {
   return (
-    <>
+    <ModalLayout>
       <h5>Remove Stall</h5>
       <p>
         {"Are you sure you want to permanently remove "}
@@ -27,6 +29,6 @@ export default function RemoveStallModal({
           Remove
         </ButtonStd>
       </div>
-    </>
+    </ModalLayout>
   );
 }

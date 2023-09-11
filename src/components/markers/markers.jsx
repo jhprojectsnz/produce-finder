@@ -1,6 +1,6 @@
 import "./markers.css";
 import { useUserContext } from "../../context/UserContext";
-import NewMarker from "../marker/marker.jsx";
+import Marker from "../marker/marker.jsx";
 
 export default function Markers({
   filteredStalls,
@@ -63,7 +63,7 @@ export default function Markers({
 
   // Create a marker for each of the filtered stalls
   return filteredStalls.map((stall) => (
-    <NewMarker
+    <Marker
       key={stall.stallId}
       position={{
         lat: stall.location.lat,

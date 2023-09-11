@@ -15,7 +15,6 @@ import MainNavBar from "./components/main-navbar/main-navbar.jsx";
 import StallDetails from "./Pages/stall-details/stall-details.jsx";
 import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
-import ModalLayout from "./components/modal-layout/modal-layout.jsx";
 import Footer from "./components/footer/footer.jsx";
 
 export default function App() {
@@ -108,9 +107,7 @@ export default function App() {
         </UserProvider>
       </BrowserRouter>
       {showWelcomeModal && (
-        <ModalLayout>
-          <WelcomeModal setShowWelcomeModal={setShowWelcomeModal} />
-        </ModalLayout>
+        <WelcomeModal setShowWelcomeModal={setShowWelcomeModal} />
       )}
     </div>
   );

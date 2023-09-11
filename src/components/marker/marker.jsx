@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function NewMarker({ position, icon, map, onClick }) {
+export default function Marker({ position, icon, map, onClick }) {
   const [marker, setMarker] = useState(null);
 
   // First render - initialise marker and save instance to state
