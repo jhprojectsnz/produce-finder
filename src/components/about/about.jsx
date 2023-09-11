@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section className="about" id="about">
       <div className="about-section-container">
-        <h2>Welecome To Find Fresh Produce</h2>
+        <h2>Welcome To Find Fresh Produce</h2>
         <p>
           A community connecting New Zealand families with local growers and
           farmers.

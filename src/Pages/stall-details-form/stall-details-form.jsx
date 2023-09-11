@@ -127,6 +127,8 @@ export default function StallDetailsForm() {
 
   const [formData, dispatch] = useReducer(reducerMethod, initialData);
 
+  console.log(formData);
+
   // This function is used to update the stored form data whenever a text input is modified
   const handleTextInputChange = (e) => {
     dispatch({

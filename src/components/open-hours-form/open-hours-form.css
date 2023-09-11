@@ -34,5 +34,7 @@
 }
 
 .openhours-checkbox {
+  /* Width set to 100% by .form-input-container &input */
+  width: auto !important;
   cursor: pointer;
 }
