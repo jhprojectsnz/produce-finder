@@ -1,13 +1,15 @@
 import "./search-results.css";
+
+import { useMemo } from "react";
+import { useUserContext } from "../../context/UserContext";
+import { useLocation } from "react-router-dom";
+
+import SectionHeading from "../../components/section-heading/section-heading";
+import Map from "../../components/map/map";
 import SearchBar from "../../components/search-bar/search-bar";
 import ResultsNav from "../../components/results-nav/results-nav";
 import ResultsList from "../../components/results-list/results-list";
 import isOpen from "../../functions/isOpen";
-import { useMemo } from "react";
-import { useUserContext } from "../../context/UserContext";
-import { useLocation } from "react-router-dom";
-import SectionHeading from "../../components/section-heading/section-heading";
-import Map from "../../components/map/map";
 
 export default function SearchResults({
   selectedStall,
@@ -22,7 +24,7 @@ export default function SearchResults({
   // Location used to find current pathname and use that for conditional rendering
   const location = useLocation();
 
-  // Make a array of stalls, first filtered by map bounds and then by user filters
+  // Filter stalls array, first by map bounds and then by user filters
   // The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
     // Filter all stalls to just those within the current map bounds
@@ -60,19 +62,17 @@ export default function SearchResults({
           : filters.keyword.toLowerCase().slice(0, -1);
 
         // Initiate variable to track whether the stall has an item that matches the filterTerm
-        let stallHasKeyword = false;
+        // let stallHasKeyword = false;
 
-        // Look through each product to see if it includes the search term
+        // Look through products to see if one includes the search term
         // Sliced filterTerms like cherr (from Cherries) will match Cherries, Cherry etc
-        stall.inStock.forEach((product) => {
+        const stallHasKeyword = stall.inStock.some((product) => {
           // toSting needs to be run before toLowerCase will work here
-          // Product.item not stored as a primitive string?
+          // product.item not stored as a primitive string??
           const productName = product.item.toString().toLowerCase();
-          if (productName.includes(filterTerm)) {
-            stallHasKeyword = true;
-          }
+          return productName.includes(filterTerm);
         });
-        // If stallHasKeyword is still false then stall does not have a matching product - don't include
+        // If stallHasKeyword is false then stall does not have a matching product - don't include
         if (!stallHasKeyword) return false;
       }
 
@@ -82,7 +82,7 @@ export default function SearchResults({
   });
 
   return (
-    <div className="search-results">
+    <section className="search-results">
       <SearchBar
         filters={filters}
         setFilters={setFilters}
@@ -106,6 +106,6 @@ export default function SearchResults({
         />
       )}
       <ResultsNav />
-    </div>
+    </section>
   );
 }

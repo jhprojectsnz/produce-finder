@@ -1,16 +1,4 @@
 .map {
-    width: 100%;
-    height: 100%;
-  }
-  
-.autocomplete {
-  position: fixed;
-  top: 50%;
-  left: 40px;
-}
-
-.standalone {
-  position: fixed;
-  top: 30%;
-  left: 40px;
+  width: 100%;
+  height: 100%;
 }
