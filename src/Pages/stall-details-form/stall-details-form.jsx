@@ -1,5 +1,5 @@
 import "./stall-details-form.css";
-import { Autocomplete } from "@react-google-maps/api";
+// import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
@@ -196,7 +196,7 @@ export default function StallDetailsForm() {
       </div>
       <div className="form-input-container">
         <label htmlFor="address">Address</label>
-        <Autocomplete
+        {/* <Autocomplete
           onLoad={onSearchBoxLoad}
           onPlaceChanged={placesChanged}
           restrictions={{ country: "nz" }}
@@ -212,7 +212,7 @@ export default function StallDetailsForm() {
             onChange={handleTextInputChange}
             required
           />
-        </Autocomplete>
+        </Autocomplete> */}
       </div>
       <div className="form-input-container">
         <label htmlFor="about">About</label>

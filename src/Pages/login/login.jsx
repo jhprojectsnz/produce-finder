@@ -1,16 +1,18 @@
 import "./login.css";
+
 import { FiMail } from "react-icons/fi";
 import { FaLock } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { users } from "../../data/data";
+
 import ButtonStd from "../../components/button-std/button-std";
 import SectionHeading from "../../components/section-heading/section-heading";
 
 export default function Login() {
   const { setCurrentUser, setIsAuth } = useUserContext();
-  // For demo version email and password are initialised to "guest" values to make it easy for user to use test log in
+  // For demo version email and password are initialised to "guest" values
   const [enteredEmail, setEnteredEmail] = useState("guest@email.com");
   const [enteredPassword, setEnteredPassword] = useState("password");
   const [showError, setShowError] = useState(false);
@@ -70,7 +72,7 @@ export default function Login() {
       <SectionHeading>Sign up</SectionHeading>
       <div className="login-input-container">
         <label htmlFor="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" name="name" required />
       </div>
       <div className="login-input-container">
         <label htmlFor="email">Email</label>

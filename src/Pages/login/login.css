@@ -3,45 +3,44 @@
   flex-direction: column;
   align-items: center;
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 1.5rem auto;
-  border-radius: 10px;
 }
 
 .login-input-container {
   position: relative;
   display: flex;
   align-items: center;
-  width: 80%;
-  gap: 0.5rem;
-  /* more padding on top - space for label */
+  width: 85%;
+  gap: 0.7rem;
+  /* More padding on top - space for label */
   padding: 15px 10px 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: 1px solid var(--main-dark-color);
   border-radius: 10px;
-}
 
-.login-input-container input {
-  /* make sure the input area is the full length of the surrounding border */
-  min-width: 90%;
-  border: none;
-}
+  & label {
+    /* Shift labels up so they sit over the input border */
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    padding: 3px;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    font-size: 0.8rem;
+  }
 
-.login-input-container label {
-  /* shift labels up so they sit over the input border */
-  position: absolute;
-  top: -12px;
-  left: 12px;
-  padding: 3px;
-  background-color: white;
-  color: rgb(77, 77, 77);
-  font-size: 0.8rem;
+  & input {
+    /* Make sure the input area is the full length of the surrounding border */
+    min-width: 90%;
+    border: none;
+  }
 }
 
 .login-text-link {
   color: var(--main-dark-color);
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   cursor: pointer;
 }
@@ -49,17 +48,17 @@
 .login-separator {
   position: relative;
   width: 90%;
-  margin: 2rem 0 1.5rem;
+  margin: 2.5rem 0 1.5rem;
   border-top: 1px solid var(--main-dark-color);
-}
 
-.login-separator span {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 1rem;
-  background-color: white;
+  & span {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
+    background-color: white;
+  }
 }
 
 .login-input-icon {
@@ -73,5 +72,5 @@
   color: red;
   font-size: 0.8rem;
   font-style: italic;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }

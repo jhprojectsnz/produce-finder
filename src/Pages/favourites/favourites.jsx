@@ -1,7 +1,9 @@
 import "./favourites.css";
+
 import { useUserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import ResultsList from "../../components/results-list/results-list";
 import SectionHeading from "../../components/section-heading/section-heading";
 

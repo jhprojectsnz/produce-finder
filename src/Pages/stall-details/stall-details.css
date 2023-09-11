@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-/* navigation buttons - shown for small screens only */
+/* Navigation buttons - shown for small screens only */
 .stall-details-btn-container {
   position: absolute;
   top: 0;
@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-/* title and stall status in this container */
+/* Title and stall status in this container */
 .stall-title-container {
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
     text-transform: capitalize;
   }
 
-  /* labels in the about section (e.g. Organic) */
+  /* Labels in the about section (e.g. Organic) */
   & ul {
     width: 100%;
     display: flex;
@@ -87,8 +87,8 @@
   }
 }
 
-/* line for an individual fruit or vege */
-/* grid to separate item and dollar amount */
+/* Line for an individual fruit or vege */
+/* Grid to separate item and dollar amount */
 .stall-item-container {
   width: 100%;
   display: grid;
@@ -103,12 +103,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
-/* button container for wide screen only */
+/* Button container for wide screen only */
 .stall-details-wide-btn-container {
   display: none;
 }
 
-/* make the top image larger on screens wider than 500px */
+/* Make the top image larger on screens wider than 500px */
 @media screen and (min-width: 500px) {
   .stall-image {
     height: 20rem;
@@ -122,19 +122,19 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
-    /* set height for first two rows - contains title and address */
+    /* Set height for first two rows - contains title and address */
     grid-template-rows: 2.5rem 2rem auto auto;
     gap: 0 2rem;
     align-items: start;
-    /* set max-width so not too streched on large screen */
+    /* Set max-width so not too streched on large screen */
     max-width: 900px;
-    /* large top padding to push down below nav */
+    /* Large top padding to push down below nav */
     padding: 2rem 2rem;
     /* Low z-index so the main nav is on top */
     z-index: 1;
   }
 
-  /* hide top buttons on larger screens */
+  /* Hide top buttons on larger screens */
   .stall-details-btn-container {
     display: none;
   }
@@ -176,11 +176,11 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
-    /* center this container by placing across both columns */
+    /* Center this container by placing across both columns */
     grid-column: 1 / 3;
   }
 
-  /* below are classes to place elements in specific grid cells */
+  /* Below are classes to place elements in specific grid cells */
   .left-col {
     grid-column: 1;
   }

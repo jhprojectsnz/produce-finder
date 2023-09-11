@@ -1,10 +1,10 @@
 import "./home.css";
 
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import PopularStalls from "../../components/popular-stalls/popular-stalls";
 import About from "../../components/about/about";
-import { useLocation } from "react-router-dom";
 import LocationSearch from "../../components/location-search/location-search";
 
 export default function Home({
