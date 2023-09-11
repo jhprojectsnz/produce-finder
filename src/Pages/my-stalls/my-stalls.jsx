@@ -19,7 +19,6 @@ export default function MyStalls({ setSelectedStall }) {
   const [displayRemoveStallModal, setDisplayRemoveStallModal] = useState(false);
 
   useEffect(() => {
-    // Check if there is a current user, otherwise redirect to login page
     if (currentUser.userId) {
       // In full version - fetch the stalls associated with the user from the database here
 
@@ -50,15 +49,6 @@ export default function MyStalls({ setSelectedStall }) {
     );
   }
 
-  // Runs when "Remove"  button within the remove stall modal is clicked
-  // It will remove the selected stall from the stalls array stored in context
-  function handleDeleteStall(selectedStallId) {
-    setStalls((prev) =>
-      prev.filter((stall) => stall.stallId != selectedStallId)
-    );
-    setDisplayRemoveStallModal(false);
-  }
-
   return (
     <section className="my-stalls">
       <SectionHeading>My Stalls</SectionHeading>
@@ -81,6 +71,7 @@ export default function MyStalls({ setSelectedStall }) {
                     onClick={() =>
                       setDisplayItemModal({
                         stallId: stall.stallId,
+                        item: item,
                         itemIndex: itemIndex,
                       })
                     }
@@ -97,6 +88,7 @@ export default function MyStalls({ setSelectedStall }) {
                   setDisplayItemModal({
                     stallId: stall.stallId,
                     itemIndex: null,
+                    item: null,
                   })
                 }
               >
@@ -136,6 +128,7 @@ export default function MyStalls({ setSelectedStall }) {
         <UpdateItemModal
           stallId={displayItemModal.stallId}
           itemIndex={displayItemModal.itemIndex}
+          itemForUpdate={displayItemModal.item}
           setDisplayItemModal={setDisplayItemModal}
         />
       )}
@@ -143,7 +136,6 @@ export default function MyStalls({ setSelectedStall }) {
         <RemoveStallModal
           stallToRemove={displayRemoveStallModal}
           setDisplayRemoveStallModal={setDisplayRemoveStallModal}
-          handleDeleteStall={handleDeleteStall}
         />
       )}
     </section>

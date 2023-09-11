@@ -29,15 +29,14 @@
 }
 
 .item-update-error {
-  font-size: 0.8rem;
   color: red;
   font-style: italic;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1rem !important;
 }
 
 .item-update-btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }

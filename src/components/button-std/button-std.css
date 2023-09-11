@@ -12,7 +12,7 @@
 
   /* slight transition to darker on hover */
   transition: filter 0.1s ease-in-out;
-  &:hover {
+  &.button-std:hover {
     filter: brightness(90%);
   }
 }

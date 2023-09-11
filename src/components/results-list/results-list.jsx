@@ -1,6 +1,8 @@
 import "./results-list.css";
-import isOpen from "../../functions/isOpen";
+
 import { useNavigate } from "react-router-dom";
+
+import isOpen from "../../functions/isOpen";
 import FavouriteButton from "../favourite-button/favourite-button";
 
 export default function ResultsList({ setSelectedStall, stallsList }) {
