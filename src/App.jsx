@@ -16,6 +16,7 @@ import StallDetails from "./Pages/stall-details/stall-details.jsx";
 import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
 import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
 import Footer from "./components/footer/footer.jsx";
+import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
 
 export default function App() {
   // Set a default map center here
@@ -57,6 +58,7 @@ export default function App() {
             version="weekly"
             libraries={["places"]}
           >
+            <ScrollToTop />
             <Routes>
               <Route
                 path="/:about?"
