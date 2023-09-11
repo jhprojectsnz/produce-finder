@@ -31,7 +31,6 @@ export default function App() {
     bounds: false,
   });
   const [selectedStall, setSelectedStall] = useState({});
-  const [lastSearchLoaction, setLastSearchLocation] = useState("");
   // Filters only used in SearchResults component but are here so values are stored when user navigates between results and stall details
   // Could create a second set of context for this and other shared variables(e.g. mapCenter)?
   // Or save to localStorage/sessionStorage
@@ -65,8 +64,6 @@ export default function App() {
                 element={
                   <Home
                     setMapDetails={setMapDetails}
-                    lastSearchLocation={lastSearchLoaction}
-                    setLastSearchLocation={setLastSearchLocation}
                     setSelectedStall={setSelectedStall}
                   />
                 }

@@ -1,5 +1,4 @@
 import "./stall-details-form.css";
-// import { Autocomplete } from "@react-google-maps/api";
 import { useState, useReducer } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
@@ -8,6 +7,7 @@ import SelectStallDetails from "../../components/select-stall-details/select-sta
 import { useUserContext } from "../../context/UserContext";
 import ButtonStd from "../../components/button-std/button-std";
 import SectionHeading from "../../components/section-heading/section-heading";
+import LocationSearch from "../../components/location-search/location-search";
 
 export default function StallDetailsForm() {
   const { id } = useParams();
@@ -15,22 +15,25 @@ export default function StallDetailsForm() {
   const { stalls, setStalls, currentUser, setCurrentUser } = useUserContext();
   const [addImageAttempt, setAddImageAttempt] = useState(false);
 
-  //Variable to store search box ref
-  const [searchBox, setSearchBox] = useState(null);
+  // If the user is not logged in or URL ID doesn't match one of their stalls return error
+  if (
+    !currentUser.userId ||
+    (id && !currentUser.stalls.includes(parseInt(id)))
+  ) {
+    return (
+      <div className="form-access-error">
+        <h3>Error</h3>
+        <p>You do not have permission to access this page</p>
+      </div>
+    );
+  }
 
-  //could try to change this so there are less rerenders on loading
-  //avoid using state to store searchbox?
-  const onSearchBoxLoad = (ref) => setSearchBox(ref);
-
-  //Run whenever a new place is entered into the search bar
-  //Uses the location of the place searched to update map center
-  function placesChanged() {
-    if (!searchBox) return;
-    const place = searchBox.getPlace();
-    const newAddress = place.formatted_address;
+  // Runs whenever a new location is entered into the address search bar
+  function handleAddressChanged(location) {
+    const newAddress = location.formatted_address;
     const newLocation = {
-      lat: place.geometry.location.lat(),
-      lng: place.geometry.location.lng(),
+      lat: location.geometry.location.lat(),
+      lng: location.geometry.location.lng(),
     };
     dispatch({
       type: "autocomplete",
@@ -124,7 +127,7 @@ export default function StallDetailsForm() {
 
   const [formData, dispatch] = useReducer(reducerMethod, initialData);
 
-  //This function is used to update the stored form data whenever a text input is modified
+  // This function is used to update the stored form data whenever a text input is modified
   const handleTextInputChange = (e) => {
     dispatch({
       type: e.target.id,
@@ -132,10 +135,11 @@ export default function StallDetailsForm() {
     });
   };
 
-  //This function will run when submit button is clicked
+  // This function will run when submit button is clicked
+  // In full version with database - Add the formData to the database here
   const handleSubmit = () => {
-    //Check that important fields are filled out
-    //Add the formData to the database here, once the database is set up
+    // Update existing stall - find stall and update with formData
+    // Else - add formData as a new stall at end of stalls array
     if (stallForUpdate) {
       setStalls((prev) =>
         prev.map((stall) =>
@@ -144,37 +148,23 @@ export default function StallDetailsForm() {
       );
     } else {
       setStalls((prev) => [...prev, formData]);
-      setCurrentUser((prev) => {
-        const obj = {
-          ...prev,
-          stalls: [...prev.stalls, formData.stallId],
-        };
-        return obj;
-      });
+      setCurrentUser((prev) => ({
+        ...prev,
+        stalls: [...prev.stalls, formData.stallId],
+      }));
     }
+    // Go back one page
     navigate(-1);
   };
 
   function handleCancel() {
+    // Go back one page
     navigate(-1);
   }
 
+  // In full version add ability to add image here
   function handleAddImage() {
-    // In full version add ability to add image here
     setAddImageAttempt(true);
-  }
-
-  // If the user is not logged in or URL ID doesn't match their stalls return error
-  if (
-    !currentUser.userId ||
-    (id && !currentUser.stalls.includes(parseInt(id)))
-  ) {
-    return (
-      <div className="form-access-error">
-        <h3>Error</h3>
-        <p>You do not have permission to access this page</p>
-      </div>
-    );
   }
 
   return (
@@ -185,7 +175,6 @@ export default function StallDetailsForm() {
       <div className="form-input-container">
         <label htmlFor="name">Stall name</label>
         <input
-          className="text-input"
           type="text"
           id="name"
           name="name"
@@ -196,23 +185,11 @@ export default function StallDetailsForm() {
       </div>
       <div className="form-input-container">
         <label htmlFor="address">Address</label>
-        {/* <Autocomplete
-          onLoad={onSearchBoxLoad}
-          onPlaceChanged={placesChanged}
-          restrictions={{ country: "nz" }}
-          className="form-autocomplete"
-        >
-          <input
-            className="text-input"
-            type="text"
-            id="address"
-            name="address"
-            placeholder=""
-            value={formData.address}
-            onChange={handleTextInputChange}
-            required
-          />
-        </Autocomplete> */}
+        <LocationSearch
+          placeholder={""}
+          onPlacesChanged={handleAddressChanged}
+          name={"address"}
+        />
       </div>
       <div className="form-input-container">
         <label htmlFor="about">About</label>
@@ -252,7 +229,6 @@ export default function StallDetailsForm() {
       <div className="form-input-container">
         <label htmlFor="phone">Phone number</label>
         <input
-          className="text-input"
           type="text"
           id="phone"
           name="phone"
@@ -263,7 +239,6 @@ export default function StallDetailsForm() {
       <div className="form-input-container">
         <label htmlFor="phone">Email</label>
         <input
-          className="text-input"
           type="text"
           id="email"
           name="email"
