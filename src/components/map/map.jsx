@@ -61,19 +61,21 @@ export default function Map({
   }, []);
 
   return (
-    <div ref={mapRef} className="map">
-      <Markers
-        googleMap={googleMap.current}
-        filteredStalls={filteredStalls}
-        selectedStall={selectedStall}
-        setSelectedStall={setSelectedStall}
-      />
+    <>
+      <div ref={mapRef} className="map">
+        <Markers
+          googleMap={googleMap.current}
+          filteredStalls={filteredStalls}
+          selectedStall={selectedStall}
+          setSelectedStall={setSelectedStall}
+        />
+      </div>
       {selectedStall.stallId && (
         <StallPreview
           selectedStall={selectedStall}
           setSelectedStall={setSelectedStall}
         />
       )}
-    </div>
+    </>
   );
 }
