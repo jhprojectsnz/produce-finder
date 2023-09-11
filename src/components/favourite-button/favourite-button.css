@@ -10,6 +10,6 @@
 }
 
 .plain-container {
-  width: fit-content;
-  height: fit-content;
+  width: auto;
+  height: auto;
 }

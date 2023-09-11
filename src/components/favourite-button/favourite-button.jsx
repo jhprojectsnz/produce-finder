@@ -8,40 +8,44 @@ import LoginRequiredModal from "../login-required-modal/login-required-modal";
 import CircleBtn from "../cricle-btn/circle-btn";
 import ButtonStd from "../button-std/button-std";
 
-export default function FavouriteButton({ selectedStall, buttonStyle }) {
+export default function FavouriteButton({ stallId, buttonStyle }) {
   const { currentUser, setCurrentUser } = useUserContext();
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const isCurrentFavourite = currentUser.userId
-    ? currentUser.favouriteStalls.includes(selectedStall.stallId)
-    : null;
+
+  // If a user is logged on check if this stall is a favourite
+  const currentUserFavourite = currentUser.userId
+    ? currentUser.favouriteStalls.includes(stallId)
+    : false;
 
   function handleClick(e) {
     if (currentUser.userId) {
       setCurrentUser((prev) => {
-        return isCurrentFavourite
+        return currentUserFavourite
           ? {
               ...prev,
               favouriteStalls: prev.favouriteStalls.filter(
-                (favId) => favId != selectedStall.stallId
+                (favId) => favId != stallId
               ),
             }
           : {
               ...prev,
-              favouriteStalls: [...prev.favouriteStalls, selectedStall.stallId],
+              favouriteStalls: [...prev.favouriteStalls, stallId],
             };
       });
     } else {
       setShowLoginModal(true);
     }
+    // Prevent click event from propagating to parent elements
     e.stopPropagation();
   }
 
-  const currentFavIcon = isCurrentFavourite ? (
+  const currentFavIcon = currentUserFavourite ? (
     <FaHeart className="fav-icon favourite" />
   ) : (
     <FaRegHeart className="fav-icon" />
   );
 
+  // .plain-container div is used below as an easy way to add the onClick handler
   return (
     <>
       {buttonStyle === "plain" && (
