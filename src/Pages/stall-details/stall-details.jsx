@@ -61,7 +61,10 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
         <CircleBtn appearance={"light"} handleClick={handleBackClick}>
           <BiArrowBack className="color-dark" />
         </CircleBtn>
-        <FavouriteButton selectedStall={selectedStall} buttonStyle={"circle"} />
+        <FavouriteButton
+          stallId={selectedStall.stallId}
+          buttonStyle={"circle"}
+        />
       </div>
       <img className="stall-image" src={selectedStall.img} />
       <div className="stall-title-container left-column row-one">
@@ -143,7 +146,7 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
         >
           Back
         </ButtonStd>
-        <FavouriteButton selectedStall={selectedStall} buttonStyle={"long"} />
+        <FavouriteButton stallId={selectedStall.stallId} buttonStyle={"long"} />
       </div>
     </section>
   );
