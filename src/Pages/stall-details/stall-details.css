@@ -8,8 +8,8 @@
   background-color: white;
   width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Navigation buttons - shown for small screens only */
@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.7rem;
   display: flex;
   justify-content: space-between;
 }
@@ -109,7 +109,7 @@
 }
 
 /* Make the top image larger on screens wider than 500px */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 450px) {
   .stall-image {
     height: 20rem;
   }
@@ -119,7 +119,8 @@
 @media screen and (min-width: 700px) {
   .stall-details {
     position: relative;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: auto auto;
     /* Set height for first two rows - contains title and address */
@@ -128,10 +129,6 @@
     align-items: start;
     /* Set max-width so not too streched on large screen */
     max-width: 900px;
-    /* Large top padding to push down below nav */
-    padding: 2rem 2rem;
-    /* Low z-index so the main nav is on top */
-    z-index: 1;
   }
 
   /* Hide top buttons on larger screens */
@@ -150,18 +147,16 @@
     justify-self: center;
   }
 
-  .stall-title-container {
+  .stall-title-container,
+  .stall-address {
     padding: 0;
   }
 
   .stall-name {
     font-size: 1.5rem;
+    /* Make sure stall name does not overlap stall status */
     margin-right: 2rem;
     white-space: nowrap;
-  }
-
-  .stall-address {
-    padding: 0;
   }
 
   .stall-text-subsection {
@@ -174,18 +169,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
     /* Center this container by placing across both columns */
     grid-column: 1 / 3;
   }
 
   /* Below are classes to place elements in specific grid cells */
-  .left-col {
+  .left-column {
     grid-column: 1;
   }
 
-  .right-col {
+  .right-column {
     grid-column: 2;
   }
 

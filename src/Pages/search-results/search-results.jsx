@@ -27,7 +27,6 @@ export default function SearchResults({
   // Filter stalls array, first by map bounds and then by user filters
   // The resulting stalls are used as markers on map and to populate results list
   const filteredStalls = useMemo(() => {
-    console.log("filter");
     // Filter all stalls to just those within the current map bounds
     const stallsWithinMapBounds = mapDetails.bounds
       ? stalls.filter((stall) =>
