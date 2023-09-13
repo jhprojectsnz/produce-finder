@@ -97,19 +97,19 @@ export default function MyStalls({ setSelectedStall }) {
             </div>
             <div className="update-btn-container">
               <ButtonStd
-                appearance={"red"}
+                options={["red"]}
                 handleClick={() => setDisplayRemoveStallModal(stall)}
               >
                 Remove
               </ButtonStd>
               <ButtonStd
-                appearance={"dark"}
+                options={["dark"]}
                 handleClick={() => navigate(`/form/${stall.stallId}`)}
               >
                 Edit details
               </ButtonStd>
               <ButtonStd
-                appearance={"dark"}
+                options={["dark"]}
                 handleClick={() => {
                   setSelectedStall(stall);
                   navigate("/details");

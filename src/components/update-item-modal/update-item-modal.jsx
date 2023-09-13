@@ -103,12 +103,12 @@ export default function UpdateItemModal({
       )}
       <div className="item-update-btn-container">
         <ButtonStd
-          appearance="light"
+          options={["light"]}
           handleClick={() => setDisplayItemModal(false)}
         >
           Cancel
         </ButtonStd>
-        <ButtonStd appearance="dark" handleClick={handleSubmit}>
+        <ButtonStd options={["dark"]} handleClick={handleSubmit}>
           Submit
         </ButtonStd>
       </div>

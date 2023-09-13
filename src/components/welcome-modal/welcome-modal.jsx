@@ -29,8 +29,7 @@ export default function WelcomeModal({ setShowWelcomeModal }) {
       </p>
       <div className="welcome-btn-container">
         <ButtonStd
-          appearance="light"
-          options={["long", "bold"]}
+          options={["long", "bold", "light"]}
           handleClick={() => {
             setShowWelcomeModal(false);
           }}

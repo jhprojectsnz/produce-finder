@@ -15,15 +15,21 @@ export default function ResultsNav() {
   return (
     <nav className={`results-nav ${resultsNavSytle}`}>
       <ButtonStd
-        appearance={currentPathname === "/results/map" ? "dark" : "light"}
-        options={["shadow", "long"]}
+        options={[
+          "shadow",
+          "long",
+          currentPathname === "/results/map" ? "dark" : "light",
+        ]}
         handleClick={() => navigate("/results/map")}
       >
         Map
       </ButtonStd>
       <ButtonStd
-        appearance={currentPathname === "/results/list" ? "dark" : "light"}
-        options={["shadow", "long"]}
+        options={[
+          "shadow",
+          "long",
+          currentPathname === "/results/list" ? "dark" : "light",
+        ]}
         handleClick={() => {
           navigate("/results/list");
         }}

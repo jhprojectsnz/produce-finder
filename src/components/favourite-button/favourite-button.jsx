@@ -59,11 +59,7 @@ export default function FavouriteButton({ stallId, buttonStyle }) {
         </CircleBtn>
       )}
       {buttonStyle === "long" && (
-        <ButtonStd
-          handleClick={handleClick}
-          appearance={"light"}
-          options={["long"]}
-        >
+        <ButtonStd handleClick={handleClick} options={["long", "light"]}>
           Favourite{currentFavIcon}
         </ButtonStd>
       )}

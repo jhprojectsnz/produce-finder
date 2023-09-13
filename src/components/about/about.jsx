@@ -88,8 +88,7 @@ export default function About() {
         <div className="about-btn-container">
           <ButtonStd
             handleClick={() => navigate("/login")}
-            appearance="light"
-            options={["bold"]}
+            options={["bold", "light"]}
           >
             Sign up
           </ButtonStd>

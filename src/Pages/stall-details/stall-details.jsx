@@ -139,11 +139,7 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
         </div>
       )}
       <div className="stall-details-wide-btn-container">
-        <ButtonStd
-          handleClick={handleBackClick}
-          appearance={"light"}
-          options={["long"]}
-        >
+        <ButtonStd handleClick={handleBackClick} options={["long", "light"]}>
           Back
         </ButtonStd>
         <FavouriteButton stallId={selectedStall.stallId} buttonStyle={"long"} />

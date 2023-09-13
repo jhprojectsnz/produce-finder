@@ -29,13 +29,13 @@ export default function RemoveStallModal({
       </p>
       <div className="remove-stall-btn-container">
         <ButtonStd
-          appearance="light"
+          options={["light"]}
           handleClick={() => setDisplayRemoveStallModal(false)}
         >
           Back
         </ButtonStd>
         <ButtonStd
-          appearance="red"
+          options={["red"]}
           handleClick={() => handleDeleteStall(stallToRemove.stallId)}
         >
           Remove

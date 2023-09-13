@@ -62,7 +62,7 @@ export default function Login() {
         <p className="login-error">Email or password do not match known user</p>
       )}
       <p className="login-text-link">Forgot your password?</p>
-      <ButtonStd appearance="dark" options={["long"]} handleClick={handleLogin}>
+      <ButtonStd options={["long", "dark"]} handleClick={handleLogin}>
         Log in
       </ButtonStd>
       <div className="login-separator">
@@ -94,8 +94,7 @@ export default function Login() {
         </p>
       )}
       <ButtonStd
-        appearance="dark"
-        options={["long"]}
+        options={["long", "dark"]}
         handleClick={() => setSignUpAttempt(true)}
       >
         Sign up

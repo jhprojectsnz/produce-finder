@@ -33,7 +33,7 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
         <>
           <div className="filter">
             <p className="filter-title">Stalls selling:</p>
-            <ButtonStd appearance="grey">
+            <ButtonStd options={["grey"]}>
               {filters.keyword}
               <FaTimes className="remove-icon" onClick={handleRemoveKeyword} />
             </ButtonStd>
@@ -44,7 +44,7 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
       <div className="filter-btn-container">
         {Object.keys(filters.buttonFilters).map((filter) => (
           <ButtonStd
-            appearance={filters.buttonFilters[filter] ? "dark" : "grey"}
+            options={[filters.buttonFilters[filter] ? "dark" : "grey"]}
             key={filter}
             handleClick={() => handleFilterClick(filter)}
           >

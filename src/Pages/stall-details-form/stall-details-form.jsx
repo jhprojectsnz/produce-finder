@@ -256,10 +256,10 @@ export default function StallDetailsForm() {
         />
       </div>
       <div className="form-btn-container">
-        <ButtonStd appearance="light" handleClick={handleCancel}>
+        <ButtonStd options={["light"]} handleClick={handleCancel}>
           Cancel
         </ButtonStd>
-        <ButtonStd appearance="dark" handleClick={handleSubmit}>
+        <ButtonStd options={["dark"]} handleClick={handleSubmit}>
           {id ? "Save" : "Submit"}
         </ButtonStd>
       </div>
