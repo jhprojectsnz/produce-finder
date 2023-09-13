@@ -1,15 +1,19 @@
 import "./stall-details-form.css";
-import { useState, useReducer } from "react";
+
+import { useState, useReducer, useMemo } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
-import OpenHoursForm from "../../components/open-hours-form/open-hours-form";
-import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
+import testImg1 from "../../assets/test-image-1.jpg";
+
 import { useUserContext } from "../../context/UserContext";
+import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
+import OpenHoursForm from "../../components/open-hours-form/open-hours-form";
 import ButtonStd from "../../components/button-std/button-std";
 import SectionHeading from "../../components/section-heading/section-heading";
 import LocationSearch from "../../components/location-search/location-search";
 
 export default function StallDetailsForm() {
+  // If the form is being used to update a stall - get that stall id from the URL
   const { id } = useParams();
   const navigate = useNavigate();
   const { stalls, setStalls, currentUser, setCurrentUser } = useUserContext();
@@ -28,57 +32,48 @@ export default function StallDetailsForm() {
     );
   }
 
-  // Runs whenever a new location is entered into the address search bar
-  function handleAddressChanged(location) {
-    const newAddress = location.formatted_address;
-    const newLocation = {
-      lat: location.geometry.location.lat(),
-      lng: location.geometry.location.lng(),
-    };
-    dispatch({
-      type: "autocomplete",
-      address: newAddress,
-      location: newLocation,
-    });
-  }
+  // Create an initial data object to initialise useReducer - either data from stall to be updated or blank data set
+  const initialData = useMemo(() => {
+    // If the form is being used to update a stall - get stall data
+    const stallForUpdate = id
+      ? stalls.filter((stall) => stall.stallId === parseInt(id))
+      : null;
 
-  const stallForUpdate = id
-    ? stalls.filter((stall) => stall.stallId === parseInt(id))
-    : false;
+    // Generate a new stall ID number
+    const newStallIdNumber = stalls[stalls.length - 1].stallId + 1;
 
-  const nextIdNumber = stalls[stalls.length - 1].stallId + 1;
-  const userId = currentUser.userId;
+    return stallForUpdate
+      ? stallForUpdate[0]
+      : {
+          stallId: newStallIdNumber,
+          ownerId: currentUser.userId,
+          name: "",
+          address: "",
+          location: { lat: 0, lng: 0 },
+          locationType: "",
+          about: "",
+          img: testImg1,
+          openTimes: {
+            Monday: { open: false, openTime: "", closeTime: "" },
+            Tuesday: { open: false, openTime: "", closeTime: "" },
+            Wednesday: { open: false, openTime: "", closeTime: "" },
+            Thursday: { open: false, openTime: "", closeTime: "" },
+            Friday: { open: false, openTime: "", closeTime: "" },
+            Saturday: { open: false, openTime: "", closeTime: "" },
+            Sunday: { open: false, openTime: "", closeTime: "" },
+          },
+          contactDetails: {
+            phone: "",
+            email: "",
+          },
+          inStock: [],
+          organic: false,
+          marketStall: false,
+          eftposPayment: false,
+        };
+  }, []);
 
-  const initialData = stallForUpdate
-    ? stallForUpdate[0]
-    : {
-        stallId: nextIdNumber,
-        ownerId: userId,
-        name: "",
-        address: "",
-        location: { lat: 0, lng: 0 },
-        locationType: "",
-        about: "",
-        img: "testImg1",
-        openTimes: {
-          Monday: { open: false, openTime: "", closeTime: "" },
-          Tuesday: { open: false, openTime: "", closeTime: "" },
-          Wednesday: { open: false, openTime: "", closeTime: "" },
-          Thursday: { open: false, openTime: "", closeTime: "" },
-          Friday: { open: false, openTime: "", closeTime: "" },
-          Saturday: { open: false, openTime: "", closeTime: "" },
-          Sunday: { open: false, openTime: "", closeTime: "" },
-        },
-        contactDetails: {
-          phone: "",
-          email: "",
-        },
-        inStock: [],
-        organic: false,
-        marketStall: false,
-        eftposPayment: false,
-      };
-
+  // Update formData based on action type from dispatch
   const reducerMethod = (formData, action) => {
     switch (action.type) {
       case "name":
@@ -125,24 +120,39 @@ export default function StallDetailsForm() {
     }
   };
 
+  // Create formData variable that can be updated using dispatch and the reducerMethod
   const [formData, dispatch] = useReducer(reducerMethod, initialData);
 
-  console.log(formData);
+  // Called whenever a new location is entered into the address search bar
+  // Takes a google maps place object as a "location"
+  function handleAddressChanged(location) {
+    const newAddress = location.formatted_address;
+    // Take the address details that come before the second comma, just "...., ....."
+    const newFormatedAddress = newAddress.replace(/(.*?,.*?),.*/, "$1");
+    const newLocation = {
+      lat: location.geometry.location.lat(),
+      lng: location.geometry.location.lng(),
+    };
+    dispatch({
+      type: "autocomplete",
+      address: newFormatedAddress,
+      location: newLocation,
+    });
+  }
 
-  // This function is used to update the stored form data whenever a text input is modified
+  // Updates formData whenever a text input is modified
   const handleTextInputChange = (e) => {
     dispatch({
-      type: e.target.id,
+      type: e.target.name,
       value: e.target.value,
     });
   };
 
-  // This function will run when submit button is clicked
-  // In full version with database - Add the formData to the database here
+  // In full version with database - Use formData to update database here
   const handleSubmit = () => {
-    // Update existing stall - find stall and update with formData
+    // Updating an existing stall - find stall and update with formData
     // Else - add formData as a new stall at end of stalls array
-    if (stallForUpdate) {
+    if (id) {
       setStalls((prev) =>
         prev.map((stall) =>
           stall.stallId === formData.stallId ? formData : stall
@@ -172,13 +182,12 @@ export default function StallDetailsForm() {
   return (
     <section className="stall-details-form">
       <SectionHeading>{`${
-        stallForUpdate ? "Update" : "New"
+        id ? "Update" : "New"
       } Stall Details`}</SectionHeading>
       <div className="form-input-container">
         <label htmlFor="name">Stall name</label>
         <input
           type="text"
-          id="name"
           name="name"
           value={formData.name}
           required
@@ -191,13 +200,13 @@ export default function StallDetailsForm() {
           placeholder={""}
           onPlacesChanged={handleAddressChanged}
           name={"address"}
+          initialValue={formData.address}
         />
       </div>
       <div className="form-input-container">
         <label htmlFor="about">About</label>
         <textarea
           type="text"
-          id="about"
           name="about"
           placeholder="Give a brief description about your stall..."
           value={formData.about}
@@ -206,7 +215,7 @@ export default function StallDetailsForm() {
         />
       </div>
       <div className="form-input-container">
-        <label htmlFor="about">Open times</label>
+        <label htmlFor="openTimes">Open times</label>
         <OpenHoursForm openTimes={formData.openTimes} dispatch={dispatch} />
       </div>
       <div className="form-input-container">
@@ -224,7 +233,7 @@ export default function StallDetailsForm() {
       <div className="form-separator">
         <span>Contact details</span>
       </div>
-      <p>
+      <p className="contact-details-text">
         <strong>Optional</strong> - These will be displayed to allow costumers
         to get in touch with you
       </p>
@@ -232,7 +241,6 @@ export default function StallDetailsForm() {
         <label htmlFor="phone">Phone number</label>
         <input
           type="text"
-          id="phone"
           name="phone"
           value={formData.contactDetails.phone}
           onChange={handleTextInputChange}
@@ -242,7 +250,6 @@ export default function StallDetailsForm() {
         <label htmlFor="phone">Email</label>
         <input
           type="text"
-          id="email"
           name="email"
           value={formData.contactDetails.email}
           onChange={handleTextInputChange}
@@ -253,7 +260,7 @@ export default function StallDetailsForm() {
           Cancel
         </ButtonStd>
         <ButtonStd appearance="dark" handleClick={handleSubmit}>
-          {stallForUpdate ? "Save" : "Submit"}
+          {id ? "Save" : "Submit"}
         </ButtonStd>
       </div>
     </section>

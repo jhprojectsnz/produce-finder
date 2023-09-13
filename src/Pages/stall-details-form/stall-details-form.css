@@ -2,38 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
   width: 95%;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 1.5rem 0;
-
-  & p {
-    color: var(--main-dark-color);
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
 }
 
 .form-input-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   width: 95%;
   /* more padding on top - space for label */
-  padding: 0.8rem 0.7rem 0.7rem;
-  margin-bottom: 1rem;
+  padding: 0.6rem 0.8rem 0.5rem;
+  margin-bottom: 1.5rem;
   border: 1px solid var(--main-dark-color);
   border-radius: 10px;
 
   & label {
     /* shift labels up so they sit over the input border */
     position: absolute;
-    top: -12px;
-    left: 12px;
-    padding: 3px;
+    top: -13px;
+    left: 13px;
+    padding: 4px;
     background-color: white;
     color: rgb(77, 77, 77);
     font-size: 0.8rem;
@@ -59,10 +48,11 @@
   }
 }
 
+/* Could also do this with an ::after for the line - need to chang the jsx first */
 .form-separator {
   position: relative;
   width: 95%;
-  margin: 1rem 0 1rem;
+  margin: 1rem 0 1.5rem;
   border-top: 1px solid var(--main-dark-color);
 
   & span {
@@ -92,7 +82,7 @@
   background-color: white;
   color: rgb(77, 77, 77);
   border-radius: 10px;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
   cursor: pointer;
 }
 
@@ -103,4 +93,11 @@
   gap: 1rem;
   padding: 2rem;
   text-align: center;
+}
+
+.contact-details-text {
+  width: 95%;
+  color: var(--main-dark-color);
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
 }

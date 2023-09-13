@@ -9,32 +9,46 @@
   display: flex;
   align-items: center;
   width: 100%;
+  /* set height to avoid height change when adding or removing times */
   height: 2rem;
+  margin-bottom: 0.3rem;
+
+  & p {
+    /* This has a set width so all check boxes align */
+    width: 100px;
+    color: var(--main-dark-color);
+    text-align: left;
+    font-size: 0.8rem;
+  }
 }
 
-.openhours-day-container p {
-  /* This has a set width so all check boxes align */
-  width: 100px;
-  margin: 0;
-  text-align: left;
-}
-
-.open-times-container {
+.openhours-times-container {
   margin-left: 1rem;
-}
 
-.open-times-container select {
-  width: 75px;
-  padding: 5px 2px;
-  font-size: 0.7rem;
-  color: rgb(77, 77, 77);
-  border: 1px solid var(--main-dark-color);
-  border-radius: 5px;
-  cursor: pointer;
+  & select {
+    width: 75px;
+    padding: 5px 2px;
+    font-size: 0.7rem;
+    color: rgb(77, 77, 77);
+    border: 1px solid var(--main-dark-color);
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }
 
 .openhours-checkbox {
   /* Width set to 100% by .form-input-container &input */
   width: auto !important;
   cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+  .openhours-times-container {
+    margin-left: 3rem;
+
+    & select {
+      width: 100px;
+      padding: 5px 5px;
+    }
+  }
 }

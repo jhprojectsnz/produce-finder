@@ -1,31 +1,28 @@
 import "./open-hours-form.css";
 
-//Change to a more specfic map key
-
 export default function OpenHoursForm({ openTimes, dispatch }) {
-  //This function is run when the open/closed check box is clicked
+  // This function is called when the open/closed check box is clicked
   function handleCheckChange(day) {
-    //create new object that contains the updated data for the day that has been clicked
-    //open times reset to an empty string
+    // Create new object that contains the updated data for the day that has been clicked
+    // Open times reset to an empty string
     const updatedDay = {
       [day]: { open: !openTimes[day].open, openTime: "", closeTime: "" },
     };
 
-    //use dispatch to send the updated day data to the reducer
+    // Use dispatch to send the updated day data to the reducer
     dispatch({
       type: "openTime",
       updatedDayData: updatedDay,
     });
   }
 
-  //This function is run when a new time is selected from the open times drop down selector
+  // This function is run when a new time is selected from the open times drop down selector
   function handleSelectChange(e, day) {
-    //set a variable to the time that has just been selected
+    // Set a variable to the time that has just been selected
     const newTime = e.target.value;
-    //define whether this time is for open or close
-    //variable below might be a bit vague? Doesn't check for 'openTimeSelect' id, just sets 'close' as a default
+    // Define whether this time is for opening or closing
     const openOrClose = e.target.id === "openTimeSelect" ? "open" : "close";
-    //create an updated version of the entry for the specfic day for which the open/close time has been changed
+    // Create an updated object for the specfic day for which the open/close time has been changed
     const updatedDay =
       openOrClose === "open"
         ? {
@@ -43,13 +40,14 @@ export default function OpenHoursForm({ openTimes, dispatch }) {
             },
           };
 
-    //use dispatch to send the updated day data to the reducer
+    // Use dispatch to send the updated day data to the reducer
     dispatch({
       type: "openTime",
       updatedDayData: updatedDay,
     });
   }
 
+  // An array of times to populate the select options
   const times = [
     "12:00 am",
     "12:30 am",
@@ -108,15 +106,13 @@ export default function OpenHoursForm({ openTimes, dispatch }) {
           <p>{day}</p>
           <input
             type="checkbox"
-            id={`custom-checkbox-${day}`}
             className="openhours-checkbox"
             name={day}
-            value={day}
             checked={openTimes[day].open}
             onChange={() => handleCheckChange(day)}
           />
           {openTimes[day].open && (
-            <div className="open-times-container">
+            <div className="openhours-times-container">
               <select
                 id="openTimeSelect"
                 onChange={(e) => handleSelectChange(e, day)}

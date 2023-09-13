@@ -1,5 +1,6 @@
+/* If more buttons added to this container add flex-wrap:wrap */
 .select-details-container {
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
 }

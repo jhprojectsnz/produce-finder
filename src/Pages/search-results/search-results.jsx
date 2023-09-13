@@ -61,13 +61,10 @@ export default function SearchResults({
           ? filters.keyword.toLowerCase().slice(0, -3)
           : filters.keyword.toLowerCase().slice(0, -1);
 
-        // Initiate variable to track whether the stall has an item that matches the filterTerm
-        // let stallHasKeyword = false;
-
-        // Look through products to see if one includes the search term
+        // Look through stall products to see if one includes the search term
         // Sliced filterTerms like cherr (from Cherries) will match Cherries, Cherry etc
         const stallHasKeyword = stall.inStock.some((product) => {
-          // toSting needs to be run before toLowerCase will work here
+          // toSting() needs to be run before toLowerCase() will work here
           // product.item not stored as a primitive string??
           const productName = product.item.toString().toLowerCase();
           return productName.includes(filterTerm);
