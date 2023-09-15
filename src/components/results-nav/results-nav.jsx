@@ -1,6 +1,8 @@
-import ButtonStd from "../button-std/button-std";
 import "./results-nav.css";
+
 import { useLocation, useNavigate } from "react-router-dom";
+
+import ButtonStd from "../button-std/button-std";
 
 export default function ResultsNav() {
   const location = useLocation();

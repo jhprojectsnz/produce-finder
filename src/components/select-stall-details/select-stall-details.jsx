@@ -1,4 +1,5 @@
 import "./select-stall-details.css";
+
 import ButtonStd from "../button-std/button-std";
 
 export default function SelectStallDetails({ dispatch, formData }) {

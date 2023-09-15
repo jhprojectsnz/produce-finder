@@ -12,7 +12,7 @@ export default function FavouriteButton({ stallId, buttonStyle }) {
   const { currentUser, setCurrentUser } = useUserContext();
   const [showLoginModal, setShowLoginModal] = useState(false);
 
-  // If a user is logged on check if this stall is a favourite
+  // If a user is logged in check if this stall is a favourite
   const currentUserFavourite = currentUser.userId
     ? currentUser.favouriteStalls.includes(stallId)
     : false;

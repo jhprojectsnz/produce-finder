@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   width: 95%;
-  /* more padding on top - space for label */
+  /* More padding on top - space for label */
   padding: 0.7rem 1rem 0.6rem;
   margin: 1rem 0;
   border: 1px solid var(--main-dark-color);
@@ -17,7 +17,7 @@
   }
 
   & label {
-    /* shift labels up so they sit over the input border */
+    /* Shift labels up so they sit over the input border */
     position: absolute;
     top: -12px;
     left: 12px;

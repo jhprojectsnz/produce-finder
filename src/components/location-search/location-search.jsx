@@ -12,8 +12,8 @@ export default function LocationSearch({
   const [autocomplete, setAutocomplete] = useState();
   const placesOptions = { componentRestrictions: { country: "nz" } };
 
-  // Input element present but no autocomplete instance => initialise autocomplete and store instance in state
-  // Save autocomplete to state to trigger rerender, adding the autocomplete to the input element
+  // Input element is present but no autocomplete instance => initialise autocomplete and store instance in state
+  // Autocomplete stored in state to trigger rerender, adding the autocomplete functionality to the input element
   useEffect(() => {
     // Declare listener variable here so that it is accessible to the useEffect return function
     let placesChangedListener;

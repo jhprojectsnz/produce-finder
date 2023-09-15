@@ -32,7 +32,7 @@
   max-width: 500px;
 }
 
-.input-container {
+.search-input-container {
   width: 100%;
   background-color: var(--main-light-color);
   height: 40px;
@@ -47,13 +47,12 @@
 .search-input {
   width: 75%;
   border: none;
-  padding: 0.5rem;
   line-height: 1;
   background-color: transparent;
 }
 
 /* For screen larger than 600px the app title is added to the search bar */
-/* search container altered so title and dropdown buttons appear on either side of sceeen, with search in the middle */
+/* Search container altered so title and dropdown buttons appear on either side of sceeen, with search in the middle */
 @media screen and (min-width: 600px) {
   .search-container {
     justify-content: space-between;

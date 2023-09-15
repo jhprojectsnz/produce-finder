@@ -2,9 +2,7 @@
   --preview-border-radius: 5px;
   position: absolute;
   display: flex;
-  /* space from bottom of the page */
   bottom: 70px;
-  /* postion in center of screen */
   left: 50%;
   transform: translate(-50%, 0);
   width: 85%;

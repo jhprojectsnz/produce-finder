@@ -1,9 +1,11 @@
-import ButtonStd from "../button-std/button-std";
 import "./filters.css";
+
 import { FaTimes } from "react-icons/fa";
 
+import ButtonStd from "../button-std/button-std";
+
 export default function Filters({ filters, setFilters, setShowFilters }) {
-  //Function below run when a true/false filter button is clicked
+  // Function below run when a true/false filter button is clicked
   function handleFilterClick(filter) {
     setFilters((prev) => {
       const newObj = {
@@ -17,7 +19,7 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
     });
   }
 
-  //This function is run when close button next to the search term is clicked
+  // This function is run when close button next to the search term is clicked
   function handleRemoveKeyword() {
     setFilters((prev) => ({
       ...prev,
@@ -30,16 +32,13 @@ export default function Filters({ filters, setFilters, setShowFilters }) {
       <FaTimes className="close" onClick={() => setShowFilters(false)} />
       <h3>Filters</h3>
       {filters.keyword && (
-        <>
-          <div className="filter">
-            <p className="filter-title">Stalls selling:</p>
-            <ButtonStd options={["grey"]}>
-              {filters.keyword}
-              <FaTimes className="remove-icon" onClick={handleRemoveKeyword} />
-            </ButtonStd>
-          </div>
-          <div className="separator-line" />
-        </>
+        <div className="filter">
+          <p className="filter-title">Stalls selling:</p>
+          <ButtonStd options={["grey"]}>
+            {filters.keyword}
+            <FaTimes className="remove-icon" onClick={handleRemoveKeyword} />
+          </ButtonStd>
+        </div>
       )}
       <div className="filter-btn-container">
         {Object.keys(filters.buttonFilters).map((filter) => (

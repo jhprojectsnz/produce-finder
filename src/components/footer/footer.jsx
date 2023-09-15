@@ -11,7 +11,5 @@ export default function Footer() {
     <footer>
       <p>Find Fresh Produce</p>
     </footer>
-  ) : (
-    <></>
-  );
+  ) : null;
 }

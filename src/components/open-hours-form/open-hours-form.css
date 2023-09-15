@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  /* set height to avoid height change when adding or removing times */
+  /* Set height to avoid height change when adding or removing times */
   height: 2rem;
   margin-bottom: 0.3rem;
 

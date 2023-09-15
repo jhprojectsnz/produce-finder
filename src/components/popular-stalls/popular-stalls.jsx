@@ -1,5 +1,7 @@
 import "./popular-stalls.css";
+
 import { useUserContext } from "../../context/UserContext";
+
 import ResultsList from "../results-list/results-list";
 import SectionHeading from "../section-heading/section-heading";
 

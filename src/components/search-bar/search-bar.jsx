@@ -1,8 +1,10 @@
 import "./search-bar.css";
+
 import { BiSearchAlt, BiSliderAlt, BiArrowBack, BiMenu } from "react-icons/bi";
-import Filters from "../filters/filters.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
+import Filters from "../filters/filters.jsx";
 import DropdownMenu from "../dropdown-menu/dropdown-menu";
 import CircleBtn from "../cricle-btn/circle-btn";
 
@@ -48,7 +50,7 @@ export default function SearchBar({ filters, setFilters, setSelectedStall }) {
           Find Fresh Produce
         </h1>
         <div className="search-elements">
-          <div className="input-container">
+          <div className="search-input-container">
             <CircleBtn appearance="light" handleClick={() => navigate(-1)}>
               <BiArrowBack className="color-dark circle-btn-icon" />
             </CircleBtn>

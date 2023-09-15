@@ -12,6 +12,7 @@ export default function Map({
 }) {
   // Get google map component as a ref
   const mapRef = useRef(null);
+  // Also store googleMap instance as a ref
   const googleMap = useRef(null);
 
   // Styles for the Google map - switch of points of interest to make map clearer
@@ -32,10 +33,8 @@ export default function Map({
       disableDefaultUI: true,
     });
 
-    // If map created successfully - save to ref and add listeners
+    // If map created successfully - add listeners and save to ref
     if (map) {
-      googleMap.current = map;
-
       map.addListener("idle", () => {
         if (map) {
           setMapDetails({
@@ -52,6 +51,8 @@ export default function Map({
       map.addListener("click", () => {
         setSelectedStall({});
       });
+
+      googleMap.current = map;
     }
 
     // Unmount - remove listeners

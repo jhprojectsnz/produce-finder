@@ -1,7 +1,9 @@
 import "./stall-preview.css";
+
 import { FaTimes } from "react-icons/fa";
-import isOpen from "../../functions/isOpen";
 import { useNavigate } from "react-router-dom";
+
+import isOpen from "../../functions/isOpen";
 
 export default function StallPreview({ selectedStall, setSelectedStall }) {
   const stallIsOpen = isOpen(selectedStall.openTimes);

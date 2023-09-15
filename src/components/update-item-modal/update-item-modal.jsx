@@ -21,7 +21,7 @@ export default function UpdateItemModal({
   );
   const [showError, setShowError] = useState(false);
 
-  // Om submit - Update the stall with the new data for this item
+  // On submit - Update the stall with the new data for this item
   function handleSubmit() {
     // Check if name has been entered, if not show error message
     if (updatedItem.item.length < 1) {

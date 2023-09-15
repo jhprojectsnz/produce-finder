@@ -40,6 +40,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--main-dark-color);
 }
 
 .remove-icon {
@@ -49,12 +51,6 @@
   border: 1px solid rgb(79, 79, 79);
   border-radius: 50%;
   color: rgb(79, 79, 79);
-}
-
-.separator-line {
-  width: 100%;
-  border-bottom: 1px solid var(--main-dark-color);
-  margin: 1rem auto 1rem auto;
 }
 
 .filter-btn-container {
