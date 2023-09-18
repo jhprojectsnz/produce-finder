@@ -46,6 +46,7 @@
 
 .search-input {
   width: 75%;
+  padding: 0 0.3rem;
   border: none;
   line-height: 1;
   background-color: transparent;
