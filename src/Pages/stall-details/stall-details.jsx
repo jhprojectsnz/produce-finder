@@ -1,7 +1,7 @@
 import "./stall-details.css";
 
 import { BiArrowBack } from "react-icons/bi";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import { useMemo } from "react";
 
 import FavouriteButton from "../../components/favourite-button/favourite-button";
@@ -13,10 +13,11 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
   const navigate = useNavigate();
 
   // If a user navigates to this page without a stall being selected navigate back one page
-  // Most likely cause of this is user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
+  // Most likely cause:
+  // - user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
+  // - user refreshing on the details page
   if (!selectedStall.stallId) {
-    navigate(-1);
-    return null;
+    return <Navigate to="/" />;
   }
 
   const stallIsOpen = isOpen(selectedStall.openTimes);
@@ -37,9 +38,9 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
             <li key={formatText}>{formatText}</li>
           ) : null;
         })
-        // filter null elements from the array
+        // Filter null elements from the array
         .filter((li) => li),
-    [selectedStall]
+    [selectedStall],
   );
 
   function handleAddressClick() {
@@ -134,7 +135,7 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
               <p
                 key={selectedStall.contactDetails[contact]}
               >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
-            ) : null
+            ) : null,
           )}
         </div>
       )}

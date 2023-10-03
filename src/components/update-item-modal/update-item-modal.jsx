@@ -17,7 +17,7 @@ export default function UpdateItemModal({
   // Store an updated version of the item data in state
   // Initiate with the current item data or an empty version
   const [updatedItem, setUpdatedItem] = useState(
-    itemForUpdate || { item: "", amount: "", price: "" }
+    itemForUpdate || { item: "", amount: "", price: "" },
   );
   const [showError, setShowError] = useState(false);
 
@@ -28,6 +28,7 @@ export default function UpdateItemModal({
       setShowError(true);
       return;
     }
+    // Check if this is to update an item or create a new one
     if (itemForUpdate) {
       setStalls((prev) =>
         prev.map((stall) => {
@@ -39,7 +40,7 @@ export default function UpdateItemModal({
                 }),
               }
             : stall;
-        })
+        }),
       );
     } else {
       setStalls((prev) =>
@@ -50,7 +51,7 @@ export default function UpdateItemModal({
                 inStock: [...stall.inStock, updatedItem],
               }
             : stall;
-        })
+        }),
       );
     }
     setDisplayItemModal(false);
