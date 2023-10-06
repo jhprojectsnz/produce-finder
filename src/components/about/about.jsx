@@ -77,11 +77,11 @@ export default function About() {
           passion for healthy and delicious food?
         </p>
         <p>
-          Find Fresh Food is a platform that allows you to list your produce and
-          sell it directly to people in your area. You can set your own prices
-          and availability. By joining you will not only increase your sales,
-          but also help people access fresh and nutritious food that they can
-          trust.
+          Find Fresh Food is a platform that allows you to list your produce
+          stall and sell directly to people in your area. You can set your own
+          prices and availability. By joining you will not only increase your
+          sales, but also help people access fresh and nutritious food that they
+          can trust.
         </p>
         <p className="bold">Sign up and start selling your produce today!</p>
         <div className="about-btn-container">
