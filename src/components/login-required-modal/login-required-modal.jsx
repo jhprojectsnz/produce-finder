@@ -17,7 +17,7 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
       <div className="login-required-btn-container">
         <ButtonStd
           options={["light"]}
-          handleClick={(e) => {
+          handleClick={() => {
             setShowLoginModal(false);
           }}
         >
@@ -25,7 +25,7 @@ export default function LoginRequiredModal({ setShowLoginModal }) {
         </ButtonStd>
         <ButtonStd
           options={["dark"]}
-          handleClick={(e) => {
+          handleClick={() => {
             navigate("/login");
           }}
         >

@@ -15,7 +15,7 @@ export default function Map({
   // Also store googleMap instance as a ref
   const googleMap = useRef(null);
 
-  // Styles for the Google map - switch of points of interest to make map clearer
+  // Styles for the Google map - switch off points of interest to make map clearer
   const mapStyles = [
     {
       featureType: "poi",

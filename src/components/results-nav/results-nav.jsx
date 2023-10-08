@@ -10,7 +10,7 @@ export default function ResultsNav() {
 
   const currentPathname = location.pathname;
   // Results shown as list - results nav = position relative. Avoids overlap with results cards
-  // Results shown as map -  results nav is fixed to bottom of screen
+  // Results shown as map - results nav is fixed to bottom of screen
   const resultsNavSytle =
     currentPathname === "/results/list" ? "rn-relative" : "rn-fixed";
 

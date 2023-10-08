@@ -1374,7 +1374,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -1458,7 +1458,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -2182,7 +2182,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [],
@@ -2304,7 +2304,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -2510,7 +2510,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -2737,7 +2737,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -3254,7 +3254,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -3376,7 +3376,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -3524,7 +3524,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -3593,7 +3593,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -3756,7 +3756,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -3899,7 +3899,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -4210,7 +4210,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -4712,7 +4712,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -5066,7 +5066,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -5288,7 +5288,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -5346,7 +5346,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -5484,7 +5484,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -6035,7 +6035,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -6483,7 +6483,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -6700,7 +6700,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -6848,7 +6848,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -6906,7 +6906,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -7387,7 +7387,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -7619,7 +7619,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -7777,7 +7777,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -7930,7 +7930,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -8009,7 +8009,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [],
@@ -8505,7 +8505,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -9541,7 +9541,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -9752,7 +9752,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -9895,7 +9895,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -10023,7 +10023,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -10298,7 +10298,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -10831,7 +10831,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -10910,7 +10910,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -11180,7 +11180,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -11676,7 +11676,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -12454,7 +12454,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -12877,7 +12877,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -13380,7 +13380,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -13655,7 +13655,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -13845,7 +13845,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -14210,7 +14210,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -14432,7 +14432,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -14570,7 +14570,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -14644,7 +14644,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -14797,7 +14797,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -14939,7 +14939,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -15504,7 +15504,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -15573,7 +15573,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -15642,7 +15642,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -15832,7 +15832,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -17399,7 +17399,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -17457,7 +17457,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -17885,7 +17885,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -18027,7 +18027,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -18111,7 +18111,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -18195,7 +18195,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -18358,7 +18358,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -18796,7 +18796,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [],
@@ -19351,7 +19351,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -19430,7 +19430,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -19704,7 +19704,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [],
@@ -19762,7 +19762,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -20160,7 +20160,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -20567,7 +20567,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -20720,7 +20720,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -20852,7 +20852,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -21265,7 +21265,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -21929,7 +21929,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -22140,7 +22140,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -22214,7 +22214,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -22293,7 +22293,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -22357,7 +22357,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -22633,7 +22633,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -22691,7 +22691,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -23061,7 +23061,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -23130,7 +23130,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -23214,7 +23214,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [],
@@ -23330,7 +23330,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -23753,7 +23753,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -23827,7 +23827,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -24039,7 +24039,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -24197,7 +24197,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -24255,7 +24255,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -24339,7 +24339,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -24683,7 +24683,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [],
@@ -24909,7 +24909,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -24967,7 +24967,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -25209,7 +25209,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -25741,7 +25741,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [],
@@ -26085,7 +26085,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -26159,7 +26159,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -26228,7 +26228,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -26302,7 +26302,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -26519,7 +26519,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -26957,7 +26957,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -27031,7 +27031,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -27184,7 +27184,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -27253,7 +27253,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -27332,7 +27332,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -27967,7 +27967,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -28463,7 +28463,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -29049,7 +29049,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -29128,7 +29128,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -29286,7 +29286,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -29645,7 +29645,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -29724,7 +29724,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -29872,7 +29872,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -29946,7 +29946,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -30020,7 +30020,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -30316,7 +30316,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -30946,7 +30946,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -31126,7 +31126,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -31200,7 +31200,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -31501,7 +31501,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -32240,7 +32240,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -32605,7 +32605,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -32738,7 +32738,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -32812,7 +32812,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -32881,7 +32881,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -33250,7 +33250,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -33308,7 +33308,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -33524,7 +33524,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -33603,7 +33603,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -33725,7 +33725,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -33994,7 +33994,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -34274,7 +34274,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -34506,7 +34506,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -34654,7 +34654,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -34728,7 +34728,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -34797,7 +34797,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -34939,7 +34939,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -35018,7 +35018,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -35161,7 +35161,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [],
@@ -35589,7 +35589,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -35801,7 +35801,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -36071,7 +36071,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -37230,7 +37230,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -37309,7 +37309,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -37378,7 +37378,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -37668,7 +37668,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -37726,7 +37726,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -37784,7 +37784,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -38016,7 +38016,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -38918,7 +38918,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -39337,7 +39337,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -39855,7 +39855,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -39934,7 +39934,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -40097,7 +40097,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -40224,7 +40224,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -40435,7 +40435,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -40677,7 +40677,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -40761,7 +40761,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -40840,7 +40840,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -40962,7 +40962,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -41041,7 +41041,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -41189,7 +41189,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -41464,7 +41464,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -41728,7 +41728,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -41812,7 +41812,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [],
@@ -42076,7 +42076,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -42140,7 +42140,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -42530,7 +42530,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -42599,7 +42599,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -43122,7 +43122,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -43313,7 +43313,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -43761,7 +43761,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -43819,7 +43819,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -44394,7 +44394,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -44605,7 +44605,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [],
@@ -44826,7 +44826,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -44900,7 +44900,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [],
@@ -44958,7 +44958,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -45121,7 +45121,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -45263,7 +45263,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -45390,7 +45390,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -45696,7 +45696,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -45844,7 +45844,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -46155,7 +46155,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -46224,7 +46224,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -46425,7 +46425,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -46573,7 +46573,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -46716,7 +46716,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -46800,7 +46800,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -46933,7 +46933,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -47133,7 +47133,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -47508,7 +47508,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [],
@@ -47566,7 +47566,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -47650,7 +47650,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -47714,7 +47714,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -47793,7 +47793,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -47877,7 +47877,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -48030,7 +48030,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -48659,7 +48659,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -48723,7 +48723,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -49067,7 +49067,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -49136,7 +49136,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -49363,7 +49363,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [],
@@ -50055,7 +50055,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -50998,7 +50998,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -51215,7 +51215,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -51284,7 +51284,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -51501,7 +51501,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -51634,7 +51634,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -51845,7 +51845,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [],
@@ -51903,7 +51903,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -52104,7 +52104,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -52331,7 +52331,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 4937493,
+      phone: "987654333",
       email: "",
     },
     inStock: [
@@ -52479,7 +52479,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -52543,7 +52543,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -52859,7 +52859,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -53228,7 +53228,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -53563,7 +53563,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -53769,7 +53769,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -53912,7 +53912,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [
@@ -54350,7 +54350,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -54661,7 +54661,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -54819,7 +54819,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -55061,7 +55061,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -55253,7 +55253,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -55548,7 +55548,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 3483984,
+      phone: "1012345678",
       email: "",
     },
     inStock: [
@@ -55785,7 +55785,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [],
@@ -56011,7 +56011,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 84344543,
+      phone: "0102030405",
       email: "",
     },
     inStock: [
@@ -56424,7 +56424,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [],
@@ -56566,7 +56566,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 283908023,
+      phone: "283908023",
       email: "",
     },
     inStock: [
@@ -56709,7 +56709,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 20940398,
+      phone: "010940398",
       email: "",
     },
     inStock: [
@@ -56956,7 +56956,7 @@ const stallData = [
       },
     },
     contactDetails: {
-      phone: 39048390,
+      phone: "123458390",
       email: "",
     },
     inStock: [

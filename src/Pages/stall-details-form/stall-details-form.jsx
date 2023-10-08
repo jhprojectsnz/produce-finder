@@ -155,8 +155,8 @@ export default function StallDetailsForm() {
     if (id) {
       setStalls((prev) =>
         prev.map((stall) =>
-          stall.stallId === formData.stallId ? formData : stall
-        )
+          stall.stallId === formData.stallId ? formData : stall,
+        ),
       );
     } else {
       setStalls((prev) => [...prev, formData]);
@@ -224,7 +224,9 @@ export default function StallDetailsForm() {
           Add a photo
           <BiUpload />
         </button>
-        {addImageAttempt && <p>Add photo coming soon...</p>}
+        {addImageAttempt && (
+          <p className="form-error">Add photo coming soon...</p>
+        )}
       </div>
       <div className="form-input-container">
         <label htmlFor="open-times">Stall details</label>

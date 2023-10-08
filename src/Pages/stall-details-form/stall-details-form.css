@@ -11,14 +11,14 @@
 .form-input-container {
   position: relative;
   width: 95%;
-  /* more padding on top - space for label */
+  /* More padding on top - space for label */
   padding: 0.6rem 0.8rem 0.5rem;
   margin-bottom: 1.5rem;
   border: 1px solid var(--main-dark-color);
   border-radius: 10px;
 
   & label {
-    /* shift labels up so they sit over the input border */
+    /* Shift labels up so they sit over the input border */
     position: absolute;
     top: -13px;
     left: 13px;
@@ -100,4 +100,12 @@
   color: var(--main-dark-color);
   font-size: 0.8rem;
   margin-bottom: 1.5rem;
+}
+
+.form-error {
+  margin: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: red;
 }

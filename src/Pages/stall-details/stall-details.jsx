@@ -93,10 +93,10 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
         {selectedStall.inStock.length === 0 ? (
           <p>Currently out of stock</p>
         ) : (
-          selectedStall.inStock.map((item) => (
+          selectedStall.inStock.map((item, index) => (
             <div
               className="stall-item-container"
-              key={`${selectedStall.stallId}-${item.item}`}
+              key={`${selectedStall.stallId}-${item.item}-${index}`}
             >
               {item.amount ? (
                 <p>{`${item.item} (${item.amount})`}</p>

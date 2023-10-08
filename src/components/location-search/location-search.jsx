@@ -12,16 +12,15 @@ export default function LocationSearch({
   const [autocomplete, setAutocomplete] = useState();
   const placesOptions = { componentRestrictions: { country: "nz" } };
 
-  // Input element is present but no autocomplete instance => initialise autocomplete and store instance in state
-  // Autocomplete stored in state to trigger rerender, adding the autocomplete functionality to the input element
   useEffect(() => {
     // Declare listener variable here so that it is accessible to the useEffect return function
     let placesChangedListener;
-
+    // If input element is present but no autocomplete instance => initialise autocomplete and store instance in state
+    // Autocomplete stored in state to trigger rerender, adding the autocomplete functionality to the input element
     if (inputRef.current && !autocomplete) {
       const newAutocomplete = new google.maps.places.Autocomplete(
         inputRef.current,
-        placesOptions
+        placesOptions,
       );
 
       placesChangedListener = newAutocomplete.addListener(
@@ -29,7 +28,7 @@ export default function LocationSearch({
         () => {
           const place = newAutocomplete.getPlace();
           onPlacesChanged(place);
-        }
+        },
       );
 
       setAutocomplete(newAutocomplete);
