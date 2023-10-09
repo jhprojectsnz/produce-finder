@@ -1,8 +1,15 @@
 import "./modal-layout.css";
 
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function ModalLayout({ children }) {
+  // Stop scrolling when a modal is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <div
       className="modal"

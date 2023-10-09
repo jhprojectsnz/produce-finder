@@ -33,6 +33,7 @@ export default function Map({
       styles: mapStyles,
       clickableIcons: false,
       disableDefaultUI: true,
+      gestureHandling: "cooperative",
     });
 
     // If map created successfully - add listeners and save to ref

@@ -10,7 +10,11 @@ import isOpen from "../../functions/isOpen";
 import CircleBtn from "../../components/cricle-btn/circle-btn";
 import ButtonStd from "../../components/button-std/button-std";
 
-export default function StallDetails({ selectedStall, setMapDetails }) {
+export default function StallDetails({
+  selectedStall,
+  setSelectedStall,
+  setMapDetails,
+}) {
   const navigate = useNavigate();
 
   // If a user navigates to this page without a stall being selected navigate back one page
@@ -54,6 +58,7 @@ export default function StallDetails({ selectedStall, setMapDetails }) {
   }
 
   function handleBackClick() {
+    setSelectedStall({});
     navigate(-1);
   }
 
