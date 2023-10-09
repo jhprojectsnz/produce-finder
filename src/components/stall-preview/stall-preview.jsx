@@ -24,7 +24,8 @@ export default function StallPreview({ selectedStall, setSelectedStall }) {
           e.stopPropagation();
         }}
       />
-      <img className="info-image" src={selectedStall.img} />
+      {/* Need to add extra dot to the src address for the image below to access the images folder */}
+      <img className="info-image" src={`.${selectedStall.img}`} />
       <div className="info-text-container">
         <h5 className="info-title">{selectedStall.name}</h5>
         <p className="info-text">
