@@ -22,7 +22,8 @@ export default function ResultsList({ setSelectedStall, stallsList }) {
               navigate("/details");
             }}
           >
-            <img className="result-image" src={stall.img} />
+            {/* Need to add extra dot to the src address for the image below to access the images folder */}
+            <img className="result-image" src={`.${stall.img}`} />
             <div className="result-text-container">
               <div className="result-title-container">
                 <h5 className="result-title">{stall.name}</h5>
