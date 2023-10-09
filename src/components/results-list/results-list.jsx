@@ -1,5 +1,6 @@
 import "./results-list.css";
 
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import isOpen from "../../functions/isOpen";

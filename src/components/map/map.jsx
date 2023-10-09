@@ -1,4 +1,6 @@
 import "./map.css";
+
+import React from "react";
 import Markers from "../markers/markers";
 import StallPreview from "../stall-preview/stall-preview.jsx";
 import { useEffect, useRef } from "react";

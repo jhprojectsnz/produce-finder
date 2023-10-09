@@ -1,5 +1,6 @@
 import "./popular-stalls.css";
 
+import React from "react";
 import { useUserContext } from "../../context/UserContext";
 
 import ResultsList from "../results-list/results-list";

@@ -1,5 +1,6 @@
 import "./about.css";
 
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import farmImg from "../../assets/farm-image.jpg";

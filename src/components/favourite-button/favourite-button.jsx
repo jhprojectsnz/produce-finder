@@ -1,5 +1,6 @@
 import "./favourite-button.css";
 
+import React from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";
 import { useState } from "react";
@@ -24,7 +25,7 @@ export default function FavouriteButton({ stallId, buttonStyle }) {
           ? {
               ...prev,
               favouriteStalls: prev.favouriteStalls.filter(
-                (favId) => favId != stallId
+                (favId) => favId != stallId,
               ),
             }
           : {

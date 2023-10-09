@@ -1,5 +1,6 @@
 import "./select-stall-details.css";
 
+import React from "react";
 import ButtonStd from "../button-std/button-std";
 
 export default function SelectStallDetails({ dispatch, formData }) {

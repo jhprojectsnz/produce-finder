@@ -1,4 +1,6 @@
 import "./markers.css";
+
+import React from "react";
 import { useUserContext } from "../../context/UserContext";
 import Marker from "../marker/marker.jsx";
 

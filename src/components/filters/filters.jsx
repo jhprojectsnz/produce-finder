@@ -1,5 +1,6 @@
 import "./filters.css";
 
+import React from "react";
 import { FaTimes } from "react-icons/fa";
 
 import ButtonStd from "../button-std/button-std";

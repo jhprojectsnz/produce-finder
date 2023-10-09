@@ -1,5 +1,6 @@
 import "./update-item-modal.css";
 
+import React from "react";
 import { useState } from "react";
 import { useUserContext } from "../../context/UserContext";
 

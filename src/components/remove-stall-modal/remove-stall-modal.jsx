@@ -1,5 +1,6 @@
 import "./remove-stall-modal.css";
 
+import React from "react";
 import { useUserContext } from "../../context/UserContext";
 
 import ButtonStd from "../button-std/button-std";
@@ -15,7 +16,7 @@ export default function RemoveStallModal({
   // It will remove the selected stall from the stalls array stored in context
   function handleDeleteStall(stallToRemoveId) {
     setStalls((prev) =>
-      prev.filter((stall) => stall.stallId != stallToRemoveId)
+      prev.filter((stall) => stall.stallId != stallToRemoveId),
     );
     setDisplayRemoveStallModal(false);
   }

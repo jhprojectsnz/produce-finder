@@ -1,5 +1,6 @@
 import "./results-nav.css";
 
+import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import ButtonStd from "../button-std/button-std";

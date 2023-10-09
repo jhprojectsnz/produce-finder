@@ -1,5 +1,7 @@
 import "./modal-layout.css";
 
+import React from "react";
+
 export default function ModalLayout({ children }) {
   return (
     <div

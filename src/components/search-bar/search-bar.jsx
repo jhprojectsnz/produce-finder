@@ -1,5 +1,6 @@
 import "./search-bar.css";
 
+import React from "react";
 import { BiSearchAlt, BiSliderAlt, BiArrowBack, BiMenu } from "react-icons/bi";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

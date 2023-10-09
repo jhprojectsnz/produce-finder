@@ -1,5 +1,7 @@
 import "./circle-btn.css";
 
+import React from "react";
+
 export default function CircleBtn({ children, appearance, handleClick }) {
   return (
     <button

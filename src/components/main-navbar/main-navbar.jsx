@@ -1,5 +1,6 @@
 import "./main-navbar.css";
 
+import React from "react";
 import { BiMenu, BiUser } from "react-icons/bi";
 import { FaHouseUser, FaHeart } from "react-icons/fa";
 import { useUserContext } from "../../context/UserContext";

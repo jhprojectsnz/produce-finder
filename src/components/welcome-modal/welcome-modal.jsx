@@ -1,5 +1,6 @@
 import "./welcome-modal.css";
 
+import React from "react";
 import ButtonStd from "../button-std/button-std";
 import ModalLayout from "../modal-layout/modal-layout";
 

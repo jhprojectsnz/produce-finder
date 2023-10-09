@@ -1,5 +1,7 @@
 import "./open-hours-form.css";
 
+import React from "react";
+
 export default function OpenHoursForm({ openTimes, dispatch }) {
   // This function is called when the open/closed check box is clicked
   function handleCheckChange(day) {
