@@ -1,5 +1,6 @@
 import "./favourites.css";
 
+import React from "react";
 import { useUserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -23,7 +24,7 @@ export default function Favourites({ setSelectedStall }) {
       const usersFavourteStallIds = currentUser.favouriteStalls;
       // Filter all stalls to get data for users favourites
       const favouriteStallsData = stalls.filter((stall) =>
-        usersFavourteStallIds.includes(stall.stallId)
+        usersFavourteStallIds.includes(stall.stallId),
       );
       // Save favourite stalls data to state to populate page
       setFavouriteStalls(favouriteStallsData);

@@ -1,5 +1,6 @@
 import "./my-stalls.css";
 
+import React from "react";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +25,7 @@ export default function MyStalls({ setSelectedStall }) {
 
       // Code below to allow front-end to function until back-end/database is added
       const userStalls = stalls.filter(
-        (stall) => stall.ownerId === currentUser.userId
+        (stall) => stall.ownerId === currentUser.userId,
       );
       setUserStalls(userStalls);
     } else {
@@ -45,7 +46,7 @@ export default function MyStalls({ setSelectedStall }) {
               }),
             }
           : stall;
-      })
+      }),
     );
   }
 

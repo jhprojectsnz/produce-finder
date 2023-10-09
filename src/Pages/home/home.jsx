@@ -1,5 +1,6 @@
 import "./home.css";
 
+import React from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { BiSearchAlt } from "react-icons/bi";

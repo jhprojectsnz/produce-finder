@@ -1,5 +1,6 @@
 import "./stall-details.css";
 
+import React from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { useNavigate, Navigate } from "react-router-dom";
 import { useMemo } from "react";

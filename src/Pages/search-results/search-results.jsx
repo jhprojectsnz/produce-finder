@@ -1,5 +1,6 @@
 import "./search-results.css";
 
+import React from "react";
 import { useMemo } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { useLocation } from "react-router-dom";
@@ -31,8 +32,8 @@ export default function SearchResults({
     const stallsWithinMapBounds = mapDetails.bounds
       ? stalls.filter((stall) =>
           mapDetails.bounds.contains(
-            new google.maps.LatLng(stall.location.lat, stall.location.lng)
-          )
+            new google.maps.LatLng(stall.location.lat, stall.location.lng),
+          ),
         )
       : [];
 

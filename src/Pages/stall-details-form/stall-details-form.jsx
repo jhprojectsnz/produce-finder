@@ -1,5 +1,6 @@
 import "./stall-details-form.css";
 
+import React from "react";
 import { useState, useReducer, useMemo } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";

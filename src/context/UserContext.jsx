@@ -1,5 +1,6 @@
 import { useState, useContext, createContext } from "react";
 import { stallData } from "../data/data";
+import React from "react";
 
 const UserContext = createContext({});
 
