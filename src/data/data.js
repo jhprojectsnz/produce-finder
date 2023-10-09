@@ -10,7 +10,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -89,7 +89,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -163,7 +163,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -242,7 +242,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -326,7 +326,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -400,7 +400,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -479,7 +479,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -563,7 +563,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -627,7 +627,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -691,7 +691,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -760,7 +760,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -824,7 +824,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -893,7 +893,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -977,7 +977,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1035,7 +1035,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1114,7 +1114,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1193,7 +1193,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1251,7 +1251,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1335,7 +1335,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1419,7 +1419,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1493,7 +1493,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1562,7 +1562,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1646,7 +1646,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1720,7 +1720,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1789,7 +1789,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1873,7 +1873,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1931,7 +1931,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1995,7 +1995,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2069,7 +2069,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2143,7 +2143,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2201,7 +2201,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2265,7 +2265,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2349,7 +2349,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2413,7 +2413,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2471,7 +2471,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2540,7 +2540,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2624,7 +2624,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2698,7 +2698,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2782,7 +2782,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2851,7 +2851,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2925,7 +2925,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3009,7 +3009,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3073,7 +3073,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3131,7 +3131,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3215,7 +3215,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3279,7 +3279,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3337,7 +3337,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3406,7 +3406,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3485,7 +3485,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3554,7 +3554,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3633,7 +3633,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3717,7 +3717,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3796,7 +3796,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3860,7 +3860,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3929,7 +3929,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4003,7 +4003,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4087,7 +4087,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4171,7 +4171,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4235,7 +4235,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4319,7 +4319,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4403,7 +4403,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4477,7 +4477,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4535,7 +4535,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4599,7 +4599,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4673,7 +4673,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4742,7 +4742,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4800,7 +4800,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4879,7 +4879,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4963,7 +4963,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5027,7 +5027,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5106,7 +5106,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5175,7 +5175,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5249,7 +5249,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5307,7 +5307,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5371,7 +5371,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5445,7 +5445,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5519,7 +5519,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5577,7 +5577,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5651,7 +5651,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5725,7 +5725,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5794,7 +5794,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5863,7 +5863,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5927,7 +5927,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5996,7 +5996,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6054,7 +6054,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6138,7 +6138,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6217,7 +6217,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6286,7 +6286,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6370,7 +6370,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6444,7 +6444,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6513,7 +6513,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6587,7 +6587,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6661,7 +6661,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6730,7 +6730,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6809,7 +6809,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6867,7 +6867,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6925,7 +6925,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7004,7 +7004,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7078,7 +7078,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7142,7 +7142,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7206,7 +7206,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7264,7 +7264,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7348,7 +7348,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7417,7 +7417,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7501,7 +7501,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7580,7 +7580,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7659,7 +7659,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7738,7 +7738,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7817,7 +7817,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7891,7 +7891,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7970,7 +7970,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8028,7 +8028,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8112,7 +8112,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8186,7 +8186,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8265,7 +8265,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8323,7 +8323,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8402,7 +8402,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8466,7 +8466,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8524,7 +8524,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8603,7 +8603,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8677,7 +8677,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8735,7 +8735,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8799,7 +8799,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8878,7 +8878,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8952,7 +8952,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9016,7 +9016,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9100,7 +9100,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9164,7 +9164,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9233,7 +9233,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9291,7 +9291,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9360,7 +9360,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9444,7 +9444,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9502,7 +9502,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9581,7 +9581,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9655,7 +9655,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9713,7 +9713,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9782,7 +9782,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9856,7 +9856,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9920,7 +9920,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9984,7 +9984,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10042,7 +10042,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10116,7 +10116,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10180,7 +10180,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10259,7 +10259,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10333,7 +10333,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10391,7 +10391,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10460,7 +10460,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10518,7 +10518,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10576,7 +10576,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10655,7 +10655,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10713,7 +10713,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10792,7 +10792,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10871,7 +10871,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10940,7 +10940,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11019,7 +11019,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11077,7 +11077,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11141,7 +11141,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11220,7 +11220,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11278,7 +11278,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11352,7 +11352,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11431,7 +11431,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11515,7 +11515,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11573,7 +11573,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11637,7 +11637,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11701,7 +11701,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11785,7 +11785,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11849,7 +11849,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11918,7 +11918,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11976,7 +11976,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12060,7 +12060,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12129,7 +12129,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12208,7 +12208,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12277,7 +12277,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12351,7 +12351,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12415,7 +12415,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12494,7 +12494,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12558,7 +12558,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12642,7 +12642,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12716,7 +12716,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12774,7 +12774,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12838,7 +12838,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12902,7 +12902,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12976,7 +12976,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13045,7 +13045,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13109,7 +13109,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13178,7 +13178,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13262,7 +13262,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13341,7 +13341,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13425,7 +13425,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13489,7 +13489,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13547,7 +13547,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13616,7 +13616,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13674,7 +13674,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13748,7 +13748,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13806,7 +13806,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13885,7 +13885,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13949,7 +13949,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14033,7 +14033,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14102,7 +14102,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-13.jpg",
+    img: "./images/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14171,7 +14171,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14255,7 +14255,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14329,7 +14329,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14393,7 +14393,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14462,7 +14462,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14531,7 +14531,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14605,7 +14605,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14689,7 +14689,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14758,7 +14758,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14816,7 +14816,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14900,7 +14900,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14974,7 +14974,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15043,7 +15043,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15101,7 +15101,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15175,7 +15175,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15259,7 +15259,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15333,7 +15333,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15407,7 +15407,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15465,7 +15465,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15534,7 +15534,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15603,7 +15603,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15661,7 +15661,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15719,7 +15719,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15793,7 +15793,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15857,7 +15857,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15941,7 +15941,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16015,7 +16015,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16073,7 +16073,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16152,7 +16152,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16216,7 +16216,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16280,7 +16280,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16364,7 +16364,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16443,7 +16443,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16507,7 +16507,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16576,7 +16576,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16640,7 +16640,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16709,7 +16709,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16773,7 +16773,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16842,7 +16842,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16911,7 +16911,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16990,7 +16990,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17059,7 +17059,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17123,7 +17123,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17207,7 +17207,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17276,7 +17276,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17360,7 +17360,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17418,7 +17418,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17502,7 +17502,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17571,7 +17571,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17650,7 +17650,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17708,7 +17708,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17777,7 +17777,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17846,7 +17846,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17930,7 +17930,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17988,7 +17988,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18072,7 +18072,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -18156,7 +18156,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -18235,7 +18235,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18319,7 +18319,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18403,7 +18403,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18482,7 +18482,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18540,7 +18540,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18614,7 +18614,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18688,7 +18688,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18757,7 +18757,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -18815,7 +18815,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18899,7 +18899,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18968,7 +18968,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19037,7 +19037,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19106,7 +19106,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19185,7 +19185,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19254,7 +19254,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19312,7 +19312,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19391,7 +19391,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19470,7 +19470,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19549,7 +19549,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19607,7 +19607,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19665,7 +19665,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19723,7 +19723,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19781,7 +19781,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19845,7 +19845,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19909,7 +19909,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19993,7 +19993,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20057,7 +20057,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20121,7 +20121,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20179,7 +20179,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-12.jpg",
+    img: "./images/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20237,7 +20237,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20306,7 +20306,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20375,7 +20375,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20459,7 +20459,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-17.jpg",
+    img: "./images/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20528,7 +20528,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20612,7 +20612,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20681,7 +20681,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20755,7 +20755,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20813,7 +20813,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20892,7 +20892,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20961,7 +20961,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21025,7 +21025,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21089,7 +21089,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21168,7 +21168,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21226,7 +21226,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21310,7 +21310,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21374,7 +21374,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21458,7 +21458,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21532,7 +21532,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21611,7 +21611,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21669,7 +21669,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21727,7 +21727,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21811,7 +21811,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21890,7 +21890,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-14.jpg",
+    img: "./images/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21964,7 +21964,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22043,7 +22043,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22101,7 +22101,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-3.jpg",
+    img: "./images/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22175,7 +22175,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22254,7 +22254,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-10.jpg",
+    img: "./images/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22318,7 +22318,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22387,7 +22387,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22451,7 +22451,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22520,7 +22520,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22594,7 +22594,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22652,7 +22652,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-5.jpg",
+    img: "./images/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22726,7 +22726,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-11.jpg",
+    img: "./images/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22790,7 +22790,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22864,7 +22864,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22938,7 +22938,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23022,7 +23022,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23091,7 +23091,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-1.jpg",
+    img: "./images/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23175,7 +23175,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-15.jpg",
+    img: "./images/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23233,7 +23233,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-2.jpg",
+    img: "./images/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23291,7 +23291,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23360,7 +23360,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23444,7 +23444,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-16.jpg",
+    img: "./images/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23502,7 +23502,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23571,7 +23571,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-4.jpg",
+    img: "./images/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23645,7 +23645,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-9.jpg",
+    img: "./images/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23714,7 +23714,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-7.jpg",
+    img: "./images/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23788,7 +23788,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23862,7 +23862,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-6.jpg",
+    img: "./images/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23926,7 +23926,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -24000,7 +24000,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -24084,7 +24084,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-8.jpg",
+    img: "./images/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -24158,7 +24158,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "/src/assets/test-image-18.jpg",
+    img: "./images/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
