@@ -3,6 +3,7 @@ import "./App.css";
 import { Wrapper } from "@googlemaps/react-wrapper";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 
 import Home from "./Pages/home/home.jsx";
 import Login from "./Pages/login/login.jsx";
