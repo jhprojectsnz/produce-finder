@@ -14,7 +14,6 @@ import UserProvider from "./context/UserContext.jsx";
 import MainNavBar from "./components/main-navbar/main-navbar.jsx";
 import StallDetails from "./Pages/stall-details/stall-details.jsx";
 import WelcomeModal from "./components/welcome-modal/welcome-modal.jsx";
-import CreateStallData from "./Pages/Create-Stall-Data/Create-Stall-Data.jsx";
 import Footer from "./components/footer/footer.jsx";
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
 
@@ -92,7 +91,6 @@ export default function App() {
                 path="/favourites"
                 element={<Favourites setSelectedStall={setSelectedStall} />}
               />
-              <Route path="/NewStallData" element={<CreateStallData />} />
               <Route
                 path="/details"
                 element={
