@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useReducer, useMemo } from "react";
 import { BiUpload } from "react-icons/bi";
 import { useParams, useNavigate } from "react-router-dom";
-import testImg1 from "./images/test-image-1.jpg";
+import testImg1 from "../../assets/test-image-1.jpg";
 
 import { useUserContext } from "../../context/UserContext";
 import SelectStallDetails from "../../components/select-stall-details/select-stall-details";
