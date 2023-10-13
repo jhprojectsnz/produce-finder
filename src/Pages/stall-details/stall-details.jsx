@@ -1,8 +1,8 @@
 import "./stall-details.css";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { BiArrowBack } from "react-icons/bi";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useMemo } from "react";
 
 import FavouriteButton from "../../components/favourite-button/favourite-button";
@@ -10,22 +10,22 @@ import isOpen from "../../functions/isOpen";
 import CircleBtn from "../../components/cricle-btn/circle-btn";
 import ButtonStd from "../../components/button-std/button-std";
 
-export default function StallDetails({
-  selectedStall,
-  setSelectedStall,
-  setMapDetails,
-}) {
+export default function StallDetails({ selectedStall, setMapDetails }) {
   const navigate = useNavigate();
 
   // If a user navigates to this page without a stall being selected navigate back one page
   // Most likely cause:
-  // - user moving from details to map, deselecting stall and then clicking back button which navigates details but with no selected stall
+  // - user moving from details to map, deselecting stall and then clicking back button which navigates to details but with no selected stall
   // - user refreshing on the details page
-  if (!selectedStall.stallId) {
-    return <Navigate to="/" />;
-  }
+  useEffect(() => {
+    if (!selectedStall.stallId) {
+      navigate(-1);
+    }
+  }, [selectedStall.stallId]);
 
-  const stallIsOpen = isOpen(selectedStall.openTimes);
+  const stallIsOpen = selectedStall.stallId
+    ? isOpen(selectedStall.openTimes)
+    : null;
 
   // New stall options should be added to the array below
   const stallOptions = ["marketStall", "organic", "eftposPayment"];
@@ -58,99 +58,108 @@ export default function StallDetails({
   }
 
   function handleBackClick() {
-    setSelectedStall({});
     navigate(-1);
   }
 
   return (
-    <section className="stall-details">
-      <div className="stall-details-btn-container">
-        <CircleBtn appearance={"light"} handleClick={handleBackClick}>
-          <BiArrowBack className="color-dark" />
-        </CircleBtn>
-        <FavouriteButton
-          stallId={selectedStall.stallId}
-          buttonStyle={"circle"}
-        />
-      </div>
-      <img className="stall-image" src={selectedStall.img} />
-      <div className="stall-title-container left-column row-one">
-        <h2 className="stall-name">{selectedStall.name}</h2>
-        <p
-          className="stall-status"
-          style={{ color: stallIsOpen ? "green" : "red" }}
-        >
-          {stallIsOpen ? "Open" : "Closed"}
-        </p>
-      </div>
-      <div
-        className="stall-address left-column row-two"
-        onClick={handleAddressClick}
-      >
-        {selectedStall.address}
-      </div>
-      <div className="stall-text-subsection left-column row-four">
-        <h3>About</h3>
-        {stallOptionsElements.length > 0 && <ul>{stallOptionsElements}</ul>}
-        <p>{selectedStall.about}</p>
-      </div>
-      <div className="stall-text-subsection row-three">
-        <h3>In Stock Now</h3>
-        {selectedStall.inStock.length === 0 ? (
-          <p>Currently out of stock</p>
-        ) : (
-          selectedStall.inStock.map((item, index) => (
-            <div
-              className="stall-item-container"
-              key={`${selectedStall.stallId}-${item.item}-${index}`}
+    <>
+      {selectedStall.stallId ? (
+        <section className="stall-details">
+          <div className="stall-details-btn-container">
+            <CircleBtn appearance={"light"} handleClick={handleBackClick}>
+              <BiArrowBack className="color-dark" />
+            </CircleBtn>
+            <FavouriteButton
+              stallId={selectedStall.stallId}
+              buttonStyle={"circle"}
+            />
+          </div>
+          <img className="stall-image" src={selectedStall.img} />
+          <div className="stall-title-container left-column row-one">
+            <h2 className="stall-name">{selectedStall.name}</h2>
+            <p
+              className="stall-status"
+              style={{ color: stallIsOpen ? "green" : "red" }}
             >
-              {item.amount ? (
-                <p>{`${item.item} (${item.amount})`}</p>
-              ) : (
-                <p>{`${item.item}`}</p>
+              {stallIsOpen ? "Open" : "Closed"}
+            </p>
+          </div>
+          <div
+            className="stall-address left-column row-two"
+            onClick={handleAddressClick}
+          >
+            {selectedStall.address}
+          </div>
+          <div className="stall-text-subsection left-column row-four">
+            <h3>About</h3>
+            {stallOptionsElements.length > 0 && <ul>{stallOptionsElements}</ul>}
+            <p>{selectedStall.about}</p>
+          </div>
+          <div className="stall-text-subsection row-three">
+            <h3>In Stock Now</h3>
+            {selectedStall.inStock.length === 0 ? (
+              <p>Currently out of stock</p>
+            ) : (
+              selectedStall.inStock.map((item, index) => (
+                <div
+                  className="stall-item-container"
+                  key={`${selectedStall.stallId}-${item.item}-${index}`}
+                >
+                  {item.amount ? (
+                    <p>{`${item.item} (${item.amount})`}</p>
+                  ) : (
+                    <p>{`${item.item}`}</p>
+                  )}
+                  {item.price && <p>{item.price}</p>}
+                </div>
+              ))
+            )}
+          </div>
+          <div className="stall-text-subsection right-column row-four">
+            <h3>Opening hours</h3>
+            {Object.keys(selectedStall.openTimes).map((day) => {
+              return (
+                <div
+                  className="stall-time-container"
+                  key={`${selectedStall.id}-${day}`}
+                >
+                  <p>{day}</p>
+                  <p>
+                    {selectedStall.openTimes[day].open
+                      ? `${selectedStall.openTimes[day].openTime} - ${selectedStall.openTimes[day].closeTime}`
+                      : "Closed"}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+          {(selectedStall.contactDetails.email ||
+            selectedStall.contactDetails.phone) && (
+            <div className="stall-text-subsection left-column">
+              <h3>Contact</h3>
+              {Object.keys(selectedStall.contactDetails).map((contact) =>
+                selectedStall.contactDetails[contact] ? (
+                  <p
+                    key={selectedStall.contactDetails[contact]}
+                  >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
+                ) : null,
               )}
-              {item.price && <p>{item.price}</p>}
             </div>
-          ))
-        )}
-      </div>
-      <div className="stall-text-subsection right-column row-four">
-        <h3>Opening hours</h3>
-        {Object.keys(selectedStall.openTimes).map((day) => {
-          return (
-            <div
-              className="stall-time-container"
-              key={`${selectedStall.id}-${day}`}
-            >
-              <p>{day}</p>
-              <p>
-                {selectedStall.openTimes[day].open
-                  ? `${selectedStall.openTimes[day].openTime} - ${selectedStall.openTimes[day].closeTime}`
-                  : "Closed"}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-      {(selectedStall.contactDetails.email ||
-        selectedStall.contactDetails.phone) && (
-        <div className="stall-text-subsection left-column">
-          <h3>Contact</h3>
-          {Object.keys(selectedStall.contactDetails).map((contact) =>
-            selectedStall.contactDetails[contact] ? (
-              <p
-                key={selectedStall.contactDetails[contact]}
-              >{`${contact}: ${selectedStall.contactDetails[contact]}`}</p>
-            ) : null,
           )}
-        </div>
-      )}
-      <div className="stall-details-wide-btn-container">
-        <ButtonStd handleClick={handleBackClick} options={["long", "light"]}>
-          Back
-        </ButtonStd>
-        <FavouriteButton stallId={selectedStall.stallId} buttonStyle={"long"} />
-      </div>
-    </section>
+          <div className="stall-details-wide-btn-container">
+            <ButtonStd
+              handleClick={handleBackClick}
+              options={["long", "light"]}
+            >
+              Back
+            </ButtonStd>
+            <FavouriteButton
+              stallId={selectedStall.stallId}
+              buttonStyle={"long"}
+            />
+          </div>
+        </section>
+      ) : null}
+    </>
   );
 }
