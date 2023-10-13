@@ -119,6 +119,7 @@
 @media screen and (min-width: 700px) {
   .stall-details {
     position: relative;
+    z-index: 1;
     margin: 2rem auto;
     padding: 0 2rem;
     display: grid;
