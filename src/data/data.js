@@ -10,7 +10,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -79,159 +79,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 3,
-    ownerId: 57304,
-    name: "Lisa's Garden",
-    address: "Unit T/301 Botany Road, Auckland",
-    location: {
-      lat: -36.924352,
-      lng: 174.912634,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Garlic",
-        amount: "bunch",
-        price: "$ 2",
-      },
-      {
-        item: "Eggplant",
-        amount: "bag",
-        price: "$ 5",
-      },
-      {
-        item: "Broccoli",
-        amount: "each",
-        price: "$ 4",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
-    stallId: 5,
-    ownerId: null,
-    name: "The Veggie Shack",
-    address: "42 Kiddle Drive, Taupo",
-    location: {
-      lat: -38.697054,
-      lng: 176.101668,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Cauliflower",
-        amount: "bag",
-        price: "$ 1",
-      },
-      {
-        item: "kiwifruit",
-        amount: "bag",
-        price: "$ 6",
-      },
-      {
-        item: "apples",
-        amount: "each",
-        price: "$ 4",
-      },
-      {
-        item: "lemon",
-        amount: "100 g",
-        price: "$ 3",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 11,
     ownerId: null,
     name: "Max's Fruit Express",
@@ -242,7 +89,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -326,7 +173,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -400,7 +247,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -479,7 +326,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -563,7 +410,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -627,7 +474,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -691,7 +538,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -760,7 +607,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -824,7 +671,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -893,7 +740,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -977,7 +824,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1025,85 +872,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 22,
-    ownerId: null,
-    name: "Juicy Delights",
-    address: "2 McVilly Rd, Auckland",
-    location: {
-      lat: -37.014798,
-      lng: 174.87331,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "lemon",
-        amount: "bunch",
-        price: "$ 2",
-      },
-      {
-        item: "strawberries",
-        amount: "bag",
-        price: "$ 2",
-      },
-      {
-        item: "Carrot",
-        amount: "bag of 5",
-        price: "$ 3",
-      },
-      {
-        item: "apricot",
-        amount: "each",
-        price: "$ 6",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
     stallId: 23,
     ownerId: null,
     name: "Veggie World",
@@ -1114,7 +882,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1193,7 +961,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1251,7 +1019,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1335,7 +1103,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1419,7 +1187,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1483,75 +1251,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 28,
-    ownerId: null,
-    name: "The Beet Boutique",
-    address: "68 High Street, Masterton",
-    location: {
-      lat: -40.959594,
-      lng: 175.641069,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "mandarins",
-        amount: "kg",
-        price: "$ 4",
-      },
-      {
-        item: "cherry",
-        amount: "each",
-        price: "$ 4",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 29,
     ownerId: null,
     name: "The Radish Room",
@@ -1562,7 +1261,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1646,7 +1345,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1720,7 +1419,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1789,7 +1488,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1873,7 +1572,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -1931,7 +1630,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -1995,7 +1694,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2069,7 +1768,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2143,7 +1842,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2201,7 +1900,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2265,7 +1964,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2349,7 +2048,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2413,7 +2112,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2471,7 +2170,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2540,7 +2239,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2624,7 +2323,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2698,7 +2397,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2782,7 +2481,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -2851,7 +2550,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -2925,7 +2624,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3009,7 +2708,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3073,7 +2772,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3131,7 +2830,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3215,7 +2914,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3279,7 +2978,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3337,7 +3036,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3406,7 +3105,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3485,7 +3184,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3554,7 +3253,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3633,7 +3332,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3717,7 +3416,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -3796,7 +3495,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3860,7 +3559,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -3929,7 +3628,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4003,7 +3702,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4087,7 +3786,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4171,7 +3870,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4235,7 +3934,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4319,7 +4018,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4403,7 +4102,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4477,7 +4176,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4535,7 +4234,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4599,7 +4298,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4673,7 +4372,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4742,7 +4441,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -4800,7 +4499,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4879,7 +4578,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -4963,7 +4662,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5027,7 +4726,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5106,7 +4805,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5175,7 +4874,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5249,7 +4948,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5307,7 +5006,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5371,7 +5070,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5445,7 +5144,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5519,7 +5218,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5577,7 +5276,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5651,7 +5350,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5725,7 +5424,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5794,7 +5493,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -5853,70 +5552,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 92,
-    ownerId: null,
-    name: "Mike's Produce",
-    address: "88 Alma Road, Whanganui",
-    location: {
-      lat: -39.939599,
-      lng: 175.024062,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Eggplant",
-        amount: "bag",
-        price: "$ 3",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 93,
     ownerId: null,
     name: "The Harvest Shop",
@@ -5927,7 +5562,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -5986,64 +5621,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 94,
-    ownerId: null,
-    name: "Juicy Delights",
-    address: "18 De Havilland Road, Auckland",
-    location: {
-      lat: -36.793184,
-      lng: 174.662907,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "010940398",
-      email: "",
-    },
-    inStock: [],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 95,
     ownerId: null,
     name: "Fruit Emporium",
@@ -6054,7 +5631,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6138,7 +5715,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6217,7 +5794,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6276,90 +5853,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 98,
-    ownerId: null,
-    name: "Ruby's Orchard Lane",
-    address: "Te Rauparaha Street, Otaki",
-    location: {
-      lat: -40.749054,
-      lng: 175.13837,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Carrot",
-        amount: "100 g",
-        price: "$ 1",
-      },
-      {
-        item: "Cabbage",
-        amount: "bag of 5",
-        price: "$ 6",
-      },
-      {
-        item: "Kale",
-        amount: "100 g",
-        price: "$ 3",
-      },
-      {
-        item: "Eggplant",
-        amount: "kg",
-        price: "$ 3",
-      },
-      {
-        item: "apples",
-        amount: "each",
-        price: "$ 6",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
     stallId: 99,
     ownerId: null,
     name: "Jane's Fruit Stall",
@@ -6370,7 +5863,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6444,7 +5937,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6513,7 +6006,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6577,80 +6070,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 103,
-    ownerId: null,
-    name: "Garden Bounty",
-    address: "7 Comet Crescent, Auckland",
-    location: {
-      lat: -36.96407,
-      lng: 174.79608,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "apples",
-        amount: "bag",
-        price: "$ 1",
-      },
-      {
-        item: "Carrot",
-        amount: "kg",
-        price: "$ 3",
-      },
-      {
-        item: "blueberries",
-        amount: "small bag",
-        price: "$ 3",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 104,
     ownerId: null,
     name: "The Produce Stand",
@@ -6661,7 +6080,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -6730,7 +6149,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6809,7 +6228,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6867,7 +6286,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -6925,7 +6344,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7004,7 +6423,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7078,7 +6497,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7142,7 +6561,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7206,7 +6625,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7264,7 +6683,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7348,7 +6767,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7417,7 +6836,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7501,7 +6920,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7570,85 +6989,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 123,
-    ownerId: null,
-    name: "Ruby's Orchard Lane",
-    address: "62 Dawson Road, Snells Beach",
-    location: {
-      lat: -36.428453,
-      lng: 174.723704,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "010940398",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "kiwifruit",
-        amount: "bag of 5",
-        price: "$ 6",
-      },
-      {
-        item: "Green Beans",
-        amount: "bunch",
-        price: "$ 5",
-      },
-      {
-        item: "raspberries",
-        amount: "bunch",
-        price: "$ 5",
-      },
-      {
-        item: "blueberries",
-        amount: "small bag",
-        price: "$ 5",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 124,
     ownerId: null,
     name: "Veggie Delight",
@@ -7659,7 +6999,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7728,85 +7068,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 125,
-    ownerId: null,
-    name: "Nick's Fruitopia",
-    address: "206 Finlayson Avenue, Auckland",
-    location: {
-      lat: -37.035348,
-      lng: 174.860313,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "283908023",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Cabbage",
-        amount: "100 g",
-        price: "$ 5",
-      },
-      {
-        item: "Cauliflower",
-        amount: "each",
-        price: "$ 4",
-      },
-      {
-        item: "lemon",
-        amount: "100 g",
-        price: "$ 5",
-      },
-      {
-        item: "coconut",
-        amount: "each",
-        price: "$ 3",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
     stallId: 126,
     ownerId: null,
     name: "The Green Grocer",
@@ -7817,7 +7078,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -7891,7 +7152,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -7970,7 +7231,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8028,7 +7289,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8112,7 +7373,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8186,7 +7447,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8265,7 +7526,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8313,85 +7574,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 135,
-    ownerId: null,
-    name: "Leo's Veg Out",
-    address: "41 Saxton Road, New Plymouth",
-    location: {
-      lat: -39.085739,
-      lng: 174.090023,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Thursday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Friday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "pumpkin",
-        amount: "small bag",
-        price: "$ 1",
-      },
-      {
-        item: "grapes",
-        amount: "small bag",
-        price: "$ 3",
-      },
-      {
-        item: "coconut",
-        amount: "bag of 5",
-        price: "$ 3",
-      },
-      {
-        item: "potato",
-        amount: "100 g",
-        price: "$ 3",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 136,
     ownerId: null,
     name: "Fruitful Delights",
@@ -8402,7 +7584,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8466,7 +7648,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8524,7 +7706,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -8603,7 +7785,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8677,7 +7859,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8735,7 +7917,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8789,85 +7971,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 142,
-    ownerId: null,
-    name: "The Produce Stand",
-    address: "25 Snelson Street, Palmerston North",
-    location: {
-      lat: -40.360994,
-      lng: 175.607452,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Cabbage",
-        amount: "each",
-        price: "$ 3",
-      },
-      {
-        item: "gooseberry",
-        amount: "bag",
-        price: "$ 5",
-      },
-      {
-        item: "coconut",
-        amount: "bag of 5",
-        price: "$ 6",
-      },
-      {
-        item: "banana",
-        amount: "bunch",
-        price: "$ 4",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 143,
     ownerId: null,
     name: "Nature's Bounty",
@@ -8878,7 +7981,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -8952,7 +8055,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9016,7 +8119,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9090,70 +8193,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 146,
-    ownerId: null,
-    name: "Fruitful Harvest",
-    address: "488E Don Buck Road, Auckland",
-    location: {
-      lat: -36.827289,
-      lng: 174.599049,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Thursday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Friday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Eggplant",
-        amount: "kg",
-        price: "$ 4",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 147,
     ownerId: null,
     name: "Alex's Veggie World",
@@ -9164,7 +8203,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9233,7 +8272,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9291,7 +8330,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9360,7 +8399,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9444,7 +8483,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9502,7 +8541,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9581,7 +8620,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9655,7 +8694,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9713,7 +8752,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9782,7 +8821,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -9856,7 +8895,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9920,7 +8959,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -9984,7 +9023,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10042,7 +9081,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10116,7 +9155,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10180,7 +9219,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10259,7 +9298,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10333,7 +9372,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10391,7 +9430,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10460,7 +9499,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10503,143 +9542,6 @@ const stallData = [
       email: "",
     },
     inStock: [],
-    organic: true,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
-    stallId: 170,
-    ownerId: null,
-    name: "The Veggie Cart",
-    address: "21 Fryer Road, Napier",
-    location: {
-      lat: -39.503209,
-      lng: 176.846227,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [],
-    organic: false,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
-    stallId: 171,
-    ownerId: null,
-    name: "Nick's Fruitopia",
-    address: "Wanganui Road, Marton",
-    location: {
-      lat: -40.064434,
-      lng: 175.360967,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Kale",
-        amount: "bag",
-        price: "$ 6",
-      },
-      {
-        item: "Carrot",
-        amount: "kg",
-        price: "$ 2",
-      },
-      {
-        item: "cherry",
-        amount: "bag of 5",
-        price: "$ 4",
-      },
-      {
-        item: "Eggplant",
-        amount: "bunch",
-        price: "$ 2",
-      },
-    ],
     organic: true,
     marketStall: false,
     eftposPayment: true,
@@ -10655,7 +9557,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -10713,7 +9615,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10792,7 +9694,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10871,7 +9773,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -10940,7 +9842,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11019,7 +9921,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11077,7 +9979,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11141,7 +10043,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11220,7 +10122,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11278,7 +10180,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11352,7 +10254,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11431,7 +10333,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11515,7 +10417,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11573,7 +10475,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11637,7 +10539,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11701,7 +10603,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11785,7 +10687,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -11849,7 +10751,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -11908,64 +10810,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 192,
-    ownerId: null,
-    name: "The Radish Room",
-    address: "46 Annebrook Road, Hamilton",
-    location: {
-      lat: -37.806791,
-      lng: 175.338495,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [],
-    organic: true,
-    marketStall: false,
-    eftposPayment: true,
-  },
-  {
     stallId: 193,
     ownerId: null,
     name: "Ruby's Orchard Lane",
@@ -11976,7 +10820,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12060,7 +10904,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12129,7 +10973,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12208,7 +11052,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12277,7 +11121,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12351,7 +11195,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12415,7 +11259,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12484,70 +11328,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 201,
-    ownerId: null,
-    name: "The Harvest Shop",
-    address: "135 Tait Drive, Napier",
-    location: {
-      lat: -39.526062,
-      lng: 176.865859,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Thursday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Friday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "watermelon",
-        amount: "100 g",
-        price: "$ 5",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 202,
     ownerId: null,
     name: "Lisa's Garden",
@@ -12558,7 +11338,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12642,7 +11422,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12716,7 +11496,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -12774,7 +11554,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12838,7 +11618,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12902,7 +11682,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -12976,7 +11756,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13045,7 +11825,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13109,7 +11889,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13178,7 +11958,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13262,7 +12042,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13341,7 +12121,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13425,7 +12205,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -13489,7 +12269,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13547,7 +12327,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
+    img: "/src/assets/test-image-13.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13616,7 +12396,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13674,7 +12454,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13748,7 +12528,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13806,7 +12586,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13885,7 +12665,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -13949,7 +12729,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14033,7 +12813,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14092,75 +12872,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 226,
-    ownerId: null,
-    name: "The Orange Grove",
-    address: "10 Wiremu Street, Auckland",
-    location: {
-      lat: -36.887836,
-      lng: 174.745772,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-13.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Thursday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Friday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Asparagus",
-        amount: "each",
-        price: "$ 2",
-      },
-      {
-        item: "Eggplant",
-        amount: "each",
-        price: "$ 6",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 227,
     ownerId: null,
     name: "Garden Bounty",
@@ -14171,7 +12882,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14255,7 +12966,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14329,7 +13040,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14393,7 +13104,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14462,7 +13173,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14531,7 +13242,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14605,7 +13316,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14689,7 +13400,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14758,7 +13469,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -14816,7 +13527,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14900,7 +13611,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -14974,7 +13685,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15043,7 +13754,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15101,7 +13812,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15175,7 +13886,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15259,7 +13970,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15333,7 +14044,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15407,7 +14118,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15465,7 +14176,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15534,7 +14245,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15603,7 +14314,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15661,7 +14372,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -15719,7 +14430,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15793,7 +14504,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15857,7 +14568,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -15941,7 +14652,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16015,7 +14726,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16073,7 +14784,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16152,7 +14863,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16216,7 +14927,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16280,7 +14991,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16364,7 +15075,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16443,7 +15154,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16507,7 +15218,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16576,7 +15287,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16640,7 +15351,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -16709,7 +15420,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16773,7 +15484,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16842,7 +15553,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16911,7 +15622,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -16990,7 +15701,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17059,7 +15770,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17123,7 +15834,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17207,7 +15918,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17276,7 +15987,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17350,64 +16061,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 281,
-    ownerId: null,
-    name: "Fruit Zone",
-    address: "Convent Road, Otaki",
-    location: {
-      lat: -40.746593,
-      lng: 175.142067,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "1012345678",
-      email: "",
-    },
-    inStock: [],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 282,
     ownerId: null,
     name: "Nick's Fruitopia",
@@ -17418,7 +16071,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17502,7 +16155,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17571,7 +16224,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17640,64 +16293,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 285,
-    ownerId: null,
-    name: "Veggie Delight",
-    address: "Paremata Crescent, Porirua",
-    location: {
-      lat: -41.106972,
-      lng: 174.86826,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "12:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 287,
     ownerId: null,
     name: "The Produce Stop",
@@ -17708,7 +16303,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17777,7 +16372,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17846,7 +16441,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -17930,7 +16525,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -17988,7 +16583,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18072,7 +16667,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -18156,7 +16751,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -18235,7 +16830,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18319,7 +16914,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18403,7 +16998,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18482,7 +17077,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18530,80 +17125,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 304,
-    ownerId: null,
-    name: "Juicy Delights",
-    address: "Molloys Road, Upper Hutt",
-    location: {
-      lat: -41.093604,
-      lng: 175.132971,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "avocado",
-        amount: "small bag",
-        price: "$ 3",
-      },
-      {
-        item: "blueberry",
-        amount: "bunch",
-        price: "$ 6",
-      },
-      {
-        item: "Kale",
-        amount: "bag",
-        price: "$ 6",
-      },
-    ],
-    organic: false,
-    marketStall: true,
-    eftposPayment: false,
-  },
-  {
     stallId: 305,
     ownerId: null,
     name: "The Radish Room",
@@ -18614,7 +17135,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18688,7 +17209,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18747,148 +17268,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 307,
-    ownerId: null,
-    name: "The Green Grocer",
-    address: "95 Conclusion Street, Porirua",
-    location: {
-      lat: -41.117726,
-      lng: 174.871648,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Thursday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Friday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Saturday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "987654333",
-      email: "",
-    },
-    inStock: [],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
-    stallId: 308,
-    ownerId: null,
-    name: "Fruitful Delights",
-    address: "54A Matai Road, Raumati South",
-    location: {
-      lat: -40.933401,
-      lng: 174.984759,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "blueberries",
-        amount: "bag",
-        price: "$ 1",
-      },
-      {
-        item: "Eggplant",
-        amount: "bunch",
-        price: "$ 2",
-      },
-      {
-        item: "watermelon",
-        amount: "bag of 5",
-        price: "$ 6",
-      },
-      {
-        item: "Broccoli",
-        amount: "bag of 5",
-        price: "$ 6",
-      },
-      {
-        item: "Cauliflower",
-        amount: "bunch",
-        price: "$ 1",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 309,
     ownerId: null,
     name: "The Orange Grove",
@@ -18899,7 +17278,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -18968,7 +17347,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19027,75 +17406,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 311,
-    ownerId: null,
-    name: "Jane's Fruit Stall",
-    address: "45 South Featherston Road, Featherston",
-    location: {
-      lat: -41.13851,
-      lng: 175.35182,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Leek",
-        amount: "100 g",
-        price: "$ 1",
-      },
-      {
-        item: "Cabbage",
-        amount: "small bag",
-        price: "$ 2",
-      },
-    ],
-    organic: false,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 312,
     ownerId: null,
     name: "Jack's Farm Shop",
@@ -19106,7 +17416,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19185,7 +17495,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19254,7 +17564,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19312,7 +17622,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19391,7 +17701,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19470,7 +17780,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19549,7 +17859,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19607,7 +17917,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19665,7 +17975,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19723,7 +18033,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19771,70 +18081,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 327,
-    ownerId: null,
-    name: "Fresh Harvest",
-    address: "Kahutea Terrace, Porirua",
-    location: {
-      lat: -41.114252,
-      lng: 174.842312,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Asparagus",
-        amount: "bag",
-        price: "$ 5",
-      },
-    ],
-    organic: true,
-    marketStall: true,
-    eftposPayment: false,
-  },
-  {
     stallId: 328,
     ownerId: null,
     name: "Sara's Salad Bar",
@@ -19845,7 +18091,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -19909,7 +18155,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -19993,7 +18239,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20057,7 +18303,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20121,7 +18367,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20179,7 +18425,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-12.jpg",
+    img: "/src/assets/test-image-12.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20237,7 +18483,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20306,7 +18552,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20375,7 +18621,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20459,7 +18705,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-17.jpg",
+    img: "/src/assets/test-image-17.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20528,7 +18774,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20612,7 +18858,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20681,7 +18927,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20755,7 +19001,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
+    img: "/src/assets/test-image-2.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -20813,7 +19059,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20892,7 +19138,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -20961,7 +19207,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21025,7 +19271,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21089,7 +19335,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21168,7 +19414,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21226,7 +19472,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21310,7 +19556,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21374,7 +19620,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21458,7 +19704,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21532,7 +19778,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21611,7 +19857,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21669,7 +19915,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -21727,7 +19973,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21811,7 +20057,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21890,7 +20136,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-14.jpg",
+    img: "/src/assets/test-image-14.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -21964,7 +20210,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22043,7 +20289,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22101,7 +20347,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-3.jpg",
+    img: "/src/assets/test-image-3.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22175,7 +20421,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22254,7 +20500,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-10.jpg",
+    img: "/src/assets/test-image-10.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22318,7 +20564,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22387,7 +20633,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22441,75 +20687,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 380,
-    ownerId: null,
-    name: "Zoe's Fruit Zone",
-    address: "24 Riverbend Road, Napier",
-    location: {
-      lat: -39.503727,
-      lng: 176.895636,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Saturday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-      Sunday: {
-        open: true,
-        openTime: "7:00 am",
-        closeTime: "8:00 pm",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Leek",
-        amount: "bunch",
-        price: "$ 4",
-      },
-      {
-        item: "Garlic",
-        amount: "bag",
-        price: "$ 1",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 381,
     ownerId: null,
     name: "Fruitful Harvest",
@@ -22520,7 +20697,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22594,7 +20771,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22652,7 +20829,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-5.jpg",
+    img: "/src/assets/test-image-5.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -22726,7 +20903,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-11.jpg",
+    img: "/src/assets/test-image-11.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22790,7 +20967,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -22854,80 +21031,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 386,
-    ownerId: null,
-    name: "The Farm Stand",
-    address: "5 Warspite Avenue, Porirua",
-    location: {
-      lat: -41.140889,
-      lng: 174.865992,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Leek",
-        amount: "bag",
-        price: "$ 1",
-      },
-      {
-        item: "coconut",
-        amount: "bag of 5",
-        price: "$ 2",
-      },
-      {
-        item: "cherries",
-        amount: "small bag",
-        price: "$ 6",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 387,
     ownerId: null,
     name: "The Farm Stand",
@@ -22938,7 +21041,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23022,7 +21125,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23091,7 +21194,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-1.jpg",
+    img: "/src/assets/test-image-1.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23175,7 +21278,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-15.jpg",
+    img: "/src/assets/test-image-15.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23223,64 +21326,6 @@ const stallData = [
     eftposPayment: false,
   },
   {
-    stallId: 391,
-    ownerId: null,
-    name: "The Green Grocer",
-    address: "264 Upper Plain Road, Masterton",
-    location: {
-      lat: -40.933595,
-      lng: 175.615935,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-2.jpg",
-    openTimes: {
-      Monday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Tuesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "9:00 am",
-        closeTime: "5:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "",
-      email: "",
-    },
-    inStock: [],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 392,
     ownerId: null,
     name: "Farm to Table",
@@ -23291,7 +21336,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
+    img: "/src/assets/test-image-7.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23360,7 +21405,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23444,7 +21489,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-16.jpg",
+    img: "/src/assets/test-image-16.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23502,7 +21547,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23571,7 +21616,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-4.jpg",
+    img: "/src/assets/test-image-4.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23645,7 +21690,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-9.jpg",
+    img: "/src/assets/test-image-9.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23704,80 +21749,6 @@ const stallData = [
     eftposPayment: true,
   },
   {
-    stallId: 404,
-    ownerId: null,
-    name: "The Produce Stop",
-    address: "169 Mungavin Avenue, Porirua",
-    location: {
-      lat: -41.139873,
-      lng: 174.859455,
-    },
-    about:
-      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-7.jpg",
-    openTimes: {
-      Monday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Tuesday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Wednesday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Thursday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Friday: {
-        open: true,
-        openTime: "1:00 pm",
-        closeTime: "6:00 pm",
-      },
-      Saturday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-      Sunday: {
-        open: false,
-        openTime: "",
-        closeTime: "",
-      },
-    },
-    contactDetails: {
-      phone: "987654333",
-      email: "",
-    },
-    inStock: [
-      {
-        item: "Kale",
-        amount: "bag of 5",
-        price: "$ 4",
-      },
-      {
-        item: "grapes",
-        amount: "small bag",
-        price: "$ 4",
-      },
-      {
-        item: "cherry",
-        amount: "kg",
-        price: "$ 6",
-      },
-    ],
-    organic: true,
-    marketStall: false,
-    eftposPayment: false,
-  },
-  {
     stallId: 405,
     ownerId: null,
     name: "Veggie World",
@@ -23788,7 +21759,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -23862,7 +21833,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-6.jpg",
+    img: "/src/assets/test-image-6.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -23926,7 +21897,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -24000,7 +21971,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: false,
@@ -24084,7 +22055,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-8.jpg",
+    img: "/src/assets/test-image-8.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -24158,7 +22129,7 @@ const stallData = [
     },
     about:
       "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
-    img: "./images/test-image-18.jpg",
+    img: "/src/assets/test-image-18.jpg",
     openTimes: {
       Monday: {
         open: true,
@@ -24203,6 +22174,18201 @@ const stallData = [
     inStock: [],
     organic: true,
     marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 412,
+    ownerId: null,
+    name: "Anna's Greenhouse",
+    address: "990 Kahutara Road, Featherston",
+    location: {
+      lat: -41.227188,
+      lng: 175.340717,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Kale",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "Asparagus",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 413,
+    ownerId: null,
+    name: "The Veggie Cart",
+    address: "Allington Road, Wellington",
+    location: {
+      lat: -41.289454,
+      lng: 174.722326,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 418,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "King Street, Rangiora",
+    location: {
+      lat: -43.30538,
+      lng: 172.590275,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "kg",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 421,
+    ownerId: null,
+    name: "Alex's Veggie World",
+    address: "54 Heaton Street, Timaru",
+    location: {
+      lat: -44.401811,
+      lng: 171.248548,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "potato",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 422,
+    ownerId: null,
+    name: "The Fruit and Veg Shop",
+    address: "603 Upper Sefton Road, Sefton",
+    location: {
+      lat: -43.246713,
+      lng: 172.672877,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "pumpkin",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 423,
+    ownerId: null,
+    name: "Lucy's Fruit Basket",
+    address: "2 Tawera Lane, Springfield",
+    location: {
+      lat: -43.337474,
+      lng: 171.9325,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 424,
+    ownerId: null,
+    name: "The Beet Boutique",
+    address: "Leeston Road, Springston",
+    location: {
+      lat: -43.644586,
+      lng: 172.425734,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Green Beans",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "lemon",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "lemon",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "grapes",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 425,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "McPhee Street, Dannevirke",
+    location: {
+      lat: -40.209894,
+      lng: 176.102267,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "avocado",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "watermelon",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "Beetroot",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "blackberry",
+        amount: "100 g",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 426,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "6 Russell Street, Waipukurau",
+    location: {
+      lat: -39.994546,
+      lng: 176.559062,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 427,
+    ownerId: null,
+    name: "Fresh Produce",
+    address: "52 Taieri Crescent, Lower Hutt",
+    location: {
+      lat: -41.180638,
+      lng: 174.933121,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "kiwifruit",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Leek",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Green Beans",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "Lettuce",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 429,
+    ownerId: null,
+    name: "The Carrot Patch",
+    address: "Redwood Street, Upper Hutt",
+    location: {
+      lat: -41.122612,
+      lng: 175.059626,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "avocado",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "Broccoli",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "grapes",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 431,
+    ownerId: null,
+    name: "The Beet Boutique",
+    address: "2 Makuri Street, Mangatainoka",
+    location: {
+      lat: -40.417309,
+      lng: 175.862935,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Leek",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "Carrot",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "Kale",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "blueberries",
+        amount: "bunch",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 432,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "32 Hillside Drive, Upper Hutt",
+    location: {
+      lat: -41.113502,
+      lng: 175.099718,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 435,
+    ownerId: null,
+    name: "Alex's Veggie World",
+    address: "Muritai Road, Lower Hutt",
+    location: {
+      lat: -41.291865,
+      lng: 174.89712,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "Lettuce",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "blueberries",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 436,
+    ownerId: null,
+    name: "The Green Spot",
+    address: "Rimu Street, Timaru",
+    location: {
+      lat: -44.390404,
+      lng: 171.213466,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "banana",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "apricot",
+        amount: "kg",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 437,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "50 Reed Street, Ashburton",
+    location: {
+      lat: -44.000913,
+      lng: 171.565272,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 438,
+    ownerId: null,
+    name: "Jane's Fruit Stall",
+    address: "278 Williams Street, Kaiapoi",
+    location: {
+      lat: -43.375957,
+      lng: 172.663615,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "potato",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "orange",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 441,
+    ownerId: null,
+    name: "Sam's Fresh Market",
+    address: "Main Road, Methven",
+    location: {
+      lat: -43.639725,
+      lng: 171.647461,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Onion",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "strawberries",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 442,
+    ownerId: null,
+    name: "Lucy's Fruit Basket",
+    address: "Blakes Road, Prebbleton",
+    location: {
+      lat: -43.577074,
+      lng: 172.513059,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Cauliflower",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 443,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "Dunford Street, Rakaia",
+    location: {
+      lat: -43.751468,
+      lng: 172.022787,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "raspberries",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 447,
+    ownerId: null,
+    name: "Garden Bounty",
+    address: "160 Tory Street, Wellington",
+    location: {
+      lat: -41.297617,
+      lng: 174.778692,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blackberry",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "watermelon",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "strawberries",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 448,
+    ownerId: null,
+    name: "The Veggie Patch",
+    address: "200 Newlands Road, Wellington",
+    location: {
+      lat: -41.224718,
+      lng: 174.820918,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "raspberries",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 449,
+    ownerId: null,
+    name: "Nature's Bounty",
+    address: "45 Abbott Street, Wellington",
+    location: {
+      lat: -41.249282,
+      lng: 174.776172,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Asparagus",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "Lettuce",
+        amount: "each",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 450,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "19 Torquay Street, Kaikoura",
+    location: {
+      lat: -42.408026,
+      lng: 173.684082,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "mandarins",
+        amount: "small bag",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 451,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "425 Schoolhouse Road, Kaikoura",
+    location: {
+      lat: -42.371694,
+      lng: 173.638327,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberry",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "blueberries",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "blueberries",
+        amount: "100 g",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 453,
+    ownerId: null,
+    name: "Green Valley",
+    address: "21 Cargill Road, Barrytown",
+    location: {
+      lat: -42.244796,
+      lng: 171.324208,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Kale",
+        amount: "100 g",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 457,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "794 Cannington Road, Cannington",
+    location: {
+      lat: -44.357499,
+      lng: 170.93677,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "watermelon",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "lemon",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 458,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "1051 Ealing Montalto Road, Carew",
+    location: {
+      lat: -43.960073,
+      lng: 171.356948,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Leek",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "cherries",
+        amount: "small bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 459,
+    ownerId: null,
+    name: "Fresh and Local",
+    address: "14 Lismore Mayfield Road, Ashburton",
+    location: {
+      lat: -43.823442,
+      lng: 171.421329,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "Kale",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "grapes",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "Green Beans",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 461,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "813 Loburn Whiterock Road, Loburn North",
+    location: {
+      lat: -43.207605,
+      lng: 172.493841,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 464,
+    ownerId: null,
+    name: "Fruit Haven",
+    address: "26 Marshall Street, Rangiora",
+    location: {
+      lat: -43.321616,
+      lng: 172.599819,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 465,
+    ownerId: null,
+    name: "Fruit Haven",
+    address: "21 Blue Cliffs Road, St Andrews",
+    location: {
+      lat: -44.528475,
+      lng: 171.188022,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "lemon",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "lemon",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "mandarins",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Cucumber",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "coconut",
+        amount: "bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 466,
+    ownerId: null,
+    name: "The Green Spot",
+    address: "Selwyn Street, Leeston",
+    location: {
+      lat: -43.760752,
+      lng: 172.297571,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Leek",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "gooseberry",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "cherries",
+        amount: "small bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 467,
+    ownerId: null,
+    name: "Jane's Fruit Stall",
+    address: "130 North Belt, Lincoln",
+    location: {
+      lat: -43.637105,
+      lng: 172.487099,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "avocado",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Cucumber",
+        amount: "kg",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 468,
+    ownerId: null,
+    name: "The Farmer's Market",
+    address: "36 Waipipi Road, Masterton",
+    location: {
+      lat: -40.896099,
+      lng: 175.661464,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Garlic",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "blackberry",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "watermelon",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 470,
+    ownerId: null,
+    name: "The Green Spot",
+    address: "15 Charles Street, Takapau",
+    location: {
+      lat: -40.025336,
+      lng: 176.34649,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "potato",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "banana",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 472,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "Fox Street, Greymouth",
+    location: {
+      lat: -42.440339,
+      lng: 171.211019,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 476,
+    ownerId: null,
+    name: "Garden Grove",
+    address: "261 Jacksons Road, Kaiapoi",
+    location: {
+      lat: -43.370163,
+      lng: 172.590554,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Kale",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 477,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "73 Hodgsons Road, Rangiora",
+    location: {
+      lat: -43.250122,
+      lng: 172.530073,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "pumpkin",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "grapes",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "Leek",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "pumpkin",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Broccoli",
+        amount: "100 g",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 479,
+    ownerId: null,
+    name: "Fruitful Delights",
+    address: "230 Park Street, Hokitika",
+    location: {
+      lat: -42.719004,
+      lng: 170.980595,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "mandarins",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 481,
+    ownerId: null,
+    name: "The Garden Market",
+    address: "Kaingaroa Road, Chatham Islands",
+    location: {
+      lat: -43.735686,
+      lng: -176.26665,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "bag",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 483,
+    ownerId: null,
+    name: "Garden Grove",
+    address: "10 Durham Avenue, Napier",
+    location: {
+      lat: -39.508991,
+      lng: 176.86843,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "pumpkin",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 484,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "Te Awa Avenue, Napier",
+    location: {
+      lat: -39.511461,
+      lng: 176.916673,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberries",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "Asparagus",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "watermelon",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "watermelon",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 485,
+    ownerId: null,
+    name: "The Produce Stand",
+    address: "164 Porangahau Road, Waipukurau",
+    location: {
+      lat: -40.00643,
+      lng: 176.548378,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "Asparagus",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 489,
+    ownerId: null,
+    name: "Dave's Veggie Stand",
+    address: "Main South Road, Greymouth",
+    location: {
+      lat: -42.475879,
+      lng: 171.18674,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Cucumber",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "lemon",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "potato",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 491,
+    ownerId: null,
+    name: "Fruit Frenzy",
+    address: "68 Fifth Street, Kumara",
+    location: {
+      lat: -42.635661,
+      lng: 171.187378,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Asparagus",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "small bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 492,
+    ownerId: null,
+    name: "Mike's Produce",
+    address: "2548 Bealey Road, Darfield",
+    location: {
+      lat: -43.53945,
+      lng: 171.959653,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "coconut",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "Beetroot",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 494,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "School Lane, Kirwee",
+    location: {
+      lat: -43.496674,
+      lng: 172.218161,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 496,
+    ownerId: null,
+    name: "Garden Bounty",
+    address: "473 Early's Road, Cust",
+    location: {
+      lat: -43.312457,
+      lng: 172.381037,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 498,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "35 Upper Kokatahi Road, Hokitika",
+    location: {
+      lat: -42.834259,
+      lng: 171.03775,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "kiwifruit",
+        amount: "each",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 504,
+    ownerId: null,
+    name: "The Farmer's Market",
+    address: "Boundary Road, Rangiora",
+    location: {
+      lat: -43.274067,
+      lng: 172.596264,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "blackberry",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 506,
+    ownerId: null,
+    name: "The Green Spot",
+    address: "Cnr Shands & Robinsons Roads, Rolleston",
+    location: {
+      lat: -43.602804,
+      lng: 172.467945,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 509,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "285 O'Roarkes Road, Rangiora",
+    location: {
+      lat: -43.312345,
+      lng: 172.533986,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Beetroot",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 510,
+    ownerId: null,
+    name: "The Veggie Patch",
+    address: "Cook Flat Road, Fox Glacier",
+    location: {
+      lat: -43.462929,
+      lng: 170.008367,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "grapes",
+        amount: "kg",
+        price: "$ 3",
+      },
+      {
+        item: "Onion",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "lemon",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 511,
+    ownerId: null,
+    name: "Nick's Fruitopia",
+    address: "187 Greendale Road, Greendale",
+    location: {
+      lat: -43.572742,
+      lng: 172.083957,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "raspberries",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "Lettuce",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Broccoli",
+        amount: "100 g",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 514,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "2 Rotohiwi Road, Waipukurau",
+    location: {
+      lat: -40.149885,
+      lng: 176.444697,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "Carrot",
+        amount: "100 g",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 515,
+    ownerId: null,
+    name: "The Apple Orchard",
+    address: "Motunau Beach, Amberley",
+    location: {
+      lat: -42.964904,
+      lng: 172.977861,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Beetroot",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Cabbage",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "kiwifruit",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 517,
+    ownerId: null,
+    name: "Nick's Fruitopia",
+    address: "Courtney Street, Motueka",
+    location: {
+      lat: -41.127726,
+      lng: 173.008469,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Carrot",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "avocado",
+        amount: "small bag",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 518,
+    ownerId: null,
+    name: "Ryan's Green Grocer",
+    address: "115 Mt Brown Road, Amberley",
+    location: {
+      lat: -43.117264,
+      lng: 172.685605,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "mandarins",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "blueberries",
+        amount: "bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 520,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "10 Heywards Road, Kaiapoi",
+    location: {
+      lat: -43.405997,
+      lng: 172.623356,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 521,
+    ownerId: null,
+    name: "Sara's Salad Bar",
+    address: "16 Ross Street, Darfield",
+    location: {
+      lat: -43.490411,
+      lng: 172.106323,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "Onion",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "Cucumber",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "potato",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 522,
+    ownerId: null,
+    name: "Ruby's Orchard Lane",
+    address: "21 School Road, Fairlie",
+    location: {
+      lat: -44.100613,
+      lng: 170.826014,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Onion",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "watermelon",
+        amount: "kg",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 525,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "225 Nayland Road, Nelson",
+    location: {
+      lat: -41.307038,
+      lng: 173.231984,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "pumpkin",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "blackberry",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "potato",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 526,
+    ownerId: null,
+    name: "Garden Delights",
+    address: "423 High Street, Motueka",
+    location: {
+      lat: -41.126308,
+      lng: 173.010998,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "pumpkin",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "Onion",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 527,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "601 Main Road, Nelson",
+    location: {
+      lat: -41.316379,
+      lng: 173.230619,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "lemon",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "blueberry",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "apples",
+        amount: "bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 528,
+    ownerId: null,
+    name: "Veggie Delight",
+    address: "69 Muritai Street, Nelson",
+    location: {
+      lat: -41.286722,
+      lng: 173.245319,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 530,
+    ownerId: null,
+    name: "The Orange Grove",
+    address: "Myrtle Street, Lower Hutt",
+    location: {
+      lat: -41.211464,
+      lng: 174.905744,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Leek",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "watermelon",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 533,
+    ownerId: null,
+    name: "The Harvest Shop",
+    address: "9 Phillip Street, Wellington",
+    location: {
+      lat: -41.222341,
+      lng: 174.801906,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "Broccoli",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Kale",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 534,
+    ownerId: null,
+    name: "Fresh and Local",
+    address: "11 Mersey Street, Wellington",
+    location: {
+      lat: -41.337887,
+      lng: 174.77506,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "lemon",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 535,
+    ownerId: null,
+    name: "The Garden Market",
+    address: "Main Road, Wellington",
+    location: {
+      lat: -41.179001,
+      lng: 174.824816,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Eggplant",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "Asparagus",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 536,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "156 Roebuck Road, Gisborne",
+    location: {
+      lat: -38.662329,
+      lng: 178.011292,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "pumpkin",
+        amount: "100 g",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 537,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "260 Orchard Road, Hastings",
+    location: {
+      lat: -39.629217,
+      lng: 176.822682,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "cherries",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 538,
+    ownerId: null,
+    name: "Dave's Veggie Stand",
+    address: "517 Wainui Road, Gisborne",
+    location: {
+      lat: -38.675803,
+      lng: 178.045197,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "banana",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "blueberry",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 539,
+    ownerId: null,
+    name: "Garden Delights",
+    address: "Oxford Street, Wellington",
+    location: {
+      lat: -41.173149,
+      lng: 174.825895,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 540,
+    ownerId: null,
+    name: "The Carrot Patch",
+    address: "59 Randwick Road, Lower Hutt",
+    location: {
+      lat: -41.229325,
+      lng: 174.904637,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "small bag",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 542,
+    ownerId: null,
+    name: "The Garden Market",
+    address: "Irvines Road, Leeston",
+    location: {
+      lat: -43.667584,
+      lng: 172.197107,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 543,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "School Lane, Duvauchelle",
+    location: {
+      lat: -43.749671,
+      lng: 172.932045,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 545,
+    ownerId: null,
+    name: "Lisa's Garden",
+    address: "22 Heath Street, Timaru",
+    location: {
+      lat: -44.382757,
+      lng: 171.193234,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Green Beans",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Kale",
+        amount: "small bag",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 546,
+    ownerId: null,
+    name: "Jack's Farm Shop",
+    address: "19 Ruane Street, Waimate",
+    location: {
+      lat: -44.914546,
+      lng: 171.098345,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Garlic",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 549,
+    ownerId: null,
+    name: "Veggie World",
+    address: "16 Britannia Street, Lower Hutt",
+    location: {
+      lat: -41.224085,
+      lng: 174.880252,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "avocado",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "avocado",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "Leek",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 550,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "5 Buller Street, Picton",
+    location: {
+      lat: -41.29381,
+      lng: 174.001255,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "watermelon",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "raspberries",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "potato",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "Broccoli",
+        amount: "bunch",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 551,
+    ownerId: null,
+    name: "The Fruit Farm",
+    address: "137 Main Road, Gisborne",
+    location: {
+      lat: -38.651239,
+      lng: 177.96045,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "kiwifruit",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "mandarins",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 555,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "29 Raumati Street, Matawai",
+    location: {
+      lat: -38.359795,
+      lng: 177.534528,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "potato",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 557,
+    ownerId: null,
+    name: "Lucy's Fruit Basket",
+    address: "Kincaid Road, Kaikoura",
+    location: {
+      lat: -42.334217,
+      lng: 173.704972,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 558,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "112 Tipahi Street, Nelson",
+    location: {
+      lat: -41.28928,
+      lng: 173.267367,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "cherries",
+        amount: "kg",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 559,
+    ownerId: null,
+    name: "Green Leaf",
+    address: "4 Greenhill Road, Motueka",
+    location: {
+      lat: -41.202591,
+      lng: 172.875575,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "orange",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "apples",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 560,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "55 Wellington Street, Ashburton",
+    location: {
+      lat: -43.912534,
+      lng: 171.760198,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "Onion",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "apricot",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "banana",
+        amount: "each",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 561,
+    ownerId: null,
+    name: "Harvest Fresh",
+    address: "School Road, Riwaka",
+    location: {
+      lat: -41.076405,
+      lng: 172.999162,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 562,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "14 Cambridge Street, Nelson",
+    location: {
+      lat: -41.33948,
+      lng: 173.182011,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Kale",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "gooseberry",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "mandarins",
+        amount: "small bag",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 563,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "111 Ranzau Road, Hope",
+    location: {
+      lat: -41.348834,
+      lng: 173.148589,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "watermelon",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 565,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "214 Vanguard Street, Nelson",
+    location: {
+      lat: -41.28377,
+      lng: 173.269151,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "Garlic",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 566,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "32 Napier Terrace, Napier",
+    location: {
+      lat: -39.488524,
+      lng: 176.908497,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Kale",
+        amount: "kg",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 568,
+    ownerId: null,
+    name: "Fruit Oasis",
+    address: "46 Long Range Road, Waipawa",
+    location: {
+      lat: -40.050987,
+      lng: 176.754079,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blackberry",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "kiwifruit",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "lemon",
+        amount: "100 g",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 575,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "Walsh Street, Reefton",
+    location: {
+      lat: -42.117611,
+      lng: 171.867433,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 576,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "1/18 Manuka Street, Nelson",
+    location: {
+      lat: -41.278585,
+      lng: 173.287786,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Carrot",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "mandarins",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "Eggplant",
+        amount: "bag",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: true,
+  },
+  {
+    stallId: 578,
+    ownerId: null,
+    name: "Emma's Orchard",
+    address: "Forest Road, Upper Hutt",
+    location: {
+      lat: -41.160828,
+      lng: 175.015217,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "Lettuce",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "orange",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 579,
+    ownerId: null,
+    name: "The Green Market",
+    address: "2782 Lake Ferry Road, Pirinoa",
+    location: {
+      lat: -41.353011,
+      lng: 175.20479,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "pumpkin",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "apples",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "watermelon",
+        amount: "bunch",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 580,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "349 Hammerichs Road, Rapaura",
+    location: {
+      lat: -41.473052,
+      lng: 173.901391,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "each",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 581,
+    ownerId: null,
+    name: "Ruby's Orchard Lane",
+    address: "Salisbury Road, Richmond",
+    location: {
+      lat: -41.339409,
+      lng: 173.193919,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 583,
+    ownerId: null,
+    name: "The Fruit Stand",
+    address: "Cooper Street, Lower Hutt",
+    location: {
+      lat: -41.177116,
+      lng: 174.960972,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Kale",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "blackberry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "cherry",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "Cucumber",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "gooseberry",
+        amount: "bunch",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 586,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "Beazley Avenue, Wellington",
+    location: {
+      lat: -41.214565,
+      lng: 174.819394,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "Broccoli",
+        amount: "100 g",
+        price: "$ 5",
+      },
+      {
+        item: "mandarins",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "orange",
+        amount: "kg",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 587,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "69A Ruahine Street, Palmerston North",
+    location: {
+      lat: -40.338749,
+      lng: 175.622461,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 588,
+    ownerId: null,
+    name: "The Veggie Cart",
+    address: "201 Ruahine Street, Palmerston North",
+    location: {
+      lat: -40.34576,
+      lng: 175.627034,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 589,
+    ownerId: null,
+    name: "Ben's Harvest",
+    address: "417 Aporo Road, Tasman",
+    location: {
+      lat: -41.188687,
+      lng: 173.049043,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "pumpkin",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "Green Beans",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "Garlic",
+        amount: "small bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 590,
+    ownerId: null,
+    name: "Garden Bounty",
+    address: "Cobden Street, Westport",
+    location: {
+      lat: -41.747607,
+      lng: 171.608397,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Garlic",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "avocado",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 591,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "20 Milne Drive, Paraparaumu",
+    location: {
+      lat: -40.907413,
+      lng: 174.996503,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "blueberries",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "apricot",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "watermelon",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "Leek",
+        amount: "100 g",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 593,
+    ownerId: null,
+    name: "The Green Market",
+    address: "Rata Street, Lower Hutt",
+    location: {
+      lat: -41.199385,
+      lng: 174.956529,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "kg",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 595,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "Redwood Street, Seddon",
+    location: {
+      lat: -41.675517,
+      lng: 174.072938,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "small bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 597,
+    ownerId: null,
+    name: "The Fruit Basket",
+    address: "Whitemans Road, Upper Hutt",
+    location: {
+      lat: -41.148127,
+      lng: 175.012662,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "banana",
+        amount: "each",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 599,
+    ownerId: null,
+    name: "Nick's Fruitopia",
+    address: "Ruapehu Street, Paraparaumu",
+    location: {
+      lat: -40.917357,
+      lng: 175.008925,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberries",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "watermelon",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "kiwifruit",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "Eggplant",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "lemon",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 600,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "8 Martin Street, Porirua",
+    location: {
+      lat: -41.13977,
+      lng: 174.84913,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Onion",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "raspberries",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "Broccoli",
+        amount: "kg",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 604,
+    ownerId: null,
+    name: "The Farm Stand",
+    address: "201 Featherston Street, Palmerston North",
+    location: {
+      lat: -40.35089,
+      lng: 175.60348,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Beetroot",
+        amount: "small bag",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 607,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "3 Stephenson Street, Blenheim",
+    location: {
+      lat: -41.517618,
+      lng: 173.952782,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Green Beans",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "blueberry",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 608,
+    ownerId: null,
+    name: "Sam's Fresh Market",
+    address: "318 Ngaumutawa Road, Masterton",
+    location: {
+      lat: -40.960548,
+      lng: 175.612664,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberry",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "Kale",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "small bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 613,
+    ownerId: null,
+    name: "Fruitful Delights",
+    address: "Staithes Drive North, Porirua",
+    location: {
+      lat: -41.112681,
+      lng: 174.880045,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "kg",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 614,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "177 South Road, New Plymouth",
+    location: {
+      lat: -39.073657,
+      lng: 174.034114,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 618,
+    ownerId: null,
+    name: "Ben's Harvest",
+    address: "11 School Road, Porirua",
+    location: {
+      lat: -41.078997,
+      lng: 174.866007,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Kale",
+        amount: "each",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 626,
+    ownerId: null,
+    name: "Sam's Fresh Market",
+    address: "25 Charles Street, Masterton",
+    location: {
+      lat: -40.877917,
+      lng: 176.072881,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "potato",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "avocado",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 628,
+    ownerId: null,
+    name: "The Fruit Stand",
+    address: "Seddon Street, Waikanae",
+    location: {
+      lat: -40.876317,
+      lng: 175.069658,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "blueberry",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "coconut",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Onion",
+        amount: "small bag",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 629,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "282 Waikawa Road, Picton",
+    location: {
+      lat: -41.271638,
+      lng: 174.037993,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberries",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "gooseberry",
+        amount: "kg",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 630,
+    ownerId: null,
+    name: "Nature's Bounty",
+    address: "Whitney Street, Blenheim",
+    location: {
+      lat: -41.519959,
+      lng: 173.948782,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "watermelon",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 631,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "William Street, Lower Hutt",
+    location: {
+      lat: -41.223419,
+      lng: 174.890736,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 633,
+    ownerId: null,
+    name: "Fruitful Delights",
+    address: "146 Mungavin Avenue, Porirua",
+    location: {
+      lat: -41.140932,
+      lng: 174.859128,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 634,
+    ownerId: null,
+    name: "Ruby's Orchard Lane",
+    address: "214-216 Weld Street, Blenheim",
+    location: {
+      lat: -41.540592,
+      lng: 173.955381,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 635,
+    ownerId: null,
+    name: "Emma's Orchard",
+    address: "1220 Dovedale Road, Tasman",
+    location: {
+      lat: -41.287343,
+      lng: 172.894626,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Kale",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "Cucumber",
+        amount: "small bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 636,
+    ownerId: null,
+    name: "Sam's Fresh Market",
+    address: "10 The Ridgeway, Nelson",
+    location: {
+      lat: -41.30557,
+      lng: 173.253976,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "banana",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 637,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "83 Torea Street, Granity",
+    location: {
+      lat: -41.630018,
+      lng: 171.85248,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "cherry",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "potato",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "gooseberry",
+        amount: "100 g",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 640,
+    ownerId: null,
+    name: "The Produce Stop",
+    address: "High Street, Renwick",
+    location: {
+      lat: -41.5082,
+      lng: 173.831527,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "cherries",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "blackberry",
+        amount: "100 g",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 646,
+    ownerId: null,
+    name: "The Beet Boutique",
+    address: "21 School Road, Blenheim",
+    location: {
+      lat: -41.523836,
+      lng: 173.985019,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 652,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "275 High Street South, Carterton",
+    location: {
+      lat: -41.033977,
+      lng: 175.519194,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 654,
+    ownerId: null,
+    name: "Fresh and Local",
+    address: "190 Naenae Road, Lower Hutt",
+    location: {
+      lat: -41.201424,
+      lng: 174.953131,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Cabbage",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Lettuce",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "potato",
+        amount: "each",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 657,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "52 North Street, Feilding",
+    location: {
+      lat: -40.214048,
+      lng: 175.567391,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "watermelon",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Carrot",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "apricot",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "cherries",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "blueberry",
+        amount: "each",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 658,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "96 Shamrock Street, Palmerston North",
+    location: {
+      lat: -40.362046,
+      lng: 175.595603,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "avocado",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "Green Beans",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "cherries",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "Carrot",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 664,
+    ownerId: null,
+    name: "Green Valley",
+    address: "89 Macarthur Street, Levin",
+    location: {
+      lat: -40.6189,
+      lng: 175.304844,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "Kale",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "cherry",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "raspberries",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "gooseberry",
+        amount: "100 g",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 666,
+    ownerId: null,
+    name: "The Green Market",
+    address: "18 Fantame Street, Porirua",
+    location: {
+      lat: -41.134335,
+      lng: 174.872214,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "watermelon",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "blackberry",
+        amount: "100 g",
+        price: "$ 5",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 5",
+      },
+      {
+        item: "Broccoli",
+        amount: "each",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 667,
+    ownerId: null,
+    name: "The Fruit and Veg Shop",
+    address: "Murphys Road, Blenheim",
+    location: {
+      lat: -41.507008,
+      lng: 173.932774,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Green Beans",
+        amount: "small bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 672,
+    ownerId: null,
+    name: "The Produce Stop",
+    address: "30 Morse Street, Blenheim",
+    location: {
+      lat: -41.562571,
+      lng: 173.527347,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "each",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 673,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "Duncan Street, Ward",
+    location: {
+      lat: -41.826488,
+      lng: 174.13992,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 680,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "New Renwick Road, Blenheim",
+    location: {
+      lat: -41.530597,
+      lng: 173.896787,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "pumpkin",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 682,
+    ownerId: null,
+    name: "The Harvest Shop",
+    address: "Hikurangi Street, Upper Hutt",
+    location: {
+      lat: -41.126527,
+      lng: 175.037186,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "Broccoli",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Cabbage",
+        amount: "kg",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 687,
+    ownerId: null,
+    name: "Garden Delights",
+    address: "888 Atawhai Drive, Nelson",
+    location: {
+      lat: -41.224653,
+      lng: 173.322845,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Kale",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 688,
+    ownerId: null,
+    name: "Alex's Veggie World",
+    address: "56A William Street, Richmond",
+    location: {
+      lat: -41.341242,
+      lng: 173.195159,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 689,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "5 Mackenzie Street, Putaruru",
+    location: {
+      lat: -38.047376,
+      lng: 175.77944,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "coconut",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 690,
+    ownerId: null,
+    name: "Emma's Orchard",
+    address: "5 Vardon Street, Hamilton",
+    location: {
+      lat: -37.76428,
+      lng: 175.253233,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "Garlic",
+        amount: "small bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 692,
+    ownerId: null,
+    name: "The Produce Stand",
+    address: "47 Main Road, Havelock",
+    location: {
+      lat: -41.280887,
+      lng: 173.766556,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "pumpkin",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "banana",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Carrot",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 694,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "316 Paton Road, Hope",
+    location: {
+      lat: -41.369201,
+      lng: 173.145106,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-9.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "gooseberry",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "Eggplant",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "watermelon",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 695,
+    ownerId: null,
+    name: "Fruit Frenzy",
+    address: "15 Mahana School Road, Mahana",
+    location: {
+      lat: -41.26635,
+      lng: 173.044234,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "Carrot",
+        amount: "kg",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 696,
+    ownerId: null,
+    name: "Lucy's Fruit Basket",
+    address: "4 Stafford Drive, Mapua",
+    location: {
+      lat: -41.246728,
+      lng: 173.090942,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 700,
+    ownerId: null,
+    name: "The Fruit and Veg Shop",
+    address: "Galt Street, Hawera",
+    location: {
+      lat: -39.581158,
+      lng: 174.288885,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 701,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "11 Uruti Road, New Plymouth",
+    location: {
+      lat: -38.944846,
+      lng: 174.52966,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "Carrot",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "Carrot",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "Onion",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Beetroot",
+        amount: "small bag",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 702,
+    ownerId: null,
+    name: "The Farm Stand",
+    address: "Sanders Avenue, New Plymouth",
+    location: {
+      lat: -39.072672,
+      lng: 174.063478,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Carrot",
+        amount: "kg",
+        price: "$ 3",
+      },
+      {
+        item: "kiwifruit",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Lettuce",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "Beetroot",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: true,
+  },
+  {
+    stallId: 704,
+    ownerId: null,
+    name: "The Garden Market",
+    address: "Fitzherbert East Road, Palmerston North",
+    location: {
+      lat: -40.363624,
+      lng: 175.66447,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "banana",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "strawberries",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Cucumber",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "lemon",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 722,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "Bridge Street, Bulls",
+    location: {
+      lat: -40.168741,
+      lng: 175.385156,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 723,
+    ownerId: null,
+    name: "The Produce Stop",
+    address: "55 Herbert Avenue, Palmerston North",
+    location: {
+      lat: -40.345267,
+      lng: 175.584798,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Cucumber",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "Green Beans",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "grapes",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "Broccoli",
+        amount: "kg",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 726,
+    ownerId: null,
+    name: "The Carrot Patch",
+    address: "Campbells Road, Blenheim",
+    location: {
+      lat: -41.42944,
+      lng: 173.962221,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 727,
+    ownerId: null,
+    name: "Garden Bounty",
+    address: "5668 Kenepuru Road, Picton",
+    location: {
+      lat: -41.158283,
+      lng: 174.044022,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "Asparagus",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "strawberries",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "Carrot",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Leek",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 728,
+    ownerId: null,
+    name: "Harvest Fresh",
+    address: "Te Manuao Road, Otaki",
+    location: {
+      lat: -40.757712,
+      lng: 175.166355,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 729,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "106 Ellis Street, Brightwater",
+    location: {
+      lat: -41.37914,
+      lng: 173.112957,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "potato",
+        amount: "each",
+        price: "$ 2",
+      },
+      {
+        item: "apples",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 731,
+    ownerId: null,
+    name: "The Orange Grove",
+    address: "57 Pine Avenue, Hamilton",
+    location: {
+      lat: -37.81316,
+      lng: 175.288082,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "lemon",
+        amount: "each",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 733,
+    ownerId: null,
+    name: "Fruitful Harvest",
+    address: "15 Durham Street, Nelson",
+    location: {
+      lat: -41.306739,
+      lng: 173.224448,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "apricot",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Eggplant",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Kale",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 734,
+    ownerId: null,
+    name: "The Orange Grove",
+    address: "111 Haven Road, Nelson",
+    location: {
+      lat: -41.268292,
+      lng: 173.277868,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 735,
+    ownerId: null,
+    name: "The Fruit and Veg Shop",
+    address: "19 Moutere Highway, Tasman",
+    location: {
+      lat: -41.306922,
+      lng: 173.119986,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "cherry",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 736,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "8 School Road, Lower Moutere",
+    location: {
+      lat: -41.154344,
+      lng: 172.995271,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "coconut",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "cherries",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "cherries",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "blueberry",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "strawberries",
+        amount: "small bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 737,
+    ownerId: null,
+    name: "The Apple Orchard",
+    address: "State Highway 63, Nelson",
+    location: {
+      lat: -41.801592,
+      lng: 172.85158,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "lemon",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 738,
+    ownerId: null,
+    name: "The Beet Boutique",
+    address: "1 Boston Crescent, Hastings",
+    location: {
+      lat: -39.61362,
+      lng: 176.773163,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "coconut",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "grapes",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Broccoli",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "Garlic",
+        amount: "kg",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 739,
+    ownerId: null,
+    name: "The Fruit Farm",
+    address: "1357 Queen Charlotte Drive, Linkwater",
+    location: {
+      lat: -41.289162,
+      lng: 173.87947,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "blackberry",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Lettuce",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "Carrot",
+        amount: "bunch",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 741,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "Dublin Street, Martinborough",
+    location: {
+      lat: -41.218711,
+      lng: 175.452717,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "gooseberry",
+        amount: "each",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 742,
+    ownerId: null,
+    name: "The Fruit Stand",
+    address: "Albert Street, Eketahuna",
+    location: {
+      lat: -40.64923,
+      lng: 175.709131,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Cabbage",
+        amount: "small bag",
+        price: "$ 1",
+      },
+      {
+        item: "Beetroot",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "pumpkin",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "potato",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 745,
+    ownerId: null,
+    name: "Fruitful Delights",
+    address: "Vickerman Street, Blenheim",
+    location: {
+      lat: -41.481336,
+      lng: 173.968885,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "each",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 749,
+    ownerId: null,
+    name: "Fruit Emporium",
+    address: "90 Crown Road, Taupo",
+    location: {
+      lat: -38.691376,
+      lng: 176.100389,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "avocado",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 751,
+    ownerId: null,
+    name: "Nature's Bounty",
+    address: "31 Fifth Avenue, Tauranga",
+    location: {
+      lat: -37.691996,
+      lng: 176.16398,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "potato",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Beetroot",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "banana",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "Cabbage",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Beetroot",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 754,
+    ownerId: null,
+    name: "Fruit Oasis",
+    address: "Mclauchlan Street, Blenheim",
+    location: {
+      lat: -41.504564,
+      lng: 173.944347,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "blackberry",
+        amount: "bunch",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 758,
+    ownerId: null,
+    name: "Lisa's Garden",
+    address: "440 Dalefield Road, Carterton",
+    location: {
+      lat: -41.025385,
+      lng: 175.477597,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Carrot",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "Asparagus",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "kiwifruit",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "kiwifruit",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "Cucumber",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 764,
+    ownerId: null,
+    name: "Sara's Salad Bar",
+    address: "Moffat Road, Tokoroa",
+    location: {
+      lat: -38.236275,
+      lng: 175.882807,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 765,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "150 Wellington Street, Opotiki",
+    location: {
+      lat: -38.014704,
+      lng: 177.293762,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberries",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "watermelon",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "blackberry",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "raspberries",
+        amount: "small bag",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 767,
+    ownerId: null,
+    name: "Fruit Frenzy",
+    address: "2986 Broadlands Road, Reporoa",
+    location: {
+      lat: -38.511393,
+      lng: 176.332745,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 784,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "130 Pt England Road, Auckland",
+    location: {
+      lat: -36.882824,
+      lng: 174.866626,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "potato",
+        amount: "100 g",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 785,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "44 Curran Street, Auckland",
+    location: {
+      lat: -36.842089,
+      lng: 174.738996,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherry",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "orange",
+        amount: "bunch",
+        price: "$ 6",
+      },
+      {
+        item: "mandarins",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 787,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "Hutchinson Avenue, Auckland",
+    location: {
+      lat: -36.914497,
+      lng: 174.681073,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "coconut",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Carrot",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "blueberry",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "blueberries",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "watermelon",
+        amount: "bunch",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 791,
+    ownerId: null,
+    name: "Ruby's Orchard Lane",
+    address: "842 Galatea Road, Whakatane",
+    location: {
+      lat: -38.108728,
+      lng: 176.816074,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 794,
+    ownerId: null,
+    name: "Fruit Emporium",
+    address: "24 Te Teko Road, Te Teko",
+    location: {
+      lat: -38.0342,
+      lng: 176.797505,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Green Beans",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "blueberry",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "banana",
+        amount: "bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 795,
+    ownerId: null,
+    name: "Ben's Harvest",
+    address: "1274 Waotu Road, Putaruru",
+    location: {
+      lat: -38.144246,
+      lng: 175.68954,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 797,
+    ownerId: null,
+    name: "The Fruit Stand",
+    address: "79 Hutcheson Street, Blenheim",
+    location: {
+      lat: -41.499975,
+      lng: 173.95493,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "100 g",
+        price: "$ 5",
+      },
+      {
+        item: "Broccoli",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "banana",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Cabbage",
+        amount: "small bag",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 809,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "10 Church Road, Napier",
+    location: {
+      lat: -39.534894,
+      lng: 176.843615,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 814,
+    ownerId: null,
+    name: "Veggie Delight",
+    address: "399 Koputaroa Road, Levin",
+    location: {
+      lat: -40.578429,
+      lng: 175.337387,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "apricot",
+        amount: "100 g",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 815,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "Mokena Kohere Street, Levin",
+    location: {
+      lat: -40.713712,
+      lng: 175.217885,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "grapes",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "blackberry",
+        amount: "kg",
+        price: "$ 3",
+      },
+      {
+        item: "Broccoli",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 816,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "93 Flux Road, Upper Hutt",
+    location: {
+      lat: -41.123992,
+      lng: 175.11671,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberry",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 820,
+    ownerId: null,
+    name: "Ben's Harvest",
+    address: "Moresby Avenue, Waihi",
+    location: {
+      lat: -37.389972,
+      lng: 175.838774,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "Onion",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "Lettuce",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Kale",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "watermelon",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 821,
+    ownerId: null,
+    name: "Ryan's Green Grocer",
+    address: "6 Raroa Road, Waimana",
+    location: {
+      lat: -38.143098,
+      lng: 177.072258,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 825,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "31 Mill Road, Gisborne",
+    location: {
+      lat: -38.651399,
+      lng: 178.00129,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "apricot",
+        amount: "each",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 828,
+    ownerId: null,
+    name: "Fresh and Local",
+    address: "56 Wairere Road, Gisborne",
+    location: {
+      lat: -38.683687,
+      lng: 178.075122,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 830,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "Muhunoa East Road, Levin",
+    location: {
+      lat: -40.662132,
+      lng: 175.251628,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Green Beans",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 832,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "6 Harker Street, Waipawa",
+    location: {
+      lat: -39.943615,
+      lng: 176.590064,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 836,
+    ownerId: null,
+    name: "The Fruit Basket",
+    address: "107 State Highway 1, Taupo",
+    location: {
+      lat: -38.787768,
+      lng: 176.076788,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 837,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "Hotel Access Road, Waitomo Caves",
+    location: {
+      lat: -38.261418,
+      lng: 175.109611,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "grapes",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "Lettuce",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "potato",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "mandarins",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 838,
+    ownerId: null,
+    name: "Mike's Produce",
+    address: "7 Nimon Street, Havelock North",
+    location: {
+      lat: -39.664097,
+      lng: 176.891791,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 850,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "2 Knox Street, Gisborne",
+    location: {
+      lat: -38.655029,
+      lng: 177.993954,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Broccoli",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "blueberries",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "Carrot",
+        amount: "kg",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 851,
+    ownerId: null,
+    name: "The Veggie Patch",
+    address: "25 Kenderdine Road, Elsthorpe",
+    location: {
+      lat: -39.914918,
+      lng: 176.812564,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "raspberries",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "lemon",
+        amount: "kg",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 852,
+    ownerId: null,
+    name: "Fruit Oasis",
+    address: "324 Hill Road, Napier",
+    location: {
+      lat: -39.402535,
+      lng: 176.85281,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "lemon",
+        amount: "bunch",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 853,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "Stoney Creek Road, Palmerston North",
+    location: {
+      lat: -40.326441,
+      lng: 175.676376,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "mandarins",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "blackberry",
+        amount: "bunch",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 854,
+    ownerId: null,
+    name: "The Apple Orchard",
+    address: "30A Meanee Road, Napier",
+    location: {
+      lat: -39.537197,
+      lng: 176.851603,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "apricot",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "apricot",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "avocado",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "Onion",
+        amount: "bag",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 863,
+    ownerId: null,
+    name: "Garden Grove",
+    address: "357 Tukapa Street, New Plymouth",
+    location: {
+      lat: -39.090983,
+      lng: 174.056453,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "Green Beans",
+        amount: "each",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 867,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "1071 Argyll Road, Otane",
+    location: {
+      lat: -39.861195,
+      lng: 176.532535,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "raspberries",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "coconut",
+        amount: "each",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 869,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "7 Raymond Road, Hastings",
+    location: {
+      lat: -39.625241,
+      lng: 176.951175,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apricot",
+        amount: "100 g",
+        price: "$ 5",
+      },
+      {
+        item: "blackberry",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "lemon",
+        amount: "bunch",
+        price: "$ 4",
+      },
+      {
+        item: "Lettuce",
+        amount: "bag",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 871,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "Bayley Street, Huirangi",
+    location: {
+      lat: -39.051773,
+      lng: 174.249859,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 874,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "8 Erin Street, Stratford",
+    location: {
+      lat: -39.290782,
+      lng: 174.264152,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "lemon",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "apricot",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "banana",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 875,
+    ownerId: null,
+    name: "Fresh and Local",
+    address: "Rangi Street, Mokau",
+    location: {
+      lat: -38.697235,
+      lng: 174.617569,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "apples",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Beetroot",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "Cucumber",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "Cabbage",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 876,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "3 Hunter Street, Normanby",
+    location: {
+      lat: -39.54089,
+      lng: 174.272881,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "coconut",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 886,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "25 Kesteven Avenue, Tauranga",
+    location: {
+      lat: -37.720485,
+      lng: 176.143844,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "cherries",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 889,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "42 Elliott Crescent, Havelock North",
+    location: {
+      lat: -39.674036,
+      lng: 176.871074,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "Asparagus",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "coconut",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 890,
+    ownerId: null,
+    name: "The Fruit Basket",
+    address: "2A Lister Crescent, Napier",
+    location: {
+      lat: -39.513585,
+      lng: 176.905655,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "gooseberry",
+        amount: "kg",
+        price: "$ 3",
+      },
+      {
+        item: "potato",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "kg",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 891,
+    ownerId: null,
+    name: "The Veggie Cart",
+    address: "80D Latham Street, Napier",
+    location: {
+      lat: -39.505766,
+      lng: 176.905445,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Asparagus",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 892,
+    ownerId: null,
+    name: "The Green Spot",
+    address: "54 Kennedy Road, Napier",
+    location: {
+      lat: -39.496815,
+      lng: 176.90779,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Kale",
+        amount: "bunch",
+        price: "$ 3",
+      },
+      {
+        item: "pumpkin",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 897,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "400 Karamu Road South, Hastings",
+    location: {
+      lat: -39.645649,
+      lng: 176.841387,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-6.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "kiwifruit",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "raspberries",
+        amount: "bag",
+        price: "$ 3",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 898,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "15 Dick Place, Napier",
+    location: {
+      lat: -39.516043,
+      lng: 176.887624,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "avocado",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "blueberries",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "Asparagus",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 899,
+    ownerId: null,
+    name: "Veggie World",
+    address: "2306 Kereru Road, Hastings",
+    location: {
+      lat: -39.655869,
+      lng: 176.407528,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Beetroot",
+        amount: "kg",
+        price: "$ 3",
+      },
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Lettuce",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 901,
+    ownerId: null,
+    name: "The Veggie Shack",
+    address: "Livingstone Avenue, Hamilton",
+    location: {
+      lat: -37.779882,
+      lng: 175.241733,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "strawberries",
+        amount: "each",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 905,
+    ownerId: null,
+    name: "The Fruit Farm",
+    address: "45 Hiruharama Road, Ruatoria",
+    location: {
+      lat: -37.928293,
+      lng: 178.260707,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 907,
+    ownerId: null,
+    name: "The Harvest Shop",
+    address: "316 Paki Paki Road, Pakipaki",
+    location: {
+      lat: -39.687956,
+      lng: 176.787193,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-3.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "987654333",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 909,
+    ownerId: null,
+    name: "Jane's Fruit Stall",
+    address: "262 Valley Road, Woodville",
+    location: {
+      lat: -40.307229,
+      lng: 175.909655,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Cucumber",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Cauliflower",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 919,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "33 Old Coach Road, Paengaroa",
+    location: {
+      lat: -37.824771,
+      lng: 176.414119,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "orange",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 920,
+    ownerId: null,
+    name: "The Radish Room",
+    address: "29 Esdaile Road, Tauranga",
+    location: {
+      lat: -37.655224,
+      lng: 175.996266,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-18.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "apples",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "raspberries",
+        amount: "small bag",
+        price: "$ 5",
+      },
+      {
+        item: "strawberries",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "Eggplant",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 921,
+    ownerId: null,
+    name: "The Fruit and Veg Shop",
+    address: "20 Patricia Avenue, Hamilton",
+    location: {
+      lat: -37.786101,
+      lng: 175.301528,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-16.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "bag of 5",
+        price: "$ 4",
+      },
+      {
+        item: "gooseberry",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "pumpkin",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Beetroot",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "mandarins",
+        amount: "100 g",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 940,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "978 Pyes Pa Road, Pyes Pa",
+    location: {
+      lat: -37.819257,
+      lng: 176.125864,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-2.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 941,
+    ownerId: null,
+    name: "Ryan's Green Grocer",
+    address: "34 Massey Road, Reporoa",
+    location: {
+      lat: -38.435285,
+      lng: 176.343189,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "Kale",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "Beetroot",
+        amount: "100 g",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 942,
+    ownerId: null,
+    name: "The Veggie Patch",
+    address: "1249 Arawa Street, Rotorua",
+    location: {
+      lat: -38.134522,
+      lng: 176.248831,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Beetroot",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Leek",
+        amount: "100 g",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 943,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "358 Makaretu Road, Takapau",
+    location: {
+      lat: -39.941666,
+      lng: 176.309437,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 944,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "27 Rauma Road, Taihape",
+    location: {
+      lat: -39.685445,
+      lng: 175.809243,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "lemon",
+        amount: "bag",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 949,
+    ownerId: null,
+    name: "Green Valley",
+    address: "19 Punga Street, Tangimoana",
+    location: {
+      lat: -40.296121,
+      lng: 175.2492,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cucumber",
+        amount: "bunch",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 950,
+    ownerId: null,
+    name: "Nature's Bounty",
+    address: "Waughs Road, Feilding",
+    location: {
+      lat: -40.256719,
+      lng: 175.599626,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "strawberries",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 953,
+    ownerId: null,
+    name: "The Orange Grove",
+    address: "Gloag Street, Waverley",
+    location: {
+      lat: -39.763184,
+      lng: 174.62965,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "123458390",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "100 g",
+        price: "$ 4",
+      },
+      {
+        item: "banana",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "Carrot",
+        amount: "bag",
+        price: "$ 2",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 954,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "985 No 1 Road, Waitoa",
+    location: {
+      lat: -37.532358,
+      lng: 175.567819,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-17.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "potato",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Beetroot",
+        amount: "bunch",
+        price: "$ 4",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 960,
+    ownerId: null,
+    name: "Alex's Veggie World",
+    address: "196 College Street, Palmerston North",
+    location: {
+      lat: -40.369605,
+      lng: 175.59988,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "strawberries",
+        amount: "kg",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 961,
+    ownerId: null,
+    name: "Harvest Fresh",
+    address: "84 Matawhero Road, Pukeokahu",
+    location: {
+      lat: -39.615968,
+      lng: 176.00161,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-13.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Leek",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "Garlic",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "kiwifruit",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Eggplant",
+        amount: "kg",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 962,
+    ownerId: null,
+    name: "Fruit Zone",
+    address: "24 Grey Street, Raetihi",
+    location: {
+      lat: -39.431444,
+      lng: 175.278645,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-10.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 963,
+    ownerId: null,
+    name: "Juicy Delights",
+    address: "7164 Te Aararoa Road, Hicks Bay",
+    location: {
+      lat: -37.57326,
+      lng: 178.142355,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag",
+        price: "$ 3",
+      },
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "Cauliflower",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "cherries",
+        amount: "100 g",
+        price: "$ 6",
+      },
+      {
+        item: "Cucumber",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 965,
+    ownerId: null,
+    name: "Green Valley",
+    address: "27 Waikare Road, Putorino",
+    location: {
+      lat: -39.134348,
+      lng: 177.00688,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Onion",
+        amount: "kg",
+        price: "$ 6",
+      },
+      {
+        item: "avocado",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "avocado",
+        amount: "each",
+        price: "$ 4",
+      },
+      {
+        item: "Leek",
+        amount: "kg",
+        price: "$ 2",
+      },
+      {
+        item: "apricot",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 966,
+    ownerId: null,
+    name: "The Harvest Shop",
+    address: "945 Makirikiri Road, Marton",
+    location: {
+      lat: -40.086722,
+      lng: 175.309685,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+      {
+        item: "Asparagus",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Cucumber",
+        amount: "each",
+        price: "$ 1",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 969,
+    ownerId: null,
+    name: "Fresh Harvest",
+    address: "50 Te Kuiti Road, Te Kuiti",
+    location: {
+      lat: -38.335869,
+      lng: 175.174234,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cabbage",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "cherries",
+        amount: "bag",
+        price: "$ 5",
+      },
+      {
+        item: "blueberry",
+        amount: "bunch",
+        price: "$ 5",
+      },
+      {
+        item: "blackberry",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Cauliflower",
+        amount: "kg",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 971,
+    ownerId: null,
+    name: "Garden Delights",
+    address: "Ruapehu Street, Waiouru",
+    location: {
+      lat: -39.468546,
+      lng: 175.673128,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-5.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "010940398",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "blueberry",
+        amount: "kg",
+        price: "$ 6",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 973,
+    ownerId: null,
+    name: "Farm to Table",
+    address: "91 Mueller Street, Waihi",
+    location: {
+      lat: -37.392955,
+      lng: 175.845002,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-1.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "banana",
+        amount: "kg",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 974,
+    ownerId: null,
+    name: "The Green Grocer",
+    address: "101 King Street, Whakatane",
+    location: {
+      lat: -37.964493,
+      lng: 176.982539,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "283908023",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "mandarins",
+        amount: "bag",
+        price: "$ 6",
+      },
+      {
+        item: "Onion",
+        amount: "bunch",
+        price: "$ 2",
+      },
+      {
+        item: "Leek",
+        amount: "each",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 978,
+    ownerId: null,
+    name: "Alex's Veggie World",
+    address: "Brighton Crescent, Palmerston North",
+    location: {
+      lat: -40.359755,
+      lng: 175.590336,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-15.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Cauliflower",
+        amount: "bag of 5",
+        price: "$ 6",
+      },
+      {
+        item: "gooseberry",
+        amount: "small bag",
+        price: "$ 3",
+      },
+      {
+        item: "orange",
+        amount: "bag of 5",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 979,
+    ownerId: null,
+    name: "Green Valley",
+    address: "208 Old West Road, Tiritea",
+    location: {
+      lat: -40.401262,
+      lng: 175.619913,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "1012345678",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+      {
+        item: "Onion",
+        amount: "100 g",
+        price: "$ 2",
+      },
+      {
+        item: "cherries",
+        amount: "bag of 5",
+        price: "$ 3",
+      },
+      {
+        item: "blackberry",
+        amount: "each",
+        price: "$ 6",
+      },
+      {
+        item: "Kale",
+        amount: "bag",
+        price: "$ 1",
+      },
+    ],
+    organic: false,
+    marketStall: true,
+    eftposPayment: false,
+  },
+  {
+    stallId: 980,
+    ownerId: null,
+    name: "Garden Delights",
+    address: "State Highway 4, Whanganui",
+    location: {
+      lat: -39.866199,
+      lng: 175.113684,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "Carrot",
+        amount: "kg",
+        price: "$ 4",
+      },
+      {
+        item: "pumpkin",
+        amount: "kg",
+        price: "$ 1",
+      },
+      {
+        item: "Carrot",
+        amount: "bag",
+        price: "$ 1",
+      },
+      {
+        item: "Garlic",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 982,
+    ownerId: null,
+    name: "The Farmer's Market",
+    address: "38 Keith Street, Whanganui",
+    location: {
+      lat: -39.922316,
+      lng: 175.046264,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 983,
+    ownerId: null,
+    name: "Fruitopia",
+    address: "Flyger Street, Kimbolton",
+    location: {
+      lat: -40.053459,
+      lng: 175.778381,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-4.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Lettuce",
+        amount: "bag",
+        price: "$ 4",
+      },
+      {
+        item: "lemon",
+        amount: "small bag",
+        price: "$ 2",
+      },
+      {
+        item: "Beetroot",
+        amount: "each",
+        price: "$ 5",
+      },
+      {
+        item: "Cabbage",
+        amount: "100 g",
+        price: "$ 1",
+      },
+      {
+        item: "raspberries",
+        amount: "bag",
+        price: "$ 5",
+      },
+    ],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 985,
+    ownerId: null,
+    name: "Max's Fruit Express",
+    address: "260 Clarkin Road, Hamilton",
+    location: {
+      lat: -37.764108,
+      lng: 175.284078,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-7.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "0102030405",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Eggplant",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "cherry",
+        amount: "bunch",
+        price: "$ 1",
+      },
+      {
+        item: "blueberries",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "potato",
+        amount: "bag",
+        price: "$ 2",
+      },
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 2",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 986,
+    ownerId: null,
+    name: "The Garden Market",
+    address: "897 Waingaro Road, Ngaruawahia",
+    location: {
+      lat: -37.673206,
+      lng: 175.075906,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-8.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "gooseberry",
+        amount: "small bag",
+        price: "$ 6",
+      },
+      {
+        item: "mandarins",
+        amount: "bag of 5",
+        price: "$ 2",
+      },
+      {
+        item: "blueberries",
+        amount: "bag of 5",
+        price: "$ 5",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 987,
+    ownerId: null,
+    name: "Zoe's Fruit Zone",
+    address: "Bruce Avenue, Hamilton",
+    location: {
+      lat: -37.81635,
+      lng: 175.290754,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-11.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Thursday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Friday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "5:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "grapes",
+        amount: "100 g",
+        price: "$ 3",
+      },
+      {
+        item: "apricot",
+        amount: "each",
+        price: "$ 3",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 988,
+    ownerId: null,
+    name: "Emma's Orchard",
+    address: "Patapu Street, Whanganui",
+    location: {
+      lat: -39.91454,
+      lng: 175.063803,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "9:00 am",
+        closeTime: "12:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [],
+    organic: false,
+    marketStall: false,
+    eftposPayment: false,
+  },
+  {
+    stallId: 989,
+    ownerId: null,
+    name: "Leo's Veg Out",
+    address: "56 Linton Street, Palmerston North",
+    location: {
+      lat: -40.361293,
+      lng: 175.610019,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-12.jpg",
+    openTimes: {
+      Monday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Tuesday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "1:00 pm",
+        closeTime: "6:00 pm",
+      },
+      Saturday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+      Sunday: {
+        open: false,
+        openTime: "",
+        closeTime: "",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Garlic",
+        amount: "bunch",
+        price: "$ 1",
+      },
+    ],
+    organic: true,
+    marketStall: false,
+    eftposPayment: true,
+  },
+  {
+    stallId: 996,
+    ownerId: null,
+    name: "The Farmer's Market",
+    address: "30 Rongoiti Road, Taihape",
+    location: {
+      lat: -39.651711,
+      lng: 175.720986,
+    },
+    about:
+      "EXAMPLE ONLY: This is an example of a fruit/vegetable seller for demonstration. Sellers can include more information here such as growing methods, what they have available in different seasons, upcoming stock etc.",
+    img: "/src/assets/test-image-14.jpg",
+    openTimes: {
+      Monday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Tuesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Wednesday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Thursday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Friday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Saturday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+      Sunday: {
+        open: true,
+        openTime: "7:00 am",
+        closeTime: "8:00 pm",
+      },
+    },
+    contactDetails: {
+      phone: "",
+      email: "",
+    },
+    inStock: [
+      {
+        item: "Broccoli",
+        amount: "small bag",
+        price: "$ 4",
+      },
+      {
+        item: "pumpkin",
+        amount: "kg",
+        price: "$ 5",
+      },
+      {
+        item: "Eggplant",
+        amount: "each",
+        price: "$ 3",
+      },
+      {
+        item: "Green Beans",
+        amount: "100 g",
+        price: "$ 6",
+      },
+    ],
+    organic: true,
+    marketStall: true,
     eftposPayment: false,
   },
 ];
