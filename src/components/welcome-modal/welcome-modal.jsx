@@ -20,14 +20,10 @@ export default function WelcomeModal({ setShowWelcomeModal }) {
         experience including:
       </p>
       <ul>
-        <li>Creating test stalls of your own</li>
-        <li>Managing stock or modifying details of existing stalls</li>
+        <li>Creating your own stall listing</li>
+        <li>Managing stock and modifying details of your stalls</li>
         <li>Saving stalls to favourites</li>
       </ul>
-      <p>
-        Final version allowing user sign up and the display of real sellers
-        coming soon...
-      </p>
       <div className="welcome-btn-container">
         <ButtonStd
           options={["long", "bold", "light"]}
